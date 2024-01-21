@@ -1,0 +1,97 @@
+import org.openrs2.deob.annotation.OriginalArg;
+import org.openrs2.deob.annotation.OriginalClass;
+import org.openrs2.deob.annotation.OriginalMember;
+import org.openrs2.deob.annotation.Pc;
+import sign.signlink;
+
+@OriginalClass("client!s")
+public final class Class40 {
+
+	@OriginalMember(owner = "client!s", name = "c", descriptor = "I")
+	private int anInt890;
+
+	@OriginalMember(owner = "client!s", name = "d", descriptor = "I")
+	private int anInt891;
+
+	@OriginalMember(owner = "client!s", name = "a", descriptor = "Z")
+	private boolean aBoolean230 = true;
+
+	@OriginalMember(owner = "client!s", name = "b", descriptor = "Z")
+	private boolean aBoolean231 = false;
+
+	@OriginalMember(owner = "client!s", name = "e", descriptor = "Lclient!w;")
+	private Class1_Sub1 aClass1_Sub1_35 = new Class1_Sub1();
+
+	@OriginalMember(owner = "client!s", name = "i", descriptor = "Lclient!pb;")
+	private Class32 aClass32_1 = new Class32(9);
+
+	@OriginalMember(owner = "client!s", name = "f", descriptor = "I")
+	private int anInt892;
+
+	@OriginalMember(owner = "client!s", name = "g", descriptor = "I")
+	private int anInt893;
+
+	@OriginalMember(owner = "client!s", name = "h", descriptor = "Lclient!t;")
+	private Class43 aClass43_1;
+
+	@OriginalMember(owner = "client!s", name = "<init>", descriptor = "(BI)V")
+	public Class40(@OriginalArg(0) byte arg0, @OriginalArg(1) int arg1) {
+		try {
+			@Pc(23) boolean local23 = false;
+			this.anInt892 = arg1;
+			this.anInt893 = arg1;
+			this.aClass43_1 = new Class43(1024, (byte) 124);
+		} catch (@Pc(47) RuntimeException local47) {
+			signlink.reporterror("86782, " + arg0 + ", " + arg1 + ", " + local47.toString());
+			throw new RuntimeException();
+		}
+	}
+
+	@OriginalMember(owner = "client!s", name = "a", descriptor = "(J)Lclient!w;")
+	public Class1_Sub1 method587(@OriginalArg(0) long arg0) {
+		@Pc(5) Class1_Sub1 local5 = (Class1_Sub1) this.aClass43_1.method628(arg0);
+		if (local5 == null) {
+			this.anInt890++;
+		} else {
+			this.aClass32_1.method512(local5);
+			this.anInt891++;
+		}
+		return local5;
+	}
+
+	@OriginalMember(owner = "client!s", name = "a", descriptor = "(JBLclient!w;)V")
+	public void method588(@OriginalArg(0) long arg0, @OriginalArg(2) Class1_Sub1 arg1) {
+		try {
+			if (this.anInt893 == 0) {
+				@Pc(10) Class1_Sub1 local10 = this.aClass32_1.method513();
+				local10.method669();
+				local10.method670();
+				if (local10 == this.aClass1_Sub1_35) {
+					local10 = this.aClass32_1.method513();
+					local10.method669();
+					local10.method670();
+				}
+			} else {
+				this.anInt893--;
+			}
+			this.aClass43_1.method629(arg1, arg0);
+			this.aClass32_1.method512(arg1);
+		} catch (@Pc(46) RuntimeException local46) {
+			signlink.reporterror("63377, " + arg0 + ", " + 76 + ", " + arg1 + ", " + local46.toString());
+			throw new RuntimeException();
+		}
+	}
+
+	@OriginalMember(owner = "client!s", name = "a", descriptor = "()V")
+	public void method589() {
+		while (true) {
+			@Pc(3) Class1_Sub1 local3 = this.aClass32_1.method513();
+			if (local3 == null) {
+				this.anInt893 = this.anInt892;
+				return;
+			}
+			local3.method669();
+			local3.method670();
+		}
+	}
+}
