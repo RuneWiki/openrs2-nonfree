@@ -1,0 +1,40 @@
+import java.awt.Component;
+import java.awt.Graphics;
+import java.awt.Point;
+import java.awt.image.BufferedImage;
+import java.awt.image.DataBufferInt;
+import java.awt.image.DirectColorModel;
+import java.awt.image.Raster;
+import java.awt.image.WritableRaster;
+import java.util.Hashtable;
+import org.openrs2.deob.annotation.OriginalArg;
+import org.openrs2.deob.annotation.OriginalClass;
+import org.openrs2.deob.annotation.OriginalMember;
+import org.openrs2.deob.annotation.Pc;
+
+@OriginalClass("client!va")
+public final class Class51_Sub2 extends Class51 {
+
+	@OriginalMember(owner = "client!va", name = "q", descriptor = "Ljava/awt/Component;")
+	private Component aComponent2;
+
+	@OriginalMember(owner = "client!va", name = "a", descriptor = "(IIILjava/awt/Component;)V")
+	@Override
+	public void method1966(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Component arg2) {
+		this.anInt2765 = arg1;
+		this.anInt2763 = arg0;
+		this.anIntArray334 = new int[arg0 * arg1 + 1];
+		@Pc(29) DataBufferInt local29 = new DataBufferInt(this.anIntArray334, this.anIntArray334.length);
+		@Pc(37) DirectColorModel local37 = new DirectColorModel(32, 16711680, 65280, 255);
+		@Pc(47) WritableRaster local47 = Raster.createWritableRaster(local37.createCompatibleSampleModel(this.anInt2765, this.anInt2763), local29, null);
+		this.anImage4 = new BufferedImage(local37, local47, false, new Hashtable());
+		this.aComponent2 = arg2;
+		this.method1970();
+	}
+
+	@OriginalMember(owner = "client!va", name = "a", descriptor = "(IILjava/awt/Graphics;I)V")
+	@Override
+	public void method1967(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Graphics arg2) {
+		arg2.drawImage(this.anImage4, arg0, arg1, this.aComponent2);
+	}
+}
