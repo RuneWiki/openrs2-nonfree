@@ -1,0 +1,92 @@
+libraries:
+  client:
+    format: jar
+    file: 356.2006-01-30.jar
+excluded_classes:
+  - "*!client"
+  - "*!sign/signlink"
+excluded_methods:
+  - "*!**.<clinit> *"
+  - "*!**.<init> *"
+  - "*!**.main *"
+  - "*!**.quit *"
+  - "*!sign/signlink.* *"
+excluded_fields:
+  - "*!**.clientversion *"
+  - "*!**.mainapp *"
+  - "*!**.sunjava *"
+  - "*!**.active *"
+  - "*!**.socketip *"
+  - "*!**.socketreq *"
+  - "*!**.socket *"
+  - "*!**.threadreqpri *"
+  - "*!**.dnsreq *"
+  - "*!**.dns *"
+  - "*!**.loadreq *"
+  - "*!**.loadbuf *"
+  - "*!**.savereq *"
+  - "*!**.savebuf *"
+  - "*!**.urlreq *"
+  - "*!**.urlstream *"
+  - "*!**.midi *"
+  - "*!**.jingle *"
+  - "*!**.jinglelen *"
+  - "*!**.looprate *"
+  - "*!**.reporterror *"
+  - "*!**.errorname *"
+entry_points:
+  - "*!**.<clinit> *"
+  - "*!**.main *"
+  - "*!client.<init> *"
+scrambled_libraries: []
+max_obfuscated_name_len: 2
+pre_transformers:
+  - OriginalPcSave
+  - OriginalName
+  - ClassLiteral
+  - InvokeSpecial
+  - MultipleAssignment
+  - RedundantGoto
+transformers:
+  - OpaquePredicate
+  - ExceptionObfuscation
+  - ExceptionTracing
+  - Monitor
+  - BitShift
+  - Canvas
+  - FieldOrder
+  - BitwiseOp
+  - ConstantArg
+  - CopyPropagation
+  - UnusedLocal
+  - UnusedArg
+  - Counter
+  - Reset
+  - EmptyClass
+  - MethodOrder
+  - Visibility
+  - FinalClass
+  - FinalMethod
+  - Override
+  - RedundantGoto
+  - OriginalPcRestore
+  - FernflowerException
+patches: []
+source_transformers:
+  - Unenclose
+  - NegativeLiteral
+  - Complement
+  - Not
+  - CharLiteral
+  - IfElse
+  - Ternary
+  - BinaryExprOrder
+  - AddSub
+  - BitMask
+  - HexLiteral
+  - ValueOf
+  - NewInstance
+  - Increment
+  - ForLoopCondition
+  - RedundantCast
+  - Enclose
