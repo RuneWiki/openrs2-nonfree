@@ -128,14 +128,14 @@ function readCsv(name, hasHeader = true) {
 const deobs = readCsv('deob.csv');
 for (let i = 0; i < deobs.length; i++) {
     // already processed
-    if (deobs[i].rev <= 458) {
+    if (deobs[i].rev <= 225) {
         continue;
     }
 
     // already processed
-    // if (deobs[i].rev >= 468) {
-    //     continue;
-    // }
+    if (deobs[i].rev >= 400) {
+        continue;
+    }
 
     // target specific
     // if (deobs[i].rev != 468) {
