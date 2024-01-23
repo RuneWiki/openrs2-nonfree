@@ -1,0 +1,112 @@
+libraries:
+  client:
+    format: jar
+    file: runescape-b501-2008-07-01-10-55-12-openrs2#31203.jar
+  loader:
+    format: jar
+    file: loader-2008-07-01-16-33-20-openrs2#30992.jar
+excluded_classes:
+  - "*!client"
+  - "*!com/sun/opengl/impl/x11/**"
+  - "*!jagex3/jagmisc/jagmisc"
+  - "*!jaggl/**"
+  - "*!javax/media/opengl/**"
+  - "*!loader"
+  - "*!unpack"
+  - "*!unpackclass"
+excluded_methods:
+  - "*!**.<clinit> *"
+  - "*!**.<init> *"
+  - "*!**.main *"
+  - "*!**.providesignlink *"
+  - "*!**.quit *"
+  - "*!com/sun/opengl/impl/x11/**.* *"
+  - "*!jaggl/**.* *"
+  - "*!javax/media/opengl/**.* *"
+excluded_fields:
+  - "*!**.cache *"
+  - "*!**.canvasScale *"
+  - "*!com/sun/opengl/impl/x11/**.* *"
+  - "*!jaggl/**.* *"
+  - "*!javax/media/opengl/**.* *"
+entry_points:
+  - "*!**.<clinit> *"
+  - "*!**.main *"
+  - "*!**.providesignlink *"
+  - "*!client.<init> *"
+  - "*!com/sun/opengl/impl/x11/DRIHack.begin *"
+  - "*!com/sun/opengl/impl/x11/DRIHack.end *"
+  - "*!loader.<init> *"
+  - "*!unpackclass.<init> *"
+scrambled_libraries:
+  - client
+max_obfuscated_name_len: 2
+pre_transformers:
+  - OriginalPcSave
+  - OriginalName
+  - StringDecryption
+  - ClassLiteral
+  - InvokeSpecial
+  - MultipleAssignment
+  - RedundantGoto
+transformers:
+  - OpaquePredicate
+  - ExceptionObfuscation
+  - ExceptionTracing
+  - Monitor
+  - BitShift
+  - Canvas
+  - FieldOrder
+  - BitwiseOp
+  - ConstantArg
+  - CopyPropagation
+  - UnusedLocal
+  - UnusedMethod
+  - UnusedArg
+  - Counter
+  - Reset
+  - EmptyClass
+  - MethodOrder
+  - Visibility
+  - FinalClass
+  - FinalMethod
+  - Override
+  - RedundantGoto
+  - OriginalPcRestore
+  - FernflowerException
+patches:
+  - BufferSize
+  - CachePath
+  - HostCheck
+  - Domain
+  - LoadLibrary
+  - MacResize
+  - MemoryAllocation
+  - Name
+  - PlatformDetection
+  - PublicKey
+  - RightClick
+  - Typo
+  - HighDpi
+  - InvalidKey
+  - Resource
+source_transformers:
+  - Unenclose
+  - NegativeLiteral
+  - Complement
+  - Not
+  - CharLiteral
+  - IfElse
+  - Ternary
+  - BinaryExprOrder
+  - AddSub
+  - Identity
+  - BitMask
+  - HexLiteral
+  - ValueOf
+  - NewInstance
+  - Increment
+  - ForLoopCondition
+  - RedundantCast
+  - Gl
+  - Enclose
