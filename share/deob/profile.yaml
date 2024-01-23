@@ -1,0 +1,117 @@
+libraries:
+  client:
+    format: pack200
+    file: runescape_gl-b543-2009-04-03-13-37-52-openrs2#31335.pack200
+    requires:
+      - gl
+  gl:
+    format: pack200
+    file: jogl-2009-03-24-16-06-30-openrs2#31707.pack200
+  loader:
+    format: jar
+    file: loader_gl-2009-04-03-13-39-04-openrs2#31249.jar
+excluded_classes:
+  - "*!client"
+  - "*!com/sun/opengl/impl/x11/**"
+  - "*!jagex3/jagmisc/jagmisc"
+  - "*!jaggl/**"
+  - "*!javax/media/opengl/**"
+  - "*!loader"
+  - "*!unpack"
+  - "*!unpackclass"
+excluded_methods:
+  - "*!**.<clinit> *"
+  - "*!**.<init> *"
+  - "*!**.main *"
+  - "*!**.providesignlink *"
+  - "*!**.quit *"
+  - "*!com/sun/opengl/impl/x11/**.* *"
+  - "*!jaggl/**.* *"
+  - "*!javax/media/opengl/**.* *"
+excluded_fields:
+  - "*!**.cache *"
+  - "*!**.canvasScale *"
+  - "*!com/sun/opengl/impl/x11/**.* *"
+  - "*!jaggl/**.* *"
+  - "*!javax/media/opengl/**.* *"
+entry_points:
+  - "*!**.<clinit> *"
+  - "*!**.main *"
+  - "*!**.providesignlink *"
+  - "*!client.<init> *"
+  - "*!com/sun/opengl/impl/x11/DRIHack.begin *"
+  - "*!com/sun/opengl/impl/x11/DRIHack.end *"
+  - "*!loader.<init> *"
+  - "*!unpackclass.<init> *"
+scrambled_libraries:
+  - client
+max_obfuscated_name_len: 2
+pre_transformers:
+  - OriginalPcSave
+  - OriginalName
+  - StringDecryption
+  - ClassLiteral
+  - InvokeSpecial
+  - MultipleAssignment
+  - RedundantGoto
+transformers:
+  - OpaquePredicate
+  - ExceptionObfuscation
+  - ExceptionTracing
+  - Monitor
+  - BitShift
+  - Canvas
+  - FieldOrder
+  - BitwiseOp
+  - ConstantArg
+  - CopyPropagation
+  - UnusedLocal
+  - UnusedMethod
+  - UnusedArg
+  - Counter
+  - Reset
+  - EmptyClass
+  - MethodOrder
+  - Visibility
+  - FinalClass
+  - FinalMethod
+  - Override
+  - RedundantGoto
+  - OriginalPcRestore
+  - FernflowerException
+patches:
+  - BufferSize
+  - CachePath
+  - HostCheck
+  - Domain
+  - LoadLibrary
+  - MacResize
+  - MemoryAllocation
+  - Name
+  - PlatformDetection
+  - PublicKey
+  - RightClick
+  - Typo
+  - HighDpi
+  - InvalidKey
+  - Resource
+source_transformers:
+  - Unenclose
+  - NegativeLiteral
+  - Complement
+  - Not
+  - CharLiteral
+  - IfElse
+  - Ternary
+  - BinaryExprOrder
+  - AddSub
+  - Identity
+  - BitMask
+  - HexLiteral
+  - ValueOf
+  - NewInstance
+  - Increment
+  - ForLoopCondition
+  - RedundantCast
+  - Gl
+  - Enclose
