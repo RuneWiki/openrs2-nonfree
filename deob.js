@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const child_process = require('child_process');
 
-function deob(settings) {
+function deob(settings, upload = true) {
     let libraries = settings.libraries.split(';').map(x => {
         let [name, file] = x.split(':');
         return { name, file };
@@ -74,30 +74,32 @@ function deob(settings) {
         return;
     }
 
-    // create a git repo in the work directory and commit the deobfuscated files
-    child_process.execSync('git init', {
-        cwd: path.join(__dirname, 'work')
-    });
+    if (upload) {
+        // create a git repo in the work directory and commit the deobfuscated files
+        child_process.execSync('git init', {
+            cwd: path.join(__dirname, 'work')
+        });
 
-    child_process.execSync('git remote add origin https://github.com/RuneWiki/openrs2-nonfree', {
-        cwd: path.join(__dirname, 'work')
-    });
+        child_process.execSync('git remote add origin https://github.com/RuneWiki/openrs2-nonfree', {
+            cwd: path.join(__dirname, 'work')
+        });
 
-    child_process.execSync(`git checkout -b ${settings.rev}`, {
-        cwd: path.join(__dirname, 'work')
-    });
+        child_process.execSync(`git checkout -b ${settings.rev}`, {
+            cwd: path.join(__dirname, 'work')
+        });
 
-    child_process.execSync('git add -A', {
-        cwd: path.join(__dirname, 'work')
-    });
+        child_process.execSync('git add -A', {
+            cwd: path.join(__dirname, 'work')
+        });
 
-    child_process.execSync('git commit -m "feat: Initial deob"', {
-        cwd: path.join(__dirname, 'work')
-    });
+        child_process.execSync('git commit -m "feat: Initial deob"', {
+            cwd: path.join(__dirname, 'work')
+        });
 
-    child_process.execSync(`git push -u origin ${settings.rev} -f`, {
-        cwd: path.join(__dirname, 'work')
-    });
+        child_process.execSync(`git push -u origin ${settings.rev} -f`, {
+            cwd: path.join(__dirname, 'work')
+        });
+    }
 }
 
 function readCsv(name, hasHeader = true) {
@@ -128,17 +130,17 @@ function readCsv(name, hasHeader = true) {
 const deobs = readCsv('deob.csv');
 for (let i = 0; i < deobs.length; i++) {
     // already processed
-    if (deobs[i].rev <= 225) {
+    if (deobs[i].rev <= 498) {
         continue;
     }
 
     // already processed
-    if (deobs[i].rev >= 400) {
+    if (deobs[i].rev >= 555) {
         continue;
     }
 
     // target specific
-    // if (deobs[i].rev != 468) {
+    // if (deobs[i].rev != 377) {
     //     continue;
     // }
 
