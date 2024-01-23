@@ -1,0 +1,27 @@
+import org.openrs2.deob.annotation.OriginalClass;
+import org.openrs2.deob.annotation.OriginalMember;
+
+@OriginalClass("loader!f")
+public final class Class197 {
+
+	@OriginalMember(owner = "loader!f", name = "a", descriptor = "Lloader!b;")
+	public static Class194 aClass194_1 = new Class194("game_unpacker.dat", "unpackclass_-1911426584.pack", new String[] { "Loading unpacker", "Lade Entpacker", "Décompression", "Carregando descompactador" }, 19788, 19788, new int[] { -3, -104, -67, 100, 126, -102, -46, -103, -8, 46, 84, -115, 18, -18, 41, -18, 1, 118, -121, 89 });
+
+	@OriginalMember(owner = "loader!f", name = "b", descriptor = "Lloader!b;")
+	public static Class194 aClass194_2 = new Class194("main_file_cache.dat3", "runescape_gl_-132784534.pack200", new String[] { "Loading game code", "Lade Spiel-Code", "Chargement du code du jeu", "Carregando código do jogo" }, 505784, 505784, new int[] { 121, 18, 64, 89, 30, 32, -69, 118, 115, -16, 105, -31, 73, -69, -55, -5, 43, -66, -52, 38 });
+
+	@OriginalMember(owner = "loader!f", name = "c", descriptor = "Lloader!b;")
+	public static Class194 aClass194_3 = new Class194("main_file_cache.dat4", "runescape_gl_1713832515.js5", new String[] { "Loading game code", "Lade Spiel-Code", "Chargement du code du jeu", "Carregando código do jogo" }, 511077, 511077, new int[] { -57, -65, 108, -96, -113, 59, -103, 119, 51, -110, -8, 28, -39, 91, 127, 31, -21, 126, 47, 120 });
+
+	@OriginalMember(owner = "loader!f", name = "d", descriptor = "Lloader!b;")
+	public static Class194 aClass194_4 = new Class194("main_file_cache.dat5", "jaggl_-1418094567.pack200", new String[] { "Loading 3D library", "Lade 3D-Softwarebibliothek", "Chargement de la librairie 3D", "Carregando biblioteca 3D" }, 5339, 5339, new int[] { 59, 3, -113, -6, -50, 76, 6, -66, 19, -64, -57, -65, 33, 127, 45, -7, 108, 19, -54, -5 });
+
+	@OriginalMember(owner = "loader!f", name = "e", descriptor = "Lloader!b;")
+	public static Class194 aClass194_5 = new Class194("main_file_cache.dat6", "jaggl_-92509340.js5", new String[] { "Loading 3D library", "Lade 3D-Softwarebibliothek", "Chargement de la librairie 3D", "Carregando biblioteca 3D" }, 6481, 6481, new int[] { 64, 44, -55, -54, 16, 63, 42, 37, 33, 12, 26, 87, 55, -125, 32, 33, -63, -40, 119, -40 });
+
+	@OriginalMember(owner = "loader!f", name = "f", descriptor = "[[Lloader!b;")
+	public static Class194[][] aClass194ArrayArray1 = new Class194[][] { { new Class194("jaggl.dll", "jaggl_0_0_-1100723720.lib", new String[] { "Loading 3D library", "Lade 3D-Softwarebibliothek", "Chargement de la librairie 3D", "Carregando biblioteca 3D" }, 77824, 31673, new int[] { -80, -105, -5, -123, -95, 46, 105, 107, 114, 6, -52, -98, -108, -108, 77, -90, 81, -78, 68, -47 }) }, { new Class194("libjaggl.so", "jaggl_1_0_181684079.lib", new String[] { "Loading 3D library (1/2)", "Lade 3D-Softwarebibliothek (1/2)", "Chargement de la librairie 3D (1/2)", "Carregando biblioteca 3D (1/2)" }, 50952, 14772, new int[] { -35, 76, -46, 81, -110, -7, 30, 27, 56, 24, -15, -120, 61, -68, 4, -91, 76, -117, 19, -121 }), new Class194("libjaggl_dri.so", "jaggl_1_1_1808963541.lib", new String[] { "Loading 3D library (2/2)", "Lade 3D-Softwarebibliothek (2/2)", "Chargement de la librairie 3D (2/2)", "Carregando biblioteca 3D (2/2)" }, 3364, 1566, new int[] { -58, 89, 68, 25, -5, 48, -122, -105, 113, -86, 58, -127, 58, 74, 47, -75, 23, 122, 112, 14 }) }, { new Class194("libjaggl.jnilib", "jaggl_2_0_1960295051.lib", new String[] { "Loading 3D library", "Lade 3D-Softwarebibliothek", "Chargement de la librairie 3D", "Carregando biblioteca 3D" }, 71884, 16831, new int[] { -20, 114, -115, 10, -109, 92, 97, -71, -4, 51, -88, 101, -1, 59, 16, -117, -100, 95, -48, 78 }) }, { new Class194("libjaggl.jnilib", "jaggl_3_0_-1784599626.lib", new String[] { "Loading 3D library", "Lade 3D-Softwarebibliothek", "Chargement de la librairie 3D", "Carregando biblioteca 3D" }, 149708, 32422, new int[] { -10, 27, 86, -49, -36, -8, -53, -114, 123, 14, -84, -51, -108, 121, -3, -33, 55, -91, -112, -37 }) }, { new Class194("jaggl.dll", "jaggl_4_0_710449033.lib", new String[] { "Loading 3D library", "Lade 3D-Softwarebibliothek", "Chargement de la librairie 3D", "Carregando biblioteca 3D" }, 91648, 39654, new int[] { -43, 79, 92, -14, -64, -121, -52, 34, -70, -22, -98, 89, -90, -48, -92, -108, 121, 109, 107, 42 }) } };
+
+	@OriginalMember(owner = "loader!f", name = "g", descriptor = "[Lloader!b;")
+	public static Class194[] aClass194Array1 = new Class194[] { new Class194("jagmisc.dll", "jagmisc_0_614929610.lib", new String[] { "Loading utility library", "Lade Utility-Softwarebibliothek", "Chargement de la librairie utilitaire", "Carregando biblioteca de ferramentas" }, 49152, 24022, new int[] { 43, 127, 107, -38, -102, -24, 124, -67, -24, -18, 5, 38, 1, 109, 54, -62, 16, 106, -88, -19 }), new Class194("jagmiscms.dll", "jagmisc_1_2101607152.lib", new String[] { "Loading utility library", "Lade Utility-Softwarebibliothek", "Chargement de la librairie utilitaire", "Carregando biblioteca de ferramentas" }, 49152, 24478, new int[] { 104, -30, -25, 50, 22, 72, 77, -18, 12, 85, -79, -24, 4, 110, -93, 32, 9, -4, -61, 77 }), new Class194("jagmisc64.dll", "jagmisc_2_-160034835.lib", new String[] { "Loading utility library", "Lade Utility-Softwarebibliothek", "Chargement de la librairie utilitaire", "Carregando biblioteca de ferramentas" }, 57856, 28951, new int[] { 77, -57, -10, -55, -13, -12, 17, 83, 23, 66, -42, -20, 37, -57, 68, -83, -75, -17, 57, 107 }) };
+}
