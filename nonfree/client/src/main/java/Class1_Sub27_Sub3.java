@@ -1,0 +1,30 @@
+import org.openrs2.deob.annotation.OriginalArg;
+import org.openrs2.deob.annotation.OriginalClass;
+import org.openrs2.deob.annotation.OriginalMember;
+
+@OriginalClass("client!oca")
+public final class Class1_Sub27_Sub3 extends Class1_Sub27 {
+
+	static {
+		new Class114("Attempting to join channel...", "Chatraum wird betreten...", "Tentative de connexion au canal...", "Tentando acessar canal...");
+	}
+
+	@OriginalMember(owner = "client!oca", name = "<init>", descriptor = "(IIIIIF)V")
+	public Class1_Sub27_Sub3(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float arg5) {
+		super(arg0, arg1, arg2, arg3, arg4, arg5);
+	}
+
+	@OriginalMember(owner = "client!oca", name = "a", descriptor = "(BIII)V")
+	@Override
+	public void method5491(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+		super.anInt6326 = arg1;
+		super.anInt6325 = arg0;
+		super.anInt6323 = arg2;
+	}
+
+	@OriginalMember(owner = "client!oca", name = "a", descriptor = "(FZ)V")
+	@Override
+	public void method5494(@OriginalArg(0) float arg0) {
+		super.aFloat124 = arg0;
+	}
+}
