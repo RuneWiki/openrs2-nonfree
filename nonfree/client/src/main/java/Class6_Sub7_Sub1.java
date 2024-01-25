@@ -1,0 +1,26 @@
+import org.openrs2.deob.annotation.OriginalArg;
+import org.openrs2.deob.annotation.OriginalClass;
+import org.openrs2.deob.annotation.OriginalMember;
+
+@OriginalClass("client!bl")
+public final class Class6_Sub7_Sub1 extends Class6_Sub7 {
+
+	@OriginalMember(owner = "client!bl", name = "<init>", descriptor = "(IIIIIF)V")
+	public Class6_Sub7_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float arg5) {
+		super(arg0, arg1, arg2, arg3, arg4, arg5);
+	}
+
+	@OriginalMember(owner = "client!bl", name = "a", descriptor = "(IIII)V")
+	@Override
+	public void method3488(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+		super.anInt4025 = arg0;
+		super.anInt4032 = arg1;
+		super.anInt4022 = arg2;
+	}
+
+	@OriginalMember(owner = "client!bl", name = "a", descriptor = "(IF)V")
+	@Override
+	public void method3484(@OriginalArg(1) float arg0) {
+		super.aFloat56 = arg0;
+	}
+}
