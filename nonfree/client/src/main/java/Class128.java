@@ -1,0 +1,9 @@
+import org.openrs2.deob.annotation.OriginalClass;
+import org.openrs2.deob.annotation.OriginalMember;
+
+@OriginalClass("client!hs")
+public final class Class128 {
+
+	@OriginalMember(owner = "client!hs", name = "a", descriptor = "Lclient!nu;")
+	public Interface10 anInterface10_2;
+}
