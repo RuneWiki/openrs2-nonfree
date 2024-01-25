@@ -102,6 +102,7 @@ transformers:
   - Canvas
   - FieldOrder
   - BitwiseOp
+  - ConstantArg
   - CopyPropagation
   - UnusedLocal
   - UnusedArg
@@ -136,5 +137,4 @@ source_transformers:
   - Increment
   - ForLoopCondition
   - RedundantCast
-  - Gl
   - Enclose

@@ -127,22 +127,39 @@ function readCsv(name, hasHeader = true) {
     return csv;
 }
 
+const args = process.argv.slice(2);
+
+let min = -1;
+let max = -1;
+let target = -1;
+
+target = parseInt(args[0]);
+
+if (args.length > 1) {
+    min = parseInt(args[1]);
+}
+
+if (args.length > 2) {
+    max = parseInt(args[2]);
+}
+
 const deobs = readCsv('deob.csv');
+
 for (let i = 0; i < deobs.length; i++) {
     // already processed
-    if (deobs[i].rev <= 498) {
+    if (min !== -1 && deobs[i].rev <= min) {
         continue;
     }
 
     // already processed
-    if (deobs[i].rev >= 555) {
+    if (max !== -1 && deobs[i].rev >= max) {
         continue;
     }
 
     // target specific
-    // if (deobs[i].rev != 377) {
-    //     continue;
-    // }
+    if (target !== -1 && deobs[i].rev != target) {
+        continue;
+    }
 
     deob(deobs[i]);
 }
