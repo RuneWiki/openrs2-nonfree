@@ -1,0 +1,21 @@
+import org.openrs2.deob.annotation.OriginalArg;
+import org.openrs2.deob.annotation.OriginalClass;
+import org.openrs2.deob.annotation.OriginalMember;
+
+@OriginalClass("client!en")
+public final class Class87 {
+
+	@OriginalMember(owner = "client!en", name = "c", descriptor = "I")
+	public final int anInt2743;
+
+	@OriginalMember(owner = "client!en", name = "<init>", descriptor = "(I)V")
+	public Class87(@OriginalArg(0) int arg0) {
+		this.anInt2743 = arg0;
+	}
+
+	@OriginalMember(owner = "client!en", name = "toString", descriptor = "()Ljava/lang/String;")
+	@Override
+	public String toString() {
+		throw new IllegalStateException();
+	}
+}
