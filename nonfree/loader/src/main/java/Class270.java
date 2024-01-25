@@ -1,0 +1,30 @@
+import org.openrs2.deob.annotation.OriginalClass;
+import org.openrs2.deob.annotation.OriginalMember;
+
+@OriginalClass("loader!e")
+public final class Class270 {
+
+	@OriginalMember(owner = "loader!e", name = "a", descriptor = "Lloader!g;")
+	public static final Class271 aClass271_1 = new Class271("game_unpacker.dat", "unpackclass_-1911426584.pack", new String[] { "Loading unpacker", "Lade Entpacker", "Décompression", "Carregando descompactador", "Uitpakprogramma wordt geladen" }, 19788, 19788, new int[] { -3, -104, -67, 100, 126, -102, -46, -103, -8, 46, 84, -115, 18, -18, 41, -18, 1, 118, -121, 89 });
+
+	@OriginalMember(owner = "loader!e", name = "b", descriptor = "Lloader!g;")
+	public static final Class271 aClass271_2 = new Class271("main_file_cache.dat3", "runescape_2030941785.pack200", new String[] { "Loading game code", "Lade Spiel-Code", "Chargement du code du jeu", "Carregando código do jogo", "Gamecode wordt geladen" }, 633030, 633030, new int[] { 27, 39, 86, -87, -22, 85, -108, 50, -25, -55, 90, 12, -43, -66, 49, -30, 56, 88, -47, 3 });
+
+	@OriginalMember(owner = "loader!e", name = "c", descriptor = "Lloader!g;")
+	public static final Class271 aClass271_3 = new Class271("main_file_cache.dat4", "runescape_1331793520.js5", new String[] { "Loading game code", "Lade Spiel-Code", "Chargement du code du jeu", "Carregando código do jogo", "Gamecode wordt geladen" }, 627122, 627122, new int[] { -110, -88, 61, 97, 123, 23, -3, 32, -123, -74, 86, 102, 87, 108, -71, 2, 127, 67, -11, -34 });
+
+	@OriginalMember(owner = "loader!e", name = "d", descriptor = "[Lloader!g;")
+	public static final Class271[] aClass271Array1 = new Class271[] { new Class271("jaggl.dll", "jaggl_0_-1130093070.lib", new String[] { "Loading 3D library", "Lade 3D-Softwarebibliothek", "Chargement de la librairie 3D", "Carregando biblioteca 3D", "Loading 3D library" }, 94208, 39426, new int[] { -125, 32, 109, -26, 127, 9, -53, -88, -83, -97, -28, -2, 116, 109, -9, -36, -88, 75, -91, 4 }), new Class271("jaggl.dll", "jaggl_1_1179221294.lib", new String[] { "Loading 3D library", "Lade 3D-Softwarebibliothek", "Chargement de la librairie 3D", "Carregando biblioteca 3D", "Loading 3D library" }, 110080, 48059, new int[] { -4, 19, -23, 74, -98, -96, -79, -27, -10, 68, 75, 121, 13, -120, 85, -2, 104, 115, -67, -62 }), new Class271("libjaggl.so", "jaggl_2_-548835062.lib", new String[] { "Loading 3D library", "Lade 3D-Softwarebibliothek", "Chargement de la librairie 3D", "Carregando biblioteca 3D", "Loading 3D library" }, 87376, 25981, new int[] { -109, -125, 107, -75, 107, 71, 83, 108, 23, -55, 53, -107, -101, -50, 12, 61, -30, -8, 96, -111 }), new Class271("libjaggl.so", "jaggl_3_-581691436.lib", new String[] { "Loading 3D library", "Lade 3D-Softwarebibliothek", "Chargement de la librairie 3D", "Carregando biblioteca 3D", "Loading 3D library" }, 97581, 28423, new int[] { 34, -82, -96, 40, -48, -17, -44, -44, 81, 38, -54, 14, 66, 85, -19, 56, 83, -11, 0, 47 }), new Class271("libjaggl.jnilib", "jaggl_4_-546798455.lib", new String[] { "Loading 3D library", "Lade 3D-Softwarebibliothek", "Chargement de la librairie 3D", "Carregando biblioteca 3D", "Loading 3D library" }, 59376, 14301, new int[] { 42, -59, -111, 87, -89, -47, 52, -80, -108, 120, -33, 103, -14, -69, -51, 54, -10, 32, -81, 113 }), new Class271("libjaggl.jnilib", "jaggl_5_1947500261.lib", new String[] { "Loading 3D library", "Lade 3D-Softwarebibliothek", "Chargement de la librairie 3D", "Carregando biblioteca 3D", "Loading 3D library" }, 71212, 19955, new int[] { 108, -80, 30, -114, 96, -88, 30, -110, -72, -107, 98, -65, -2, 97, 65, -89, 58, -110, -91, -49 }), new Class271("libjaggl.jnilib", "jaggl_6_-1464682677.lib", new String[] { "Loading 3D library", "Lade 3D-Softwarebibliothek", "Chargement de la librairie 3D", "Carregando biblioteca 3D", "Loading 3D library" }, 71088, 18920, new int[] { 67, 55, -82, 118, -78, -20, -64, -62, -82, -43, 11, 127, 68, -108, -11, 11, 23, -45, -107, 60 }), new Class271("libjaggl.jnilib", "jaggl_7_-1222169232.lib", new String[] { "Loading 3D library", "Lade 3D-Softwarebibliothek", "Chargement de la librairie 3D", "Carregando biblioteca 3D", "Loading 3D library" }, 210352, 52917, new int[] { 13, 5, 25, 127, 5, -29, 17, -58, 114, -61, -100, 93, 46, 38, 20, -114, 106, -31, -64, -41 }) };
+
+	@OriginalMember(owner = "loader!e", name = "e", descriptor = "[Lloader!g;")
+	public static final Class271[] aClass271Array2 = new Class271[] { new Class271("jagmisc.dll", "jagmisc_0_-1116511889.lib", new String[] { "Loading utility library", "Lade Utility-Softwarebibliothek", "Chargement de la librairie utilitaire", "Carregando biblioteca de ferramentas", "Loading utility library" }, 49152, 24425, new int[] { 56, -117, -76, 64, -93, -75, -91, 17, -117, 20, -61, -38, -57, -69, -68, 0, -94, 87, -125, 40 }), new Class271("jagmiscms.dll", "jagmisc_1_-384383368.lib", new String[] { "Loading utility library", "Lade Utility-Softwarebibliothek", "Chargement de la librairie utilitaire", "Carregando biblioteca de ferramentas", "Loading utility library" }, 49152, 24859, new int[] { 114, 91, -1, -2, -85, 32, -83, -48, -51, 60, 74, -1, 112, -75, 55, 80, -124, -44, -118, -72 }), new Class271("jagmisc64.dll", "jagmisc_2_954087334.lib", new String[] { "Loading utility library", "Lade Utility-Softwarebibliothek", "Chargement de la librairie utilitaire", "Carregando biblioteca de ferramentas", "Loading utility library" }, 58880, 29373, new int[] { -2, 6, -23, 7, -65, -105, 98, -83, -34, -99, -76, -116, -63, -80, 18, -12, -1, 22, -79, 0 }) };
+
+	@OriginalMember(owner = "loader!e", name = "g", descriptor = "[Ljava/lang/String;")
+	public static final String[] aStringArray54 = new String[] { "runescape", "stellardawn" };
+
+	@OriginalMember(owner = "loader!e", name = "f", descriptor = "[I")
+	public static final int[] anIntArray552 = new int[] { 9179409, 16777215 };
+
+	@OriginalMember(owner = "loader!e", name = "h", descriptor = "[I")
+	public static final int[] anIntArray553 = new int[] { 16777215, 16777215 };
+}
