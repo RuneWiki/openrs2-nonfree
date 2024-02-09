@@ -2,6 +2,8 @@ This repo is a collection of clients deobfuscated using my additions to `openrs2
 
 ## Inspect a specific revision
 
+Web-based code viewer: https://github.dev/RuneWiki/openrs2-nonfree/tree/555
+
 Fresh clones: `git clone https://github.com/RuneWiki/openrs2-nonfree -b 555 --single-branch`
 
 Already cloned: `git checkout 555` OR `git fetch origin 555 && git reset --hard FETCH_HEAD` depending on your needs.
