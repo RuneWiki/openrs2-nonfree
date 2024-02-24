@@ -1,0 +1,65 @@
+libraries:
+  jagexappletviewer:
+    format: jar
+    file: jagexappletviewer.jar
+dependencies:
+  stub:
+    format: jar
+    file: stub.jar
+excluded_classes:
+  - "*!app/appletviewer"
+  - "*!jagexappletviewer"
+  - "*!netscape/javascript/JSObjec_"
+  - "*!MacOSXHelpers"
+excluded_methods:
+  - "*!**.<clinit> *"
+  - "*!**.<init> *"
+  - "*!**.removeadvert *"
+  - "*!**.readdadvert *"
+  - "*!**.doresize *"
+  - "*!**.showurl *"
+  - "*!**.main *"
+  - "*!**.create *"
+  - "*!**.destroy *"
+  - "*!**.navigate *"
+  - "*!**.iscreated *"
+  - "*!**.resize *"
+  - "*!**.eval *"
+  - "*!**.call *"
+  - "*!**.getWindow *"
+excluded_fields:
+  - "*!**.iscreated *"
+  - "*!**.error *"
+entry_points:
+  - "*!**.<clinit> *"
+scrambled_libraries: []
+max_obfuscated_name_len: 2
+pre_transformers:
+  - OriginalPcSave
+  - OriginalName
+transformers:
+  - OpaquePredicate
+  - ExceptionObfuscation
+  - ExceptionTracing
+  - OriginalPcRestore
+  - FernflowerException
+patches: []
+source_transformers:
+  - Unenclose
+  - NegativeLiteral
+  - Complement
+  - Not
+  - CharLiteral
+  - IfElse
+  - Ternary
+  - BinaryExprOrder
+  - AddSub
+  - Identity
+  - BitMask
+  - HexLiteral
+  - ValueOf
+  - NewInstance
+  - Increment
+  - ForLoopCondition
+  - RedundantCast
+  - Enclose
