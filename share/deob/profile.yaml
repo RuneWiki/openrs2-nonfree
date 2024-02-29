@@ -1,0 +1,112 @@
+---
+libraries:
+  client:
+    format: jar
+    file: 881.jar
+    default_package: com/jagex
+  loader:
+    format: jar
+    file: 881.gamepack.jar
+dependencies:
+  stub:
+    format: jar
+    file: stub.jar
+excluded_classes:
+  - "*!client"
+  - "*!com/jagex/twitchtv/**"
+  - "*!jaclib/**"
+  - "*!jagdx/**"
+  - "*!jaggl/**"
+  - "*!Rs2Applet"
+excluded_methods:
+  - "*!**.<clinit> *"
+  - "*!**.<init> *"
+  - "*!com/jagex/twitchtv/**.* *"
+  - "*!jaclib/**.* *"
+  - "*!**.main *"
+  - "*!**.start *"
+  - "*!**.stop *"
+  - "*!**.destroy *"
+  - "*!**.update *"
+  - "*!**.init *"
+  - "*!**.supplyApplet *"
+  - "*!**.paint *"
+  - "*!**.setcustomcursor *"
+  - "*!**.movemouse *"
+excluded_fields:
+  - "*!com/jagex/twitchtv/**.* *"
+  - "*!jaclib/**.* *"
+  - "*!**.nativeid *"
+  - "*!**.peer *"
+  - "*!**.this$* *"
+  - "*!**.$assertionsDisabled *"
+  - "*!jagdx/D3DADAPTER_IDENTIFIER.* *"
+  - "*!jagdx/D3DCAPS.* *"
+  - "*!jagdx/D3DDISPLAYMODE.* *"
+  - "*!jagdx/D3DLIGHT.* *"
+  - "*!jagdx/D3DPRESENT_PARAMETERS.* *"
+  - "*!jagdx/D3DPSHADERCAPS2_0.* *"
+  - "*!jagdx/D3DSURFACE_DESC.* *"
+  - "*!jagdx/D3DVSHADERCAPS2_0.* *"
+  - "*!jagdx/IDirect3D.* *"
+  - "*!jagdx/IDirect3DBaseTexture.* *"
+  - "*!jagdx/IDirect3DCubeTexture.* *"
+  - "*!jagdx/IDirect3DDevice.* *"
+  - "*!jagdx/IDirect3DEventQuery.* *"
+  - "*!jagdx/IDirect3DIndexBuffer.* *"
+  - "*!jagdx/IDirect3DSurface.* *"
+  - "*!jagdx/IDirect3DSwapChain.* *"
+  - "*!jagdx/IDirect3DTexture.* *"
+  - "*!jagdx/IDirect3DVertexBuffer.* *"
+  - "*!jagdx/IDirect3DVolumeTexture.* *"
+  - "*!jagdx/IUnknown.* *"
+entry_points:
+  - "*!**.<clinit> *"
+  - "*!**.main *"
+  - "*!client.<init> *"
+scrambled_libraries: []
+max_obfuscated_name_len: 3
+pre_transformers:
+  - LineNumberTable
+  - OriginalPcSave
+  - OriginalName
+  - StringDecryption
+  - ClassLiteral
+  - InvokeSpecial
+  - MultipleAssignment
+  - RedundantGoto
+transformers:
+  - OpaquePredicate
+  - ExceptionObfuscation
+  - ExceptionTracing
+  - Monitor
+  - BitShift
+  - Canvas
+  - FieldOrder
+  - BitwiseOp
+  - UnusedArg
+  - Counter
+  - Reset
+  - Override
+  - RedundantGoto
+  - OriginalPcRestore
+  - FernflowerException
+patches: []
+source_transformers:
+  - Unenclose
+  - NegativeLiteral
+  - Complement
+  - Not
+  - CharLiteral
+  - IfElse
+  - Ternary
+  - BinaryExprOrder
+  - Identity
+  - BitMask
+  - HexLiteral
+  - ValueOf
+  - NewInstance
+  - Increment
+  - ForLoopCondition
+  - RedundantCast
+  - Enclose
