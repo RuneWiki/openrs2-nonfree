@@ -1,4 +1,8 @@
 rev,libraries,profile
+--- tools
+jagexappletviewer,jagexappletviewer:jagexappletviewer.jar,profile.jagexappletviewer.yaml
+--- rt2 (rsc)
+177,mudclient:mudclient177.jar,profile.rt2.yaml
 --- rt3 original
 185
 186,client:186.2003-12-02.jar,profile.rt3-beta1.yaml
@@ -465,7 +469,7 @@ rev,libraries,profile
 664,client:runescape-b664-2011-09-13-16-41-18-openrs2#31433.pack200;loader:loader-2011-09-13-17-07-50-openrs2#31036.jar,profile.rt5.yaml
 665,client:runescape-b665-2011-09-14-17-29-02-openrs2#31301.pack200;loader:loader-2011-09-13-17-07-50-openrs2#31036.jar,profile.rt5.yaml
 666,client:runescape-b666-2011-09-15-15-15-22-openrs2#31369.pack200;loader:loader-2011-09-15-15-21-16-openrs2#30949.jar,profile.rt5.yaml
-667,client:runescape-b667-2011-09-29-13-06-20-openrs2#31438.pack200;loader:loader-2011-09-29-13-13-26-openrs2#31087.jar,profile.rt5.yaml
+667,client:runescape-b667-2011-09-29-13-06-20-openrs2#31438.pack200;loader:loader-2011-09-29-13-13-26-openrs2#31087.jar,profile.rt5-gl667.yaml
 --- rt5 (clusterflutterer)
 668,client:runescape-b668-2011-10-13-12-03-42-openrs2#31437.pack200;loader:loader-2011-10-13-13-01-16-openrs2#30917.jar,profile.rt5.yaml
 --- rt5 + gamepack (clusterflutterer)
@@ -684,7 +688,7 @@ rev,libraries,profile
 878
 879
 880
-881
+881,client:881.jar;loader:881.gamepack.jar,profile.rt7.yaml
 882
 883
 884
@@ -713,7 +717,7 @@ rev,libraries,profile
 907
 908
 909
-910
+910,client:910.jar;loader:910.gamepack.jar,profile.rt7.yaml
 --- last java client
 911
 912

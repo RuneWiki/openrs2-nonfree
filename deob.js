@@ -3,6 +3,10 @@ const path = require('path');
 const child_process = require('child_process');
 
 function deob(settings, upload = true) {
+    if (!settings) {
+        return;
+    }
+
     let libraries = settings.libraries.split(';').map(x => {
         let [name, file] = x.split(':');
         return { name, file };
@@ -10,9 +14,9 @@ function deob(settings, upload = true) {
 
     // setting up the work directory
     fs.rmSync('work', { recursive: true, force: true });
-
     fs.mkdirSync(path.join('work', 'share', 'deob'), { recursive: true });
-    fs.cpSync(path.join('khronosgl.xml'), path.join('work', 'share', 'deob', 'gl.xml'));
+
+    fs.cpSync('deob-annotations', path.join('work', 'nonfree', 'deob-annotations'), { recursive: true });
 
     fs.mkdirSync(path.join('work', 'nonfree', 'lib'), { recursive: true });
     fs.cpSync(path.join('lib', 'stub.jar'), path.join('work', 'nonfree', 'lib', 'stub.jar')); // temp
@@ -27,6 +31,15 @@ function deob(settings, upload = true) {
         profile = profile.replace(`%${name}_format%`, file.split('.').pop());
         profile = profile.replace(`%${name}_file%`, file);
     }
+
+    if (profile.indexOf('gl_profile') !== -1) {
+        const gl = profile.match(/gl_profile: "(.*)"/)[1];
+        fs.cpSync(gl, path.join('work', 'share', 'deob', 'gl.xml'));
+    } else {
+        fs.cpSync('khronosgl.xml', path.join('work', 'share', 'deob', 'gl.xml'));
+    }
+
+    profile = profile.replaceAll(/\n#.*/g, ''); // we store extra info as comments in the profile, remove them
     fs.writeFileSync(path.join('work', 'share', 'deob', 'profile.yaml'), profile);
 
     // attempt to deobfuscate
@@ -38,7 +51,7 @@ function deob(settings, upload = true) {
         try {
             child_process.execSync('java -jar ../openrs2.jar deob', {
                 cwd: path.join(__dirname, 'work'),
-                // stdio: 'inherit'
+                stdio: 'inherit'
             });
 
             done = true;
@@ -133,7 +146,13 @@ let min = -1;
 let max = -1;
 let target = -1;
 
-target = parseInt(args[0]);
+const deobs = readCsv('deob.csv');
+
+target = args[0];
+if (target) {
+    deob(deobs.find(x => x.rev == target));
+    process.exit(0);
+}
 
 if (args.length > 1) {
     min = parseInt(args[1]);
@@ -142,8 +161,6 @@ if (args.length > 1) {
 if (args.length > 2) {
     max = parseInt(args[2]);
 }
-
-const deobs = readCsv('deob.csv');
 
 for (let i = 0; i < deobs.length; i++) {
     // already processed

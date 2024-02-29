@@ -1,0 +1,85 @@
+libraries:
+  jagexappletviewer:
+    format: %jagexappletviewer_format%
+    file: %jagexappletviewer_file%
+dependencies:
+  stub:
+    format: jar
+    file: stub.jar
+excluded_classes:
+  - "*!app/appletviewer"
+  - "*!jagexappletviewer"
+  - "*!netscape/javascript/JSObjec_"
+  - "*!MacOSXHelpers"
+excluded_methods:
+  - "*!**.<clinit> *"
+  - "*!**.<init> *"
+  - "*!**.removeadvert *"
+  - "*!**.readdadvert *"
+  - "*!**.doresize *"
+  - "*!**.showurl *"
+  - "*!**.main *"
+  - "*!**.create *"
+  - "*!**.destroy *"
+  - "*!**.navigate *"
+  - "*!**.iscreated *"
+  - "*!**.resize *"
+  - "*!**.eval *"
+  - "*!**.call *"
+  - "*!**.getWindow *"
+excluded_fields:
+  - "*!**.iscreated *"
+  - "*!**.error *"
+entry_points:
+  - "*!**.<clinit> *"
+scrambled_libraries: []
+max_obfuscated_name_len: 2
+pre_transformers:
+  - OriginalPcSave
+  - OriginalName
+  - ClassLiteral
+  - InvokeSpecial
+  - MultipleAssignment
+  - RedundantGoto
+transformers:
+  - OpaquePredicate
+  - ExceptionObfuscation
+  - ExceptionTracing
+  - Monitor
+  - BitShift
+  - Canvas
+  - FieldOrder
+  - BitwiseOp
+  - ConstantArg
+  - CopyPropagation
+  - Counter
+  - Reset
+  - EmptyClass
+  - MethodOrder
+  - Visibility
+  - FinalClass
+  - FinalMethod
+  - Override
+  - RedundantGoto
+  - OriginalPcRestore
+  - FernflowerException
+patches: []
+source_transformers:
+  - Unenclose
+  - NegativeLiteral
+  - Complement
+  - Not
+  - CharLiteral
+  - IfElse
+  - Ternary
+  - BinaryExprOrder
+  - AddSub
+  - Identity
+  - BitMask
+  - HexLiteral
+  - ValueOf
+  - NewInstance
+  - Increment
+  - ForLoopCondition
+  - RedundantCast
+  - Enclose
