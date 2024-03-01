@@ -2,7 +2,42 @@ const fs = require('fs');
 const path = require('path');
 const child_process = require('child_process');
 
-function deob(settings, upload = true) {
+const yauzl = require('yauzl');
+
+const { decryptClient, unpack200 } = require('./gamepack.js');
+
+function extractFile(zip, name, dest) {
+    return new Promise((resolve, reject) => {
+        yauzl.open(zip, { lazyEntries: true }, (err, zipfile) => {
+            if (err) {
+                reject(err);
+                return;
+            }
+
+            zipfile.readEntry();
+            zipfile.on('entry', entry => {
+                if (entry.fileName === name) {
+                    zipfile.openReadStream(entry, (err, readStream) => {
+                        if (err) {
+                            reject(err);
+                            return;
+                        }
+
+                        const writeStream = fs.createWriteStream(dest);
+                        readStream.pipe(writeStream);
+                        writeStream.on('close', () => {
+                            resolve();
+                        });
+                    });
+                } else {
+                    zipfile.readEntry();
+                }
+            });
+        });
+    });
+}
+
+async function deob(settings, upload = true) {
     if (!settings) {
         return;
     }
@@ -15,11 +50,19 @@ function deob(settings, upload = true) {
     // setting up the work directory
     fs.rmSync('work', { recursive: true, force: true });
     fs.mkdirSync(path.join('work', 'share', 'deob'), { recursive: true });
+    fs.cpSync(path.join('template', 'deob-annotations'), path.join('work', 'nonfree', 'deob-annotations'), { recursive: true });
 
-    fs.cpSync('deob-annotations', path.join('work', 'nonfree', 'deob-annotations'), { recursive: true });
+    if (settings.secret && settings.vector) {
+        const gamepack = libraries.find(x => x.name === 'gamepack');
+        await extractFile(path.join('lib', gamepack.file), 'inner.pack.gz', path.join('lib', `${settings.rev}.innerpack.jar`));
+        const innerPack = decryptClient(fs.readFileSync(path.join('lib', `${settings.rev}.innerpack.jar`)), settings.secret, settings.vector);
+        unpack200(innerPack, path.join('lib', `${settings.rev}.innerpack.jar`));
 
-    fs.mkdirSync(path.join('work', 'nonfree', 'lib'), { recursive: true });
-    fs.cpSync(path.join('lib', 'stub.jar'), path.join('work', 'nonfree', 'lib', 'stub.jar')); // temp
+        libraries = [
+            { name: 'client', file: `${settings.rev}.innerpack.jar` },
+            { name: 'loader', file: gamepack.file }
+        ];
+    }
 
     // update the base profile
     let profile = fs.readFileSync(settings.profile, 'ascii').replaceAll('\r\n', '\n');
@@ -32,6 +75,10 @@ function deob(settings, upload = true) {
         profile = profile.replace(`%${name}_file%`, file);
     }
 
+    if (settings.secret && settings.vector) {
+        fs.rmSync(path.join('lib', `${settings.rev}.innerpack.jar`));
+    }
+
     if (profile.indexOf('gl_profile') !== -1) {
         const gl = profile.match(/gl_profile: "(.*)"/)[1];
         fs.cpSync(gl, path.join('work', 'share', 'deob', 'gl.xml'));
@@ -42,6 +89,11 @@ function deob(settings, upload = true) {
     profile = profile.replaceAll(/\n#.*/g, ''); // we store extra info as comments in the profile, remove them
     fs.writeFileSync(path.join('work', 'share', 'deob', 'profile.yaml'), profile);
 
+    if (profile.indexOf('stub.jar') !== -1) {
+        fs.mkdirSync(path.join('work', 'nonfree', 'lib'), { recursive: true });
+        fs.cpSync(path.join('lib', 'stub.jar'), path.join('work', 'nonfree', 'lib', 'stub.jar'));
+    }
+
     // attempt to deobfuscate
     let done = false;
     let retry = 0;
@@ -49,9 +101,20 @@ function deob(settings, upload = true) {
         console.log(`Deobfuscating ${settings.rev} (attempt ${retry + 1})`);
 
         try {
+            if (settings.mathdeob) {
+                child_process.execSync(`java -jar ../../../rl-math.jar ${settings.mathdeob} ${settings.mathdeob}-temp.jar`, {
+                    cwd: path.join(__dirname, 'work', 'nonfree', 'lib'),
+                    stdio: 'inherit'
+                });
+
+                fs.renameSync(path.join(__dirname, 'work', 'nonfree', 'lib', `${settings.mathdeob}-temp.jar`), path.join(__dirname, 'work', 'nonfree', 'lib', settings.mathdeob));
+            }
+
             child_process.execSync('java -jar ../openrs2.jar deob', {
                 cwd: path.join(__dirname, 'work'),
-                stdio: 'inherit'
+                // stdio: 'inherit'
+                // pipe stdio to file
+                // stdio: ['ignore', fs.openSync(`${settings.rev}.log`, 'w'), fs.openSync(`${settings.rev}.err.log`, 'w')]
             });
 
             done = true;
@@ -141,42 +204,44 @@ function readCsv(name, hasHeader = true) {
 }
 
 const args = process.argv.slice(2);
+async function run() {
+    let min = -1;
+    let max = -1;
+    let target = -1;
 
-let min = -1;
-let max = -1;
-let target = -1;
+    const deobs = readCsv('deob.csv');
 
-const deobs = readCsv('deob.csv');
-
-target = args[0];
-if (target) {
-    deob(deobs.find(x => x.rev == target));
-    process.exit(0);
-}
-
-if (args.length > 1) {
-    min = parseInt(args[1]);
-}
-
-if (args.length > 2) {
-    max = parseInt(args[2]);
-}
-
-for (let i = 0; i < deobs.length; i++) {
-    // already processed
-    if (min !== -1 && deobs[i].rev <= min) {
-        continue;
+    target = args[0];
+    if (target) {
+        await deob(deobs.find(x => x.rev == target));
+        process.exit(0);
     }
 
-    // already processed
-    if (max !== -1 && deobs[i].rev >= max) {
-        continue;
+    if (args.length > 1) {
+        min = parseInt(args[1]);
     }
 
-    // target specific
-    if (target !== -1 && deobs[i].rev != target) {
-        continue;
+    if (args.length > 2) {
+        max = parseInt(args[2]);
     }
 
-    deob(deobs[i]);
+    for (let i = 0; i < deobs.length; i++) {
+        // already processed
+        if (min !== -1 && deobs[i].rev <= min) {
+            continue;
+        }
+
+        // already processed
+        if (max !== -1 && deobs[i].rev >= max) {
+            continue;
+        }
+
+        // target specific
+        if (target !== -1 && deobs[i].rev != target) {
+            continue;
+        }
+
+        await deob(deobs[i]);
+    }
 }
+run();

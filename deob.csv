@@ -1,4 +1,4 @@
-rev,libraries,profile
+rev,libraries,profile,secret,vector
 --- tools
 jagexappletviewer,jagexappletviewer:jagexappletviewer.jar,profile.jagexappletviewer.yaml
 --- rt2 (rsc)
@@ -559,7 +559,7 @@ jagexappletviewer,jagexappletviewer:jagexappletviewer.jar,profile.jagexappletvie
 750
 751
 752
-753
+753,gamepack:753.jar,profile.rt7.yaml,zwSaebZUG7Xv0YR*Hwei8A,2PghqOIp4m0TiklyKqldmA
 754
 755
 756
@@ -580,7 +580,7 @@ jagexappletviewer,jagexappletviewer:jagexappletviewer.jar,profile.jagexappletvie
 770
 771
 772
-773
+773,gamepack:773.jar,profile.rt7.yaml,efV2vgZTtFoQO5df3g2pUw,1CXSB6AsVZh0HDMt9GGJAg
 774
 775
 776
@@ -590,12 +590,12 @@ jagexappletviewer,jagexappletviewer:jagexappletviewer.jar,profile.jagexappletvie
 780
 781
 782
-783
+783,gamepack:783.jar,profile.rt7.yaml,iMYbcYcWFGibLID4qjhFlg,whoojbynAkzr4O8L-exXJw
 784
 785
 786
 787
-788
+788,client:788.innerpack.jar,profile.rt7-inner.yaml
 789
 790
 791
@@ -604,7 +604,7 @@ jagexappletviewer,jagexappletviewer:jagexappletviewer.jar,profile.jagexappletvie
 794
 795
 796
-797
+797,gamepack:797.jar,profile.rt7.yaml,QwR09xyI0oJjlApdJxAJ8Q,fKUG91ODqdNihEt9Dswp2g
 798
 799
 800
@@ -688,7 +688,7 @@ jagexappletviewer,jagexappletviewer:jagexappletviewer.jar,profile.jagexappletvie
 878
 879
 880
-881,client:881.jar;loader:881.gamepack.jar,profile.rt7.yaml
+881,client:881.jar,profile.rt7.yaml
 882
 883
 884
@@ -717,7 +717,7 @@ jagexappletviewer,jagexappletviewer:jagexappletviewer.jar,profile.jagexappletvie
 907
 908
 909
-910,client:910.jar;loader:910.gamepack.jar,profile.rt7.yaml
+910,gamepack:910.jar,profile.rt7.yaml,2saKHgFXDY-JkDpbki-Zpw,XbyqhhtP1cr0KxpCQ-O8Wg
 --- last java client
 911
 912

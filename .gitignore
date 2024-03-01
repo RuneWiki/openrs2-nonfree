@@ -1,3 +1,9 @@
 work/
 lib/
+node_modules/
+
 openrs2.jar
+rl-math.jar
+
+/*.txt
+/*.log
