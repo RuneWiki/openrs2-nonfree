@@ -1,0 +1,42 @@
+---
+libraries:
+  client:
+    format: jar
+    file: 910-nomultipliers.jar
+    default_package: com/jagex
+dependencies:
+  stub:
+    format: jar
+    file: stub.jar
+excluded_classes:
+  - "*!*"
+excluded_methods:
+  - "*!*.* *"
+excluded_fields:
+  - "*!*.* *"
+entry_points:
+  - "*!**.<clinit> *"
+  - "*!**.main *"
+  - "*!client.<init> *"
+scrambled_libraries: []
+max_obfuscated_name_len: 3
+pre_transformers: []
+transformers: []
+patches: []
+source_transformers:
+  - Unenclose
+  - NegativeLiteral
+  - Complement
+  - Not
+  - IfElse
+  - Ternary
+  - BinaryExprOrder
+  - Identity
+  - BitMask
+  - HexLiteral
+  - ValueOf
+  - NewInstance
+  - Increment
+  - ForLoopCondition
+  - RedundantCast
+  - Enclose
