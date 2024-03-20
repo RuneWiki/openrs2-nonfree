@@ -105,6 +105,7 @@ transformers:
   - ConstantArg
   - CopyPropagation
   - UnusedLocal
+  - UnusedMethod
   - UnusedArg
   - Counter
   - Reset
@@ -113,7 +114,6 @@ transformers:
   - Visibility
   - FinalClass
   - FinalMethod
-  - FinalField
   - Override
   - RedundantGoto
   - OriginalPcRestore
@@ -137,4 +137,5 @@ source_transformers:
   - Increment
   - ForLoopCondition
   - RedundantCast
+  - Gl
   - Enclose

@@ -137,6 +137,5 @@ source_transformers:
   - NewInstance
   - Increment
   - ForLoopCondition
-  - RedundantCast
   - Gl
   - Enclose

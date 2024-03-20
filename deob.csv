@@ -548,7 +548,7 @@ jagexappletviewer,jagexappletviewer:jagexappletviewer.jar,profile.jagexappletvie
 739
 740
 741
-742
+742,client:742.innerpack.jar,profile.rt7-inner.yaml
 743
 744
 745
@@ -718,6 +718,7 @@ jagexappletviewer,jagexappletviewer:jagexappletviewer.jar,profile.jagexappletvie
 908
 909
 910,gamepack:910.jar,profile.rt7.yaml,2saKHgFXDY-JkDpbki-Zpw,XbyqhhtP1cr0KxpCQ-O8Wg
+910-nomultipliers,client:910-nomultipliers.jar,profile.decompile.yaml
 --- last java client
 911
 912
