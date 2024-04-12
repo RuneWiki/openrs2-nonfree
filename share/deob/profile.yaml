@@ -1,0 +1,92 @@
+libraries:
+  client:
+    format: pack200
+    file: runescape-b410-2006-05-25-10-09-06-openrs2#32256.pack200
+  loader:
+    format: jar
+    file: loader-2006-05-25-10-18-00-openrs2#31737.jar
+excluded_classes:
+  - "*!client"
+excluded_methods:
+  - "*!**.<clinit> *"
+  - "*!**.<init> *"
+  - "*!**.main *"
+  - "*!**.quit *"
+excluded_fields: []
+entry_points:
+  - "*!**.<clinit> *"
+  - "*!**.main *"
+  - "*!**.providesignlink *"
+  - "*!client.<init> *"
+scrambled_libraries:
+  - client
+max_obfuscated_name_len: 2
+pre_transformers:
+  - OriginalPcSave
+  - OriginalName
+  - StringDecryption
+  - ClassLiteral
+  - InvokeSpecial
+  - MultipleAssignment
+  - RedundantGoto
+transformers:
+  - OpaquePredicate
+  - ExceptionObfuscation
+  - ExceptionTracing
+  - Monitor
+  - BitShift
+  - Canvas
+  - FieldOrder
+  - BitwiseOp
+  - ConstantArg
+  - CopyPropagation
+  - UnusedLocal
+  - UnusedMethod
+  - UnusedArg
+  - Counter
+  - Reset
+  - EmptyClass
+  - LineNumberOrder
+  - Visibility
+  - FinalClass
+  - FinalMethod
+  - FinalField
+  - Override
+  - RedundantGoto
+  - OriginalPcRestore
+  - FernflowerException
+patches:
+  - BufferSize
+  - CachePath
+  - HostCheck
+  - Domain
+  - LoadLibrary
+  - MacResize
+  - MemoryAllocation
+  - Name
+  - PlatformDetection
+  - PublicKey
+  - RightClick
+  - Typo
+  - HighDpi
+  - InvalidKey
+  - Resource
+source_transformers:
+  - Unenclose
+  - NegativeLiteral
+  - Complement
+  - Not
+  - CharLiteral
+  - IfElse
+  - Ternary
+  - BinaryExprOrder
+  - AddSub
+  - Identity
+  - BitMask
+  - HexLiteral
+  - ValueOf
+  - NewInstance
+  - Increment
+  - ForLoopCondition
+  - RedundantCast
+  - Enclose
