@@ -1,0 +1,67 @@
+libraries:
+  mapview:
+    format: jar
+    file: mapview-2004-08-10-14-20-26-openrs2#31836.jar
+dependencies:
+  stub:
+    format: jar
+    file: stub.jar
+excluded_classes:
+  - "*!mapview"
+excluded_methods:
+  - "*!**.<clinit> *"
+  - "*!**.<init> *"
+  - "*!**.main *"
+excluded_fields: []
+entry_points:
+  - "*!**.<clinit> *"
+  - "*!**.main *"
+scrambled_libraries: []
+max_obfuscated_name_len: 2
+pre_transformers:
+  - OriginalPcSave
+  - OriginalName
+  - ClassLiteral
+  - InvokeSpecial
+  - MultipleAssignment
+  - RedundantGoto
+transformers:
+  - OpaquePredicate
+  - ExceptionObfuscation
+  - ExceptionTracing
+  - Monitor
+  - BitShift
+  - Canvas
+  - FieldOrder
+  - BitwiseOp
+  - CopyPropagation
+  - Counter
+  - Reset
+  - EmptyClass
+  - MethodOrder
+  - Visibility
+  - FinalClass
+  - FinalMethod
+  - Override
+  - RedundantGoto
+  - OriginalPcRestore
+  - FernflowerException
+patches: []
+source_transformers:
+  - Unenclose
+  - NegativeLiteral
+  - Complement
+  - Not
+  - CharLiteral
+  - IfElse
+  - Ternary
+  - BinaryExprOrder
+  - Identity
+  - BitMask
+  - HexLiteral
+  - ValueOf
+  - NewInstance
+  - Increment
+  - ForLoopCondition
+  - RedundantCast
+  - Enclose
