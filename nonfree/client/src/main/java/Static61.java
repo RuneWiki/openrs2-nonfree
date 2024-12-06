@@ -15,57 +15,54 @@ public final class Static61 {
 	public static int[] anIntArray176;
 
 	@OriginalMember(owner = "client!ke", name = "q", descriptor = "[Lclient!hb;")
-	public static Class4_Sub1_Sub2_Sub3[] aClass4_Sub1_Sub2_Sub3Array5;
-
-	@OriginalMember(owner = "client!ke", name = "b", descriptor = "I")
-	public static int anInt1798 = 1;
+	public static Pix8[] aClass4_Sub1_Sub2_Sub3Array5;
 
 	@OriginalMember(owner = "client!ke", name = "m", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_474 = Static60.method1113("");
+	public static JagString aClass22_474 = Static60.method1113("");
 
 	@OriginalMember(owner = "client!ke", name = "c", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_470 = aClass22_474;
+	public static JagString aClass22_470 = aClass22_474;
 
 	@OriginalMember(owner = "client!ke", name = "d", descriptor = "[J")
 	public static long[] aLongArray3 = new long[100];
 
 	@OriginalMember(owner = "client!ke", name = "e", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_471 = aClass22_474;
+	public static JagString aClass22_471 = aClass22_474;
 
 	@OriginalMember(owner = "client!ke", name = "f", descriptor = "[I")
 	public static int[] anIntArray174 = new int[32];
 
 	@OriginalMember(owner = "client!ke", name = "g", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_472 = aClass22_474;
+	public static JagString aClass22_472 = aClass22_474;
 
 	@OriginalMember(owner = "client!ke", name = "h", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_473 = aClass22_474;
+	public static JagString aClass22_473 = aClass22_474;
 
 	@OriginalMember(owner = "client!ke", name = "o", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_475 = Static60.method1113("Malformed login packet)3");
+	private static JagString aClass22_475 = Static60.method1113("Malformed login packet)3");
 
 	@OriginalMember(owner = "client!ke", name = "p", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_476 = aClass22_474;
+	public static JagString aClass22_476 = aClass22_474;
 
 	@OriginalMember(owner = "client!ke", name = "r", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_477 = aClass22_475;
+	public static JagString aClass22_477 = aClass22_475;
 
 	@OriginalMember(owner = "client!ke", name = "s", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_478 = aClass22_474;
+	public static JagString aClass22_478 = aClass22_474;
 
 	@OriginalMember(owner = "client!ke", name = "a", descriptor = "(IB)Lclient!ec;")
-	public static Class22 method1118(@OriginalArg(0) int arg0) {
+	public static JagString method1118(@OriginalArg(0) int arg0) {
 		if (arg0 < 100000) {
-			return Static44.method856(new Class22[] { Static78.aClass22_574, Static134.method2042(arg0), Static37.aClass22_255 });
+			return Static44.method856(new JagString[] { Static78.aClass22_574, Static134.method2042(arg0), Static37.aClass22_255 });
 		} else if (arg0 < 10000000) {
-			return Static44.method856(new Class22[] { Static116.aClass22_892, Static134.method2042(arg0 / 1000), Static74.aClass22_546, Static37.aClass22_255 });
+			return Static44.method856(new JagString[] { Static116.aClass22_892, Static134.method2042(arg0 / 1000), Static74.aClass22_546, Static37.aClass22_255 });
 		} else {
-			return Static44.method856(new Class22[] { Static84.aClass22_638, Static134.method2042(arg0 / 1000000), Static38.aClass22_268, Static37.aClass22_255 });
+			return Static44.method856(new JagString[] { Static84.aClass22_638, Static134.method2042(arg0 / 1000000), Static38.aClass22_268, Static37.aClass22_255 });
 		}
 	}
 
 	@OriginalMember(owner = "client!ke", name = "a", descriptor = "(Lclient!ea;IZLclient!ea;)V")
-	public static void method1119(@OriginalArg(0) Class20 arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) Class20 arg2) {
+	public static void method1119(@OriginalArg(0) Js5Index arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) Js5Index arg2) {
 		Static128.aClass20_60 = arg2;
 		Static32.aBoolean85 = arg1;
 		Static99.aClass20_48 = arg0;
@@ -197,12 +194,12 @@ public final class Static61 {
 			Static38.aClass4_Sub11_Sub1_1.method691(Static111.anInt2754);
 			Static38.aClass4_Sub11_Sub1_1.method691(Static111.anInt2766);
 		}
-		if (Static105.aBoolean234 && !Static64.aBoolean164) {
+		if (GameShell.aBoolean234 && !Static64.aBoolean164) {
 			Static64.aBoolean164 = true;
 			Static38.aClass4_Sub11_Sub1_1.method752(177);
 			Static38.aClass4_Sub11_Sub1_1.method701(1);
 		}
-		if (!Static105.aBoolean234 && Static64.aBoolean164) {
+		if (!GameShell.aBoolean234 && Static64.aBoolean164) {
 			Static64.aBoolean164 = false;
 			Static38.aClass4_Sub11_Sub1_1.method752(177);
 			Static38.aClass4_Sub11_Sub1_1.method701(0);
@@ -235,7 +232,7 @@ public final class Static61 {
 				Static5.aClass4_Sub7_1 = null;
 			}
 		}
-		@Pc(654) Class4_Sub7 local654;
+		@Pc(654) IfType local654;
 		if (Static30.aClass4_Sub7_6 != null) {
 			Static110.method1772(Static30.aClass4_Sub7_6);
 			Static90.anInt2395++;
@@ -297,7 +294,7 @@ public final class Static61 {
 		Static93.aBoolean224 = false;
 		local654 = Static43.aClass4_Sub7_10;
 		Static43.aClass4_Sub7_10 = null;
-		@Pc(830) Class4_Sub7 local830 = Static58.aClass4_Sub7_12;
+		@Pc(830) IfType local830 = Static58.aClass4_Sub7_12;
 		Static58.aClass4_Sub7_12 = null;
 		while (Static122.method950() && Static45.anInt1278 < 128) {
 			Static60.anIntArray173[Static45.anInt1278] = Static11.anInt2985;
@@ -307,19 +304,19 @@ public final class Static61 {
 		Static106.method1750(Static11.anInt2982, 0, 0, 503, 0, 765, 0);
 		Static96.anInt2513++;
 		while (true) {
-			@Pc(872) Class4_Sub3 local872;
-			@Pc(885) Class4_Sub7 local885;
-			@Pc(877) Class4_Sub7 local877;
+			@Pc(872) HookRequest local872;
+			@Pc(885) IfType local885;
+			@Pc(877) IfType local877;
 			do {
-				local872 = (Class4_Sub3) Static92.aClass82_8.method2029();
+				local872 = (HookRequest) Static92.aClass82_8.method2029();
 				if (local872 == null) {
 					while (true) {
 						do {
-							local872 = (Class4_Sub3) Static66.aClass82_6.method2029();
+							local872 = (HookRequest) Static66.aClass82_6.method2029();
 							if (local872 == null) {
 								while (true) {
 									do {
-										local872 = (Class4_Sub3) Static9.aClass82_2.method2029();
+										local872 = (HookRequest) Static9.aClass82_2.method2029();
 										if (local872 == null) {
 											if (Static133.aClass4_Sub7_16 != null) {
 												Static75.method1270();

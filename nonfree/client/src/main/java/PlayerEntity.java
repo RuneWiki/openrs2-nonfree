@@ -4,13 +4,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ka")
-public final class Class4_Sub1_Sub3_Sub2_Sub1 extends Class4_Sub1_Sub3_Sub2 {
+public final class PlayerEntity extends PathingEntity {
 
 	@OriginalMember(owner = "client!ka", name = "Fc", descriptor = "I")
 	public int anInt1727;
 
 	@OriginalMember(owner = "client!ka", name = "Jc", descriptor = "Lclient!eb;")
-	public Class21 aClass21_2;
+	public PlayerModel aClass21_2;
 
 	@OriginalMember(owner = "client!ka", name = "Kc", descriptor = "I")
 	public int anInt1730;
@@ -34,10 +34,10 @@ public final class Class4_Sub1_Sub3_Sub2_Sub1 extends Class4_Sub1_Sub3_Sub2 {
 	public int anInt1743;
 
 	@OriginalMember(owner = "client!ka", name = "gd", descriptor = "Lclient!od;")
-	public Class4_Sub1_Sub3_Sub3 aClass4_Sub1_Sub3_Sub3_1;
+	public SoftwareModel aClass4_Sub1_Sub3_Sub3_1;
 
 	@OriginalMember(owner = "client!ka", name = "ld", descriptor = "Lclient!ec;")
-	public Class22 aClass22_444;
+	public JagString aClass22_444;
 
 	@OriginalMember(owner = "client!ka", name = "Rc", descriptor = "I")
 	public int anInt1735 = 0;
@@ -64,7 +64,7 @@ public final class Class4_Sub1_Sub3_Sub2_Sub1 extends Class4_Sub1_Sub3_Sub2 {
 	public int anInt1744 = -1;
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(BLclient!jd;)V")
-	public void method1092(@OriginalArg(1) Class4_Sub11 arg0) {
+	public void method1092(@OriginalArg(1) Packet arg0) {
 		arg0.anInt1099 = 0;
 		@Pc(11) int[] local11 = new int[12];
 		@Pc(13) int local13 = -1;
@@ -134,40 +134,40 @@ public final class Class4_Sub1_Sub3_Sub2_Sub1 extends Class4_Sub1_Sub3_Sub2 {
 		this.anInt1732 = arg0.method719();
 		this.anInt1746 = arg0.method718();
 		if (this.aClass21_2 == null) {
-			this.aClass21_2 = new Class21();
+			this.aClass21_2 = new PlayerModel();
 		}
 		this.aClass21_2.method441(local105, local13, local11, local17 == 1);
 	}
 
 	@OriginalMember(owner = "client!ka", name = "b", descriptor = "(B)Lclient!od;")
 	@Override
-	public Class4_Sub1_Sub3_Sub3 method1816() {
+	public SoftwareModel method1816() {
 		if (this.aClass21_2 == null) {
 			return null;
 		}
-		@Pc(28) Class4_Sub1_Sub17 local28 = super.anInt2474 != -1 && super.anInt2477 == 0 ? Static79.method1437(super.anInt2474) : null;
-		@Pc(54) Class4_Sub1_Sub17 local54 = super.anInt2470 == -1 || this.aBoolean157 || super.anInt2470 == super.anInt2452 && local28 != null ? null : Static79.method1437(super.anInt2470);
-		@Pc(70) Class4_Sub1_Sub3_Sub3 local70 = this.aClass21_2.method442(local28, super.anInt2486, local54, super.anInt2483);
+		@Pc(28) SeqType local28 = super.anInt2474 != -1 && super.anInt2477 == 0 ? Static79.method1437(super.anInt2474) : null;
+		@Pc(54) SeqType local54 = super.anInt2470 == -1 || this.aBoolean157 || super.anInt2470 == super.anInt2452 && local28 != null ? null : Static79.method1437(super.anInt2470);
+		@Pc(70) SoftwareModel local70 = this.aClass21_2.method442(local28, super.anInt2486, local54, super.anInt2483);
 		if (local70 == null) {
 			return null;
 		}
 		local70.method1474();
 		super.anInt2453 = local70.anInt2808;
-		@Pc(100) Class4_Sub1_Sub3_Sub3 local100;
-		@Pc(113) Class4_Sub1_Sub3_Sub3[] local113;
+		@Pc(100) SoftwareModel local100;
+		@Pc(113) SoftwareModel[] local113;
 		if (!this.aBoolean157 && super.anInt2489 != -1 && super.anInt2507 != -1) {
 			local100 = Static33.method549(super.anInt2489).method1790(super.anInt2507);
 			if (local100 != null) {
-				local113 = new Class4_Sub1_Sub3_Sub3[] { local70, local100 };
+				local113 = new SoftwareModel[] { local70, local100 };
 				local100.method1487(0, -super.anInt2485, 0);
-				local70 = new Class4_Sub1_Sub3_Sub3(local113, 2);
+				local70 = new SoftwareModel(local113, 2);
 			}
 		}
 		if (!this.aBoolean157 && this.aClass4_Sub1_Sub3_Sub3_1 != null) {
-			if (this.anInt1747 <= Static117.anInt2877) {
+			if (this.anInt1747 <= Client.anInt2877) {
 				this.aClass4_Sub1_Sub3_Sub3_1 = null;
 			}
-			if (this.anInt1735 <= Static117.anInt2877 && this.anInt1747 > Static117.anInt2877) {
+			if (this.anInt1735 <= Client.anInt2877 && this.anInt1747 > Client.anInt2877) {
 				local100 = this.aClass4_Sub1_Sub3_Sub3_1;
 				local100.method1487(this.anInt1727 - super.anInt2500, this.anInt1739 + -this.anInt1738, this.anInt1743 - super.anInt2462);
 				if (super.anInt2496 == 512) {
@@ -180,8 +180,8 @@ public final class Class4_Sub1_Sub3_Sub2_Sub1 extends Class4_Sub1_Sub3_Sub2 {
 				} else if (super.anInt2496 == 1536) {
 					local100.method1471();
 				}
-				local113 = new Class4_Sub1_Sub3_Sub3[] { local70, local100 };
-				local70 = new Class4_Sub1_Sub3_Sub3(local113, 2);
+				local113 = new SoftwareModel[] { local70, local100 };
+				local70 = new SoftwareModel(local113, 2);
 				if (super.anInt2496 == 512) {
 					local100.method1471();
 				} else if (super.anInt2496 == 1024) {

@@ -2,16 +2,16 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ab")
-public final class Class3 {
+public final class Wall {
 
 	@OriginalMember(owner = "client!ab", name = "a", descriptor = "Lclient!dd;")
-	public Class4_Sub1_Sub3 aClass4_Sub1_Sub3_1;
+	public Entity aClass4_Sub1_Sub3_1;
 
 	@OriginalMember(owner = "client!ab", name = "b", descriptor = "I")
 	public int anInt15;
 
 	@OriginalMember(owner = "client!ab", name = "d", descriptor = "Lclient!dd;")
-	public Class4_Sub1_Sub3 aClass4_Sub1_Sub3_2;
+	public Entity aClass4_Sub1_Sub3_2;
 
 	@OriginalMember(owner = "client!ab", name = "f", descriptor = "I")
 	public int anInt18;

@@ -8,7 +8,7 @@ public final class Static2 {
 	public static int[] anIntArray1;
 
 	@OriginalMember(owner = "client!aa", name = "d", descriptor = "Lclient!wd;")
-	public static Class82 aClass82_1 = new Class82();
+	public static LinkList aClass82_1 = new LinkList();
 
 	@OriginalMember(owner = "client!aa", name = "f", descriptor = "I")
 	public static int anInt9 = 0;
@@ -20,13 +20,13 @@ public final class Static2 {
 	public static int anInt12 = 0;
 
 	@OriginalMember(owner = "client!aa", name = "j", descriptor = "Lclient!ja;")
-	public static Class33 aClass33_1 = new Class33(64);
+	public static LruCache aClass33_1 = new LruCache(64);
 
 	@OriginalMember(owner = "client!aa", name = "l", descriptor = "I")
 	public static int anInt14 = 0;
 
 	@OriginalMember(owner = "client!aa", name = "n", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_7 = Static60.method1113("::gc");
+	public static JagString aClass22_7 = Static60.method1113("::gc");
 
 	@OriginalMember(owner = "client!aa", name = "a", descriptor = "(I)V")
 	public static void method5() {
@@ -107,11 +107,11 @@ public final class Static2 {
 				}
 			}
 		}
-		Static43.aClass11_1.method577();
+		GameShell.drawArea.method577();
 	}
 
 	@OriginalMember(owner = "client!aa", name = "a", descriptor = "(Lclient!ea;Lclient!ec;Lclient!ec;I)Lclient!h;")
-	public static Class4_Sub1_Sub2_Sub2 method8(@OriginalArg(0) Class20 arg0, @OriginalArg(1) Class22 arg1, @OriginalArg(2) Class22 arg2) {
+	public static Pix32 method8(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) JagString arg1, @OriginalArg(2) JagString arg2) {
 		@Pc(13) int local13 = arg0.method592(arg2);
 		@Pc(19) int local19 = arg0.method606(arg1, local13);
 		return Static31.method535(local19, arg0, local13);

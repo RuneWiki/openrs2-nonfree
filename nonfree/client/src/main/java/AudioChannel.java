@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!qc")
-public class Class15 {
+public class AudioChannel {
 
 	@OriginalMember(owner = "client!qc", name = "m", descriptor = "[I")
 	public int[] anIntArray197;

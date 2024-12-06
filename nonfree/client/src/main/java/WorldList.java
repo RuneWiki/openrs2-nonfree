@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!bc")
-public final class Class9 {
+public final class WorldList {
 
 	@OriginalMember(owner = "client!bc", name = "a", descriptor = "I")
 	private int anInt182;
@@ -25,7 +25,7 @@ public final class Class9 {
 	private final byte[] aByteArray4 = new byte[4];
 
 	@OriginalMember(owner = "client!bc", name = "v", descriptor = "Lclient!cc;")
-	private final Class12 aClass12_3;
+	private final PrivilegedRequest aClass12_3;
 
 	@OriginalMember(owner = "client!bc", name = "k", descriptor = "I")
 	private int anInt187;
@@ -34,7 +34,7 @@ public final class Class9 {
 	private final long aLong8;
 
 	@OriginalMember(owner = "client!bc", name = "<init>", descriptor = "(Lclient!dc;Ljava/net/URL;)V")
-	public Class9(@OriginalArg(0) SignLink arg0, @OriginalArg(1) URL arg1) {
+	public WorldList(@OriginalArg(0) SignLink arg0, @OriginalArg(1) URL arg1) {
 		this.aClass12_3 = arg0.method386(arg1);
 		this.anInt187 = 0;
 		this.aLong8 = Static44.method861() + 30000L;

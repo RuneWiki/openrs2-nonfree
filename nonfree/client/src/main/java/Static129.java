@@ -5,19 +5,19 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static129 {
 
 	@OriginalMember(owner = "client!vf", name = "A", descriptor = "Lclient!vf;")
-	public static Class79 aClass79_5;
+	public static BufferedFile aClass79_5;
 
 	@OriginalMember(owner = "client!vf", name = "G", descriptor = "I")
 	public static int anInt3064;
 
 	@OriginalMember(owner = "client!vf", name = "e", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_945 = Static60.method1113(" from your ignore list first");
+	private static JagString aClass22_945 = Static60.method1113(" from your ignore list first");
 
 	@OriginalMember(owner = "client!vf", name = "h", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_946 = Static60.method1113("Verbindung abgebrochen)3");
+	public static JagString aClass22_946 = Static60.method1113("Verbindung abgebrochen)3");
 
 	@OriginalMember(owner = "client!vf", name = "m", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_947 = aClass22_945;
+	public static JagString aClass22_947 = aClass22_945;
 
 	@OriginalMember(owner = "client!vf", name = "n", descriptor = "I")
 	public static int anInt3052 = 0;
@@ -29,10 +29,10 @@ public final class Static129 {
 	public static int anInt3059 = 0;
 
 	@OriginalMember(owner = "client!vf", name = "z", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_948 = Static60.method1113("Cabbage");
+	public static JagString aClass22_948 = Static60.method1113("Cabbage");
 
 	@OriginalMember(owner = "client!vf", name = "I", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_949 = Static60.method1113(":");
+	public static JagString aClass22_949 = Static60.method1113(":");
 
 	@OriginalMember(owner = "client!vf", name = "a", descriptor = "(IB)V")
 	public static void method1980() {
@@ -46,15 +46,15 @@ public final class Static129 {
 	}
 
 	@OriginalMember(owner = "client!vf", name = "a", descriptor = "(II)Lclient!ee;")
-	public static Class4_Sub1_Sub4 method1981(@OriginalArg(1) int arg0) {
-		@Pc(6) Class4_Sub1_Sub4 local6 = (Class4_Sub1_Sub4) Static2.aClass33_1.method998((long) arg0);
+	public static FluType method1981(@OriginalArg(1) int arg0) {
+		@Pc(6) FluType local6 = (FluType) Static2.aClass33_1.method998((long) arg0);
 		if (local6 != null) {
 			return local6;
 		}
 		@Pc(25) byte[] local25 = Static75.aClass20_36.method597(1, arg0);
-		local6 = new Class4_Sub1_Sub4();
+		local6 = new FluType();
 		if (local25 != null) {
-			local6.method509(arg0, new Class4_Sub11(local25));
+			local6.method509(arg0, new Packet(local25));
 		}
 		local6.method510();
 		Static2.aClass33_1.method997((long) arg0, local6);
@@ -73,7 +73,7 @@ public final class Static129 {
 	}
 
 	@OriginalMember(owner = "client!vf", name = "a", descriptor = "(Lclient!ec;I)V")
-	public static void method1990(@OriginalArg(0) Class22 arg0) {
+	public static void method1990(@OriginalArg(0) JagString arg0) {
 		if (Static122.anInt1377 >= 2) {
 			if (arg0.method480(Static2.aClass22_7)) {
 				System.gc();
@@ -101,7 +101,7 @@ public final class Static129 {
 			}
 			if (arg0.method471(Static117.aClass22_895)) {
 				Static76.anInt2022 = arg0.method477(12).method484().method470();
-				Static65.method1153(Static44.method856(new Class22[] { Static52.aClass22_366, Static134.method2042(Static76.anInt2022) }), 0, null);
+				Static65.method1153(Static44.method856(new JagString[] { Static52.aClass22_366, Static134.method2042(Static76.anInt2022) }), 0, null);
 			}
 			if (arg0.method480(Static120.aClass22_908)) {
 				Static123.aBoolean278 = true;
@@ -119,11 +119,11 @@ public final class Static129 {
 			local14 = true;
 			for (@Pc(20) int local20 = 0; local20 < Static99.anInt2589 - 1; local20++) {
 				if (Static38.anIntArray111[local20] < 1000 && Static38.anIntArray111[local20 + 1] > 1000) {
-					@Pc(40) Class22 local40 = Static48.aClass22Array9[local20];
+					@Pc(40) JagString local40 = Static48.aClass22Array9[local20];
 					local14 = false;
 					Static48.aClass22Array9[local20] = Static48.aClass22Array9[local20 + 1];
 					Static48.aClass22Array9[local20 + 1] = local40;
-					@Pc(60) Class22 local60 = Static90.aClass22Array18[local20];
+					@Pc(60) JagString local60 = Static90.aClass22Array18[local20];
 					Static90.aClass22Array18[local20] = Static90.aClass22Array18[local20 + 1];
 					Static90.aClass22Array18[local20 + 1] = local60;
 					@Pc(78) int local78 = Static38.anIntArray111[local20];

@@ -14,46 +14,46 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static79 {
 
 	@OriginalMember(owner = "client!o", name = "Db", descriptor = "[Lclient!h;")
-	public static Class4_Sub1_Sub2_Sub2[] aClass4_Sub1_Sub2_Sub2Array12;
+	public static Pix32[] aClass4_Sub1_Sub2_Sub2Array12;
 
 	@OriginalMember(owner = "client!o", name = "Fb", descriptor = "[Lclient!oe;")
-	public static Class54[] aClass54Array1;
+	public static WorldEntry[] aClass54Array1;
 
 	@OriginalMember(owner = "client!o", name = "Hb", descriptor = "Lclient!ea;")
-	public static Class20 aClass20_40;
+	public static Js5Index aClass20_40;
 
 	@OriginalMember(owner = "client!o", name = "ib", descriptor = "Lclient!wc;")
-	public static Class81 aClass81_10 = new Class81(4096);
+	public static HashTable aClass81_10 = new HashTable(4096);
 
 	@OriginalMember(owner = "client!o", name = "Mb", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_624 = Static60.method1113(" has logged out)3");
+	private static JagString aClass22_624 = Static60.method1113(" has logged out)3");
 
 	@OriginalMember(owner = "client!o", name = "wb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_616 = aClass22_624;
+	public static JagString aClass22_616 = aClass22_624;
 
 	@OriginalMember(owner = "client!o", name = "zb", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_617 = Static60.method1113("Unable to find ");
+	private static JagString aClass22_617 = Static60.method1113("Unable to find ");
 
 	@OriginalMember(owner = "client!o", name = "Ab", descriptor = "I")
 	public static int anInt2177 = 0;
 
 	@OriginalMember(owner = "client!o", name = "Bb", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_618 = Static60.method1113("Please try again)3");
+	private static JagString aClass22_618 = Static60.method1113("Please try again)3");
 
 	@OriginalMember(owner = "client!o", name = "Cb", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_619 = Static60.method1113("You are standing in a members)2only area)3");
+	private static JagString aClass22_619 = Static60.method1113("You are standing in a members)2only area)3");
 
 	@OriginalMember(owner = "client!o", name = "Eb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_620 = Static60.method1113("Ihr Charakter)2Profil wird in:");
+	public static JagString aClass22_620 = Static60.method1113("Ihr Charakter)2Profil wird in:");
 
 	@OriginalMember(owner = "client!o", name = "Gb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_621 = aClass22_618;
+	public static JagString aClass22_621 = aClass22_618;
 
 	@OriginalMember(owner = "client!o", name = "Ib", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_622 = aClass22_617;
+	public static JagString aClass22_622 = aClass22_617;
 
 	@OriginalMember(owner = "client!o", name = "Jb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_623 = aClass22_619;
+	public static JagString aClass22_623 = aClass22_619;
 
 	@OriginalMember(owner = "client!o", name = "Kb", descriptor = "I")
 	public static final int anInt2178 = 20;
@@ -67,9 +67,9 @@ public final class Static79 {
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(BILclient!ge;)V")
-	public static void method1430(@OriginalArg(2) Class4_Sub11_Sub1 arg0) {
+	public static void method1430(@OriginalArg(2) PacketBit arg0) {
 		while (true) {
-			@Pc(17) Class4_Sub6 local17 = (Class4_Sub6) Static93.aClass82_9.method2025();
+			@Pc(17) ReflectionCheckNode local17 = (ReflectionCheckNode) Static93.aClass82_9.method2025();
 			if (local17 == null) {
 				return;
 			}
@@ -135,9 +135,9 @@ public final class Static79 {
 							} else if (local278 instanceof Number) {
 								arg0.method701(1);
 								arg0.method728(((Number) local278).longValue());
-							} else if (local278 instanceof Class22) {
+							} else if (local278 instanceof JagString) {
 								arg0.method701(2);
-								arg0.method708((Class22) local278);
+								arg0.method708((JagString) local278);
 							} else {
 								arg0.method701(4);
 							}
@@ -184,7 +184,7 @@ public final class Static79 {
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(I[B)[B")
 	public static byte[] method1431(@OriginalArg(1) byte[] arg0) {
-		@Pc(8) Class4_Sub11 local8 = new Class4_Sub11(arg0);
+		@Pc(8) Packet local8 = new Packet(arg0);
 		@Pc(14) int local14 = local8.method719();
 		@Pc(18) int local18 = local8.method725();
 		if (local18 < 0 || Static31.anInt737 != 0 && Static31.anInt737 < local18) {
@@ -200,7 +200,7 @@ public final class Static79 {
 			}
 			@Pc(67) byte[] local67 = new byte[local47];
 			if (local14 == 1) {
-				Static102.method1708(local67, local47, arg0, local18);
+				BZip2.method1708(local67, local47, arg0, local18);
 			} else {
 				Static11.aClass2_32.method6(local67, local8);
 			}
@@ -209,7 +209,7 @@ public final class Static79 {
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(Lclient!ec;ZILclient!ec;Lclient!ec;)V")
-	public static void method1433(@OriginalArg(0) Class22 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class22 arg2, @OriginalArg(4) Class22 arg3) {
+	public static void method1433(@OriginalArg(0) JagString arg0, @OriginalArg(2) int arg1, @OriginalArg(3) JagString arg2, @OriginalArg(4) JagString arg3) {
 		for (@Pc(3) int local3 = 99; local3 > 0; local3--) {
 			Static14.anIntArray40[local3] = Static14.anIntArray40[local3 - 1];
 			Static12.aClass22Array2[local3] = Static12.aClass22Array2[local3 - 1];
@@ -242,15 +242,15 @@ public final class Static79 {
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(BI)Lclient!vc;")
-	public static Class4_Sub1_Sub17 method1437(@OriginalArg(1) int arg0) {
-		@Pc(6) Class4_Sub1_Sub17 local6 = (Class4_Sub1_Sub17) Static76.aClass33_25.method998((long) arg0);
+	public static SeqType method1437(@OriginalArg(1) int arg0) {
+		@Pc(6) SeqType local6 = (SeqType) Static76.aClass33_25.method998((long) arg0);
 		if (local6 != null) {
 			return local6;
 		}
 		@Pc(25) byte[] local25 = Static65.aClass20_34.method597(12, arg0);
-		local6 = new Class4_Sub1_Sub17();
+		local6 = new SeqType();
 		if (local25 != null) {
-			local6.method1911(new Class4_Sub11(local25));
+			local6.method1911(new Packet(local25));
 		}
 		local6.method1919();
 		Static76.aClass33_25.method997((long) arg0, local6);

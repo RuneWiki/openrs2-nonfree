@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!pb")
-public final class Class4_Sub1_Sub3_Sub5 extends Entity {
+public final class LocEntity extends Entity {
 
 	@OriginalMember(owner = "client!pb", name = "hb", descriptor = "I")
 	private final int anInt2355;
@@ -25,7 +25,7 @@ public final class Class4_Sub1_Sub3_Sub5 extends Entity {
 	private final int anInt2352;
 
 	@OriginalMember(owner = "client!pb", name = "bb", descriptor = "Lclient!vc;")
-	private Class4_Sub1_Sub17 aClass4_Sub1_Sub17_1;
+	private SeqType aClass4_Sub1_Sub17_1;
 
 	@OriginalMember(owner = "client!pb", name = "ab", descriptor = "I")
 	private int anInt2350;
@@ -34,7 +34,7 @@ public final class Class4_Sub1_Sub3_Sub5 extends Entity {
 	private int anInt2358;
 
 	@OriginalMember(owner = "client!pb", name = "<init>", descriptor = "(IIIIIIIZLclient!dd;)V")
-	public Class4_Sub1_Sub3_Sub5(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) Entity arg8) {
+	public LocEntity(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) Entity arg8) {
 		this.anInt2355 = arg0;
 		this.anInt2353 = arg1;
 		this.anInt2347 = arg3;
@@ -44,9 +44,9 @@ public final class Class4_Sub1_Sub3_Sub5 extends Entity {
 		if (arg6 != -1) {
 			this.aClass4_Sub1_Sub17_1 = Static79.method1437(arg6);
 			this.anInt2350 = 0;
-			this.anInt2358 = Static117.anInt2877 - 1;
-			if (this.aClass4_Sub1_Sub17_1.anInt3005 == 0 && arg8 != null && arg8 instanceof Class4_Sub1_Sub3_Sub5) {
-				@Pc(50) Class4_Sub1_Sub3_Sub5 local50 = (Class4_Sub1_Sub3_Sub5) arg8;
+			this.anInt2358 = Client.anInt2877 - 1;
+			if (this.aClass4_Sub1_Sub17_1.anInt3005 == 0 && arg8 != null && arg8 instanceof LocEntity) {
+				@Pc(50) LocEntity local50 = (LocEntity) arg8;
 				if (this.aClass4_Sub1_Sub17_1 == local50.aClass4_Sub1_Sub17_1) {
 					this.anInt2350 = local50.anInt2350;
 					this.anInt2358 = local50.anInt2358;
@@ -65,7 +65,7 @@ public final class Class4_Sub1_Sub3_Sub5 extends Entity {
 	@Override
 	public SoftwareModel method1816() {
 		if (this.aClass4_Sub1_Sub17_1 != null) {
-			@Pc(10) int local10 = Static117.anInt2877 - this.anInt2358;
+			@Pc(10) int local10 = Client.anInt2877 - this.anInt2358;
 			if (local10 > 100 && this.aClass4_Sub1_Sub17_1.anInt2998 > 0) {
 				local10 = 100;
 			}
@@ -82,9 +82,9 @@ public final class Class4_Sub1_Sub3_Sub5 extends Entity {
 				} while (this.anInt2350 >= 0 && this.aClass4_Sub1_Sub17_1.anIntArray330.length > this.anInt2350);
 				this.aClass4_Sub1_Sub17_1 = null;
 			}
-			this.anInt2358 = Static117.anInt2877 - local10;
+			this.anInt2358 = Client.anInt2877 - local10;
 		}
-		@Pc(102) Class4_Sub1_Sub5 local102 = Static5.method45(this.anInt2355);
+		@Pc(102) LocType local102 = Static5.method45(this.anInt2355);
 		if (local102.anIntArray137 != null) {
 			local102 = local102.method885();
 		}

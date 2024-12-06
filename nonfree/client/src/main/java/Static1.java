@@ -5,43 +5,40 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static1 {
 
 	@OriginalMember(owner = "client!a", name = "b", descriptor = "[Lclient!h;")
-	public static Class4_Sub1_Sub2_Sub2[] aClass4_Sub1_Sub2_Sub2Array1;
+	public static Pix32[] aClass4_Sub1_Sub2_Sub2Array1;
 
 	@OriginalMember(owner = "client!a", name = "f", descriptor = "Lclient!ga;")
-	public static Class20_Sub1 aClass20_Sub1_1;
+	public static Js5Provider aClass20_Sub1_1;
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_1 = Static60.method1113(" )2> ");
-
-	@OriginalMember(owner = "client!a", name = "c", descriptor = "Z")
-	public static volatile boolean aBoolean1 = true;
+	public static JagString aClass22_1 = Static60.method1113(" )2> ");
 
 	@OriginalMember(owner = "client!a", name = "d", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_2 = Static60.method1113("Hierhin gehen");
+	public static JagString aClass22_2 = Static60.method1113("Hierhin gehen");
 
 	@OriginalMember(owner = "client!a", name = "g", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_3 = Static60.method1113("Ung-Ultige Session)2ID)3");
+	public static JagString aClass22_3 = Static60.method1113("Ung-Ultige Session)2ID)3");
 
 	@OriginalMember(owner = "client!a", name = "h", descriptor = "I")
 	public static int anInt2 = 0;
 
 	@OriginalMember(owner = "client!a", name = "j", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_4 = Static60.method1113("Please wait 5 minutes before trying again)3");
+	private static JagString aClass22_4 = Static60.method1113("Please wait 5 minutes before trying again)3");
 
 	@OriginalMember(owner = "client!a", name = "k", descriptor = "I")
 	public static int anInt4 = 0;
 
 	@OriginalMember(owner = "client!a", name = "l", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_5 = aClass22_4;
+	public static JagString aClass22_5 = aClass22_4;
 
 	@OriginalMember(owner = "client!a", name = "n", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_6 = Static60.method1113("(U(Y");
+	public static JagString aClass22_6 = Static60.method1113("(U(Y");
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(I)[Lclient!h;")
-	public static Class4_Sub1_Sub2_Sub2[] method1() {
-		@Pc(8) Class4_Sub1_Sub2_Sub2[] local8 = new Class4_Sub1_Sub2_Sub2[Static76.anInt2020];
+	public static Pix32[] method1() {
+		@Pc(8) Pix32[] local8 = new Pix32[Static76.anInt2020];
 		for (@Pc(10) int local10 = 0; local10 < Static76.anInt2020; local10++) {
-			@Pc(20) Class4_Sub1_Sub2_Sub2 local20 = local8[local10] = new Class4_Sub1_Sub2_Sub2();
+			@Pc(20) Pix32 local20 = local8[local10] = new Pix32();
 			local20.anInt1157 = Static129.anInt3064;
 			local20.anInt1159 = Static106.anInt2687;
 			local20.anInt1158 = Static57.anIntArray171[local10];
@@ -72,9 +69,9 @@ public final class Static1 {
 		local24 -= 73;
 		local30 -= 75;
 		@Pc(53) int local53 = Static111.anInt2754 + Static23.anInt552 & 0x7FF;
-		@Pc(57) int local57 = Class4_Sub1_Sub2_Sub1.anIntArray9[local53];
+		@Pc(57) int local57 = Pix3D.anIntArray9[local53];
 		@Pc(65) int local65 = (Static25.anInt574 + 256) * local57 >> 8;
-		@Pc(69) int local69 = Class4_Sub1_Sub2_Sub1.anIntArray12[local53];
+		@Pc(69) int local69 = Pix3D.anIntArray12[local53];
 		@Pc(77) int local77 = (Static25.anInt574 + 256) * local69 >> 8;
 		@Pc(88) int local88 = local30 * local77 - local24 * local65 >> 11;
 		@Pc(98) int local98 = local65 * local30 + local24 * local77 >> 11;
@@ -111,7 +108,7 @@ public final class Static1 {
 	}
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(IIZLclient!ea;)Lclient!hb;")
-	public static Class4_Sub1_Sub2_Sub3 method4(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class20 arg2) {
+	public static Pix8 method4(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Js5Index arg2) {
 		return Static24.method397(arg1, arg2, arg0) ? Static78.method1299() : null;
 	}
 }

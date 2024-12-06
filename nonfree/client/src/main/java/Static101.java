@@ -11,16 +11,16 @@ public final class Static101 {
 	public static boolean aBoolean232;
 
 	@OriginalMember(owner = "client!rc", name = "V", descriptor = "Lclient!nf;")
-	public static Class4_Sub1_Sub2_Sub4_Sub1 aClass4_Sub1_Sub2_Sub4_Sub1_4;
+	public static SoftwareFont aClass4_Sub1_Sub2_Sub4_Sub1_4;
 
 	@OriginalMember(owner = "client!rc", name = "H", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_767 = Static60.method1113("Versteckt");
+	public static JagString aClass22_767 = Static60.method1113("Versteckt");
 
 	@OriginalMember(owner = "client!rc", name = "M", descriptor = "[I")
 	public static int[] anIntArray290 = new int[500];
 
 	@OriginalMember(owner = "client!rc", name = "S", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_768 = Static60.method1113("rot:");
+	public static JagString aClass22_768 = Static60.method1113("rot:");
 
 	@OriginalMember(owner = "client!rc", name = "W", descriptor = "[I")
 	public static int[] anIntArray291 = new int[] { 16, 32, 64, 128 };
@@ -45,7 +45,7 @@ public final class Static101 {
 		@Pc(55) int local55 = Static59.anInt1769 - local36;
 		@Pc(62) int local62 = Static98.anInt2584 - local44;
 		for (@Pc(66) int local66 = 0; local66 < 32768; local66++) {
-			@Pc(72) Class4_Sub1_Sub3_Sub2_Sub2 local72 = Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1[local66];
+			@Pc(72) NpcEntity local72 = Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1[local66];
 			if (local72 != null) {
 				for (@Pc(76) int local76 = 0; local76 < 10; local76++) {
 					local72.anIntArray280[local76] -= local55;
@@ -56,7 +56,7 @@ public final class Static101 {
 			}
 		}
 		for (@Pc(124) int local124 = 0; local124 < 2048; local124++) {
-			@Pc(130) Class4_Sub1_Sub3_Sub2_Sub1 local130 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local124];
+			@Pc(130) PlayerEntity local130 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local124];
 			if (local130 != null) {
 				for (@Pc(134) int local134 = 0; local134 < 10; local134++) {
 					local130.anIntArray280[local134] -= local55;
@@ -97,7 +97,7 @@ public final class Static101 {
 				}
 			}
 		}
-		for (@Pc(319) Class4_Sub5 local319 = (Class4_Sub5) Static39.aClass82_4.method2025(); local319 != null; local319 = (Class4_Sub5) Static39.aClass82_4.method2023()) {
+		for (@Pc(319) LocSpawned local319 = (LocSpawned) Static39.aClass82_4.method2025(); local319 != null; local319 = (LocSpawned) Static39.aClass82_4.method2023()) {
 			local319.anInt531 -= local55;
 			local319.anInt542 -= local62;
 			if (local319.anInt531 < 0 || local319.anInt542 < 0 || local319.anInt531 >= 104 || local319.anInt542 >= 104) {
@@ -117,7 +117,7 @@ public final class Static101 {
 
 	@OriginalMember(owner = "client!rc", name = "e", descriptor = "(I)V")
 	public static void method1700() {
-		@Pc(3) Class44 local3 = Static33.aClass44_1;
+		@Pc(3) JavaKeyboardProvider local3 = Static33.aClass44_1;
 		synchronized (Static33.aClass44_1) {
 			Static1.anInt2 = Static34.anInt856;
 			@Pc(19) int local19;

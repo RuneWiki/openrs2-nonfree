@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!td")
-public final class Class4_Sub1_Sub3_Sub7 extends Entity {
+public final class SpotAnimEntity extends Entity {
 
 	@OriginalMember(owner = "client!td", name = "db", descriptor = "Z")
 	public boolean aBoolean251 = false;
@@ -34,10 +34,10 @@ public final class Class4_Sub1_Sub3_Sub7 extends Entity {
 	public final int anInt2830;
 
 	@OriginalMember(owner = "client!td", name = "Z", descriptor = "Lclient!vc;")
-	private Class4_Sub1_Sub17 aClass4_Sub1_Sub17_3;
+	private SeqType aClass4_Sub1_Sub17_3;
 
 	@OriginalMember(owner = "client!td", name = "<init>", descriptor = "(IIIIIII)V")
-	public Class4_Sub1_Sub3_Sub7(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
+	public SpotAnimEntity(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
 		this.anInt2815 = arg1;
 		this.anInt2827 = arg2;
 		this.anInt2817 = arg5 + arg6;
@@ -72,7 +72,7 @@ public final class Class4_Sub1_Sub3_Sub7 extends Entity {
 	@OriginalMember(owner = "client!td", name = "b", descriptor = "(B)Lclient!od;")
 	@Override
 	public SoftwareModel method1816() {
-		@Pc(14) Class4_Sub1_Sub14 local14 = Static33.method549(this.anInt2826);
+		@Pc(14) SpotAnimType local14 = Static33.method549(this.anInt2826);
 		@Pc(22) SoftwareModel local22;
 		if (this.aBoolean251) {
 			local22 = local14.method1790(-1);

@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!wb")
-public final class Class80 {
+public final class VorbisMapping {
 
 	@OriginalMember(owner = "client!wb", name = "b", descriptor = "I")
 	public final int anInt3106;
@@ -18,7 +18,7 @@ public final class Class80 {
 	public final int[] anIntArray341;
 
 	@OriginalMember(owner = "client!wb", name = "<init>", descriptor = "()V")
-	public Class80() {
+	public VorbisMapping() {
 		Static77.method1296(16);
 		this.anInt3106 = Static77.method1289() == 0 ? 1 : Static77.method1296(4) + 1;
 		if (Static77.method1289() != 0) {

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!eb")
-public final class Class21 {
+public final class PlayerModel {
 
 	@OriginalMember(owner = "client!eb", name = "x", descriptor = "[I")
 	public static int[] anIntArray73 = new int[256];

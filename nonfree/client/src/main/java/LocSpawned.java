@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!da")
-public final class Class4_Sub5 extends Linkable {
+public final class LocSpawned extends Linkable {
 
 	@OriginalMember(owner = "client!da", name = "s", descriptor = "I")
 	public int anInt526;

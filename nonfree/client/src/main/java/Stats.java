@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!tc")
-public final class Class72 {
+public final class Stats {
 
 	@OriginalMember(owner = "client!tc", name = "l", descriptor = "[I")
 	public static int[] anIntArray307 = new int[99];

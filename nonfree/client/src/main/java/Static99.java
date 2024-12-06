@@ -5,31 +5,31 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static99 {
 
 	@OriginalMember(owner = "client!ra", name = "c", descriptor = "Lclient!ea;")
-	public static Class20 aClass20_48;
+	public static Js5Index aClass20_48;
 
 	@OriginalMember(owner = "client!ra", name = "d", descriptor = "[I")
 	public static int[] anIntArray284;
 
 	@OriginalMember(owner = "client!ra", name = "i", descriptor = "Lclient!jd;")
-	public static Class4_Sub11 aClass4_Sub11_3;
+	public static Packet aClass4_Sub11_3;
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_758 = Static60.method1113("Bitte geben Sie Ihr Passwort ein)3");
+	public static JagString aClass22_758 = Static60.method1113("Bitte geben Sie Ihr Passwort ein)3");
 
 	@OriginalMember(owner = "client!ra", name = "b", descriptor = "I")
 	public static int anInt2586 = 0;
 
 	@OriginalMember(owner = "client!ra", name = "f", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_759 = Static60.method1113("nav");
+	public static JagString aClass22_759 = Static60.method1113("nav");
 
 	@OriginalMember(owner = "client!ra", name = "g", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_760 = Static60.method1113("wishes to duel with you)3");
+	private static JagString aClass22_760 = Static60.method1113("wishes to duel with you)3");
 
 	@OriginalMember(owner = "client!ra", name = "h", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_761 = Static60.method1113("Wir vermuten)1 dass Ihr Konto gestohlen wurde");
+	public static JagString aClass22_761 = Static60.method1113("Wir vermuten)1 dass Ihr Konto gestohlen wurde");
 
 	@OriginalMember(owner = "client!ra", name = "j", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_762 = Static60.method1113("und haben es deaktiviert)3 Klicken Sie auf der");
+	public static JagString aClass22_762 = Static60.method1113("und haben es deaktiviert)3 Klicken Sie auf der");
 
 	@OriginalMember(owner = "client!ra", name = "k", descriptor = "I")
 	public static int anInt2588 = 0;
@@ -41,10 +41,10 @@ public final class Static99 {
 	public static int[] anIntArray285 = new int[1000];
 
 	@OriginalMember(owner = "client!ra", name = "o", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_763 = aClass22_760;
+	public static JagString aClass22_763 = aClass22_760;
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(BLclient!lf;)V")
-	public static void method1671(@OriginalArg(1) Applet_Sub1 arg0) {
+	public static void method1671(@OriginalArg(1) GameShell arg0) {
 		if (Static65.anInt1845 != 1) {
 			return;
 		}
@@ -90,9 +90,9 @@ public final class Static99 {
 		if (Static115.anInt2839 == -1) {
 			return;
 		}
-		@Pc(267) Class54 local267 = Static79.aClass54Array1[Static115.anInt2839];
+		@Pc(267) WorldEntry local267 = Static79.aClass54Array1[Static115.anInt2839];
 		if (Static123.aBoolean277 == local267.aBoolean201) {
-			@Pc(291) byte[] local291 = Static44.method856(new Class22[] { local267.aClass22_637, Static53.aClass22_380 }).method464();
+			@Pc(291) byte[] local291 = Static44.method856(new JagString[] { local267.aClass22_637, Static53.aClass22_380 }).method464();
 			Static128.aString4 = new String(local291, 0, local291.length);
 			if (Static57.anInt1741 != 0) {
 				Static34.anInt859 = 43594;
@@ -107,7 +107,7 @@ public final class Static99 {
 			Static80.aClass4_Sub1_Sub2_Sub3_4.method853(382 - Static80.aClass4_Sub1_Sub2_Sub3_4.anInt1206 / 2, 18);
 			return;
 		}
-		@Pc(394) Class22 local394 = Static44.method856(new Class22[] { Static130.aClass22_953, local267.aClass22_637, Static53.aClass22_380, Static64.aClass22_484, Static128.aClass22_935, Static134.method2042(Static130.aBoolean279 ? 1 : 0), Static52.aClass22_368, Static134.method2042(Static89.anInt2372), Static13.aClass22_85, Static134.method2042(Static108.anInt2725) });
+		@Pc(394) JagString local394 = Static44.method856(new JagString[] { Static130.aClass22_953, local267.aClass22_637, Static53.aClass22_380, Static64.aClass22_484, Static128.aClass22_935, Static134.method2042(Static130.aBoolean279 ? 1 : 0), Static52.aClass22_368, Static134.method2042(Static89.anInt2372), Static13.aClass22_85, Static134.method2042(Static108.anInt2725) });
 		try {
 			arg0.getAppletContext().showDocument(local394.method487(), "_self");
 			return;
@@ -131,15 +131,15 @@ public final class Static99 {
 	}
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(IB)Lclient!se;")
-	public static Class4_Sub1_Sub13 method1673(@OriginalArg(0) int arg0) {
-		@Pc(6) Class4_Sub1_Sub13 local6 = (Class4_Sub1_Sub13) Static94.aClass33_29.method998((long) arg0);
+	public static EnumType method1673(@OriginalArg(0) int arg0) {
+		@Pc(6) EnumType local6 = (EnumType) Static94.aClass33_29.method998((long) arg0);
 		if (local6 != null) {
 			return local6;
 		}
 		@Pc(25) byte[] local25 = Static42.aClass20_20.method597(8, arg0);
-		local6 = new Class4_Sub1_Sub13();
+		local6 = new EnumType();
 		if (local25 != null) {
-			local6.method1766(new Class4_Sub11(local25));
+			local6.method1766(new Packet(local25));
 		}
 		Static94.aClass33_29.method997((long) arg0, local6);
 		return local6;

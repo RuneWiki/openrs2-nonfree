@@ -4,16 +4,16 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ae")
-public final class Class4_Sub2 extends Linkable {
+public final class Song extends Linkable {
 
 	@OriginalMember(owner = "client!ae", name = "r", descriptor = "Lclient!wc;")
-	public Class81 aClass81_1;
+	public HashTable aClass81_1;
 
 	@OriginalMember(owner = "client!ae", name = "s", descriptor = "[B")
 	public final byte[] aByteArray1;
 
 	@OriginalMember(owner = "client!ae", name = "<init>", descriptor = "(Lclient!jd;)V")
-	public Class4_Sub2(@OriginalArg(0) Packet arg0) {
+	public Song(@OriginalArg(0) Packet arg0) {
 		arg0.anInt1099 = arg0.aByteArray9.length - 3;
 		@Pc(12) int local12 = arg0.method719();
 		@Pc(16) int local16 = arg0.method718();
@@ -300,11 +300,11 @@ public final class Class4_Sub2 extends Linkable {
 		if (this.aClass81_1 != null) {
 			return;
 		}
-		this.aClass81_1 = new Class81(16);
+		this.aClass81_1 = new HashTable(16);
 		@Pc(12) int[] local12 = new int[16];
 		@Pc(15) int[] local15 = new int[16];
 		local12[9] = local15[9] = 128;
-		@Pc(29) Class63 local29 = new Class63(this.aByteArray1);
+		@Pc(29) MidiDecoder local29 = new MidiDecoder(this.aByteArray1);
 		@Pc(32) int local32 = local29.method1681();
 		for (@Pc(34) int local34 = 0; local34 < local32; local34++) {
 			local29.method1688(local34);
@@ -349,9 +349,9 @@ public final class Class4_Sub2 extends Linkable {
 						local99 = local64 >> 16 & 0x7F;
 						if (local99 > 0) {
 							@Pc(174) int local174 = local15[local87];
-							@Pc(182) Class4_Sub12 local182 = (Class4_Sub12) this.aClass81_1.method2010((long) local174);
+							@Pc(182) ByteArrayNode local182 = (ByteArrayNode) this.aClass81_1.method2010((long) local174);
 							if (local182 == null) {
-								local182 = new Class4_Sub12(new byte[128]);
+								local182 = new ByteArrayNode(new byte[128]);
 								this.aClass81_1.method2015((long) local174, local182);
 							}
 							local182.aByteArray10[local93] = 1;

@@ -14,29 +14,29 @@ public final class Static49 {
 	public static byte[][] aByteArrayArray2 = new byte[1000][];
 
 	@OriginalMember(owner = "client!ia", name = "M", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_328 = Static60.method1113("gr-Un:");
+	public static JagString aClass22_328 = Static60.method1113("gr-Un:");
 
 	@OriginalMember(owner = "client!ia", name = "N", descriptor = "[Z")
 	public static boolean[] aBooleanArray5 = new boolean[100];
 
 	@OriginalMember(owner = "client!ia", name = "U", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_329 = Static60.method1113("Prepared sound engine");
+	private static JagString aClass22_329 = Static60.method1113("Prepared sound engine");
 
 	@OriginalMember(owner = "client!ia", name = "V", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_330 = aClass22_329;
+	public static JagString aClass22_330 = aClass22_329;
 
 	@OriginalMember(owner = "client!ia", name = "W", descriptor = "I")
 	public static int anInt1334 = 0;
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(ZLclient!qd;)V")
-	public static void method916(@OriginalArg(1) Class4_Sub1_Sub3_Sub2 arg0) {
+	public static void method916(@OriginalArg(1) PathingEntity arg0) {
 		if (arg0.anInt2457 == 0) {
 			return;
 		}
 		@Pc(40) int local40;
 		@Pc(47) int local47;
 		if (arg0.anInt2509 != -1 && arg0.anInt2509 < 32768) {
-			@Pc(31) Class4_Sub1_Sub3_Sub2_Sub2 local31 = Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1[arg0.anInt2509];
+			@Pc(31) NpcEntity local31 = Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1[arg0.anInt2509];
 			if (local31 != null) {
 				local40 = arg0.anInt2500 - local31.anInt2500;
 				local47 = arg0.anInt2462 - local31.anInt2462;
@@ -51,7 +51,7 @@ public final class Static49 {
 			if (local77 == Static32.anInt824) {
 				local77 = 2047;
 			}
-			@Pc(86) Class4_Sub1_Sub3_Sub2_Sub1 local86 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local77];
+			@Pc(86) PlayerEntity local86 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local77];
 			if (local86 != null) {
 				@Pc(95) int local95 = arg0.anInt2462 - local86.anInt2462;
 				local47 = arg0.anInt2500 - local86.anInt2500;
@@ -109,9 +109,9 @@ public final class Static49 {
 	}
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(ILclient!ea;I)Lclient!kd;")
-	public static Class4_Sub14 method920(@OriginalArg(0) int arg0, @OriginalArg(1) Class20 arg1) {
+	public static MidiInstrument method920(@OriginalArg(0) int arg0, @OriginalArg(1) Js5Index arg1) {
 		@Pc(12) byte[] local12 = arg1.method609(arg0);
-		return local12 == null ? null : new Class4_Sub14(local12);
+		return local12 == null ? null : new MidiInstrument(local12);
 	}
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(B)V")

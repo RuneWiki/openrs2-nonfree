@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static86 {
 
 	@OriginalMember(owner = "client!p", name = "bb", descriptor = "[I")
-	public static int[] anIntArray260 = Class4_Sub1_Sub2_Sub1.anIntArray12;
+	public static int[] anIntArray260 = Pix3D.anIntArray12;
 
 	@OriginalMember(owner = "client!p", name = "eb", descriptor = "I")
 	private static int anInt2307 = 0;
 
 	@OriginalMember(owner = "client!p", name = "hb", descriptor = "[I")
-	public static int[] anIntArray262 = Class4_Sub1_Sub2_Sub1.anIntArray9;
+	public static int[] anIntArray262 = Pix3D.anIntArray9;
 
 	@OriginalMember(owner = "client!p", name = "zb", descriptor = "[I")
 	private static int[] anIntArray265 = new int[10000];
@@ -20,9 +20,9 @@ public final class Static86 {
 	private static int[] anIntArray267 = new int[10000];
 
 	@OriginalMember(owner = "client!p", name = "a", descriptor = "(Lclient!ea;II)Lclient!p;")
-	public static Class4_Sub1_Sub3_Sub4 method1524(@OriginalArg(0) Class20 arg0, @OriginalArg(1) int arg1) {
+	public static Model method1524(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) int arg1) {
 		@Pc(5) byte[] local5 = arg0.method597(arg1, 0);
-		return local5 == null ? null : new Class4_Sub1_Sub3_Sub4(local5);
+		return local5 == null ? null : new Model(local5);
 	}
 
 	@OriginalMember(owner = "client!p", name = "b", descriptor = "(II)I")
@@ -37,7 +37,7 @@ public final class Static86 {
 	}
 
 	@OriginalMember(owner = "client!p", name = "a", descriptor = "(Lclient!p;Lclient!p;IIIZ)V")
-	public static void method1532(@OriginalArg(0) Class4_Sub1_Sub3_Sub4 arg0, @OriginalArg(1) Class4_Sub1_Sub3_Sub4 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
+	public static void method1532(@OriginalArg(0) Model arg0, @OriginalArg(1) Model arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
 		arg0.method1527();
 		arg0.method1523();
 		arg1.method1527();
@@ -48,7 +48,7 @@ public final class Static86 {
 		@Pc(19) int local19 = arg1.anInt2306;
 		@Pc(37) int local37;
 		for (@Pc(21) int local21 = 0; local21 < arg0.anInt2306; local21++) {
-			@Pc(27) Class37 local27 = arg0.aClass37Array1[local21];
+			@Pc(27) VertexNormal local27 = arg0.aClass37Array1[local21];
 			if (local27.anInt1756 != 0) {
 				local37 = arg0.anIntArray264[local21] - arg3;
 				if (local37 <= arg1.anInt2313) {
@@ -57,21 +57,21 @@ public final class Static86 {
 						@Pc(64) int local64 = arg0.anIntArray258[local21] - arg4;
 						if (local64 >= arg1.anInt2308 && local64 <= arg1.anInt2310) {
 							for (@Pc(75) int local75 = 0; local75 < local19; local75++) {
-								@Pc(81) Class37 local81 = arg1.aClass37Array1[local75];
+								@Pc(81) VertexNormal local81 = arg1.aClass37Array1[local75];
 								if (local48 == local16[local75] && local64 == arg1.anIntArray258[local75] && local37 == arg1.anIntArray264[local75] && local81.anInt1756 != 0) {
 									if (arg0.aClass37Array2 == null) {
-										arg0.aClass37Array2 = new Class37[arg0.anInt2306];
+										arg0.aClass37Array2 = new VertexNormal[arg0.anInt2306];
 									}
 									if (arg1.aClass37Array2 == null) {
-										arg1.aClass37Array2 = new Class37[local19];
+										arg1.aClass37Array2 = new VertexNormal[local19];
 									}
-									@Pc(121) Class37 local121 = arg0.aClass37Array2[local21];
+									@Pc(121) VertexNormal local121 = arg0.aClass37Array2[local21];
 									if (local121 == null) {
-										local121 = arg0.aClass37Array2[local21] = new Class37(local27);
+										local121 = arg0.aClass37Array2[local21] = new VertexNormal(local27);
 									}
-									@Pc(138) Class37 local138 = arg1.aClass37Array2[local75];
+									@Pc(138) VertexNormal local138 = arg1.aClass37Array2[local75];
 									if (local138 == null) {
-										local138 = arg1.aClass37Array2[local75] = new Class37(local81);
+										local138 = arg1.aClass37Array2[local75] = new VertexNormal(local81);
 									}
 									local121.anInt1761 += local81.anInt1761;
 									local121.anInt1759 += local81.anInt1759;

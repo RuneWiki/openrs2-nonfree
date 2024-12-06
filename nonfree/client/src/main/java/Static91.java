@@ -1,6 +1,3 @@
-import java.io.DataInputStream;
-import java.net.URL;
-import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
@@ -13,7 +10,7 @@ public final class Static91 {
 	public static int anInt2416 = 0;
 
 	@OriginalMember(owner = "client!pf", name = "K", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_702 = Static60.method1113("Update)2Liste geladen)3");
+	public static JagString aClass22_702 = Static60.method1113("Update)2Liste geladen)3");
 
 	@OriginalMember(owner = "client!pf", name = "L", descriptor = "I")
 	public static int anInt2418 = 0;
@@ -22,48 +19,15 @@ public final class Static91 {
 	public static int[] anIntArray275 = new int[5];
 
 	@OriginalMember(owner = "client!pf", name = "R", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_703 = Static60.method1113("<br>(X100(U(Y");
+	public static JagString aClass22_703 = Static60.method1113("<br>(X100(U(Y");
 
 	@OriginalMember(owner = "client!pf", name = "U", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_704 = Static60.method1113("Bitte wenden Sie sich an den Kundendienst)3");
-
-	@OriginalMember(owner = "client!pf", name = "a", descriptor = "(Ljava/lang/Throwable;Ljava/lang/String;I)V")
-	public static void method1588(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
-		try {
-			@Pc(7) String local7 = "";
-			if (arg0 != null) {
-				local7 = Static56.method1039(arg0);
-			}
-			if (arg1 != null) {
-				if (arg0 != null) {
-					local7 = local7 + " | ";
-				}
-				local7 = local7 + arg1;
-			}
-			System.out.println("Error: " + local7);
-			local7 = local7.replace(':', '.');
-			local7 = local7.replace('@', '_');
-			local7 = local7.replace('&', '_');
-			local7 = local7.replace('#', '_');
-			if (Static72.aClass17_3.anApplet1 != null) {
-				@Pc(102) Class12 local102 = Static72.aClass17_3.method386(new URL(Static72.aClass17_3.anApplet1.getCodeBase(), "clienterror.ws?c=" + Static97.anInt2572 + "&u=" + Static80.aLong68 + "&v1=" + Static21.aString3 + "&v2=" + Static21.aString2 + "&e=" + local7));
-				while (local102.anInt373 == 0) {
-					Static46.method889(1L);
-				}
-				if (local102.anInt373 == 1) {
-					@Pc(120) DataInputStream local120 = (DataInputStream) local102.anObject1;
-					local120.read();
-					local120.close();
-				}
-			}
-		} catch (@Pc(127) Exception local127) {
-		}
-	}
+	public static JagString aClass22_704 = Static60.method1113("Bitte wenden Sie sich an den Kundendienst)3");
 
 	@OriginalMember(owner = "client!pf", name = "e", descriptor = "(I)V")
 	public static void method1589() {
 		Static38.aClass4_Sub11_Sub1_1.method752(113);
-		for (@Pc(23) Class4_Sub21 local23 = (Class4_Sub21) Static90.aClass81_11.method2017(); local23 != null; local23 = (Class4_Sub21) Static90.aClass81_11.method2013()) {
+		for (@Pc(23) ComponentPointer local23 = (ComponentPointer) Static90.aClass81_11.method2017(); local23 != null; local23 = (ComponentPointer) Static90.aClass81_11.method2013()) {
 			if (local23.anInt2946 == 0 || local23.anInt2946 == 3) {
 				Static112.method1794(true, local23);
 			}

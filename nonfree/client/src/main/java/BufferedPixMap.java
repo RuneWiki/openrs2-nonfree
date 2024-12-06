@@ -7,14 +7,14 @@ import java.awt.image.DirectColorModel;
 import java.awt.image.ImageConsumer;
 import java.awt.image.ImageObserver;
 import java.awt.image.ImageProducer;
-import java.util.Hashtable;
+
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!g")
-public final class Class11_Sub2 extends Class11 implements ImageProducer, ImageObserver {
+public final class BufferedPixMap extends PixMap implements ImageProducer, ImageObserver {
 
 	@OriginalMember(owner = "client!g", name = "u", descriptor = "Ljava/awt/image/ColorModel;")
 	private ColorModel aColorModel1;

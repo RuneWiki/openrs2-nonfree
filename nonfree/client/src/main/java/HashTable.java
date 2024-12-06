@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!wc")
-public final class Class81 {
+public final class HashTable {
 
 	@OriginalMember(owner = "client!wc", name = "h", descriptor = "Lclient!v;")
 	private Linkable aClass4_125;
@@ -25,7 +25,7 @@ public final class Class81 {
 	private final int anInt3112;
 
 	@OriginalMember(owner = "client!wc", name = "<init>", descriptor = "(I)V")
-	public Class81(@OriginalArg(0) int arg0) {
+	public HashTable(@OriginalArg(0) int arg0) {
 		this.aClass4Array1 = new Linkable[arg0];
 		this.anInt3112 = arg0;
 		for (@Pc(13) int local13 = 0; local13 < arg0; local13++) {

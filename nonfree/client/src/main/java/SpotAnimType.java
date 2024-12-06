@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ta")
-public final class Class4_Sub1_Sub14 extends DoublyLinkable {
+public final class SpotAnimType extends DoublyLinkable {
 
 	@OriginalMember(owner = "client!ta", name = "J", descriptor = "I")
 	private int anInt2752;

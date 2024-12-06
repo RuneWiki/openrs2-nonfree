@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!kb")
-public final class Class37 {
+public final class VertexNormal {
 
 	@OriginalMember(owner = "client!kb", name = "k", descriptor = "I")
 	public int anInt1755;
@@ -18,11 +18,11 @@ public final class Class37 {
 	public int anInt1761;
 
 	@OriginalMember(owner = "client!kb", name = "<init>", descriptor = "()V")
-	public Class37() {
+	public VertexNormal() {
 	}
 
 	@OriginalMember(owner = "client!kb", name = "<init>", descriptor = "(Lclient!kb;)V")
-	public Class37(@OriginalArg(0) Class37 arg0) {
+	public VertexNormal(@OriginalArg(0) VertexNormal arg0) {
 		this.anInt1755 = arg0.anInt1755;
 		this.anInt1759 = arg0.anInt1759;
 		this.anInt1761 = arg0.anInt1761;

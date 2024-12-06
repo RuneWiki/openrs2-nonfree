@@ -23,8 +23,8 @@ public final class Static20 {
 	@OriginalMember(owner = "client!db", name = "a", descriptor = "()V")
 	public static void method379() {
 		anIntArray52 = null;
-		Class16.anIntArray54 = null;
-		Class16.anIntArray51 = null;
+		Tone.anIntArray54 = null;
+		Tone.anIntArray51 = null;
 		anIntArray57 = null;
 		anIntArray56 = null;
 		anIntArray55 = null;

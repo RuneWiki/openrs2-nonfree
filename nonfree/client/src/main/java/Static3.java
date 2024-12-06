@@ -8,19 +8,19 @@ public final class Static3 {
 	public static int[] anIntArray2;
 
 	@OriginalMember(owner = "client!ab", name = "q", descriptor = "Lclient!ea;")
-	public static Class20 aClass20_1;
+	public static Js5Index aClass20_1;
 
 	@OriginalMember(owner = "client!ab", name = "r", descriptor = "Lclient!h;")
-	public static Class4_Sub1_Sub2_Sub2 aClass4_Sub1_Sub2_Sub2_1;
+	public static Pix32 aClass4_Sub1_Sub2_Sub2_1;
 
 	@OriginalMember(owner = "client!ab", name = "s", descriptor = "[I")
 	public static int[] anIntArray3;
 
 	@OriginalMember(owner = "client!ab", name = "o", descriptor = "Lclient!ja;")
-	public static Class33 aClass33_2 = new Class33(64);
+	public static LruCache aClass33_2 = new LruCache(64);
 
 	@OriginalMember(owner = "client!ab", name = "t", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_8 = Static60.method1113("me");
+	public static JagString aClass22_8 = Static60.method1113("me");
 
 	@OriginalMember(owner = "client!ab", name = "u", descriptor = "I")
 	public static int anInt27 = 0;
@@ -29,7 +29,7 @@ public final class Static3 {
 	public static byte[][][] aByteArrayArrayArray1 = new byte[4][104][104];
 
 	@OriginalMember(owner = "client!ab", name = "w", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_9 = Static60.method1113("mapedge");
+	public static JagString aClass22_9 = Static60.method1113("mapedge");
 
 	@OriginalMember(owner = "client!ab", name = "a", descriptor = "(IIII)I")
 	public static int method9(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
@@ -59,7 +59,7 @@ public final class Static3 {
 	}
 
 	@OriginalMember(owner = "client!ab", name = "a", descriptor = "(BLclient!ea;Lclient!ea;)V")
-	public static void method11(@OriginalArg(1) Class20 arg0, @OriginalArg(2) Class20 arg1) {
+	public static void method11(@OriginalArg(1) Js5Index arg0, @OriginalArg(2) Js5Index arg1) {
 		Static35.aClass20_19 = arg1;
 		Static133.aClass20_62 = arg0;
 	}

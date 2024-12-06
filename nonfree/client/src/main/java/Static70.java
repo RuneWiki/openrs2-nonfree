@@ -8,10 +8,10 @@ public final class Static70 {
 	public static int anInt1900;
 
 	@OriginalMember(owner = "client!ma", name = "b", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_512 = Static60.method1113("::fpson");
+	public static JagString aClass22_512 = Static60.method1113("::fpson");
 
 	@OriginalMember(owner = "client!ma", name = "c", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_513 = Static60.method1113("null");
+	public static JagString aClass22_513 = Static60.method1113("null");
 
 	@OriginalMember(owner = "client!ma", name = "g", descriptor = "J")
 	public static long aLong57 = 0L;
@@ -27,7 +27,7 @@ public final class Static70 {
 	}
 
 	@OriginalMember(owner = "client!ma", name = "a", descriptor = "([Lclient!ec;IIB)Lclient!ec;")
-	public static Class22 method1175(@OriginalArg(0) Class22[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static JagString method1175(@OriginalArg(0) JagString[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(7) int local7 = 0;
 		for (@Pc(9) int local9 = 0; local9 < arg1; local9++) {
 			if (arg0[local9 + arg2] == null) {
@@ -37,13 +37,13 @@ public final class Static70 {
 		}
 		@Pc(39) byte[] local39 = new byte[local7];
 		@Pc(50) int local50 = 0;
-		@Pc(61) Class22 local61;
+		@Pc(61) JagString local61;
 		for (@Pc(52) int local52 = 0; local52 < arg1; local52++) {
 			local61 = arg0[arg2 + local52];
 			Static139.method952(local61.aByteArray7, 0, local39, local50, local61.anInt668);
 			local50 += local61.anInt668;
 		}
-		local61 = new Class22();
+		local61 = new JagString();
 		local61.anInt668 = local7;
 		local61.aByteArray7 = local39;
 		return local61;
@@ -68,7 +68,7 @@ public final class Static70 {
 	}
 
 	@OriginalMember(owner = "client!ma", name = "a", descriptor = "(Lclient!f;I)Z")
-	public static boolean method1177(@OriginalArg(0) Class4_Sub7 arg0) {
+	public static boolean method1177(@OriginalArg(0) IfType arg0) {
 		if (arg0.anIntArray85 == null) {
 			return false;
 		}

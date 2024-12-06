@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static30 {
 
 	@OriginalMember(owner = "client!ee", name = "Z", descriptor = "Lclient!ea;")
-	public static Class20 aClass20_17;
+	public static Js5Index aClass20_17;
 
 	@OriginalMember(owner = "client!ee", name = "ab", descriptor = "[I")
 	public static int[] anIntArray77;
 
 	@OriginalMember(owner = "client!ee", name = "eb", descriptor = "Lclient!f;")
-	public static Class4_Sub7 aClass4_Sub7_6;
+	public static IfType aClass4_Sub7_6;
 
 	@OriginalMember(owner = "client!ee", name = "I", descriptor = "I")
 	public static int anInt706 = 2;
@@ -20,34 +20,34 @@ public final class Static30 {
 	public static int anInt708 = 0;
 
 	@OriginalMember(owner = "client!ee", name = "P", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_192 = Static60.method1113("Konfig geladen)3");
+	public static JagString aClass22_192 = Static60.method1113("Konfig geladen)3");
 
 	@OriginalMember(owner = "client!ee", name = "Q", descriptor = "Lclient!wc;")
-	public static Class81 aClass81_4 = new Class81(32);
+	public static HashTable aClass81_4 = new HashTable(32);
 
 	@OriginalMember(owner = "client!ee", name = "R", descriptor = "I")
 	public static int anInt713 = 0;
 
 	@OriginalMember(owner = "client!ee", name = "S", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_193 = Static60.method1113("<col=ffffff> )4 ");
+	public static JagString aClass22_193 = Static60.method1113("<col=ffffff> )4 ");
 
 	@OriginalMember(owner = "client!ee", name = "V", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_194 = Static60.method1113("(U0a )2 in: ");
+	public static JagString aClass22_194 = Static60.method1113("(U0a )2 in: ");
 
 	@OriginalMember(owner = "client!ee", name = "jb", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_199 = Static60.method1113("OFF");
+	private static JagString aClass22_199 = Static60.method1113("OFF");
 
 	@OriginalMember(owner = "client!ee", name = "W", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_195 = aClass22_199;
+	public static JagString aClass22_195 = aClass22_199;
 
 	@OriginalMember(owner = "client!ee", name = "Y", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_196 = Static60.method1113(": ");
+	public static JagString aClass22_196 = Static60.method1113(": ");
 
 	@OriginalMember(owner = "client!ee", name = "ib", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_198 = Static60.method1113("Location");
+	private static JagString aClass22_198 = Static60.method1113("Location");
 
 	@OriginalMember(owner = "client!ee", name = "cb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_197 = aClass22_198;
+	public static JagString aClass22_197 = aClass22_198;
 
 	@OriginalMember(owner = "client!ee", name = "kb", descriptor = "I")
 	public static int anInt722 = 0;
@@ -62,7 +62,7 @@ public final class Static30 {
 	}
 
 	@OriginalMember(owner = "client!ee", name = "a", descriptor = "(ILclient!f;)V")
-	public static void method507(@OriginalArg(1) Class4_Sub7 arg0) {
+	public static void method507(@OriginalArg(1) IfType arg0) {
 		@Pc(11) int local11 = arg0.anInt793;
 		if (local11 == 324) {
 			if (Static57.anInt1731 == -1) {
@@ -86,12 +86,12 @@ public final class Static30 {
 			}
 		} else if (local11 == 327) {
 			arg0.anInt775 = 150;
-			arg0.anInt808 = (int) (Math.sin((double) Static117.anInt2877 / 40.0D) * 256.0D) & 0x7FF;
+			arg0.anInt808 = (int) (Math.sin((double) Client.anInt2877 / 40.0D) * 256.0D) & 0x7FF;
 			arg0.anInt752 = 5;
 			arg0.anInt794 = 0;
 		} else if (local11 == 328) {
 			arg0.anInt775 = 150;
-			arg0.anInt808 = (int) (Math.sin((double) Static117.anInt2877 / 40.0D) * 256.0D) & 0x7FF;
+			arg0.anInt808 = (int) (Math.sin((double) Client.anInt2877 / 40.0D) * 256.0D) & 0x7FF;
 			arg0.anInt752 = 5;
 			arg0.anInt794 = 1;
 		}

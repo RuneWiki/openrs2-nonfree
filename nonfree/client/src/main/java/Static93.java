@@ -13,16 +13,16 @@ public final class Static93 {
 	public static final int anInt2526 = 2301979;
 
 	@OriginalMember(owner = "client!qa", name = "d", descriptor = "Lclient!wc;")
-	public static Class81 aClass81_13 = new Class81(32);
+	public static HashTable aClass81_13 = new HashTable(32);
 
 	@OriginalMember(owner = "client!qa", name = "e", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_731 = Static60.method1113("(Udns");
+	public static JagString aClass22_731 = Static60.method1113("(Udns");
 
 	@OriginalMember(owner = "client!qa", name = "m", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_733 = Static60.method1113("Type");
+	private static JagString aClass22_733 = Static60.method1113("Type");
 
 	@OriginalMember(owner = "client!qa", name = "h", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_732 = aClass22_733;
+	public static JagString aClass22_732 = aClass22_733;
 
 	@OriginalMember(owner = "client!qa", name = "i", descriptor = "Z")
 	public static boolean aBoolean223 = false;
@@ -34,25 +34,25 @@ public final class Static93 {
 	public static int[] anIntArray281 = new int[50];
 
 	@OriginalMember(owner = "client!qa", name = "o", descriptor = "Lclient!wd;")
-	public static Class82 aClass82_9 = new Class82();
+	public static LinkList aClass82_9 = new LinkList();
 
 	@OriginalMember(owner = "client!qa", name = "p", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_734 = Static60.method1113("k");
+	public static JagString aClass22_734 = Static60.method1113("k");
 
 	@OriginalMember(owner = "client!qa", name = "q", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_735 = Static60.method1113("Anmelde)2Limit -Uberschritten)3");
+	public static JagString aClass22_735 = Static60.method1113("Anmelde)2Limit -Uberschritten)3");
 
 	@OriginalMember(owner = "client!qa", name = "r", descriptor = "I")
 	public static int anInt2531 = 0;
 
 	@OriginalMember(owner = "client!qa", name = "t", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_736 = Static60.method1113("Sie k-Onnen sich selbst nicht selbst auf Ihre Ignorieren)2Liste setzen(Q");
+	public static JagString aClass22_736 = Static60.method1113("Sie k-Onnen sich selbst nicht selbst auf Ihre Ignorieren)2Liste setzen(Q");
 
 	@OriginalMember(owner = "client!qa", name = "u", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_737 = Static60.method1113("scrollen:");
+	public static JagString aClass22_737 = Static60.method1113("scrollen:");
 
 	@OriginalMember(owner = "client!qa", name = "a", descriptor = "(BLclient!ea;Lclient!ea;Lclient!ec;Lclient!ec;)Lclient!nf;")
-	public static Class4_Sub1_Sub2_Sub4_Sub1 method1621(@OriginalArg(1) Class20 arg0, @OriginalArg(2) Class20 arg1, @OriginalArg(3) Class22 arg2, @OriginalArg(4) Class22 arg3) {
+	public static SoftwareFont method1621(@OriginalArg(1) Js5Index arg0, @OriginalArg(2) Js5Index arg1, @OriginalArg(3) JagString arg2, @OriginalArg(4) JagString arg3) {
 		@Pc(4) int local4 = arg0.method592(arg3);
 		@Pc(19) int local19 = arg0.method606(arg2, local4);
 		return Static107.method1756(local4, arg1, arg0, local19);
@@ -74,13 +74,13 @@ public final class Static93 {
 	}
 
 	@OriginalMember(owner = "client!qa", name = "a", descriptor = "(Lclient!ea;BLclient!ea;Ljava/awt/Component;)V")
-	public static void method1623(@OriginalArg(0) Class20 arg0, @OriginalArg(2) Class20 arg1, @OriginalArg(3) Component arg2) {
+	public static void method1623(@OriginalArg(0) Js5Index arg0, @OriginalArg(2) Js5Index arg1, @OriginalArg(3) Component arg2) {
 		if (Static114.aBoolean252) {
 			return;
 		}
 		Static118.method1374();
 		@Pc(15) byte[] local15 = arg0.method610(Static68.aClass22_144, Static61.aClass22_474);
-		Static82.aClass4_Sub1_Sub2_Sub2_6 = new Class4_Sub1_Sub2_Sub2(local15, arg2);
+		Static82.aClass4_Sub1_Sub2_Sub2_6 = new Pix32(local15, arg2);
 		Static39.aClass4_Sub1_Sub2_Sub2_5 = Static82.aClass4_Sub1_Sub2_Sub2_6.method806();
 		Static80.aClass4_Sub1_Sub2_Sub3_4 = Static114.method1820(Static61.aClass22_474, arg1, Static28.aClass22_185);
 		Static4.aClass4_Sub1_Sub2_Sub3_1 = Static114.method1820(Static61.aClass22_474, arg1, Static56.aClass22_394);
@@ -165,19 +165,19 @@ public final class Static93 {
 		if (local18 == 1) {
 			if (local28 == 1) {
 				Static6.method113(0.9D);
-				((Class75) Static6.anInterface2_1).method1848(0.9D);
+				((SceneBuilderProvider) Static6.anInterface2_1).method1848(0.9D);
 			}
 			if (local28 == 2) {
 				Static6.method113(0.8D);
-				((Class75) Static6.anInterface2_1).method1848(0.8D);
+				((SceneBuilderProvider) Static6.anInterface2_1).method1848(0.8D);
 			}
 			if (local28 == 3) {
 				Static6.method113(0.7D);
-				((Class75) Static6.anInterface2_1).method1848(0.7D);
+				((SceneBuilderProvider) Static6.anInterface2_1).method1848(0.7D);
 			}
 			if (local28 == 4) {
 				Static6.method113(0.6D);
-				((Class75) Static6.anInterface2_1).method1848(0.6D);
+				((SceneBuilderProvider) Static6.anInterface2_1).method1848(0.6D);
 			}
 			Static87.method1541();
 		}

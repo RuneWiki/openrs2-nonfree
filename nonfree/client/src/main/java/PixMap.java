@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!gf")
-public abstract class Class11 {
+public abstract class PixMap {
 
 	@OriginalMember(owner = "client!gf", name = "b", descriptor = "I")
 	protected int anInt883;

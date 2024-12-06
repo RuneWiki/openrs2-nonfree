@@ -5,55 +5,55 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static5 {
 
 	@OriginalMember(owner = "client!ad", name = "g", descriptor = "Lclient!f;")
-	public static Class4_Sub7 aClass4_Sub7_1;
+	public static IfType aClass4_Sub7_1;
 
 	@OriginalMember(owner = "client!ad", name = "q", descriptor = "[I")
 	public static int[] anIntArray5;
 
 	@OriginalMember(owner = "client!ad", name = "h", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_37 = Static60.method1113("flash3:");
+	private static JagString aClass22_37 = Static60.method1113("flash3:");
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_32 = aClass22_37;
+	public static JagString aClass22_32 = aClass22_37;
 
 	@OriginalMember(owner = "client!ad", name = "b", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_33 = aClass22_37;
+	public static JagString aClass22_33 = aClass22_37;
 
 	@OriginalMember(owner = "client!ad", name = "c", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_34 = Static60.method1113("You can(Wt add yourself to your own friend list");
+	private static JagString aClass22_34 = Static60.method1113("You can(Wt add yourself to your own friend list");
 
 	@OriginalMember(owner = "client!ad", name = "e", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_35 = Static60.method1113("<col=80ff00>");
+	public static JagString aClass22_35 = Static60.method1113("<col=80ff00>");
 
 	@OriginalMember(owner = "client!ad", name = "f", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_36 = Static60.method1113("Diese Betatest)2Welt ist nur f-Ur eingeladene");
+	public static JagString aClass22_36 = Static60.method1113("Diese Betatest)2Welt ist nur f-Ur eingeladene");
 
 	@OriginalMember(owner = "client!ad", name = "i", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_38 = Static60.method1113("Please remove ");
+	private static JagString aClass22_38 = Static60.method1113("Please remove ");
 
 	@OriginalMember(owner = "client!ad", name = "j", descriptor = "I")
 	public static int anInt85 = -1;
 
 	@OriginalMember(owner = "client!ad", name = "k", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_39 = Static60.method1113("leuchten2:");
+	public static JagString aClass22_39 = Static60.method1113("leuchten2:");
 
 	@OriginalMember(owner = "client!ad", name = "r", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_45 = Static60.method1113("Choose Option");
+	private static JagString aClass22_45 = Static60.method1113("Choose Option");
 
 	@OriginalMember(owner = "client!ad", name = "l", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_40 = aClass22_45;
+	public static JagString aClass22_40 = aClass22_45;
 
 	@OriginalMember(owner = "client!ad", name = "m", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_41 = aClass22_38;
+	public static JagString aClass22_41 = aClass22_38;
 
 	@OriginalMember(owner = "client!ad", name = "n", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_42 = aClass22_34;
+	public static JagString aClass22_42 = aClass22_34;
 
 	@OriginalMember(owner = "client!ad", name = "o", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_43 = aClass22_38;
+	public static JagString aClass22_43 = aClass22_38;
 
 	@OriginalMember(owner = "client!ad", name = "p", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_44 = Static60.method1113("Benutzeroberfl-=che geladen)3");
+	public static JagString aClass22_44 = Static60.method1113("Benutzeroberfl-=che geladen)3");
 
 	@OriginalMember(owner = "client!ad", name = "t", descriptor = "I")
 	public static int anInt87 = 1;
@@ -62,16 +62,16 @@ public final class Static5 {
 	public static int[] anIntArray6 = new int[200];
 
 	@OriginalMember(owner = "client!ad", name = "w", descriptor = "Lclient!ja;")
-	public static Class33 aClass33_3 = new Class33(64);
+	public static LruCache aClass33_3 = new LruCache(64);
 
 	@OriginalMember(owner = "client!ad", name = "z", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_47 = Static60.method1113("white:");
+	private static JagString aClass22_47 = Static60.method1113("white:");
 
 	@OriginalMember(owner = "client!ad", name = "y", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_46 = aClass22_47;
+	public static JagString aClass22_46 = aClass22_47;
 
 	@OriginalMember(owner = "client!ad", name = "A", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_48 = aClass22_47;
+	public static JagString aClass22_48 = aClass22_47;
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(B)V")
 	public static void method42() {
@@ -99,7 +99,7 @@ public final class Static5 {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(Lclient!da;B)V")
-	public static void method43(@OriginalArg(0) Class4_Sub5 arg0) {
+	public static void method43(@OriginalArg(0) LocSpawned arg0) {
 		@Pc(5) int local5 = 0;
 		if (arg0.anInt526 == 0) {
 			local5 = Static134.aClass77_1.method1957(arg0.anInt529, arg0.anInt531, arg0.anInt542);
@@ -211,16 +211,16 @@ public final class Static5 {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(II)Lclient!hd;")
-	public static Class4_Sub1_Sub5 method45(@OriginalArg(1) int arg0) {
-		@Pc(6) Class4_Sub1_Sub5 local6 = (Class4_Sub1_Sub5) Static38.aClass33_14.method998((long) arg0);
+	public static LocType method45(@OriginalArg(1) int arg0) {
+		@Pc(6) LocType local6 = (LocType) Static38.aClass33_14.method998((long) arg0);
 		if (local6 != null) {
 			return local6;
 		}
 		@Pc(28) byte[] local28 = Static128.aClass20_60.method597(6, arg0);
-		local6 = new Class4_Sub1_Sub5();
+		local6 = new LocType();
 		local6.anInt1255 = arg0;
 		if (local28 != null) {
-			local6.method882(new Class4_Sub11(local28));
+			local6.method882(new Packet(local28));
 		}
 		local6.method887();
 		if (local6.aBoolean116) {

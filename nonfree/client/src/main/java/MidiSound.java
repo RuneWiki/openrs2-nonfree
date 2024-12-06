@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!kc")
-public final class Class38 {
+public final class MidiSound {
 
 	@OriginalMember(owner = "client!kc", name = "a", descriptor = "[B")
 	public byte[] aByteArray14;

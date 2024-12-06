@@ -8,25 +8,22 @@ public final class Static23 {
 	public static byte[][] aByteArrayArray1;
 
 	@OriginalMember(owner = "client!de", name = "k", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_159 = Static60.method1113(" seconds)3");
+	private static JagString aClass22_159 = Static60.method1113(" seconds)3");
 
 	@OriginalMember(owner = "client!de", name = "a", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_155 = aClass22_159;
-
-	@OriginalMember(owner = "client!de", name = "d", descriptor = "Z")
-	public static volatile boolean aBoolean55 = true;
+	public static JagString aClass22_155 = aClass22_159;
 
 	@OriginalMember(owner = "client!de", name = "p", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_160 = Static60.method1113("flash1:");
+	private static JagString aClass22_160 = Static60.method1113("flash1:");
 
 	@OriginalMember(owner = "client!de", name = "h", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_156 = aClass22_160;
+	public static JagString aClass22_156 = aClass22_160;
 
 	@OriginalMember(owner = "client!de", name = "i", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_157 = aClass22_160;
+	public static JagString aClass22_157 = aClass22_160;
 
 	@OriginalMember(owner = "client!de", name = "j", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_158 = Static60.method1113(")4lang)4de");
+	public static JagString aClass22_158 = Static60.method1113(")4lang)4de");
 
 	@OriginalMember(owner = "client!de", name = "m", descriptor = "I")
 	public static int anInt552 = 0;
@@ -41,13 +38,13 @@ public final class Static23 {
 	public static boolean aBoolean57 = false;
 
 	@OriginalMember(owner = "client!de", name = "v", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_161 = Static60.method1113(":clan:");
+	public static JagString aClass22_161 = Static60.method1113(":clan:");
 
 	@OriginalMember(owner = "client!de", name = "x", descriptor = "[I")
 	public static int[] anIntArray61 = new int[2000];
 
 	@OriginalMember(owner = "client!de", name = "a", descriptor = "(III)Lclient!ec;")
-	public static Class22 method391(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
+	public static JagString method391(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(4) int local4 = arg1 - arg0;
 		if (local4 < -9) {
 			return Static85.aClass22_643;
@@ -105,13 +102,13 @@ public final class Static23 {
 	}
 
 	@OriginalMember(owner = "client!de", name = "a", descriptor = "(Lclient!tb;I[BI)V")
-	public static void method394(@OriginalArg(0) Class71 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2) {
-		@Pc(12) Class4_Sub20 local12 = new Class4_Sub20();
+	public static void method394(@OriginalArg(0) FileStream arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2) {
+		@Pc(12) Js5NetProviderRequest local12 = new Js5NetProviderRequest();
 		local12.aByteArray42 = arg2;
 		local12.aLong99 = arg1;
 		local12.aClass71_4 = arg0;
 		local12.anInt2897 = 0;
-		@Pc(27) Class82 local27 = Static2.aClass82_1;
+		@Pc(27) LinkList local27 = Static2.aClass82_1;
 		synchronized (Static2.aClass82_1) {
 			Static2.aClass82_1.method2028(local12);
 		}

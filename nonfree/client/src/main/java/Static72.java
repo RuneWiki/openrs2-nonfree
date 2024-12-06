@@ -4,62 +4,59 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static72 {
 
-	@OriginalMember(owner = "client!mc", name = "k", descriptor = "Lclient!dc;")
-	public static Class17 aClass17_3;
-
 	@OriginalMember(owner = "client!mc", name = "v", descriptor = "I")
 	public static int anInt1923;
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_524 = Static60.method1113("Continue");
+	private static JagString aClass22_524 = Static60.method1113("Continue");
 
 	@OriginalMember(owner = "client!mc", name = "b", descriptor = "I")
 	public static int anInt1914 = 0;
 
 	@OriginalMember(owner = "client!mc", name = "c", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_525 = aClass22_524;
+	public static JagString aClass22_525 = aClass22_524;
 
 	@OriginalMember(owner = "client!mc", name = "d", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_526 = Static60.method1113("Welt");
+	public static JagString aClass22_526 = Static60.method1113("Welt");
 
 	@OriginalMember(owner = "client!mc", name = "e", descriptor = "I")
 	public static int anInt1915 = 0;
 
 	@OriginalMember(owner = "client!mc", name = "s", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_533 = Static60.method1113("Please wait )2 attempting to reestablish");
+	private static JagString aClass22_533 = Static60.method1113("Please wait )2 attempting to reestablish");
 
 	@OriginalMember(owner = "client!mc", name = "h", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_527 = aClass22_533;
+	public static JagString aClass22_527 = aClass22_533;
 
 	@OriginalMember(owner = "client!mc", name = "i", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_528 = Static60.method1113("sch-Utteln:");
+	public static JagString aClass22_528 = Static60.method1113("sch-Utteln:");
 
 	@OriginalMember(owner = "client!mc", name = "j", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_529 = Static60.method1113("Abbrechen");
+	public static JagString aClass22_529 = Static60.method1113("Abbrechen");
 
 	@OriginalMember(owner = "client!mc", name = "l", descriptor = "I")
 	public static int anInt1918 = 0;
 
 	@OriginalMember(owner = "client!mc", name = "m", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_530 = Static60.method1113("Create a free account");
+	private static JagString aClass22_530 = Static60.method1113("Create a free account");
 
 	@OriginalMember(owner = "client!mc", name = "n", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_531 = Static60.method1113("::clientdrop");
+	public static JagString aClass22_531 = Static60.method1113("::clientdrop");
 
 	@OriginalMember(owner = "client!mc", name = "o", descriptor = "I")
 	public static int anInt1919 = 1;
 
 	@OriginalMember(owner = "client!mc", name = "w", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_535 = Static60.method1113("Service unavailable)3");
+	private static JagString aClass22_535 = Static60.method1113("Service unavailable)3");
 
 	@OriginalMember(owner = "client!mc", name = "p", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_532 = aClass22_535;
+	public static JagString aClass22_532 = aClass22_535;
 
 	@OriginalMember(owner = "client!mc", name = "q", descriptor = "I")
 	public static int anInt1920 = 0;
 
 	@OriginalMember(owner = "client!mc", name = "u", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_534 = aClass22_530;
+	public static JagString aClass22_534 = aClass22_530;
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(IIIII)V")
 	public static void method1183(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
@@ -77,7 +74,7 @@ public final class Static72 {
 				local29 = local37;
 				@Pc(185) int local185;
 				if (local43 == 2 && Static134.aClass77_1.method1925(Static37.anInt895, local47, local59, local37) >= 0) {
-					@Pc(85) Class4_Sub1_Sub5 local85 = Static5.method45(local53);
+					@Pc(85) LocType local85 = Static5.method45(local53);
 					if (local85.anIntArray137 != null) {
 						local85 = local85.method885();
 					}
@@ -85,9 +82,9 @@ public final class Static72 {
 						continue;
 					}
 					if (Static104.anInt2636 == 1) {
-						Static48.method905(local37, Static35.aClass22_246, local59, 49, Static44.method856(new Class22[] { Static43.aClass22_290, Static75.aClass22_552, local85.aClass22_309 }), local47);
+						Static48.method905(local37, Static35.aClass22_246, local59, 49, Static44.method856(new JagString[] { Static43.aClass22_290, Static75.aClass22_552, local85.aClass22_309 }), local47);
 					} else if (!Static128.aBoolean274) {
-						@Pc(173) Class22[] local173 = local85.aClass22Array8;
+						@Pc(173) JagString[] local173 = local85.aClass22Array8;
 						if (Static78.aBoolean179) {
 							local173 = Static104.method1728(local173);
 						}
@@ -110,20 +107,20 @@ public final class Static72 {
 									if (local185 == 4) {
 										local197 = 1003;
 									}
-									Static48.method905(local37, local173[local185], local59, local197, Static44.method856(new Class22[] { Static111.aClass22_827, local85.aClass22_309 }), local47);
+									Static48.method905(local37, local173[local185], local59, local197, Static44.method856(new JagString[] { Static111.aClass22_827, local85.aClass22_309 }), local47);
 								}
 							}
 						}
-						Static48.method905(local85.anInt1255 << 14, Static113.aClass22_870, local59, 1002, Static44.method856(new Class22[] { Static111.aClass22_827, local85.aClass22_309 }), local47);
+						Static48.method905(local85.anInt1255 << 14, Static113.aClass22_870, local59, 1002, Static44.method856(new JagString[] { Static111.aClass22_827, local85.aClass22_309 }), local47);
 					} else if ((Static73.anInt1961 & 0x4) == 4) {
-						Static48.method905(local37, Static124.aClass22_927, local59, 2, Static44.method856(new Class22[] { Static12.aClass22_80, Static75.aClass22_552, local85.aClass22_309 }), local47);
+						Static48.method905(local37, Static124.aClass22_927, local59, 2, Static44.method856(new JagString[] { Static12.aClass22_80, Static75.aClass22_552, local85.aClass22_309 }), local47);
 					}
 				}
 				@Pc(303) int local303;
-				@Pc(311) Class4_Sub1_Sub3_Sub2_Sub2 local311;
-				@Pc(364) Class4_Sub1_Sub3_Sub2_Sub1 local364;
+				@Pc(311) NpcEntity local311;
+				@Pc(364) PlayerEntity local364;
 				if (local43 == 1) {
-					@Pc(278) Class4_Sub1_Sub3_Sub2_Sub2 local278 = Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1[local53];
+					@Pc(278) NpcEntity local278 = Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1[local53];
 					if (local278.aClass4_Sub1_Sub10_1.anInt2153 == 1 && (local278.anInt2500 & 0x7F) == 64 && (local278.anInt2462 & 0x7F) == 64) {
 						for (local303 = 0; local303 < Static84.anInt2255; local303++) {
 							local311 = Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1[Static13.anIntArray33[local303]];
@@ -141,7 +138,7 @@ public final class Static72 {
 					Static28.method460(local47, local278.aClass4_Sub1_Sub10_1, local53, local59);
 				}
 				if (local43 == 0) {
-					@Pc(412) Class4_Sub1_Sub3_Sub2_Sub1 local412 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local53];
+					@Pc(412) PlayerEntity local412 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local53];
 					if ((local412.anInt2500 & 0x7F) == 64 && (local412.anInt2462 & 0x7F) == 64) {
 						for (local303 = 0; local303 < Static84.anInt2255; local303++) {
 							local311 = Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1[Static13.anIntArray33[local303]];
@@ -159,14 +156,14 @@ public final class Static72 {
 					Static50.method968(local53, local59, local412, local47);
 				}
 				if (local43 == 3) {
-					@Pc(526) Class82 local526 = Static19.aClass82ArrayArrayArray1[Static37.anInt895][local47][local59];
+					@Pc(526) LinkList local526 = Static19.aClass82ArrayArrayArray1[Static37.anInt895][local47][local59];
 					if (local526 != null) {
-						for (@Pc(535) Class4_Sub1_Sub3_Sub1 local535 = (Class4_Sub1_Sub3_Sub1) local526.method2034(); local535 != null; local535 = (Class4_Sub1_Sub3_Sub1) local526.method2022()) {
-							@Pc(544) Class4_Sub1_Sub8 local544 = Static123.method2000(local535.anInt361);
+						for (@Pc(535) ObjStackEntity local535 = (ObjStackEntity) local526.method2034(); local535 != null; local535 = (ObjStackEntity) local526.method2022()) {
+							@Pc(544) ObjType local544 = Static123.method2000(local535.anInt361);
 							if (Static104.anInt2636 == 1) {
-								Static48.method905(local535.anInt361, Static35.aClass22_246, local59, 20, Static44.method856(new Class22[] { Static43.aClass22_290, Static42.aClass22_250, local544.aClass22_359 }), local47);
+								Static48.method905(local535.anInt361, Static35.aClass22_246, local59, 20, Static44.method856(new JagString[] { Static43.aClass22_290, Static42.aClass22_250, local544.aClass22_359 }), local47);
 							} else if (!Static128.aBoolean274) {
-								@Pc(556) Class22[] local556 = local544.aClass22Array11;
+								@Pc(556) JagString[] local556 = local544.aClass22Array11;
 								if (Static78.aBoolean179) {
 									local556 = Static104.method1728(local556);
 								}
@@ -188,14 +185,14 @@ public final class Static72 {
 										if (local564 == 4) {
 											local604 = 36;
 										}
-										Static48.method905(local535.anInt361, local556[local564], local59, local604, Static44.method856(new Class22[] { Static33.aClass22_221, local544.aClass22_359 }), local47);
+										Static48.method905(local535.anInt361, local556[local564], local59, local604, Static44.method856(new JagString[] { Static33.aClass22_221, local544.aClass22_359 }), local47);
 									} else if (local564 == 2) {
-										Static48.method905(local535.anInt361, Static24.aClass22_163, local59, 31, Static44.method856(new Class22[] { Static33.aClass22_221, local544.aClass22_359 }), local47);
+										Static48.method905(local535.anInt361, Static24.aClass22_163, local59, 31, Static44.method856(new JagString[] { Static33.aClass22_221, local544.aClass22_359 }), local47);
 									}
 								}
-								Static48.method905(local535.anInt361, Static113.aClass22_870, local59, 1001, Static44.method856(new Class22[] { Static33.aClass22_221, local544.aClass22_359 }), local47);
+								Static48.method905(local535.anInt361, Static113.aClass22_870, local59, 1001, Static44.method856(new JagString[] { Static33.aClass22_221, local544.aClass22_359 }), local47);
 							} else if ((Static73.anInt1961 & 0x1) == 1) {
-								Static48.method905(local535.anInt361, Static124.aClass22_927, local59, 33, Static44.method856(new Class22[] { Static12.aClass22_80, Static42.aClass22_250, local544.aClass22_359 }), local47);
+								Static48.method905(local535.anInt361, Static124.aClass22_927, local59, 33, Static44.method856(new JagString[] { Static12.aClass22_80, Static42.aClass22_250, local544.aClass22_359 }), local47);
 							}
 						}
 					}
@@ -205,7 +202,7 @@ public final class Static72 {
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(ILclient!f;IIIIII)V")
-	public static void method1184(@OriginalArg(0) int arg0, @OriginalArg(1) Class4_Sub7 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
+	public static void method1184(@OriginalArg(0) int arg0, @OriginalArg(1) IfType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
 		if (Static19.aBoolean52) {
 			Static59.anInt1771 = 32;
 		} else {
@@ -246,7 +243,7 @@ public final class Static72 {
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(I)V")
 	public static void method1185() {
 		aClass22_532 = null;
-		aClass17_3 = null;
+		GameShell.aClass17_3 = null;
 		aClass22_530 = null;
 		aClass22_524 = null;
 		aClass22_529 = null;
@@ -261,8 +258,8 @@ public final class Static72 {
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(BI)Lclient!rc;")
-	public static Class4_Sub1_Sub12 method1186(@OriginalArg(1) int arg0) {
-		@Pc(6) Class4_Sub1_Sub12 local6 = (Class4_Sub1_Sub12) Static53.aClass33_20.method998((long) arg0);
+	public static AnimFrameset method1186(@OriginalArg(1) int arg0) {
+		@Pc(6) AnimFrameset local6 = (AnimFrameset) Static53.aClass33_20.method998((long) arg0);
 		if (local6 != null) {
 			return local6;
 		}
@@ -274,7 +271,7 @@ public final class Static72 {
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(ZLclient!ea;IZIII)V")
-	public static void method1187(@OriginalArg(1) Class20 arg0, @OriginalArg(2) int arg1, @OriginalArg(4) int arg2, @OriginalArg(6) int arg3) {
+	public static void method1187(@OriginalArg(1) Js5Index arg0, @OriginalArg(2) int arg1, @OriginalArg(4) int arg2, @OriginalArg(6) int arg3) {
 		Static60.anInt1790 = 2;
 		Static30.aClass20_17 = arg0;
 		Static132.anInt3135 = arg3;

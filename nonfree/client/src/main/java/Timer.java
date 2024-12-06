@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ba")
-public abstract class Class7 {
+public abstract class Timer {
 
 	@OriginalMember(owner = "client!ba", name = "a", descriptor = "(I)V")
 	public abstract void method1573();

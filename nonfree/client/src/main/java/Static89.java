@@ -1,4 +1,3 @@
-import java.awt.Canvas;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -8,39 +7,36 @@ public final class Static89 {
 	@OriginalMember(owner = "client!pc", name = "v", descriptor = "I")
 	public static int anInt2374;
 
-	@OriginalMember(owner = "client!pc", name = "y", descriptor = "Ljava/awt/Canvas;")
-	public static Canvas aCanvas1;
-
 	@OriginalMember(owner = "client!pc", name = "r", descriptor = "I")
 	public static int anInt2372 = 0;
 
 	@OriginalMember(owner = "client!pc", name = "s", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_680 = Static60.method1113(" loggt sich ein)3");
+	public static JagString aClass22_680 = Static60.method1113(" loggt sich ein)3");
 
 	@OriginalMember(owner = "client!pc", name = "z", descriptor = "[Z")
 	public static boolean[] aBooleanArray18 = new boolean[112];
 
 	@OriginalMember(owner = "client!pc", name = "A", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_681 = Static60.method1113("Your ignore list is full)3 Max of 100 users)3");
+	private static JagString aClass22_681 = Static60.method1113("Your ignore list is full)3 Max of 100 users)3");
 
 	@OriginalMember(owner = "client!pc", name = "B", descriptor = "I")
 	public static int anInt2376 = 0;
 
 	@OriginalMember(owner = "client!pc", name = "C", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_682 = Static60.method1113("Verbindung mit Update)2Server)3)3)3");
+	public static JagString aClass22_682 = Static60.method1113("Verbindung mit Update)2Server)3)3)3");
 
 	@OriginalMember(owner = "client!pc", name = "D", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_683 = Static60.method1113("Bitte starten Sie eine Mitgliedschaft");
+	public static JagString aClass22_683 = Static60.method1113("Bitte starten Sie eine Mitgliedschaft");
 
 	@OriginalMember(owner = "client!pc", name = "E", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_684 = aClass22_681;
+	public static JagString aClass22_684 = aClass22_681;
 
 	@OriginalMember(owner = "client!pc", name = "G", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_685 = Static60.method1113("Ihr Spielkonto wurde deaktiviert)3");
+	public static JagString aClass22_685 = Static60.method1113("Ihr Spielkonto wurde deaktiviert)3");
 
 	@OriginalMember(owner = "client!pc", name = "c", descriptor = "(II)V")
 	public static void method1566(@OriginalArg(1) int arg0) {
-		for (@Pc(6) Class4_Sub9 local6 = (Class4_Sub9) Static96.aClass81_12.method2017(); local6 != null; local6 = (Class4_Sub9) Static96.aClass81_12.method2013()) {
+		for (@Pc(6) ServerKeyProperties local6 = (ServerKeyProperties) Static96.aClass81_12.method2017(); local6 != null; local6 = (ServerKeyProperties) Static96.aClass81_12.method2013()) {
 			if ((long) arg0 == (local6.aLong99 >> 48 & 0xFFFFL)) {
 				local6.method1999();
 			}
@@ -91,7 +87,7 @@ public final class Static89 {
 	}
 
 	@OriginalMember(owner = "client!pc", name = "a", descriptor = "([BIIII[Lclient!qf;I)V")
-	public static void method1568(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class60[] arg4, @OriginalArg(6) int arg5) {
+	public static void method1568(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) CollisionMap[] arg4, @OriginalArg(6) int arg5) {
 		@Pc(15) int local15;
 		for (@Pc(7) int local7 = 0; local7 < 4; local7++) {
 			for (@Pc(11) int local11 = 0; local11 < 64; local11++) {
@@ -102,7 +98,7 @@ public final class Static89 {
 				}
 			}
 		}
-		@Pc(91) Class4_Sub11 local91 = new Class4_Sub11(arg0);
+		@Pc(91) Packet local91 = new Packet(arg0);
 		for (local15 = 0; local15 < 4; local15++) {
 			for (@Pc(102) int local102 = 0; local102 < 64; local102++) {
 				for (@Pc(106) int local106 = 0; local106 < 64; local106++) {
@@ -121,6 +117,6 @@ public final class Static89 {
 		aClass22_683 = null;
 		aClass22_685 = null;
 		aClass22_682 = null;
-		aCanvas1 = null;
+		GameShell.aCanvas1 = null;
 	}
 }

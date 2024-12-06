@@ -1,7 +1,7 @@
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
-import java.awt.image.ImageObserver;
+
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -9,10 +9,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static115 {
 
 	@OriginalMember(owner = "client!te", name = "b", descriptor = "Lclient!t;")
-	public static Class70 aClass70_1;
+	public static MouseTracking aClass70_1;
 
 	@OriginalMember(owner = "client!te", name = "u", descriptor = "Lclient!ea;")
-	public static Class20 aClass20_55;
+	public static Js5Index aClass20_55;
 
 	@OriginalMember(owner = "client!te", name = "a", descriptor = "[I")
 	public static int[] anIntArray308 = new int[25];
@@ -21,7 +21,7 @@ public final class Static115 {
 	public static int[] anIntArray309 = new int[] { 1, 2, 4, 8 };
 
 	@OriginalMember(owner = "client!te", name = "e", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_883 = Static60.method1113("glow2:");
+	private static JagString aClass22_883 = Static60.method1113("glow2:");
 
 	@OriginalMember(owner = "client!te", name = "f", descriptor = "I")
 	public static int anInt2833 = 0;
@@ -30,31 +30,31 @@ public final class Static115 {
 	public static int anInt2835 = -1;
 
 	@OriginalMember(owner = "client!te", name = "j", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_884 = Static60.method1113("<col=ffff00>");
+	public static JagString aClass22_884 = Static60.method1113("<col=ffff00>");
 
 	@OriginalMember(owner = "client!te", name = "l", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_885 = Static60.method1113("mapback");
+	public static JagString aClass22_885 = Static60.method1113("mapback");
 
 	@OriginalMember(owner = "client!te", name = "m", descriptor = "Lclient!ja;")
-	public static Class33 aClass33_31 = new Class33(30);
+	public static LruCache aClass33_31 = new LruCache(30);
 
 	@OriginalMember(owner = "client!te", name = "n", descriptor = "[Lclient!p;")
-	public static Class4_Sub1_Sub3_Sub4[] aClass4_Sub1_Sub3_Sub4Array1 = new Class4_Sub1_Sub3_Sub4[4];
+	public static Model[] aClass4_Sub1_Sub3_Sub4Array1 = new Model[4];
 
 	@OriginalMember(owner = "client!te", name = "o", descriptor = "[I")
 	public static int[] anIntArray310 = new int[2048];
 
 	@OriginalMember(owner = "client!te", name = "p", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_886 = aClass22_883;
+	public static JagString aClass22_886 = aClass22_883;
 
 	@OriginalMember(owner = "client!te", name = "r", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_887 = Static60.method1113("Lade Titelbild )2 ");
+	public static JagString aClass22_887 = Static60.method1113("Lade Titelbild )2 ");
 
 	@OriginalMember(owner = "client!te", name = "s", descriptor = "I")
 	public static int anInt2839 = -1;
 
 	@OriginalMember(owner = "client!te", name = "t", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_888 = aClass22_883;
+	public static JagString aClass22_888 = aClass22_883;
 
 	@OriginalMember(owner = "client!te", name = "v", descriptor = "I")
 	public static int anInt2840 = 0;
@@ -147,7 +147,7 @@ public final class Static115 {
 
 	@OriginalMember(owner = "client!te", name = "a", descriptor = "(B)V")
 	public static void method1826() {
-		for (@Pc(15) Class4_Sub5 local15 = (Class4_Sub5) Static39.aClass82_4.method2025(); local15 != null; local15 = (Class4_Sub5) Static39.aClass82_4.method2023()) {
+		for (@Pc(15) LocSpawned local15 = (LocSpawned) Static39.aClass82_4.method2025(); local15 != null; local15 = (LocSpawned) Static39.aClass82_4.method2023()) {
 			if (local15.anInt537 == -1) {
 				local15.anInt538 = 0;
 				Static5.method43(local15);
@@ -159,7 +159,7 @@ public final class Static115 {
 
 	@OriginalMember(owner = "client!te", name = "a", descriptor = "(I)V")
 	public static void method1827() {
-		@Pc(5) Class57 local5 = Static33.aClass57_1;
+		@Pc(5) JavaMouseProvider local5 = Static33.aClass57_1;
 		synchronized (Static33.aClass57_1) {
 			Static72.anInt1920 = Static68.anInt499;
 			Static72.anInt1914 = Static105.anInt2637;
@@ -173,24 +173,24 @@ public final class Static115 {
 	}
 
 	@OriginalMember(owner = "client!te", name = "a", descriptor = "(Lclient!ec;ILjava/awt/Color;I)V")
-	public static void method1828(@OriginalArg(0) Class22 arg0, @OriginalArg(2) Color arg1, @OriginalArg(3) int arg2) {
+	public static void method1828(@OriginalArg(0) JagString arg0, @OriginalArg(2) Color arg1, @OriginalArg(3) int arg2) {
 		try {
-			@Pc(2) Graphics local2 = Static89.aCanvas1.getGraphics();
+			@Pc(2) Graphics local2 = GameShell.aCanvas1.getGraphics();
 			if (Static28.aFont1 == null) {
 				Static28.aFont1 = new Font("Helvetica", 1, 13);
-				Static93.aFontMetrics1 = Static89.aCanvas1.getFontMetrics(Static28.aFont1);
+				Static93.aFontMetrics1 = GameShell.aCanvas1.getFontMetrics(Static28.aFont1);
 			}
-			if (Static1.aBoolean1) {
-				Static1.aBoolean1 = false;
+			if (GameShell.aBoolean1) {
+				GameShell.aBoolean1 = false;
 				local2.setColor(Color.black);
-				local2.fillRect(0, 0, Static121.anInt2947, Static29.anInt685);
+				local2.fillRect(0, 0, GameShell.anInt2947, GameShell.anInt685);
 			}
 			if (arg1 == null) {
 				arg1 = new Color(140, 17, 17);
 			}
 			try {
 				if (Static84.anImage4 == null) {
-					Static84.anImage4 = Static89.aCanvas1.createImage(304, 34);
+					Static84.anImage4 = GameShell.aCanvas1.createImage(304, 34);
 				}
 				@Pc(47) Graphics local47 = Static84.anImage4.getGraphics();
 				local47.setColor(arg1);
@@ -202,10 +202,10 @@ public final class Static115 {
 				local47.setFont(Static28.aFont1);
 				local47.setColor(Color.white);
 				arg0.method462((304 - arg0.method461(Static93.aFontMetrics1)) / 2, 22, local47);
-				local2.drawImage(Static84.anImage4, Static121.anInt2947 / 2 - 152, Static29.anInt685 / 2 - 18, null);
+				local2.drawImage(Static84.anImage4, GameShell.anInt2947 / 2 - 152, GameShell.anInt685 / 2 - 18, null);
 			} catch (@Pc(126) Exception local126) {
-				@Pc(132) int local132 = Static29.anInt685 / 2 - 18;
-				@Pc(138) int local138 = Static121.anInt2947 / 2 - 152;
+				@Pc(132) int local132 = GameShell.anInt685 / 2 - 18;
+				@Pc(138) int local138 = GameShell.anInt2947 / 2 - 152;
 				local2.setColor(arg1);
 				local2.drawRect(local138, local132, 303, 33);
 				local2.fillRect(local138 + 2, local132 + 2, arg2 * 3, 30);
@@ -217,7 +217,7 @@ public final class Static115 {
 				arg0.method462(local138 + (304 - arg0.method461(Static93.aFontMetrics1)) / 2, local132 - -22, local2);
 			}
 		} catch (@Pc(220) Exception local220) {
-			Static89.aCanvas1.repaint();
+			GameShell.aCanvas1.repaint();
 		}
 	}
 }

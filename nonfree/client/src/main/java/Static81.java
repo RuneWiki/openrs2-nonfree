@@ -6,10 +6,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static81 {
 
 	@OriginalMember(owner = "client!ob", name = "ib", descriptor = "[Lclient!hb;")
-	public static Class4_Sub1_Sub2_Sub3[] aClass4_Sub1_Sub2_Sub3Array7;
+	public static Pix8[] aClass4_Sub1_Sub2_Sub3Array7;
 
 	@OriginalMember(owner = "client!ob", name = "P", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_597 = Static60.method1113(")4u");
+	public static JagString aClass22_597 = Static60.method1113(")4u");
 
 	@OriginalMember(owner = "client!ob", name = "Q", descriptor = "I")
 	public static int anInt2117 = 0;
@@ -18,40 +18,40 @@ public final class Static81 {
 	public static int anInt2118 = -1;
 
 	@OriginalMember(owner = "client!ob", name = "T", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_598 = Static60.method1113("img=");
+	public static JagString aClass22_598 = Static60.method1113("img=");
 
 	@OriginalMember(owner = "client!ob", name = "U", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_599 = Static60.method1113("col=");
+	public static JagString aClass22_599 = Static60.method1113("col=");
 
 	@OriginalMember(owner = "client!ob", name = "Z", descriptor = "I")
 	public static int anInt2119 = 0;
 
 	@OriginalMember(owner = "client!ob", name = "ab", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_600 = Static60.method1113("shad=");
+	public static JagString aClass22_600 = Static60.method1113("shad=");
 
 	@OriginalMember(owner = "client!ob", name = "cb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_601 = Static60.method1113("lt");
+	public static JagString aClass22_601 = Static60.method1113("lt");
 
 	@OriginalMember(owner = "client!ob", name = "db", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_602 = Static60.method1113(")4str");
+	public static JagString aClass22_602 = Static60.method1113(")4str");
 
 	@OriginalMember(owner = "client!ob", name = "gb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_603 = Static60.method1113("u=");
+	public static JagString aClass22_603 = Static60.method1113("u=");
 
 	@OriginalMember(owner = "client!ob", name = "hb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_604 = Static60.method1113(")4col");
+	public static JagString aClass22_604 = Static60.method1113(")4col");
 
 	@OriginalMember(owner = "client!ob", name = "jb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_605 = Static60.method1113("gt");
+	public static JagString aClass22_605 = Static60.method1113("gt");
 
 	@OriginalMember(owner = "client!ob", name = "lb", descriptor = "I")
 	public static int anInt2122 = -1;
 
 	@OriginalMember(owner = "client!ob", name = "mb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_606 = Static60.method1113(")4shad");
+	public static JagString aClass22_606 = Static60.method1113(")4shad");
 
 	@OriginalMember(owner = "client!ob", name = "nb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_607 = Static60.method1113("str=");
+	public static JagString aClass22_607 = Static60.method1113("str=");
 
 	@OriginalMember(owner = "client!ob", name = "ob", descriptor = "I")
 	public static int anInt2123 = -1;
@@ -66,28 +66,28 @@ public final class Static81 {
 	public static int anInt2126 = -1;
 
 	@OriginalMember(owner = "client!ob", name = "tb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_608 = Static60.method1113("str");
+	public static JagString aClass22_608 = Static60.method1113("str");
 
 	@OriginalMember(owner = "client!ob", name = "ub", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_609 = Static60.method1113("u");
+	public static JagString aClass22_609 = Static60.method1113("u");
 
 	@OriginalMember(owner = "client!ob", name = "vb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_610 = Static60.method1113("shad");
+	public static JagString aClass22_610 = Static60.method1113("shad");
 
 	@OriginalMember(owner = "client!ob", name = "wb", descriptor = "I")
 	public static int anInt2127 = 0;
 
 	@OriginalMember(owner = "client!ob", name = "yb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_611 = Static60.method1113("br");
+	public static JagString aClass22_611 = Static60.method1113("br");
 
 	@OriginalMember(owner = "client!ob", name = "zb", descriptor = "Ljava/util/Random;")
 	public static Random aRandom2 = new Random();
 
 	@OriginalMember(owner = "client!ob", name = "Ab", descriptor = "[Lclient!ec;")
-	public static Class22[] aClass22Array16 = new Class22[100];
+	public static JagString[] aClass22Array16 = new JagString[100];
 
 	@OriginalMember(owner = "client!ob", name = "b", descriptor = "(Lclient!ec;)Lclient!ec;")
-	public static Class22 method1393(@OriginalArg(0) Class22 arg0) {
+	public static JagString method1393(@OriginalArg(0) JagString arg0) {
 		@Pc(3) int local3 = arg0.method449();
 		@Pc(5) int local5 = 0;
 		for (@Pc(7) int local7 = 0; local7 < local3; local7++) {
@@ -96,7 +96,7 @@ public final class Static81 {
 				local5 += 3;
 			}
 		}
-		@Pc(28) Class22 local28 = new Class22();
+		@Pc(28) JagString local28 = new JagString();
 		local28.anInt668 = local3 + local5;
 		local28.aByteArray7 = new byte[local28.anInt668];
 		@Pc(40) int local40 = 0;

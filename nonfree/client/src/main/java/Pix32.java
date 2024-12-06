@@ -9,7 +9,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!h")
-public final class Class4_Sub1_Sub2_Sub2 extends Pix2D {
+public final class Pix32 extends Pix2D {
 
 	@OriginalMember(owner = "client!h", name = "O", descriptor = "I")
 	public int anInt1157;
@@ -33,11 +33,11 @@ public final class Class4_Sub1_Sub2_Sub2 extends Pix2D {
 	public int[] anIntArray129;
 
 	@OriginalMember(owner = "client!h", name = "<init>", descriptor = "()V")
-	public Class4_Sub1_Sub2_Sub2() {
+	public Pix32() {
 	}
 
 	@OriginalMember(owner = "client!h", name = "<init>", descriptor = "(II)V")
-	public Class4_Sub1_Sub2_Sub2(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public Pix32(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		this.anIntArray129 = new int[arg0 * arg1];
 		this.anInt1160 = this.anInt1157 = arg0;
 		this.anInt1161 = this.anInt1159 = arg1;
@@ -45,7 +45,7 @@ public final class Class4_Sub1_Sub2_Sub2 extends Pix2D {
 	}
 
 	@OriginalMember(owner = "client!h", name = "<init>", descriptor = "([BLjava/awt/Component;)V")
-	public Class4_Sub1_Sub2_Sub2(@OriginalArg(0) byte[] arg0, @OriginalArg(1) Component arg1) {
+	public Pix32(@OriginalArg(0) byte[] arg0, @OriginalArg(1) Component arg1) {
 		try {
 			@Pc(5) Image local5 = Toolkit.getDefaultToolkit().createImage(arg0);
 			@Pc(10) MediaTracker local10 = new MediaTracker(arg1);
@@ -905,8 +905,8 @@ public final class Class4_Sub1_Sub2_Sub2 extends Pix2D {
 	}
 
 	@OriginalMember(owner = "client!h", name = "g", descriptor = "()Lclient!h;")
-	public Class4_Sub1_Sub2_Sub2 method806() {
-		@Pc(7) Class4_Sub1_Sub2_Sub2 local7 = new Class4_Sub1_Sub2_Sub2(this.anInt1160, this.anInt1161);
+	public Pix32 method806() {
+		@Pc(7) Pix32 local7 = new Pix32(this.anInt1160, this.anInt1161);
 		local7.anInt1157 = this.anInt1157;
 		local7.anInt1159 = this.anInt1159;
 		local7.anInt1158 = this.anInt1157 - this.anInt1160 - this.anInt1158;

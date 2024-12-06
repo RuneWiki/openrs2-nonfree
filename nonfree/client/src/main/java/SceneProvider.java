@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!je")
-public interface Interface2 {
+public interface SceneProvider {
 
 	@OriginalMember(owner = "client!je", name = "a", descriptor = "(IZ)I")
 	int method1844(@OriginalArg(0) int arg0);

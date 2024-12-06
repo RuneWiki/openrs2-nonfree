@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!vc")
-public final class Class4_Sub1_Sub17 extends DoublyLinkable {
+public final class SeqType extends DoublyLinkable {
 
 	@OriginalMember(owner = "client!vc", name = "J", descriptor = "[I")
 	public int[] anIntArray326;
@@ -193,7 +193,7 @@ public final class Class4_Sub1_Sub17 extends DoublyLinkable {
 	}
 
 	@OriginalMember(owner = "client!vc", name = "a", descriptor = "(ILclient!vc;Lclient!od;II)Lclient!od;")
-	public SoftwareModel method1918(@OriginalArg(0) int arg0, @OriginalArg(1) Class4_Sub1_Sub17 arg1, @OriginalArg(2) SoftwareModel arg2, @OriginalArg(4) int arg3) {
+	public SoftwareModel method1918(@OriginalArg(0) int arg0, @OriginalArg(1) SeqType arg1, @OriginalArg(2) SoftwareModel arg2, @OriginalArg(4) int arg3) {
 		@Pc(8) int local8 = this.anIntArray330[arg3];
 		@Pc(14) AnimFrameset local14 = Static72.method1186(local8 >> 16);
 		@Pc(18) int local18 = local8 & 0xFFFF;

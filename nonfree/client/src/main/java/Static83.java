@@ -12,16 +12,16 @@ public final class Static83 {
 	public static int anInt2244;
 
 	@OriginalMember(owner = "client!od", name = "db", descriptor = "Lclient!od;")
-	public static Class4_Sub1_Sub3_Sub3 aClass4_Sub1_Sub3_Sub3_2 = new Class4_Sub1_Sub3_Sub3();
+	public static SoftwareModel aClass4_Sub1_Sub3_Sub3_2 = new SoftwareModel();
 
 	@OriginalMember(owner = "client!od", name = "ob", descriptor = "[B")
 	public static byte[] aByteArray32 = new byte[1];
 
 	@OriginalMember(owner = "client!od", name = "xb", descriptor = "Lclient!od;")
-	public static Class4_Sub1_Sub3_Sub3 aClass4_Sub1_Sub3_Sub3_3 = new Class4_Sub1_Sub3_Sub3();
+	public static SoftwareModel aClass4_Sub1_Sub3_Sub3_3 = new SoftwareModel();
 
 	@OriginalMember(owner = "client!od", name = "yb", descriptor = "[I")
-	public static int[] anIntArray238 = Class4_Sub1_Sub2_Sub1.anIntArray14;
+	public static int[] anIntArray238 = Pix3D.anIntArray14;
 
 	@OriginalMember(owner = "client!od", name = "zb", descriptor = "[I")
 	public static int[] anIntArray239 = new int[12];
@@ -45,7 +45,7 @@ public final class Static83 {
 	public static int[] anIntArray245 = new int[10];
 
 	@OriginalMember(owner = "client!od", name = "Hb", descriptor = "[I")
-	public static int[] anIntArray246 = Class4_Sub1_Sub2_Sub1.anIntArray9;
+	public static int[] anIntArray246 = Pix3D.anIntArray9;
 
 	@OriginalMember(owner = "client!od", name = "Ib", descriptor = "I")
 	public static int anInt2241 = 0;
@@ -96,7 +96,7 @@ public final class Static83 {
 	public static int[] anIntArray255 = new int[12];
 
 	@OriginalMember(owner = "client!od", name = "ac", descriptor = "[I")
-	public static int[] anIntArray256 = Class4_Sub1_Sub2_Sub1.anIntArray12;
+	public static int[] anIntArray256 = Pix3D.anIntArray12;
 
 	@OriginalMember(owner = "client!od", name = "bc", descriptor = "[B")
 	public static byte[] aByteArray34 = new byte[1];

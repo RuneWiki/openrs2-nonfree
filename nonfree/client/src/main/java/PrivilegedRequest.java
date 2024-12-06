@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!cc")
-public final class Class12 {
+public final class PrivilegedRequest {
 
 	@OriginalMember(owner = "client!cc", name = "a", descriptor = "Ljava/lang/Object;")
 	public volatile Object anObject1;
@@ -11,7 +11,7 @@ public final class Class12 {
 	public int anInt372;
 
 	@OriginalMember(owner = "client!cc", name = "c", descriptor = "Lclient!cc;")
-	public Class12 aClass12_4;
+	public PrivilegedRequest aClass12_4;
 
 	@OriginalMember(owner = "client!cc", name = "e", descriptor = "I")
 	public int anInt374;

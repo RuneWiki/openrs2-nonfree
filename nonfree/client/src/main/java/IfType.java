@@ -4,10 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!f")
-public final class Class4_Sub7 extends Linkable {
+public final class IfType extends Linkable {
 
 	@OriginalMember(owner = "client!f", name = "t", descriptor = "[Lclient!ec;")
-	public Class22[] aClass22Array3;
+	public JagString[] aClass22Array3;
 
 	@OriginalMember(owner = "client!f", name = "w", descriptor = "[Ljava/lang/Object;")
 	public Object[] anObjectArray3;
@@ -25,13 +25,13 @@ public final class Class4_Sub7 extends Linkable {
 	public int[] anIntArray83;
 
 	@OriginalMember(owner = "client!f", name = "J", descriptor = "[Lclient!f;")
-	public Class4_Sub7[] aClass4_Sub7Array1;
+	public IfType[] aClass4_Sub7Array1;
 
 	@OriginalMember(owner = "client!f", name = "K", descriptor = "I")
 	public int anInt743;
 
 	@OriginalMember(owner = "client!f", name = "L", descriptor = "[Lclient!ec;")
-	public Class22[] aClass22Array4;
+	public JagString[] aClass22Array4;
 
 	@OriginalMember(owner = "client!f", name = "N", descriptor = "[Ljava/lang/Object;")
 	public Object[] anObjectArray5;
@@ -148,7 +148,7 @@ public final class Class4_Sub7 extends Linkable {
 	public boolean aBoolean72 = false;
 
 	@OriginalMember(owner = "client!f", name = "T", descriptor = "Lclient!ec;")
-	public Class22 aClass22_201 = Static106.aClass22_789;
+	public JagString aClass22_201 = Static106.aClass22_789;
 
 	@OriginalMember(owner = "client!f", name = "s", descriptor = "I")
 	public int anInt735 = 0;
@@ -196,7 +196,7 @@ public final class Class4_Sub7 extends Linkable {
 	public int anInt782 = -1;
 
 	@OriginalMember(owner = "client!f", name = "eb", descriptor = "Lclient!ec;")
-	public Class22 aClass22_203 = Static106.aClass22_789;
+	public JagString aClass22_203 = Static106.aClass22_789;
 
 	@OriginalMember(owner = "client!f", name = "wb", descriptor = "I")
 	public int anInt763 = 0;
@@ -205,7 +205,7 @@ public final class Class4_Sub7 extends Linkable {
 	public int anInt755 = 0;
 
 	@OriginalMember(owner = "client!f", name = "vb", descriptor = "Lclient!ec;")
-	public Class22 aClass22_204 = Static45.aClass22_307;
+	public JagString aClass22_204 = Static45.aClass22_307;
 
 	@OriginalMember(owner = "client!f", name = "gb", descriptor = "I")
 	public int anInt754 = 0;
@@ -220,7 +220,7 @@ public final class Class4_Sub7 extends Linkable {
 	public int anInt785 = 0;
 
 	@OriginalMember(owner = "client!f", name = "cc", descriptor = "Lclient!f;")
-	public Class4_Sub7 aClass4_Sub7_7 = null;
+	public IfType aClass4_Sub7_7 = null;
 
 	@OriginalMember(owner = "client!f", name = "V", descriptor = "I")
 	public int anInt749 = -1;
@@ -241,7 +241,7 @@ public final class Class4_Sub7 extends Linkable {
 	public int anInt772 = 100;
 
 	@OriginalMember(owner = "client!f", name = "dc", descriptor = "Lclient!ec;")
-	public Class22 aClass22_206 = Static106.aClass22_789;
+	public JagString aClass22_206 = Static106.aClass22_789;
 
 	@OriginalMember(owner = "client!f", name = "Ob", descriptor = "I")
 	public int anInt773 = 0;
@@ -256,7 +256,7 @@ public final class Class4_Sub7 extends Linkable {
 	public int anInt761 = 1;
 
 	@OriginalMember(owner = "client!f", name = "Rb", descriptor = "Lclient!ec;")
-	public Class22 aClass22_205 = Static106.aClass22_789;
+	public JagString aClass22_205 = Static106.aClass22_789;
 
 	@OriginalMember(owner = "client!f", name = "Pb", descriptor = "I")
 	private int anInt774 = -1;
@@ -271,7 +271,7 @@ public final class Class4_Sub7 extends Linkable {
 	public int anInt775 = 0;
 
 	@OriginalMember(owner = "client!f", name = "lc", descriptor = "Lclient!ec;")
-	public Class22 aClass22_208 = Static106.aClass22_789;
+	public JagString aClass22_208 = Static106.aClass22_789;
 
 	@OriginalMember(owner = "client!f", name = "Bc", descriptor = "I")
 	public int anInt794 = -1;
@@ -418,9 +418,9 @@ public final class Class4_Sub7 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(Lclient!ec;ZI)V")
-	public void method524(@OriginalArg(0) Class22 arg0, @OriginalArg(2) int arg1) {
+	public void method524(@OriginalArg(0) JagString arg0, @OriginalArg(2) int arg1) {
 		if (this.aClass22Array3 == null || arg1 >= this.aClass22Array3.length) {
-			@Pc(22) Class22[] local22 = new Class22[arg1 + 1];
+			@Pc(22) JagString[] local22 = new JagString[arg1 + 1];
 			if (this.aClass22Array3 != null) {
 				for (@Pc(27) int local27 = 0; local27 < this.aClass22Array3.length; local27++) {
 					local22[local27] = this.aClass22Array3[local27];
@@ -451,7 +451,7 @@ public final class Class4_Sub7 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(Lclient!vc;ILclient!eb;IZ)Lclient!od;")
-	public SoftwareModel method529(@OriginalArg(0) SeqType arg0, @OriginalArg(2) Class21 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3) {
+	public SoftwareModel method529(@OriginalArg(0) SeqType arg0, @OriginalArg(2) PlayerModel arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3) {
 		Static104.aBoolean233 = false;
 		@Pc(18) int local18;
 		@Pc(15) int local15;
@@ -629,9 +629,9 @@ public final class Class4_Sub7 extends Linkable {
 					this.anIntArray84[local343] = -1;
 				}
 			}
-			this.aClass22Array4 = new Class22[5];
+			this.aClass22Array4 = new JagString[5];
 			for (local349 = 0; local349 < 5; local349++) {
-				@Pc(400) Class22 local400 = arg0.method742();
+				@Pc(400) JagString local400 = arg0.method742();
 				if (local400.method449() > 0) {
 					this.aClass22Array4[local349] = local400;
 					this.anInt750 |= 0x1 << local349 + 23;
@@ -703,12 +703,12 @@ public final class Class4_Sub7 extends Linkable {
 			this.anInt779 = arg0.method738();
 			this.anInt758 = arg0.method738();
 			local148 = arg0.method719();
-			this.aClass22Array4 = new Class22[5];
+			this.aClass22Array4 = new JagString[5];
 			if (local148 == 1) {
 				this.anInt750 |= 0x40000000;
 			}
 			for (local154 = 0; local154 < 5; local154++) {
-				@Pc(736) Class22 local736 = arg0.method742();
+				@Pc(736) JagString local736 = arg0.method742();
 				if (local736.method449() > 0) {
 					this.aClass22Array4[local154] = local736;
 					this.anInt750 |= 0x1 << local154 + 23;
@@ -856,7 +856,7 @@ public final class Class4_Sub7 extends Linkable {
 		this.aClass22_205 = arg0.method742();
 		@Pc(370) int local370 = arg0.method719();
 		if (local370 > 0) {
-			this.aClass22Array3 = new Class22[local370];
+			this.aClass22Array3 = new JagString[local370];
 			for (@Pc(378) int local378 = 0; local378 < local370; local378++) {
 				this.aClass22Array3[local378] = arg0.method742();
 			}

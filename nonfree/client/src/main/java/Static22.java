@@ -11,16 +11,16 @@ public final class Static22 {
 	public static int anInt2807 = 0;
 
 	@OriginalMember(owner = "client!dd", name = "K", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_876 = Static60.method1113("da dieser Computer gegen unsere ");
+	public static JagString aClass22_876 = Static60.method1113("da dieser Computer gegen unsere ");
 
 	@OriginalMember(owner = "client!dd", name = "N", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_877 = Static60.method1113("m-Ochte sich mit Ihnen duellieren)3");
+	public static JagString aClass22_877 = Static60.method1113("m-Ochte sich mit Ihnen duellieren)3");
 
 	@OriginalMember(owner = "client!dd", name = "O", descriptor = "Z")
 	public static boolean aBoolean250 = false;
 
 	@OriginalMember(owner = "client!dd", name = "R", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_878 = Static60.method1113("null");
+	public static JagString aClass22_878 = Static60.method1113("null");
 
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(B)V")
 	public static void method1813() {
@@ -30,13 +30,13 @@ public final class Static22 {
 	}
 
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(Lclient!ea;I)V")
-	public static void method1815(@OriginalArg(0) Class20 arg0) {
+	public static void method1815(@OriginalArg(0) Js5Index arg0) {
 		Static60.aClass20_33 = arg0;
 	}
 
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "([BBII)Lclient!ec;")
-	public static Class22 method1817(@OriginalArg(0) byte[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(14) Class22 local14 = new Class22();
+	public static JagString method1817(@OriginalArg(0) byte[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+		@Pc(14) JagString local14 = new JagString();
 		local14.anInt668 = 0;
 		local14.aByteArray7 = new byte[arg2];
 		for (@Pc(23) int local23 = arg1; local23 < arg1 + arg2; local23++) {

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ua")
-public final class Class75 implements Interface2 {
+public final class SceneBuilderProvider implements SceneProvider {
 
 	@OriginalMember(owner = "client!ua", name = "o", descriptor = "Lclient!wd;")
 	private LinkList aClass82_12 = new LinkList();
@@ -28,7 +28,7 @@ public final class Class75 implements Interface2 {
 	private final SceneTextureProvider[] aClass4_Sub22Array1;
 
 	@OriginalMember(owner = "client!ua", name = "<init>", descriptor = "(Lclient!ea;Lclient!ea;IDI)V")
-	public Class75(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) Js5Index arg1, @OriginalArg(2) int arg2, @OriginalArg(3) double arg3, @OriginalArg(4) int arg4) {
+	public SceneBuilderProvider(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) Js5Index arg1, @OriginalArg(2) int arg2, @OriginalArg(3) double arg3, @OriginalArg(4) int arg4) {
 		this.anInt2885 = arg4;
 		this.aDouble9 = arg3;
 		this.aClass20_57 = arg1;

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!jd")
-public class Class4_Sub11 extends Linkable {
+public class Packet extends Linkable {
 
 	@OriginalMember(owner = "client!jd", name = "Db", descriptor = "[B")
 	public byte[] aByteArray9;
@@ -14,13 +14,13 @@ public class Class4_Sub11 extends Linkable {
 	public int anInt1099;
 
 	@OriginalMember(owner = "client!jd", name = "<init>", descriptor = "(I)V")
-	public Class4_Sub11(@OriginalArg(0) int arg0) {
+	public Packet(@OriginalArg(0) int arg0) {
 		this.aByteArray9 = Static93.method1626(arg0);
 		this.anInt1099 = 0;
 	}
 
 	@OriginalMember(owner = "client!jd", name = "<init>", descriptor = "([B)V")
-	public Class4_Sub11(@OriginalArg(0) byte[] arg0) {
+	public Packet(@OriginalArg(0) byte[] arg0) {
 		this.aByteArray9 = arg0;
 		this.anInt1099 = 0;
 	}
@@ -43,7 +43,7 @@ public class Class4_Sub11 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!jd", name = "a", descriptor = "(B)Lclient!ec;")
-	public final Class22 method694() {
+	public final JagString method694() {
 		if (this.aByteArray9[this.anInt1099] == 0) {
 			this.anInt1099++;
 			return null;
@@ -126,7 +126,7 @@ public class Class4_Sub11 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!jd", name = "a", descriptor = "(Lclient!ec;B)V")
-	public final void method708(@OriginalArg(0) Class22 arg0) {
+	public final void method708(@OriginalArg(0) JagString arg0) {
 		this.anInt1099 += arg0.method444(this.anInt1099, arg0.method449(), this.aByteArray9);
 		this.aByteArray9[this.anInt1099++] = 0;
 	}
@@ -377,7 +377,7 @@ public class Class4_Sub11 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!jd", name = "r", descriptor = "(I)Lclient!ec;")
-	public final Class22 method742() {
+	public final JagString method742() {
 		@Pc(11) int local11 = this.anInt1099;
 		while (this.aByteArray9[this.anInt1099++] != 0) {
 		}

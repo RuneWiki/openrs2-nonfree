@@ -5,22 +5,19 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static29 {
 
 	@OriginalMember(owner = "client!ed", name = "m", descriptor = "Lclient!ea;")
-	public static Class20 aClass20_15;
-
-	@OriginalMember(owner = "client!ed", name = "q", descriptor = "I")
-	public static int anInt685;
+	public static Js5Index aClass20_15;
 
 	@OriginalMember(owner = "client!ed", name = "s", descriptor = "[I")
 	public static int[] anIntArray76;
 
 	@OriginalMember(owner = "client!ed", name = "j", descriptor = "Lclient!ja;")
-	public static Class33 aClass33_10 = new Class33(30);
+	public static LruCache aClass33_10 = new LruCache(30);
 
 	@OriginalMember(owner = "client!ed", name = "o", descriptor = "[J")
 	public static long[] aLongArray1 = new long[200];
 
 	@OriginalMember(owner = "client!ed", name = "p", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_188 = Static60.method1113("(U0a )2 non)2existant gosub script)2num: ");
+	public static JagString aClass22_188 = Static60.method1113("(U0a )2 non)2existant gosub script)2num: ");
 
 	@OriginalMember(owner = "client!ed", name = "r", descriptor = "I")
 	public static int anInt686 = 0;
@@ -54,7 +51,7 @@ public final class Static29 {
 
 	@OriginalMember(owner = "client!ed", name = "a", descriptor = "(Z)V")
 	public static void method492() {
-		for (@Pc(6) Class4_Sub18 local6 = (Class4_Sub18) Static52.aClass82_5.method2025(); local6 != null; local6 = (Class4_Sub18) Static52.aClass82_5.method2023()) {
+		for (@Pc(6) PositionedSound local6 = (PositionedSound) Static52.aClass82_5.method2025(); local6 != null; local6 = (PositionedSound) Static52.aClass82_5.method2023()) {
 			if (local6.aClass4_Sub4_Sub3_2 != null) {
 				Static32.aClass4_Sub4_Sub4_1.method1642(local6.aClass4_Sub4_Sub3_2);
 				local6.aClass4_Sub4_Sub3_2 = null;
@@ -69,7 +66,7 @@ public final class Static29 {
 
 	@OriginalMember(owner = "client!ed", name = "a", descriptor = "(BII)Z")
 	public static boolean method494(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(16) Class4_Sub1_Sub5 local16 = Static5.method45(arg0);
+		@Pc(16) LocType local16 = Static5.method45(arg0);
 		if (arg1 == 11) {
 			arg1 = 10;
 		}
@@ -80,7 +77,7 @@ public final class Static29 {
 	}
 
 	@OriginalMember(owner = "client!ed", name = "a", descriptor = "(BLclient!ea;Lclient!ea;ZI)Lclient!rc;")
-	public static Class4_Sub1_Sub12 method495(@OriginalArg(1) Class20 arg0, @OriginalArg(2) Class20 arg1, @OriginalArg(4) int arg2) {
+	public static AnimFrameset method495(@OriginalArg(1) Js5Index arg0, @OriginalArg(2) Js5Index arg1, @OriginalArg(4) int arg2) {
 		@Pc(15) int[] local15 = arg1.method598(arg2);
 		@Pc(17) boolean local17 = true;
 		for (@Pc(19) int local19 = 0; local19 < local15.length; local19++) {
@@ -99,7 +96,7 @@ public final class Static29 {
 			return null;
 		}
 		try {
-			return new Class4_Sub1_Sub12(arg1, arg0, arg2, false);
+			return new AnimFrameset(arg1, arg0, arg2, false);
 		} catch (@Pc(91) Exception local91) {
 			return null;
 		}

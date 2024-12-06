@@ -5,16 +5,16 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static85 {
 
 	@OriginalMember(owner = "client!of", name = "w", descriptor = "Lclient!ga;")
-	public static Class20_Sub1 aClass20_Sub1_57;
+	public static Js5Provider aClass20_Sub1_57;
 
 	@OriginalMember(owner = "client!of", name = "y", descriptor = "[[[I")
 	public static int[][][] anIntArrayArrayArray5;
 
 	@OriginalMember(owner = "client!of", name = "d", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_640 = Static60.method1113("Please contact customer support)3");
+	private static JagString aClass22_640 = Static60.method1113("Please contact customer support)3");
 
 	@OriginalMember(owner = "client!of", name = "a", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_639 = aClass22_640;
+	public static JagString aClass22_639 = aClass22_640;
 
 	@OriginalMember(owner = "client!of", name = "b", descriptor = "I")
 	public static int anInt2258 = 0;
@@ -23,24 +23,24 @@ public final class Static85 {
 	public static long aLong71 = 0L;
 
 	@OriginalMember(owner = "client!of", name = "e", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_641 = Static60.method1113("event_opbase");
+	public static JagString aClass22_641 = Static60.method1113("event_opbase");
 
 	@OriginalMember(owner = "client!of", name = "f", descriptor = "[J")
 	public static long[] aLongArray5 = new long[100];
 
 	@OriginalMember(owner = "client!of", name = "o", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_642 = Static60.method1113("Freie Welt");
+	private static JagString aClass22_642 = Static60.method1113("Freie Welt");
 
 	@OriginalMember(owner = "client!of", name = "q", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_643 = Static60.method1113("<col=ff0000>");
+	public static JagString aClass22_643 = Static60.method1113("<col=ff0000>");
 
 	@OriginalMember(owner = "client!of", name = "F", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_644 = Static60.method1113("Weiter");
+	private static JagString aClass22_644 = Static60.method1113("Weiter");
 
 	@OriginalMember(owner = "client!of", name = "a", descriptor = "(IILclient!jd;)Lclient!ec;")
-	public static Class22 method1498(@OriginalArg(2) Class4_Sub11 arg0) {
+	public static JagString method1498(@OriginalArg(2) Packet arg0) {
 		try {
-			@Pc(7) Class22 local7 = new Class22();
+			@Pc(7) JagString local7 = new JagString();
 			local7.anInt668 = arg0.method692();
 			if (local7.anInt668 > 32767) {
 				local7.anInt668 = 32767;

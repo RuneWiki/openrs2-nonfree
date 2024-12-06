@@ -22,28 +22,28 @@ public final class Static37 {
 	public static int anInt896 = 0;
 
 	@OriginalMember(owner = "client!g", name = "C", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_254 = Static60.method1113("You can(Wt add yourself to your own ignore list");
+	private static JagString aClass22_254 = Static60.method1113("You can(Wt add yourself to your own ignore list");
 
 	@OriginalMember(owner = "client!g", name = "H", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_255 = Static60.method1113("<)4col>");
+	public static JagString aClass22_255 = Static60.method1113("<)4col>");
 
 	@OriginalMember(owner = "client!g", name = "L", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_256 = Static60.method1113("::errortest");
+	public static JagString aClass22_256 = Static60.method1113("::errortest");
 
 	@OriginalMember(owner = "client!g", name = "R", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_260 = Static60.method1113("and choose the (Wcreate account(W");
+	private static JagString aClass22_260 = Static60.method1113("and choose the (Wcreate account(W");
 
 	@OriginalMember(owner = "client!g", name = "O", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_257 = aClass22_260;
+	public static JagString aClass22_257 = aClass22_260;
 
 	@OriginalMember(owner = "client!g", name = "Q", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_259 = Static60.method1113("Loaded config");
+	private static JagString aClass22_259 = Static60.method1113("Loaded config");
 
 	@OriginalMember(owner = "client!g", name = "P", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_258 = aClass22_259;
+	public static JagString aClass22_258 = aClass22_259;
 
 	@OriginalMember(owner = "client!g", name = "U", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_261 = aClass22_254;
+	public static JagString aClass22_261 = aClass22_254;
 
 	@OriginalMember(owner = "client!g", name = "b", descriptor = "(I)V")
 	public static void method583() {
@@ -60,13 +60,13 @@ public final class Static37 {
 			}
 			if (Static44.anInt1212 == 1) {
 				if (Static9.aClass12_2 == null) {
-					Static9.aClass12_2 = Static130.aClass17_4.method389(Static128.aString4, Static34.anInt859);
+					Static9.aClass12_2 = GameShell.aClass17_4.method389(Static128.aString4, Static34.anInt859);
 				}
 				if (Static9.aClass12_2.anInt373 == 2) {
 					throw new IOException();
 				}
 				if (Static9.aClass12_2.anInt373 == 1) {
-					Static120.aClass6_4 = new Class6((Socket) Static9.aClass12_2.anObject1, Static130.aClass17_4);
+					Static120.aClass6_4 = new ClientStream((Socket) Static9.aClass12_2.anObject1, GameShell.aClass17_4);
 					Static9.aClass12_2 = null;
 					Static44.anInt1212 = 2;
 				}
@@ -189,7 +189,7 @@ public final class Static37 {
 			}
 			if (Static44.anInt1212 == 8) {
 				Static34.anInt857 = 0;
-				Static95.method1192(Static67.aClass22_505, Static44.method856(new Class22[] { Static134.method2042(Static97.anInt2562 / 60), Static23.aClass22_155 }), Static13.aClass22_92);
+				Static95.method1192(Static67.aClass22_505, Static44.method856(new JagString[] { Static134.method2042(Static97.anInt2562 / 60), Static23.aClass22_155 }), Static13.aClass22_92);
 				if (--Static97.anInt2562 <= 0) {
 					Static44.anInt1212 = 0;
 				}
@@ -252,7 +252,7 @@ public final class Static37 {
 	public static void method584() {
 		for (@Pc(3) int local3 = 0; local3 < Static50.anInt1405; local3++) {
 			@Pc(9) int local9 = Static51.anIntArray146[local3];
-			@Pc(13) Class4_Sub1_Sub3_Sub2_Sub1 local13 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local9];
+			@Pc(13) PlayerEntity local13 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local9];
 			@Pc(19) int local19 = Static133.aClass4_Sub11_Sub1_3.method719();
 			if ((local19 & 0x80) != 0) {
 				local19 += Static133.aClass4_Sub11_Sub1_3.method719() << 8;
@@ -275,19 +275,19 @@ public final class Static37 {
 	}
 
 	@OriginalMember(owner = "client!g", name = "a", descriptor = "(BLclient!ka;II)V")
-	private static void method587(@OriginalArg(1) Class4_Sub1_Sub3_Sub2_Sub1 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+	private static void method587(@OriginalArg(1) PlayerEntity arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(17) int local17;
 		if ((arg2 & 0x400) != 0) {
 			arg0.anInt2489 = Static133.aClass4_Sub11_Sub1_3.method706();
 			local17 = Static133.aClass4_Sub11_Sub1_3.method712();
-			arg0.anInt2466 = Static117.anInt2877 + (local17 & 0xFFFF);
+			arg0.anInt2466 = Client.anInt2877 + (local17 & 0xFFFF);
 			arg0.anInt2485 = local17 >> 16;
 			if (arg0.anInt2489 == 65535) {
 				arg0.anInt2489 = -1;
 			}
 			arg0.anInt2464 = 0;
 			arg0.anInt2507 = 0;
-			if (Static117.anInt2877 < arg0.anInt2466) {
+			if (Client.anInt2877 < arg0.anInt2466) {
 				arg0.anInt2507 = -1;
 			}
 		}
@@ -295,8 +295,8 @@ public final class Static37 {
 		if ((arg2 & 0x20) != 0) {
 			local17 = Static133.aClass4_Sub11_Sub1_3.method716();
 			local66 = Static133.aClass4_Sub11_Sub1_3.method719();
-			arg0.method1615(Static117.anInt2877, local66, local17);
-			arg0.anInt2456 = Static117.anInt2877 + 300;
+			arg0.method1615(Client.anInt2877, local66, local17);
+			arg0.anInt2456 = Client.anInt2877 + 300;
 			arg0.anInt2508 = Static133.aClass4_Sub11_Sub1_3.method722();
 			arg0.anInt2493 = Static133.aClass4_Sub11_Sub1_3.method716();
 		}
@@ -328,15 +328,15 @@ public final class Static37 {
 					Static108.aClass4_Sub11_5.anInt1099 = 0;
 					Static133.aClass4_Sub11_Sub1_3.method744(local128, Static108.aClass4_Sub11_5.aByteArray9);
 					Static108.aClass4_Sub11_5.anInt1099 = 0;
-					@Pc(197) Class22 local197 = Static81.method1393(Static107.method1754(Static108.aClass4_Sub11_5).method467());
+					@Pc(197) JagString local197 = Static81.method1393(Static107.method1754(Static108.aClass4_Sub11_5).method467());
 					arg0.aClass22_715 = local197.method484();
 					arg0.anInt2468 = 150;
 					arg0.anInt2506 = local17 >> 8;
 					arg0.anInt2502 = local17 & 0xFF;
 					if (local66 == 2 || local66 == 3) {
-						Static65.method1153(local197, 1, Static44.method856(new Class22[] { Static122.aClass22_342, arg0.aClass22_444 }));
+						Static65.method1153(local197, 1, Static44.method856(new JagString[] { Static122.aClass22_342, arg0.aClass22_444 }));
 					} else if (local66 == 1) {
-						Static65.method1153(local197, 1, Static44.method856(new Class22[] { Static120.aClass22_909, arg0.aClass22_444 }));
+						Static65.method1153(local197, 1, Static44.method856(new JagString[] { Static120.aClass22_909, arg0.aClass22_444 }));
 					} else {
 						Static65.method1153(local197, 2, arg0.aClass22_444);
 					}
@@ -349,8 +349,8 @@ public final class Static37 {
 			arg0.anInt2479 = Static133.aClass4_Sub11_Sub1_3.method707();
 			arg0.anInt2455 = Static133.aClass4_Sub11_Sub1_3.method719();
 			arg0.anInt2494 = Static133.aClass4_Sub11_Sub1_3.method707();
-			arg0.anInt2488 = Static133.aClass4_Sub11_Sub1_3.method706() + Static117.anInt2877;
-			arg0.anInt2482 = Static133.aClass4_Sub11_Sub1_3.method718() + Static117.anInt2877;
+			arg0.anInt2488 = Static133.aClass4_Sub11_Sub1_3.method706() + Client.anInt2877;
+			arg0.anInt2482 = Static133.aClass4_Sub11_Sub1_3.method718() + Client.anInt2877;
 			arg0.anInt2504 = Static133.aClass4_Sub11_Sub1_3.method719();
 			arg0.anInt2460 = 1;
 			arg0.anInt2501 = 0;
@@ -358,8 +358,8 @@ public final class Static37 {
 		if ((arg2 & 0x100) != 0) {
 			local17 = Static133.aClass4_Sub11_Sub1_3.method722();
 			local66 = Static133.aClass4_Sub11_Sub1_3.method707();
-			arg0.method1615(Static117.anInt2877, local66, local17);
-			arg0.anInt2456 = Static117.anInt2877 + 300;
+			arg0.method1615(Client.anInt2877, local66, local17);
+			arg0.anInt2456 = Client.anInt2877 + 300;
 			arg0.anInt2508 = Static133.aClass4_Sub11_Sub1_3.method719();
 			arg0.anInt2493 = Static133.aClass4_Sub11_Sub1_3.method716();
 		}
@@ -384,7 +384,7 @@ public final class Static37 {
 		if ((arg2 & 0x40) != 0) {
 			local17 = Static133.aClass4_Sub11_Sub1_3.method722();
 			@Pc(456) byte[] local456 = new byte[local17];
-			@Pc(461) Class4_Sub11 local461 = new Class4_Sub11(local456);
+			@Pc(461) Packet local461 = new Packet(local456);
 			Static133.aClass4_Sub11_Sub1_3.method726(local456, local17);
 			Static120.aClass4_Sub11Array1[arg1] = local461;
 			arg0.method1092(local461);

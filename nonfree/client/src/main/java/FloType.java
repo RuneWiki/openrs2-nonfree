@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ia")
-public final class Class4_Sub1_Sub6 extends DoublyLinkable {
+public final class FloType extends DoublyLinkable {
 
 	@OriginalMember(owner = "client!ia", name = "K", descriptor = "I")
 	public int anInt1326;
@@ -37,7 +37,7 @@ public final class Class4_Sub1_Sub6 extends DoublyLinkable {
 	public boolean aBoolean127 = true;
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(Lclient!jd;III)V")
-	private void method917(@OriginalArg(0) Class4_Sub11 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
+	private void method917(@OriginalArg(0) Packet arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		if (arg1 == 1) {
 			this.anInt1327 = arg0.method704();
 		} else if (arg1 == 2) {
@@ -61,7 +61,7 @@ public final class Class4_Sub1_Sub6 extends DoublyLinkable {
 	}
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(ILclient!jd;I)V")
-	public void method919(@OriginalArg(1) Class4_Sub11 arg0, @OriginalArg(2) int arg1) {
+	public void method919(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
 		while (true) {
 			@Pc(5) int local5 = arg0.method719();
 			if (local5 == 0) {

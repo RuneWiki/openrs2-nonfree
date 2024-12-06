@@ -10,19 +10,19 @@ public final class Static7 {
 	public static int anInt160 = 10;
 
 	@OriginalMember(owner = "client!b", name = "l", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_56 = Static60.method1113(" zuerst von Ihrer Freunde)2Liste(Q");
+	public static JagString aClass22_56 = Static60.method1113(" zuerst von Ihrer Freunde)2Liste(Q");
 
 	@OriginalMember(owner = "client!b", name = "o", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_57 = Static60.method1113("VOLL");
+	public static JagString aClass22_57 = Static60.method1113("VOLL");
 
 	@OriginalMember(owner = "client!b", name = "r", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_58 = Static60.method1113("AUS");
+	public static JagString aClass22_58 = Static60.method1113("AUS");
 
 	@OriginalMember(owner = "client!b", name = "w", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_59 = Static60.method1113("Starting game engine)3)3)3");
+	private static JagString aClass22_59 = Static60.method1113("Starting game engine)3)3)3");
 
 	@OriginalMember(owner = "client!b", name = "x", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_60 = aClass22_59;
+	public static JagString aClass22_60 = aClass22_59;
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(I)V")
 	public static void method129() {
@@ -32,15 +32,15 @@ public final class Static7 {
 				if (local12 != 2047) {
 					@Pc(17) boolean local17 = false;
 					if (Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local12] == null) {
-						Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local12] = new Class4_Sub1_Sub3_Sub2_Sub1();
+						Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local12] = new PlayerEntity();
 						if (Static120.aClass4_Sub11Array1[local12] != null) {
 							Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local12].method1092(Static120.aClass4_Sub11Array1[local12]);
 						}
 						local17 = true;
 					}
 					Static115.anIntArray310[Static51.anInt1461++] = local12;
-					@Pc(53) Class4_Sub1_Sub3_Sub2_Sub1 local53 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local12];
-					local53.anInt2475 = Static117.anInt2877;
+					@Pc(53) PlayerEntity local53 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local12];
+					local53.anInt2475 = Client.anInt2877;
 					@Pc(61) int local61 = Static133.aClass4_Sub11_Sub1_3.method748(5);
 					if (local61 > 15) {
 						local61 -= 32;

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ja")
-public final class Class33 {
+public final class LruCache {
 
 	@OriginalMember(owner = "client!ja", name = "i", descriptor = "Lclient!be;")
 	private final DoublyLinkable aClass4_Sub1_27 = new DoublyLinkable();
@@ -22,7 +22,7 @@ public final class Class33 {
 	private final HashTable aClass81_5;
 
 	@OriginalMember(owner = "client!ja", name = "<init>", descriptor = "(I)V")
-	public Class33(@OriginalArg(0) int arg0) {
+	public LruCache(@OriginalArg(0) int arg0) {
 		@Pc(13) int local13 = 1;
 		this.anInt1491 = arg0;
 		this.anInt1492 = arg0;

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!o")
-public final class Class4_Sub1_Sub10 extends DoublyLinkable {
+public final class NpcType extends DoublyLinkable {
 
 	@OriginalMember(owner = "client!o", name = "M", descriptor = "[I")
 	private int[] anIntArray219;
@@ -34,7 +34,7 @@ public final class Class4_Sub1_Sub10 extends DoublyLinkable {
 	public boolean aBoolean189 = true;
 
 	@OriginalMember(owner = "client!o", name = "L", descriptor = "[Lclient!ec;")
-	public final Class22[] aClass22Array17 = new Class22[5];
+	public final JagString[] aClass22Array17 = new JagString[5];
 
 	@OriginalMember(owner = "client!o", name = "H", descriptor = "I")
 	public int anInt2146 = -1;
@@ -67,7 +67,7 @@ public final class Class4_Sub1_Sub10 extends DoublyLinkable {
 	public int anInt2154 = -1;
 
 	@OriginalMember(owner = "client!o", name = "ab", descriptor = "Lclient!ec;")
-	public Class22 aClass22_615 = Static58.aClass22_451;
+	public JagString aClass22_615 = Static58.aClass22_451;
 
 	@OriginalMember(owner = "client!o", name = "sb", descriptor = "I")
 	private int anInt2172 = 0;
@@ -102,7 +102,7 @@ public final class Class4_Sub1_Sub10 extends DoublyLinkable {
 	@OriginalMember(owner = "client!o", name = "e", descriptor = "(I)Lclient!p;")
 	public Model method1429() {
 		if (this.anIntArray221 != null) {
-			@Pc(12) Class4_Sub1_Sub10 local12 = this.method1434();
+			@Pc(12) NpcType local12 = this.method1434();
 			return local12 == null ? null : local12.method1429();
 		} else if (this.anIntArray220 == null) {
 			return null;
@@ -156,7 +156,7 @@ public final class Class4_Sub1_Sub10 extends DoublyLinkable {
 	}
 
 	@OriginalMember(owner = "client!o", name = "g", descriptor = "(I)Lclient!o;")
-	public Class4_Sub1_Sub10 method1434() {
+	public NpcType method1434() {
 		@Pc(1) int local1 = -1;
 		if (this.anInt2150 != -1) {
 			local1 = Static57.method1093(this.anInt2150);
@@ -178,9 +178,9 @@ public final class Class4_Sub1_Sub10 extends DoublyLinkable {
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(Lclient!vc;ILclient!vc;BI)Lclient!od;")
-	public SoftwareModel method1438(@OriginalArg(0) Class4_Sub1_Sub17 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class4_Sub1_Sub17 arg2, @OriginalArg(4) int arg3) {
+	public SoftwareModel method1438(@OriginalArg(0) SeqType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) SeqType arg2, @OriginalArg(4) int arg3) {
 		if (this.anIntArray221 != null) {
-			@Pc(12) Class4_Sub1_Sub10 local12 = this.method1434();
+			@Pc(12) NpcType local12 = this.method1434();
 			return local12 == null ? null : local12.method1438(arg0, arg1, arg2, arg3);
 		}
 		@Pc(40) SoftwareModel local40 = (SoftwareModel) Static120.aClass33_32.method998((long) this.anInt2174);

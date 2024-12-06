@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!vb")
-public final class Class4_Sub22 extends Linkable {
+public final class SceneTextureProvider extends Linkable {
 
 	@OriginalMember(owner = "client!vb", name = "C", descriptor = "Z")
 	public boolean aBoolean267 = false;
@@ -37,7 +37,7 @@ public final class Class4_Sub22 extends Linkable {
 	public int[] anIntArray322;
 
 	@OriginalMember(owner = "client!vb", name = "<init>", descriptor = "(Lclient!jd;)V")
-	public Class4_Sub22(@OriginalArg(0) Packet arg0) {
+	public SceneTextureProvider(@OriginalArg(0) Packet arg0) {
 		this.anInt2968 = arg0.method718();
 		this.aBoolean266 = arg0.method719() == 1;
 		@Pc(23) int local23 = arg0.method719();
@@ -140,7 +140,7 @@ public final class Class4_Sub22 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!vb", name = "a", descriptor = "(DILclient!ea;)Z")
-	public boolean method1900(@OriginalArg(0) double arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class20 arg2) {
+	public boolean method1900(@OriginalArg(0) double arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5Index arg2) {
 		for (@Pc(1) int local1 = 0; local1 < this.anIntArray324.length; local1++) {
 			if (arg2.method607(this.anIntArray324[local1]) == null) {
 				return false;

@@ -5,34 +5,34 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static46 {
 
 	@OriginalMember(owner = "client!he", name = "a", descriptor = "[Lclient!hb;")
-	public static Class4_Sub1_Sub2_Sub3[] aClass4_Sub1_Sub2_Sub3Array3;
+	public static Pix8[] aClass4_Sub1_Sub2_Sub3Array3;
 
 	@OriginalMember(owner = "client!he", name = "o", descriptor = "Lclient!nf;")
-	public static Class4_Sub1_Sub2_Sub4_Sub1 aClass4_Sub1_Sub2_Sub4_Sub1_3;
+	public static SoftwareFont aClass4_Sub1_Sub2_Sub4_Sub1_3;
 
 	@OriginalMember(owner = "client!he", name = "b", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_313 = Static60.method1113("oder ung-Ultiges Passwort)3");
+	public static JagString aClass22_313 = Static60.method1113("oder ung-Ultiges Passwort)3");
 
 	@OriginalMember(owner = "client!he", name = "c", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_314 = Static60.method1113("Ung-Ultiger Benutzername");
+	public static JagString aClass22_314 = Static60.method1113("Ung-Ultiger Benutzername");
 
 	@OriginalMember(owner = "client!he", name = "f", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_315 = Static60.method1113("Checking for updates )2 ");
+	private static JagString aClass22_315 = Static60.method1113("Checking for updates )2 ");
 
 	@OriginalMember(owner = "client!he", name = "h", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_316 = Static60.method1113("ams");
+	public static JagString aClass22_316 = Static60.method1113("ams");
 
 	@OriginalMember(owner = "client!he", name = "i", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_317 = Static60.method1113("Registrierter Benutzer");
+	public static JagString aClass22_317 = Static60.method1113("Registrierter Benutzer");
 
 	@OriginalMember(owner = "client!he", name = "j", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_318 = Static60.method1113("This computers address has been blocked");
+	private static JagString aClass22_318 = Static60.method1113("This computers address has been blocked");
 
 	@OriginalMember(owner = "client!he", name = "k", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_319 = aClass22_315;
+	public static JagString aClass22_319 = aClass22_315;
 
 	@OriginalMember(owner = "client!he", name = "l", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_320 = aClass22_318;
+	public static JagString aClass22_320 = aClass22_318;
 
 	@OriginalMember(owner = "client!he", name = "m", descriptor = "I")
 	public static int anInt1290 = (int) (Math.random() * 17.0D) - 8;
@@ -68,7 +68,7 @@ public final class Static46 {
 			Static129.anInt3052 = 0;
 		}
 		if (arg0 == 5 || arg0 == 10 || arg0 == 20) {
-			Static93.method1623(Static59.aClass20_Sub1_43, Static26.aClass20_Sub1_25, Static89.aCanvas1);
+			Static93.method1623(Static59.aClass20_Sub1_43, Static26.aClass20_Sub1_25, GameShell.aCanvas1);
 		} else {
 			Static19.method375();
 		}
@@ -90,7 +90,7 @@ public final class Static46 {
 
 	@OriginalMember(owner = "client!he", name = "a", descriptor = "(Z[B)V")
 	public static void method890(@OriginalArg(1) byte[] arg0) {
-		@Pc(10) Class4_Sub11 local10 = new Class4_Sub11(arg0);
+		@Pc(10) Packet local10 = new Packet(arg0);
 		local10.anInt1099 = arg0.length - 2;
 		Static76.anInt2020 = local10.method718();
 		Static105.anIntArray297 = new int[Static76.anInt2020];
@@ -146,34 +146,34 @@ public final class Static46 {
 	}
 
 	@OriginalMember(owner = "client!he", name = "a", descriptor = "(B[Lclient!f;I)V")
-	public static void method891(@OriginalArg(1) Class4_Sub7[] arg0, @OriginalArg(2) int arg1) {
+	public static void method891(@OriginalArg(1) IfType[] arg0, @OriginalArg(2) int arg1) {
 		for (@Pc(13) int local13 = 0; local13 < arg0.length; local13++) {
-			@Pc(19) Class4_Sub7 local19 = arg0[local13];
+			@Pc(19) IfType local19 = arg0[local13];
 			if (local19 != null) {
 				if (local19.anInt743 == 0) {
 					if (local19.aClass4_Sub7Array1 != null) {
 						method891(local19.aClass4_Sub7Array1, arg1);
 					}
-					@Pc(43) Class4_Sub21 local43 = (Class4_Sub21) Static90.aClass81_11.method2010((long) local19.anInt738);
+					@Pc(43) ComponentPointer local43 = (ComponentPointer) Static90.aClass81_11.method2010((long) local19.anInt738);
 					if (local43 != null) {
 						Static130.method2006(local43.anInt2939, arg1);
 					}
 				}
-				@Pc(59) Class4_Sub3 local59;
+				@Pc(59) HookRequest local59;
 				if (arg1 == 0 && local19.anObjectArray5 != null) {
-					local59 = new Class4_Sub3();
+					local59 = new HookRequest();
 					local59.anObjectArray1 = local19.anObjectArray5;
 					local59.aClass4_Sub7_3 = local19;
 					Static133.method2036(local59);
 				}
 				if (arg1 == 1 && local19.anObjectArray14 != null) {
 					if (local19.anInt784 >= 0) {
-						@Pc(86) Class4_Sub7 local86 = Static106.method1749(local19.anInt738);
+						@Pc(86) IfType local86 = Static106.method1749(local19.anInt738);
 						if (local86 == null || local86.aClass4_Sub7Array1 == null || local86.aClass4_Sub7Array1.length <= local19.anInt784 || local86.aClass4_Sub7Array1[local19.anInt784] != local19) {
 							continue;
 						}
 					}
-					local59 = new Class4_Sub3();
+					local59 = new HookRequest();
 					local59.anObjectArray1 = local19.anObjectArray14;
 					local59.aClass4_Sub7_3 = local19;
 					Static133.method2036(local59);

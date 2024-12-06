@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!c")
-public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
+public final class MidiPcmStream extends PcmStream {
 
 	@OriginalMember(owner = "client!c", name = "Wb", descriptor = "Z")
 	private boolean aBoolean33;
@@ -37,7 +37,7 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 	private final int[] anIntArray24 = new int[16];
 
 	@OriginalMember(owner = "client!c", name = "Q", descriptor = "[[Lclient!la;")
-	private final Class4_Sub15[][] aClass4_Sub15ArrayArray1 = new Class4_Sub15[16][128];
+	private final MidiNote[][] aClass4_Sub15ArrayArray1 = new MidiNote[16][128];
 
 	@OriginalMember(owner = "client!c", name = "vb", descriptor = "[I")
 	private final int[] anIntArray29 = new int[16];
@@ -58,7 +58,7 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 	public final int[] anIntArray32 = new int[16];
 
 	@OriginalMember(owner = "client!c", name = "Ob", descriptor = "[[Lclient!la;")
-	private final Class4_Sub15[][] aClass4_Sub15ArrayArray2 = new Class4_Sub15[16][128];
+	private final MidiNote[][] aClass4_Sub15ArrayArray2 = new MidiNote[16][128];
 
 	@OriginalMember(owner = "client!c", name = "Sb", descriptor = "[I")
 	private final int[] anIntArray36 = new int[16];
@@ -79,16 +79,16 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 	private final int[] anIntArray35 = new int[16];
 
 	@OriginalMember(owner = "client!c", name = "hb", descriptor = "Lclient!rb;")
-	private final Class63 aClass63_1 = new Class63();
+	private final MidiDecoder aClass63_1 = new MidiDecoder();
 
 	@OriginalMember(owner = "client!c", name = "Zb", descriptor = "Lclient!fe;")
 	private final MidiNoteStream aClass4_Sub4_Sub2_1 = new MidiNoteStream(this);
 
 	@OriginalMember(owner = "client!c", name = "Ib", descriptor = "Lclient!wc;")
-	private final Class81 aClass81_2 = new Class81(128);
+	private final HashTable aClass81_2 = new HashTable(128);
 
 	@OriginalMember(owner = "client!c", name = "<init>", descriptor = "()V")
-	public Class4_Sub4_Sub1() {
+	public MidiPcmStream() {
 		this.method230();
 	}
 
@@ -102,9 +102,9 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(ILclient!la;)I")
-	private int method200(@OriginalArg(1) Class4_Sub15 arg0) {
+	private int method200(@OriginalArg(1) MidiNote arg0) {
 		@Pc(15) int local15 = this.anIntArray35[arg0.anInt1842] * this.anIntArray30[arg0.anInt1842] + 4096 >> 13;
-		@Pc(18) Class38 local18 = arg0.aClass38_1;
+		@Pc(18) MidiSound local18 = arg0.aClass38_1;
 		@Pc(30) int local30 = local15 * local15 + 16384 >> 15;
 		@Pc(39) int local39 = local30 * arg0.anInt1822 + 16384 >> 15;
 		local15 = this.anInt274 * local39 + 128 >> 8;
@@ -139,7 +139,7 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(IZLclient!ae;)V")
-	public synchronized void method201(@OriginalArg(1) boolean arg0, @OriginalArg(2) Class4_Sub2 arg1) {
+	public synchronized void method201(@OriginalArg(1) boolean arg0, @OriginalArg(2) Song arg1) {
 		this.method228();
 		this.aClass63_1.method1687(arg1.aByteArray1);
 		this.aLong13 = 0L;
@@ -369,13 +369,13 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(B)V")
 	public synchronized void method207() {
-		for (@Pc(11) Class4_Sub14 local11 = (Class4_Sub14) this.aClass81_2.method2017(); local11 != null; local11 = (Class4_Sub14) this.aClass81_2.method2013()) {
+		for (@Pc(11) MidiInstrument local11 = (MidiInstrument) this.aClass81_2.method2017(); local11 != null; local11 = (MidiInstrument) this.aClass81_2.method2013()) {
 			local11.method1999();
 		}
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(IZLclient!la;)V")
-	public void method208(@OriginalArg(1) boolean arg0, @OriginalArg(2) Class4_Sub15 arg1) {
+	public void method208(@OriginalArg(1) boolean arg0, @OriginalArg(2) MidiNote arg1) {
 		@Pc(8) int local8 = arg1.aClass4_Sub13_Sub1_1.aByteArray12.length;
 		@Pc(40) int local40;
 		if (arg0 && arg1.aClass4_Sub13_Sub1_1.aBoolean132) {
@@ -397,7 +397,7 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 		if ((this.anIntArray28[arg0] & 0x2) == 0) {
 			return;
 		}
-		for (@Pc(18) Class4_Sub15 local18 = (Class4_Sub15) this.aClass4_Sub4_Sub2_1.aClass82_3.method2025(); local18 != null; local18 = (Class4_Sub15) this.aClass4_Sub4_Sub2_1.aClass82_3.method2023()) {
+		for (@Pc(18) MidiNote local18 = (MidiNote) this.aClass4_Sub4_Sub2_1.aClass82_3.method2025(); local18 != null; local18 = (MidiNote) this.aClass4_Sub4_Sub2_1.aClass82_3.method2023()) {
 			if (local18.anInt1842 == arg0 && this.aClass4_Sub15ArrayArray2[arg0][local18.anInt1833] == null && local18.anInt1843 < 0) {
 				local18.anInt1843 = 0;
 			}
@@ -408,7 +408,7 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 	private void method210(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		this.method215(arg2, 64, arg1);
 		if ((this.anIntArray28[arg1] & 0x2) != 0) {
-			for (@Pc(28) Class4_Sub15 local28 = (Class4_Sub15) this.aClass4_Sub4_Sub2_1.aClass82_3.method2034(); local28 != null; local28 = (Class4_Sub15) this.aClass4_Sub4_Sub2_1.aClass82_3.method2022()) {
+			for (@Pc(28) MidiNote local28 = (MidiNote) this.aClass4_Sub4_Sub2_1.aClass82_3.method2034(); local28 != null; local28 = (MidiNote) this.aClass4_Sub4_Sub2_1.aClass82_3.method2022()) {
 				if (arg1 == local28.anInt1842 && local28.anInt1843 < 0) {
 					this.aClass4_Sub15ArrayArray2[arg1][local28.anInt1833] = null;
 					this.aClass4_Sub15ArrayArray2[arg1][arg2] = local28;
@@ -421,15 +421,15 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 				}
 			}
 		}
-		@Pc(126) Class4_Sub14 local126 = (Class4_Sub14) this.aClass81_2.method2010((long) this.anIntArray24[arg1]);
+		@Pc(126) MidiInstrument local126 = (MidiInstrument) this.aClass81_2.method2010((long) this.anIntArray24[arg1]);
 		if (local126 == null) {
 			return;
 		}
-		@Pc(134) Class4_Sub13_Sub1 local134 = local126.aClass4_Sub13_Sub1Array1[arg2];
+		@Pc(134) PcmSound local134 = local126.aClass4_Sub13_Sub1Array1[arg2];
 		if (local134 == null) {
 			return;
 		}
-		@Pc(141) Class4_Sub15 local141 = new Class4_Sub15();
+		@Pc(141) MidiNote local141 = new MidiNote();
 		local141.aClass4_Sub14_1 = local126;
 		local141.aClass4_Sub13_Sub1_1 = local134;
 		local141.anInt1842 = arg1;
@@ -454,7 +454,7 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 			local141.aClass4_Sub4_Sub3_1.method1232(-1);
 		}
 		if (local141.anInt1825 >= 0) {
-			@Pc(292) Class4_Sub15 local292 = this.aClass4_Sub15ArrayArray1[arg1][local141.anInt1825];
+			@Pc(292) MidiNote local292 = this.aClass4_Sub15ArrayArray1[arg1][local141.anInt1825];
 			if (local292 != null && local292.anInt1843 < 0) {
 				this.aClass4_Sub15ArrayArray2[arg1][local292.anInt1833] = null;
 				local292.anInt1843 = 0;
@@ -470,13 +470,13 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(ILclient!ea;Lclient!jf;Lclient!ae;I)Z")
-	public synchronized boolean method212(@OriginalArg(1) Class20 arg0, @OriginalArg(2) Class35 arg1, @OriginalArg(3) Class4_Sub2 arg2) {
+	public synchronized boolean method212(@OriginalArg(1) Js5Index arg0, @OriginalArg(2) Class35 arg1, @OriginalArg(3) Song arg2) {
 		arg2.method51();
 		@Pc(9) boolean local9 = true;
 		@Pc(20) int[] local20 = new int[] { 22050 };
-		for (@Pc(26) Class4_Sub12 local26 = (Class4_Sub12) arg2.aClass81_1.method2017(); local26 != null; local26 = (Class4_Sub12) arg2.aClass81_1.method2013()) {
+		for (@Pc(26) ByteArrayNode local26 = (ByteArrayNode) arg2.aClass81_1.method2017(); local26 != null; local26 = (ByteArrayNode) arg2.aClass81_1.method2013()) {
 			@Pc(32) int local32 = (int) local26.aLong99;
-			@Pc(40) Class4_Sub14 local40 = (Class4_Sub14) this.aClass81_2.method2010((long) local32);
+			@Pc(40) MidiInstrument local40 = (MidiInstrument) this.aClass81_2.method2010((long) local32);
 			if (local40 == null) {
 				local40 = Static49.method920(local32, arg0);
 				if (local40 == null) {
@@ -510,7 +510,7 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 		if ((this.anIntArray28[arg0] & 0x4) == 0) {
 			return;
 		}
-		for (@Pc(18) Class4_Sub15 local18 = (Class4_Sub15) this.aClass4_Sub4_Sub2_1.aClass82_3.method2025(); local18 != null; local18 = (Class4_Sub15) this.aClass4_Sub4_Sub2_1.aClass82_3.method2023()) {
+		for (@Pc(18) MidiNote local18 = (MidiNote) this.aClass4_Sub4_Sub2_1.aClass82_3.method2025(); local18 != null; local18 = (MidiNote) this.aClass4_Sub4_Sub2_1.aClass82_3.method2023()) {
 			if (arg0 == local18.anInt1842) {
 				local18.anInt1831 = 0;
 			}
@@ -519,7 +519,7 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(IIBI)V")
 	private void method215(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(12) Class4_Sub15 local12 = this.aClass4_Sub15ArrayArray2[arg2][arg0];
+		@Pc(12) MidiNote local12 = this.aClass4_Sub15ArrayArray2[arg2][arg0];
 		if (local12 == null) {
 			return;
 		}
@@ -528,7 +528,7 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 			local12.anInt1843 = 0;
 			return;
 		}
-		for (@Pc(43) Class4_Sub15 local43 = (Class4_Sub15) this.aClass4_Sub4_Sub2_1.aClass82_3.method2025(); local43 != null; local43 = (Class4_Sub15) this.aClass4_Sub4_Sub2_1.aClass82_3.method2023()) {
+		for (@Pc(43) MidiNote local43 = (MidiNote) this.aClass4_Sub4_Sub2_1.aClass82_3.method2025(); local43 != null; local43 = (MidiNote) this.aClass4_Sub4_Sub2_1.aClass82_3.method2023()) {
 			if (local12.anInt1842 == local43.anInt1842 && local43.anInt1843 < 0 && local43 != local12) {
 				local12.anInt1843 = 0;
 				return;
@@ -538,7 +538,7 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 
 	@OriginalMember(owner = "client!c", name = "d", descriptor = "(II)V")
 	private void method216(@OriginalArg(1) int arg0) {
-		for (@Pc(14) Class4_Sub15 local14 = (Class4_Sub15) this.aClass4_Sub4_Sub2_1.aClass82_3.method2025(); local14 != null; local14 = (Class4_Sub15) this.aClass4_Sub4_Sub2_1.aClass82_3.method2023()) {
+		for (@Pc(14) MidiNote local14 = (MidiNote) this.aClass4_Sub4_Sub2_1.aClass82_3.method2025(); local14 != null; local14 = (MidiNote) this.aClass4_Sub4_Sub2_1.aClass82_3.method2023()) {
 			if ((arg0 < 0 || arg0 == local14.anInt1842) && local14.anInt1843 < 0) {
 				this.aClass4_Sub15ArrayArray2[local14.anInt1842][local14.anInt1833] = null;
 				local14.anInt1843 = 0;
@@ -568,19 +568,19 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(Lclient!la;I)I")
-	private int method220(@OriginalArg(0) Class4_Sub15 arg0) {
+	private int method220(@OriginalArg(0) MidiNote arg0) {
 		@Pc(14) int local14 = this.anIntArray31[arg0.anInt1842];
 		return local14 >= 8192 ? 16384 - ((16384 - local14) * (-arg0.anInt1841 + 128) + 32 >> 6) : local14 * arg0.anInt1841 + 32 >> 6;
 	}
 
 	@OriginalMember(owner = "client!c", name = "c", descriptor = "()Lclient!fd;")
 	@Override
-	public synchronized Class4_Sub4 method1640() {
+	public synchronized PcmStream method1640() {
 		return this.aClass4_Sub4_Sub2_1;
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(Lclient!la;ZI[II)Z")
-	public boolean method222(@OriginalArg(0) Class4_Sub15 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int[] arg2, @OriginalArg(4) int arg3) {
+	public boolean method222(@OriginalArg(0) MidiNote arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int[] arg2, @OriginalArg(4) int arg3) {
 		arg0.anInt1823 = Static116.anInt2873 / 100;
 		if (arg0.anInt1843 >= 0 && (arg0.aClass4_Sub4_Sub3_1 == null || arg0.aClass4_Sub4_Sub3_1.method1247())) {
 			arg0.method1140();
@@ -601,7 +601,7 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 		arg0.aClass4_Sub4_Sub3_1.method1227(this.method232(arg0));
 		arg0.anInt1830++;
 		@Pc(120) double local120 = (double) ((arg0.anInt1834 * arg0.anInt1840 >> 12) + (arg0.anInt1833 - 60 << 8)) * 5.086263020833333E-6D;
-		@Pc(123) Class38 local123 = arg0.aClass38_1;
+		@Pc(123) MidiSound local123 = arg0.aClass38_1;
 		arg0.anInt1837 += local123.anInt1767;
 		if (local123.anInt1770 > 0) {
 			if (local123.anInt1768 > 0) {
@@ -685,7 +685,7 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 
 	@OriginalMember(owner = "client!c", name = "f", descriptor = "(II)V")
 	private void method224(@OriginalArg(1) int arg0) {
-		for (@Pc(15) Class4_Sub15 local15 = (Class4_Sub15) this.aClass4_Sub4_Sub2_1.aClass82_3.method2025(); local15 != null; local15 = (Class4_Sub15) this.aClass4_Sub4_Sub2_1.aClass82_3.method2023()) {
+		for (@Pc(15) MidiNote local15 = (MidiNote) this.aClass4_Sub4_Sub2_1.aClass82_3.method2025(); local15 != null; local15 = (MidiNote) this.aClass4_Sub4_Sub2_1.aClass82_3.method2023()) {
 			if (arg0 < 0 || arg0 == local15.anInt1842) {
 				if (local15.aClass4_Sub4_Sub3_1 != null) {
 					local15.aClass4_Sub4_Sub3_1.method1230(Static116.anInt2873 / 100);
@@ -709,12 +709,12 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 
 	@OriginalMember(owner = "client!c", name = "b", descriptor = "()Lclient!fd;")
 	@Override
-	public synchronized Class4_Sub4 method1638() {
+	public synchronized PcmStream method1638() {
 		return null;
 	}
 
 	@OriginalMember(owner = "client!c", name = "b", descriptor = "(ILclient!la;)Z")
-	public boolean method227(@OriginalArg(1) Class4_Sub15 arg0) {
+	public boolean method227(@OriginalArg(1) MidiNote arg0) {
 		if (arg0.aClass4_Sub4_Sub3_1 != null) {
 			return false;
 		}
@@ -781,9 +781,9 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 	}
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "(Lclient!la;B)I")
-	private int method232(@OriginalArg(0) Class4_Sub15 arg0) {
+	private int method232(@OriginalArg(0) MidiNote arg0) {
 		@Pc(23) int local23 = arg0.anInt1832 + (arg0.anInt1834 * arg0.anInt1840 >> 12);
-		@Pc(26) Class38 local26 = arg0.aClass38_1;
+		@Pc(26) MidiSound local26 = arg0.aClass38_1;
 		local23 += (this.anIntArray26[arg0.anInt1842] - 8192) * this.anIntArray36[arg0.anInt1842] >> 12;
 		@Pc(64) int local64;
 		if (local26.anInt1767 > 0 && (local26.anInt1774 > 0 || this.anIntArray34[arg0.anInt1842] > 0)) {
@@ -802,7 +802,7 @@ public final class Class4_Sub4_Sub1 extends Class4_Sub4 {
 
 	@OriginalMember(owner = "client!c", name = "j", descriptor = "(I)V")
 	public synchronized void method233() {
-		for (@Pc(15) Class4_Sub14 local15 = (Class4_Sub14) this.aClass81_2.method2017(); local15 != null; local15 = (Class4_Sub14) this.aClass81_2.method2013()) {
+		for (@Pc(15) MidiInstrument local15 = (MidiInstrument) this.aClass81_2.method2017(); local15 != null; local15 = (MidiInstrument) this.aClass81_2.method2013()) {
 			local15.method1112();
 		}
 	}

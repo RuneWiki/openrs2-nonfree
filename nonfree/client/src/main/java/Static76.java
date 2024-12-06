@@ -9,40 +9,40 @@ public final class Static76 {
 	public static boolean[] aBooleanArray14;
 
 	@OriginalMember(owner = "client!nb", name = "L", descriptor = "Lclient!cc;")
-	public static Class12 aClass12_8;
+	public static PrivilegedRequest aClass12_8;
 
 	@OriginalMember(owner = "client!nb", name = "N", descriptor = "Lclient!ga;")
-	public static Class20_Sub1 aClass20_Sub1_48;
+	public static Js5Provider aClass20_Sub1_48;
 
 	@OriginalMember(owner = "client!nb", name = "s", descriptor = "Ljava/lang/Object;")
 	public static Object anObject3 = new Object();
 
 	@OriginalMember(owner = "client!nb", name = "t", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_560 = Static60.method1113("<col=ffff00>*V");
+	public static JagString aClass22_560 = Static60.method1113("<col=ffff00>*V");
 
 	@OriginalMember(owner = "client!nb", name = "w", descriptor = "Lclient!ja;")
-	public static Class33 aClass33_25 = new Class33(64);
+	public static LruCache aClass33_25 = new LruCache(64);
 
 	@OriginalMember(owner = "client!nb", name = "B", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_561 = Static60.method1113("Unexpected loginserver response)3");
+	private static JagString aClass22_561 = Static60.method1113("Unexpected loginserver response)3");
 
 	@OriginalMember(owner = "client!nb", name = "C", descriptor = "Z")
 	public static boolean aBoolean173 = false;
 
 	@OriginalMember(owner = "client!nb", name = "M", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_565 = Static60.method1113("Cancel");
+	private static JagString aClass22_565 = Static60.method1113("Cancel");
 
 	@OriginalMember(owner = "client!nb", name = "D", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_562 = aClass22_565;
+	public static JagString aClass22_562 = aClass22_565;
 
 	@OriginalMember(owner = "client!nb", name = "E", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_563 = aClass22_561;
+	public static JagString aClass22_563 = aClass22_561;
 
 	@OriginalMember(owner = "client!nb", name = "F", descriptor = "I")
 	public static int anInt2022 = 0;
 
 	@OriginalMember(owner = "client!nb", name = "G", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_564 = Static60.method1113("Einloggen");
+	public static JagString aClass22_564 = Static60.method1113("Einloggen");
 
 	@OriginalMember(owner = "client!nb", name = "H", descriptor = "B")
 	public static byte aByte3 = 0;

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ob")
-public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
+public abstract class PixFont extends Pix2D {
 
 	@OriginalMember(owner = "client!ob", name = "bb", descriptor = "[I")
 	private int[] anIntArray217;
@@ -37,7 +37,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 	private int anInt2121;
 
 	@OriginalMember(owner = "client!ob", name = "<init>", descriptor = "([B[I[I[I[I[I[[B)V")
-	public Class4_Sub1_Sub2_Sub4(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int[] arg4, @OriginalArg(5) int[] arg5, @OriginalArg(6) byte[][] arg6) {
+	public PixFont(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int[] arg4, @OriginalArg(5) int[] arg5, @OriginalArg(6) byte[][] arg6) {
 		this.anIntArray215 = arg1;
 		this.anIntArray216 = arg2;
 		this.anIntArray214 = arg3;
@@ -59,12 +59,12 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 	}
 
 	@OriginalMember(owner = "client!ob", name = "<init>", descriptor = "([B)V")
-	public Class4_Sub1_Sub2_Sub4(@OriginalArg(0) byte[] arg0) {
+	public PixFont(@OriginalArg(0) byte[] arg0) {
 		this.method1397(arg0);
 	}
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(Lclient!ec;IIIIIIIII)I")
-	public final int method1391(@OriginalArg(0) Class22 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9) {
+	public final int method1391(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9) {
 		if (arg0 == null) {
 			return 0;
 		}
@@ -116,7 +116,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 	}
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(Lclient!ec;)I")
-	public final int method1392(@OriginalArg(0) Class22 arg0) {
+	public final int method1392(@OriginalArg(0) JagString arg0) {
 		if (arg0 == null) {
 			return 0;
 		}
@@ -129,7 +129,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 				local5 = local11;
 			} else {
 				if (local19 == 62 && local5 != -1) {
-					@Pc(39) Class22 local39 = arg0.method450(local5 + 1, local11);
+					@Pc(39) JagString local39 = arg0.method450(local5 + 1, local11);
 					local5 = -1;
 					if (local39.method481(Static81.aClass22_601)) {
 						local19 = 60;
@@ -161,7 +161,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 	}
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(Lclient!ec;I)V")
-	private void method1395(@OriginalArg(0) Class22 arg0, @OriginalArg(1) int arg1) {
+	private void method1395(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1) {
 		@Pc(1) int local1 = 0;
 		@Pc(3) boolean local3 = false;
 		for (@Pc(5) int local5 = 0; local5 < arg0.method449(); local5++) {
@@ -239,7 +239,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 	}
 
 	@OriginalMember(owner = "client!ob", name = "b", descriptor = "(Lclient!ec;I)I")
-	public final int method1398(@OriginalArg(0) Class22 arg0, @OriginalArg(1) int arg1) {
+	public final int method1398(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1) {
 		return this.method1405(arg0, new int[] { arg1 }, Static81.aClass22Array16);
 	}
 
@@ -249,7 +249,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 	}
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(Lclient!ec;IIII)V")
-	public final void method1400(@OriginalArg(0) Class22 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+	public final void method1400(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		if (arg0 != null) {
 			this.method1404(arg3, arg4);
 			this.method1409(arg0, arg1 - this.method1392(arg0), arg2);
@@ -257,7 +257,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 	}
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(Lclient!ec;IIIII)V")
-	public final void method1402(@OriginalArg(0) Class22 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(5) int arg3) {
+	public final void method1402(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(5) int arg3) {
 		if (arg0 == null) {
 			return;
 		}
@@ -276,7 +276,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 	}
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(Lclient!ec;II[I[I)V")
-	private void method1403(@OriginalArg(0) Class22 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int[] arg4) {
+	private void method1403(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int[] arg4) {
 		@Pc(4) int local4 = arg2 - this.anInt2120;
 		@Pc(6) int local6 = -1;
 		@Pc(8) int local8 = -1;
@@ -290,7 +290,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 				@Pc(78) int local78;
 				@Pc(89) int local89;
 				if (local20 == 62 && local6 != -1) {
-					@Pc(40) Class22 local40 = arg0.method450(local6 + 1, local12);
+					@Pc(40) JagString local40 = arg0.method450(local6 + 1, local12);
 					local6 = -1;
 					if (local40.method481(Static81.aClass22_601)) {
 						local20 = 60;
@@ -386,13 +386,13 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 	}
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(Lclient!ec;[I[Lclient!ec;)I")
-	private int method1405(@OriginalArg(0) Class22 arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) Class22[] arg2) {
+	private int method1405(@OriginalArg(0) JagString arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) JagString[] arg2) {
 		if (arg0 == null) {
 			return 0;
 		}
 		@Pc(5) int local5 = 0;
 		@Pc(7) int local7 = 0;
-		@Pc(11) Class22 local11 = Static53.method1004(100);
+		@Pc(11) JagString local11 = Static53.method1004(100);
 		@Pc(13) int local13 = -1;
 		@Pc(15) int local15 = 0;
 		@Pc(17) byte local17 = 0;
@@ -406,7 +406,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 				local19 = local29;
 			} else {
 				if (local35 == 62 && local19 != -1) {
-					@Pc(55) Class22 local55 = arg0.method450(local19 + 1, local29);
+					@Pc(55) JagString local55 = arg0.method450(local19 + 1, local29);
 					local19 = -1;
 					local11.method482(60);
 					local11.method452(local55);
@@ -475,7 +475,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 	}
 
 	@OriginalMember(owner = "client!ob", name = "b", descriptor = "(Lclient!ec;IIIII)V")
-	public final void method1406(@OriginalArg(0) Class22 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
+	public final void method1406(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
 		if (arg0 == null) {
 			return;
 		}
@@ -488,7 +488,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 	}
 
 	@OriginalMember(owner = "client!ob", name = "c", descriptor = "(Lclient!ec;)V")
-	private void method1407(@OriginalArg(0) Class22 arg0) {
+	private void method1407(@OriginalArg(0) JagString arg0) {
 		try {
 			if (arg0.method471(Static81.aClass22_599)) {
 				Static81.anInt2127 = arg0.method477(4).method465(16);
@@ -543,7 +543,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 	}
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(Lclient!ec;II)V")
-	private void method1409(@OriginalArg(0) Class22 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	private void method1409(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(4) int local4 = arg2 - this.anInt2120;
 		@Pc(6) int local6 = -1;
 		@Pc(8) int local8 = -1;
@@ -554,7 +554,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 			} else {
 				@Pc(68) int local68;
 				if (local18 == 62 && local6 != -1) {
-					@Pc(38) Class22 local38 = arg0.method450(local6 + 1, local10);
+					@Pc(38) JagString local38 = arg0.method450(local6 + 1, local10);
 					local6 = -1;
 					if (local38.method481(Static81.aClass22_601)) {
 						local18 = 60;
@@ -618,7 +618,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 	protected abstract void method1410(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5);
 
 	@OriginalMember(owner = "client!ob", name = "c", descriptor = "(Lclient!ec;IIIII)V")
-	public final void method1411(@OriginalArg(0) Class22 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
+	public final void method1411(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
 		if (arg0 == null) {
 			return;
 		}
@@ -633,7 +633,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 	}
 
 	@OriginalMember(owner = "client!ob", name = "c", descriptor = "(Lclient!ec;I)I")
-	public final int method1413(@OriginalArg(0) Class22 arg0, @OriginalArg(1) int arg1) {
+	public final int method1413(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1) {
 		@Pc(10) int local10 = this.method1405(arg0, new int[] { arg1 }, Static81.aClass22Array16);
 		@Pc(12) int local12 = 0;
 		for (@Pc(14) int local14 = 0; local14 < local10; local14++) {
@@ -646,7 +646,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 	}
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(Lclient!ec;IIIIII)V")
-	public final void method1414(@OriginalArg(0) Class22 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
+	public final void method1414(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		if (arg0 == null) {
 			return;
 		}
@@ -663,7 +663,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 	}
 
 	@OriginalMember(owner = "client!ob", name = "b", descriptor = "(Lclient!ec;IIII)V")
-	public final void method1415(@OriginalArg(0) Class22 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+	public final void method1415(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		if (arg0 != null) {
 			this.method1404(arg3, arg4);
 			this.method1409(arg0, arg1, arg2);
@@ -671,7 +671,7 @@ public abstract class Class4_Sub1_Sub2_Sub4 extends Pix2D {
 	}
 
 	@OriginalMember(owner = "client!ob", name = "c", descriptor = "(Lclient!ec;IIII)V")
-	public final void method1417(@OriginalArg(0) Class22 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+	public final void method1417(@OriginalArg(0) JagString arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		if (arg0 != null) {
 			this.method1404(arg3, arg4);
 			this.method1409(arg0, arg1 - this.method1392(arg0) / 2, arg2);

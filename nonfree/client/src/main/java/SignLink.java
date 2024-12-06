@@ -4,6 +4,7 @@ import java.awt.Toolkit;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.net.URL;
@@ -13,28 +14,38 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!dc")
-public final class Class17 implements Runnable {
+public final class SignLink implements Runnable {
 
+	@OriginalMember(owner = "client!dc", name = "h", descriptor = "Ljava/lang/String;")
+	public static String aString2;
+	@OriginalMember(owner = "client!dc", name = "o", descriptor = "Ljava/lang/String;")
+	public static String aString3;
+	@OriginalMember(owner = "client!dc", name = "g", descriptor = "Ljava/lang/String;")
+	public static String aString1;
+	@OriginalMember(owner = "client!dc", name = "c", descriptor = "Ljava/lang/reflect/Method;")
+	public static Method aMethod1;
+	@OriginalMember(owner = "client!dc", name = "q", descriptor = "Ljava/lang/reflect/Method;")
+	public static Method aMethod2;
 	@OriginalMember(owner = "client!dc", name = "f", descriptor = "[Lclient!lb;")
-	public Class42[] aClass42Array1;
+	public FileOnDisk[] aClass42Array1;
 
 	@OriginalMember(owner = "client!dc", name = "l", descriptor = "Lclient!d;")
-	private Interface1 anInterface1_2;
+	private AudioSource anInterface1_2;
 
 	@OriginalMember(owner = "client!dc", name = "b", descriptor = "Z")
 	private boolean aBoolean54 = false;
 
 	@OriginalMember(owner = "client!dc", name = "a", descriptor = "Lclient!cc;")
-	private Class12 aClass12_5 = null;
+	private PrivilegedRequest aClass12_5 = null;
 
 	@OriginalMember(owner = "client!dc", name = "m", descriptor = "Lclient!cc;")
-	private Class12 aClass12_6 = null;
+	private PrivilegedRequest aClass12_6 = null;
 
 	@OriginalMember(owner = "client!dc", name = "i", descriptor = "Ljava/applet/Applet;")
 	public Applet anApplet1 = null;
 
 	@OriginalMember(owner = "client!dc", name = "k", descriptor = "Lclient!lb;")
-	public Class42 aClass42_2 = null;
+	public FileOnDisk aClass42_2 = null;
 
 	@OriginalMember(owner = "client!dc", name = "n", descriptor = "Ljava/io/File;")
 	private File aFile1 = null;
@@ -43,10 +54,10 @@ public final class Class17 implements Runnable {
 	private File aFile2 = null;
 
 	@OriginalMember(owner = "client!dc", name = "e", descriptor = "Lclient!lb;")
-	public Class42 aClass42_1 = null;
+	public FileOnDisk aClass42_1 = null;
 
 	@OriginalMember(owner = "client!dc", name = "s", descriptor = "Lclient!lb;")
-	public Class42 aClass42_3 = null;
+	public FileOnDisk aClass42_3 = null;
 
 	@OriginalMember(owner = "client!dc", name = "j", descriptor = "Ljava/awt/EventQueue;")
 	public EventQueue anEventQueue1;
@@ -55,24 +66,24 @@ public final class Class17 implements Runnable {
 	private final Thread aThread1;
 
 	@OriginalMember(owner = "client!dc", name = "<init>", descriptor = "(ZLjava/applet/Applet;ILjava/lang/String;I)V")
-	public Class17(@OriginalArg(0) boolean arg0, @OriginalArg(1) Applet arg1, @OriginalArg(2) int arg2, @OriginalArg(3) String arg3, @OriginalArg(4) int arg4) {
+	public SignLink(@OriginalArg(0) boolean arg0, @OriginalArg(1) Applet arg1, @OriginalArg(2) int arg2, @OriginalArg(3) String arg3, @OriginalArg(4) int arg4) {
 		this.anApplet1 = arg1;
-		Static21.aString3 = "Unknown";
-		Static21.aString2 = "1.1";
+		aString3 = "Unknown";
+		aString2 = "1.1";
 		try {
-			Static21.aString3 = System.getProperty("java.vendor");
-			Static21.aString2 = System.getProperty("java.version");
+			aString3 = System.getProperty("java.vendor");
+			aString2 = System.getProperty("java.version");
 		} catch (@Pc(43) Exception local43) {
 		}
 		try {
-			Static21.aString1 = System.getProperty("user.home");
-			if (Static21.aString1 != null) {
-				Static21.aString1 = Static21.aString1 + "/";
+			aString1 = System.getProperty("user.home");
+			if (aString1 != null) {
+				aString1 = aString1 + "/";
 			}
 		} catch (@Pc(59) Exception local59) {
 		}
-		if (Static21.aString1 == null) {
-			Static21.aString1 = "~/";
+		if (aString1 == null) {
+			aString1 = "~/";
 		}
 		try {
 			this.anEventQueue1 = Toolkit.getDefaultToolkit().getSystemEventQueue();
@@ -80,17 +91,17 @@ public final class Class17 implements Runnable {
 		}
 		try {
 			if (arg1 == null) {
-				Static21.aMethod1 = Class.forName("java.awt.Component").getDeclaredMethod("setFocusTraversalKeysEnabled", Boolean.TYPE);
+				aMethod1 = Class.forName("java.awt.Component").getDeclaredMethod("setFocusTraversalKeysEnabled", Boolean.TYPE);
 			} else {
-				Static21.aMethod1 = arg1.getClass().getMethod("setFocusTraversalKeysEnabled", Boolean.TYPE);
+				aMethod1 = arg1.getClass().getMethod("setFocusTraversalKeysEnabled", Boolean.TYPE);
 			}
 		} catch (@Pc(96) Exception local96) {
 		}
 		try {
 			if (arg1 == null) {
-				Static21.aMethod2 = Class.forName("java.awt.Container").getDeclaredMethod("setFocusCycleRoot", Boolean.TYPE);
+				aMethod2 = Class.forName("java.awt.Container").getDeclaredMethod("setFocusCycleRoot", Boolean.TYPE);
 			} else {
-				Static21.aMethod2 = arg1.getClass().getMethod("setFocusCycleRoot", Boolean.TYPE);
+				aMethod2 = arg1.getClass().getMethod("setFocusCycleRoot", Boolean.TYPE);
 			}
 		} catch (@Pc(123) Exception local123) {
 		}
@@ -105,7 +116,7 @@ public final class Class17 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!dc", name = "a", descriptor = "(ZLjava/lang/Class;Ljava/lang/String;)Lclient!cc;")
-	public Class12 method381(@OriginalArg(1) Class arg0, @OriginalArg(2) String arg1) {
+	public PrivilegedRequest method381(@OriginalArg(1) Class arg0, @OriginalArg(2) String arg1) {
 		return this.method390(0, new Object[] { arg0, arg1 }, 9);
 	}
 
@@ -114,7 +125,7 @@ public final class Class17 implements Runnable {
 		if (arg0 < 32 || arg0 > 34) {
 			arg0 = 32;
 		}
-		@Pc(46) String[] local46 = new String[] { "c:/rscache/", "/rscache/", "c:/windows/", "c:/winnt/", "c:/", Static21.aString1, "/tmp/", "" };
+		@Pc(46) String[] local46 = new String[] { "c:/rscache/", "/rscache/", "c:/windows/", "c:/winnt/", "c:/", aString1, "/tmp/", "" };
 		@Pc(69) String[] local69 = new String[] { ".jagex_cache_" + arg0, ".file_store_" + arg0 };
 		for (@Pc(71) int local71 = 0; local71 < 2; local71++) {
 			for (@Pc(74) int local74 = 0; local74 < local69.length; local74++) {
@@ -137,7 +148,7 @@ public final class Class17 implements Runnable {
 							try {
 								local128 = new File(local105, "random.dat");
 								if (local71 == 1 || local128.exists()) {
-									this.aClass42_3 = new Class42(local128, "rw", 25L);
+									this.aClass42_3 = new FileOnDisk(local128, "rw", 25L);
 								}
 							} catch (@Pc(144) Exception local144) {
 								this.aClass42_3 = null;
@@ -156,12 +167,12 @@ public final class Class17 implements Runnable {
 								if (local71 == 0 && !local128.exists()) {
 									continue;
 								}
-								this.aClass42_1 = new Class42(local128, "rw", 52428800L);
-								this.aClass42Array1 = new Class42[arg2];
+								this.aClass42_1 = new FileOnDisk(local128, "rw", 52428800L);
+								this.aClass42Array1 = new FileOnDisk[arg2];
 								for (@Pc(194) int local194 = 0; local194 < arg2; local194++) {
-									this.aClass42Array1[local194] = new Class42(new File(local105, "main_file_cache.idx" + local194), "rw", 1048576L);
+									this.aClass42Array1[local194] = new FileOnDisk(new File(local105, "main_file_cache.idx" + local194), "rw", 1048576L);
 								}
-								this.aClass42_2 = new Class42(new File(local105, "main_file_cache.idx255"), "rw", 1048576L);
+								this.aClass42_2 = new FileOnDisk(new File(local105, "main_file_cache.idx255"), "rw", 1048576L);
 								this.aFile2 = this.aFile1 = local105;
 							} catch (@Pc(239) Exception local239) {
 								try {
@@ -191,7 +202,7 @@ public final class Class17 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!dc", name = "a", descriptor = "(ILjava/lang/Runnable;I)Lclient!cc;")
-	public Class12 method383(@OriginalArg(0) int arg0, @OriginalArg(1) Runnable arg1) {
+	public PrivilegedRequest method383(@OriginalArg(0) int arg0, @OriginalArg(1) Runnable arg1) {
 		return this.method390(arg0, arg1, 2);
 	}
 
@@ -239,7 +250,7 @@ public final class Class17 implements Runnable {
 	@Override
 	public void run() {
 		while (true) {
-			@Pc(15) Class12 local15;
+			@Pc(15) PrivilegedRequest local15;
 			synchronized (this) {
 				while (true) {
 					if (this.aBoolean54) {
@@ -293,33 +304,33 @@ public final class Class17 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!dc", name = "b", descriptor = "(I)Lclient!d;")
-	public Interface1 method385() {
+	public AudioSource method385() {
 		return this.anInterface1_2;
 	}
 
 	@OriginalMember(owner = "client!dc", name = "a", descriptor = "(BLjava/net/URL;)Lclient!cc;")
-	public Class12 method386(@OriginalArg(1) URL arg0) {
+	public PrivilegedRequest method386(@OriginalArg(1) URL arg0) {
 		return this.method390(0, arg0, 4);
 	}
 
 	@OriginalMember(owner = "client!dc", name = "a", descriptor = "([Ljava/lang/Class;Ljava/lang/String;ILjava/lang/Class;)Lclient!cc;")
-	public Class12 method387(@OriginalArg(0) Class[] arg0, @OriginalArg(1) String arg1, @OriginalArg(3) Class arg2) {
+	public PrivilegedRequest method387(@OriginalArg(0) Class[] arg0, @OriginalArg(1) String arg1, @OriginalArg(3) Class arg2) {
 		return this.method390(0, new Object[] { arg2, arg1, arg0 }, 8);
 	}
 
 	@OriginalMember(owner = "client!dc", name = "a", descriptor = "(II)Lclient!cc;")
-	public Class12 method388(@OriginalArg(0) int arg0) {
+	public PrivilegedRequest method388(@OriginalArg(0) int arg0) {
 		return this.method390(arg0, null, 3);
 	}
 
 	@OriginalMember(owner = "client!dc", name = "a", descriptor = "(Ljava/lang/String;II)Lclient!cc;")
-	public Class12 method389(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
+	public PrivilegedRequest method389(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
 		return this.method390(arg1, arg0, 1);
 	}
 
 	@OriginalMember(owner = "client!dc", name = "a", descriptor = "(IIILjava/lang/Object;I)Lclient!cc;")
-	private Class12 method390(@OriginalArg(1) int arg0, @OriginalArg(3) Object arg1, @OriginalArg(4) int arg2) {
-		@Pc(11) Class12 local11 = new Class12();
+	private PrivilegedRequest method390(@OriginalArg(1) int arg0, @OriginalArg(3) Object arg1, @OriginalArg(4) int arg2) {
+		@Pc(11) PrivilegedRequest local11 = new PrivilegedRequest();
 		local11.anInt374 = arg2;
 		local11.anObject2 = arg1;
 		local11.anInt372 = arg0;

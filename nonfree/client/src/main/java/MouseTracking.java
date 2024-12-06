@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!t")
-public final class Class70 implements Runnable {
+public final class MouseTracking implements Runnable {
 
 	@OriginalMember(owner = "client!t", name = "c", descriptor = "Z")
 	public boolean aBoolean243 = true;

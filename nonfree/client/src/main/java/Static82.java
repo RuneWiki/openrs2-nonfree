@@ -5,16 +5,16 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static82 {
 
 	@OriginalMember(owner = "client!oc", name = "f", descriptor = "Lclient!h;")
-	public static Class4_Sub1_Sub2_Sub2 aClass4_Sub1_Sub2_Sub2_6;
+	public static Pix32 aClass4_Sub1_Sub2_Sub2_6;
 
 	@OriginalMember(owner = "client!oc", name = "a", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_629 = Static60.method1113("headicons_pk");
+	public static JagString aClass22_629 = Static60.method1113("headicons_pk");
 
 	@OriginalMember(owner = "client!oc", name = "c", descriptor = "[[I")
 	public static int[][] anIntArrayArray20 = new int[104][104];
 
 	@OriginalMember(owner = "client!oc", name = "d", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_630 = Static60.method1113("Mitglieder)2Welt");
+	public static JagString aClass22_630 = Static60.method1113("Mitglieder)2Welt");
 
 	@OriginalMember(owner = "client!oc", name = "a", descriptor = "(IIII)I")
 	public static int method1451(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
@@ -42,12 +42,12 @@ public final class Static82 {
 	}
 
 	@OriginalMember(owner = "client!oc", name = "a", descriptor = "(BLclient!fd;)V")
-	public static void method1453(@OriginalArg(1) Class4_Sub4 arg0) {
+	public static void method1453(@OriginalArg(1) PcmStream arg0) {
 		arg0.aBoolean227 = false;
 		if (arg0.aClass4_Sub13_5 != null) {
 			arg0.aClass4_Sub13_5.anInt1364 = 0;
 		}
-		for (@Pc(18) Class4_Sub4 local18 = arg0.method1640(); local18 != null; local18 = arg0.method1638()) {
+		for (@Pc(18) PcmStream local18 = arg0.method1640(); local18 != null; local18 = arg0.method1638()) {
 			method1453(local18);
 		}
 	}

@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static62 {
 
 	@OriginalMember(owner = "client!kf", name = "a", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_479 = Static60.method1113(" )2> <col=ffff00>");
+	public static JagString aClass22_479 = Static60.method1113(" )2> <col=ffff00>");
 
 	@OriginalMember(owner = "client!kf", name = "c", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_480 = Static60.method1113("Fehler bei der Verbindung zum Server)3");
+	public static JagString aClass22_480 = Static60.method1113("Fehler bei der Verbindung zum Server)3");
 
 	@OriginalMember(owner = "client!kf", name = "d", descriptor = "I")
 	public static int anInt1802 = 0;
@@ -20,10 +20,10 @@ public final class Static62 {
 	public static int anInt1808 = 0;
 
 	@OriginalMember(owner = "client!kf", name = "n", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_481 = Static60.method1113("<img=1>");
+	public static JagString aClass22_481 = Static60.method1113("<img=1>");
 
 	@OriginalMember(owner = "client!kf", name = "o", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_482 = Static60.method1113(")1");
+	public static JagString aClass22_482 = Static60.method1113(")1");
 
 	@OriginalMember(owner = "client!kf", name = "a", descriptor = "(IIIBI)V")
 	public static void method1122(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3) {
@@ -105,7 +105,7 @@ public final class Static62 {
 		Static134.aClass77_1.method1939();
 		Static48.method902(arg2, arg3, arg1, arg0);
 		Static52.method996(arg1, arg3);
-		((Class75) Static6.anInterface2_1).method1849(Static46.anInt1293);
+		((SceneBuilderProvider) Static6.anInterface2_1).method1849(Static46.anInt1293);
 		Static14.method278(arg3, arg2, arg1, arg0);
 		Static87.anInt2318 = local45;
 		Static42.anInt885 = local105;
@@ -125,8 +125,8 @@ public final class Static62 {
 	}
 
 	@OriginalMember(owner = "client!kf", name = "a", descriptor = "(IILclient!hd;III)V")
-	public static void method1123(@OriginalArg(1) int arg0, @OriginalArg(2) Class4_Sub1_Sub5 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		@Pc(12) Class4_Sub18 local12 = new Class4_Sub18();
+	public static void method1123(@OriginalArg(1) int arg0, @OriginalArg(2) LocType arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
+		@Pc(12) PositionedSound local12 = new PositionedSound();
 		local12.anInt2203 = arg4 * 128;
 		local12.anInt2202 = arg1.anInt1282;
 		local12.anInt2193 = arg3 * 128;

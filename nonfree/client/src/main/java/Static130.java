@@ -5,10 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static130 {
 
 	@OriginalMember(owner = "client!wa", name = "t", descriptor = "Lclient!ea;")
-	public static Class20 aClass20_61;
-
-	@OriginalMember(owner = "client!wa", name = "x", descriptor = "Lclient!dc;")
-	public static Class17 aClass17_4;
+	public static Js5Index aClass20_61;
 
 	@OriginalMember(owner = "client!wa", name = "r", descriptor = "[I")
 	public static int[] anIntArray339 = new int[] { 0, 1, 2, 3 };
@@ -17,19 +14,19 @@ public final class Static130 {
 	public static int anInt3086 = -1;
 
 	@OriginalMember(owner = "client!wa", name = "B", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_952 = Static60.method1113("Benutzen Sie die (WPasswort -=ndern(W Option");
+	public static JagString aClass22_952 = Static60.method1113("Benutzen Sie die (WPasswort -=ndern(W Option");
 
 	@OriginalMember(owner = "client!wa", name = "H", descriptor = "I")
 	public static int anInt3095 = 0;
 
 	@OriginalMember(owner = "client!wa", name = "J", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_953 = Static60.method1113("http:)4)4");
+	public static JagString aClass22_953 = Static60.method1113("http:)4)4");
 
 	@OriginalMember(owner = "client!wa", name = "K", descriptor = "Z")
 	public static boolean aBoolean279 = false;
 
 	@OriginalMember(owner = "client!wa", name = "T", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_954 = Static60.method1113("<br>");
+	public static JagString aClass22_954 = Static60.method1113("<br>");
 
 	@OriginalMember(owner = "client!wa", name = "Z", descriptor = "I")
 	public static int anInt3100 = 0;
@@ -38,7 +35,7 @@ public final class Static130 {
 	public static int anInt3102 = 0;
 
 	@OriginalMember(owner = "client!wa", name = "eb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_955 = Static60.method1113("Bitte warten Sie eine Minute");
+	public static JagString aClass22_955 = Static60.method1113("Bitte warten Sie eine Minute");
 
 	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(B)V")
 	public static void method2004() {
@@ -85,7 +82,7 @@ public final class Static130 {
 			if (local24 == 38 || local24 == 15 || local24 == 51 || local24 == 18 || local24 == 41 || local24 == 17 || local24 == 30 || local24 == 7 || local24 == 19 || local24 == 35 || local24 == 21 || local24 == 1004) {
 				local26 = Static101.anIntArray290[Static99.anInt2589 - 1];
 				local75 = Static133.anIntArray344[Static99.anInt2589 - 1];
-				@Pc(232) Class4_Sub7 local232 = Static106.method1749(local75);
+				@Pc(232) IfType local232 = Static106.method1749(local75);
 				if (Static12.method171(Static124.method1890(local232)) || Static48.method899(Static124.method1890(local232))) {
 					Static90.anInt2395 = 0;
 					Static59.aBoolean158 = false;
@@ -118,7 +115,7 @@ public final class Static130 {
 		aClass20_61 = null;
 		aClass22_955 = null;
 		aClass22_954 = null;
-		aClass17_4 = null;
+		GameShell.aClass17_4 = null;
 		anIntArray339 = null;
 		aClass22_952 = null;
 		aClass22_953 = null;
@@ -137,7 +134,7 @@ public final class Static130 {
 	}
 
 	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(Lclient!ec;BLclient!jd;)I")
-	public static int method2008(@OriginalArg(0) Class22 arg0, @OriginalArg(2) Class4_Sub11 arg1) {
+	public static int method2008(@OriginalArg(0) JagString arg0, @OriginalArg(2) Packet arg1) {
 		@Pc(11) int local11 = arg1.anInt1099;
 		arg1.method732(arg0.anInt668);
 		arg1.anInt1099 += Static75.aClass10_1.method168(0, arg0.anInt668, arg1.anInt1099, arg0.aByteArray7, arg1.aByteArray9);
@@ -145,7 +142,7 @@ public final class Static130 {
 	}
 
 	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(Lclient!ea;IIIZI)V")
-	public static void method2009(@OriginalArg(0) Class20 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(5) int arg3) {
+	public static void method2009(@OriginalArg(0) Js5Index arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(5) int arg3) {
 		Static105.anInt2640 = arg3;
 		Static132.anInt3135 = arg1;
 		Static30.aClass20_17 = arg0;

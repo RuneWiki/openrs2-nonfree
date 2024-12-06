@@ -5,55 +5,52 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static92 {
 
 	@OriginalMember(owner = "client!q", name = "Nc", descriptor = "[Lclient!h;")
-	public static Class4_Sub1_Sub2_Sub2[] aClass4_Sub1_Sub2_Sub2Array14;
+	public static Pix32[] aClass4_Sub1_Sub2_Sub2Array14;
 
 	@OriginalMember(owner = "client!q", name = "Vc", descriptor = "[Lclient!fa;")
-	public static Class4_Sub8[] aClass4_Sub8Array1;
-
-	@OriginalMember(owner = "client!q", name = "Xc", descriptor = "I")
-	public static int anInt2523;
+	public static ClanMember[] aClass4_Sub8Array1;
 
 	@OriginalMember(owner = "client!q", name = "Yc", descriptor = "[[[B")
 	public static byte[][][] aByteArrayArrayArray4;
 
 	@OriginalMember(owner = "client!q", name = "Kc", descriptor = "Lclient!wd;")
-	public static Class82 aClass82_8 = new Class82();
+	public static LinkList aClass82_8 = new LinkList();
 
 	@OriginalMember(owner = "client!q", name = "Oc", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_725 = Static60.method1113("Ung-Ultige Verbindung mit einem Anmelde)2Server)3");
+	public static JagString aClass22_725 = Static60.method1113("Ung-Ultige Verbindung mit einem Anmelde)2Server)3");
 
 	@OriginalMember(owner = "client!q", name = "Pc", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_726 = Static60.method1113("Hidden)2");
+	public static JagString aClass22_726 = Static60.method1113("Hidden)2");
 
 	@OriginalMember(owner = "client!q", name = "Qc", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_727 = Static60.method1113("Benutzen");
+	public static JagString aClass22_727 = Static60.method1113("Benutzen");
 
 	@OriginalMember(owner = "client!q", name = "Rc", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_728 = Static60.method1113("Lade Konfiguration )2 ");
+	public static JagString aClass22_728 = Static60.method1113("Lade Konfiguration )2 ");
 
 	@OriginalMember(owner = "client!q", name = "Sc", descriptor = "I")
 	public static int anInt2522 = -1;
 
 	@OriginalMember(owner = "client!q", name = "Tc", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_729 = Static60.method1113("sl_stars");
+	public static JagString aClass22_729 = Static60.method1113("sl_stars");
 
 	@OriginalMember(owner = "client!q", name = "Uc", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_730 = Static60.method1113("Verbindung konnte nicht hergestellt werden)3");
+	public static JagString aClass22_730 = Static60.method1113("Verbindung konnte nicht hergestellt werden)3");
 
 	@OriginalMember(owner = "client!q", name = "Wc", descriptor = "[Lclient!ec;")
-	public static Class22[] aClass22Array19 = new Class22[100];
+	public static JagString[] aClass22Array19 = new JagString[100];
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(ILclient!jd;ILclient!dc;)V")
-	public static void method1616(@OriginalArg(0) int arg0, @OriginalArg(1) Class4_Sub11 arg1, @OriginalArg(3) Class17 arg2) {
-		@Pc(13) Class4_Sub6 local13 = new Class4_Sub6();
+	public static void method1616(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1, @OriginalArg(3) SignLink arg2) {
+		@Pc(13) ReflectionCheckNode local13 = new ReflectionCheckNode();
 		local13.anInt575 = arg1.method719();
 		local13.anInt571 = arg1.method725();
-		local13.aClass12Array2 = new Class12[local13.anInt575];
+		local13.aClass12Array2 = new PrivilegedRequest[local13.anInt575];
 		local13.anIntArray63 = new int[local13.anInt575];
 		local13.aByteArrayArrayArray2 = new byte[local13.anInt575][][];
 		local13.anIntArray64 = new int[local13.anInt575];
 		local13.anIntArray65 = new int[local13.anInt575];
-		local13.aClass12Array1 = new Class12[local13.anInt575];
+		local13.aClass12Array1 = new PrivilegedRequest[local13.anInt575];
 		for (@Pc(59) int local59 = 0; local59 < local13.anInt575; local59++) {
 			try {
 				@Pc(65) int local65 = arg1.method719();
@@ -115,14 +112,14 @@ public final class Static92 {
 		@Pc(5) Object local5 = Static76.anObject3;
 		synchronized (Static76.anObject3) {
 			if (Static123.anInt3084 == 0) {
-				Static130.aClass17_4.method383(5, new Class73());
+				GameShell.aClass17_4.method383(5, new Js5ProviderThread());
 			}
 			Static123.anInt3084 = 600;
 		}
 	}
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(BLclient!ec;)Z")
-	public static boolean method1618(@OriginalArg(1) Class22 arg0) {
+	public static boolean method1618(@OriginalArg(1) JagString arg0) {
 		if (arg0 == null) {
 			return false;
 		}
@@ -150,7 +147,7 @@ public final class Static92 {
 	}
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(ZI)Lclient!ec;")
-	public static Class22 method1620(@OriginalArg(1) int arg0) {
-		return Static48.aClass22Array9[arg0].method449() > 0 ? Static44.method856(new Class22[] { Static90.aClass22Array18[arg0], Static95.aClass22_537, Static48.aClass22Array9[arg0] }) : Static90.aClass22Array18[arg0];
+	public static JagString method1620(@OriginalArg(1) int arg0) {
+		return Static48.aClass22Array9[arg0].method449() > 0 ? Static44.method856(new JagString[] { Static90.aClass22Array18[arg0], Static95.aClass22_537, Static48.aClass22Array9[arg0] }) : Static90.aClass22Array18[arg0];
 	}
 }

@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!sf")
-public abstract class Class8 {
+public abstract class ByteArrayCopier {
 
 	@OriginalMember(owner = "client!sf", name = "a", descriptor = "([BB)V")
 	public abstract void method150(@OriginalArg(0) byte[] arg0);

@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!la")
-public final class Class4_Sub15 extends Linkable {
+public final class MidiNote extends Linkable {
 
 	@OriginalMember(owner = "client!la", name = "s", descriptor = "I")
 	public int anInt1822;
@@ -26,7 +26,7 @@ public final class Class4_Sub15 extends Linkable {
 	public int anInt1827;
 
 	@OriginalMember(owner = "client!la", name = "D", descriptor = "Lclient!kc;")
-	public Class38 aClass38_1;
+	public MidiSound aClass38_1;
 
 	@OriginalMember(owner = "client!la", name = "G", descriptor = "I")
 	public int anInt1830;

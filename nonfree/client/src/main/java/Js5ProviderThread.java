@@ -10,10 +10,10 @@ public final class Js5ProviderThread implements Runnable {
 	public void run() {
 		try {
 			while (true) {
-				@Pc(5) Class82 local5 = Static2.aClass82_1;
-				@Pc(12) Class4_Sub20 local12;
+				@Pc(5) LinkList local5 = Static2.aClass82_1;
+				@Pc(12) Js5NetProviderRequest local12;
 				synchronized (Static2.aClass82_1) {
-					local12 = (Class4_Sub20) Static2.aClass82_1.method2025();
+					local12 = (Js5NetProviderRequest) Static2.aClass82_1.method2025();
 				}
 				@Pc(83) Object local83;
 				if (local12 == null) {
@@ -53,7 +53,7 @@ public final class Js5ProviderThread implements Runnable {
 				}
 			}
 		} catch (@Pc(135) Exception local135) {
-			Static91.method1588(local135, null);
+			JagException.report(local135, null);
 		}
 	}
 }

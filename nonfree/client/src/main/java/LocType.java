@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!hd")
-public final class Class4_Sub1_Sub5 extends DoublyLinkable {
+public final class LocType extends DoublyLinkable {
 
 	@OriginalMember(owner = "client!hd", name = "N", descriptor = "[S")
 	private short[] aShortArray5;
@@ -49,7 +49,7 @@ public final class Class4_Sub1_Sub5 extends DoublyLinkable {
 	public int anInt1268 = 2;
 
 	@OriginalMember(owner = "client!hd", name = "eb", descriptor = "Lclient!ec;")
-	public Class22 aClass22_309 = Static96.aClass22_712;
+	public JagString aClass22_309 = Static96.aClass22_712;
 
 	@OriginalMember(owner = "client!hd", name = "nb", descriptor = "I")
 	public int anInt1256 = 1;
@@ -100,7 +100,7 @@ public final class Class4_Sub1_Sub5 extends DoublyLinkable {
 	private int anInt1281 = -1;
 
 	@OriginalMember(owner = "client!hd", name = "Ub", descriptor = "[Lclient!ec;")
-	public final Class22[] aClass22Array8 = new Class22[5];
+	public final JagString[] aClass22Array8 = new JagString[5];
 
 	@OriginalMember(owner = "client!hd", name = "kb", descriptor = "Z")
 	public boolean aBoolean119 = true;
@@ -142,7 +142,7 @@ public final class Class4_Sub1_Sub5 extends DoublyLinkable {
 		}
 		for (@Pc(29) int local29 = 0; local29 < this.anIntArray137.length; local29++) {
 			if (this.anIntArray137[local29] != -1) {
-				@Pc(44) Class4_Sub1_Sub5 local44 = Static5.method45(this.anIntArray137[local29]);
+				@Pc(44) LocType local44 = Static5.method45(this.anIntArray137[local29]);
 				if (local44.anInt1282 != -1 || local44.anIntArray135 != null) {
 					return true;
 				}
@@ -300,7 +300,7 @@ public final class Class4_Sub1_Sub5 extends DoublyLinkable {
 	}
 
 	@OriginalMember(owner = "client!hd", name = "a", descriptor = "(ZLclient!vc;II[[IIIII)Lclient!od;")
-	public SoftwareModel method878(@OriginalArg(1) Class4_Sub1_Sub17 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int[][] arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7) {
+	public SoftwareModel method878(@OriginalArg(1) SeqType arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int[][] arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7) {
 		@Pc(13) long local13;
 		if (this.anIntArray134 == null) {
 			local13 = (this.anInt1255 << 10) + arg7;
@@ -331,7 +331,7 @@ public final class Class4_Sub1_Sub5 extends DoublyLinkable {
 	}
 
 	@OriginalMember(owner = "client!hd", name = "a", descriptor = "(BLclient!jd;I)V")
-	private void method879(@OriginalArg(1) Class4_Sub11 arg0, @OriginalArg(2) int arg1) {
+	private void method879(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
 		@Pc(16) int local16;
 		@Pc(33) int local33;
 		if (arg1 == 1) {
@@ -519,7 +519,7 @@ public final class Class4_Sub1_Sub5 extends DoublyLinkable {
 	}
 
 	@OriginalMember(owner = "client!hd", name = "a", descriptor = "(Lclient!jd;Z)V")
-	public void method882(@OriginalArg(0) Class4_Sub11 arg0) {
+	public void method882(@OriginalArg(0) Packet arg0) {
 		while (true) {
 			@Pc(5) int local5 = arg0.method719();
 			if (local5 == 0) {
@@ -567,7 +567,7 @@ public final class Class4_Sub1_Sub5 extends DoublyLinkable {
 	}
 
 	@OriginalMember(owner = "client!hd", name = "d", descriptor = "(B)Lclient!hd;")
-	public Class4_Sub1_Sub5 method885() {
+	public LocType method885() {
 		@Pc(5) int local5 = -1;
 		if (this.anInt1281 != -1) {
 			local5 = Static57.method1093(this.anInt1281);

@@ -8,16 +8,16 @@ public final class Static16 {
 	public static int anInt377;
 
 	@OriginalMember(owner = "client!ce", name = "f", descriptor = "Lclient!hb;")
-	public static Class4_Sub1_Sub2_Sub3 aClass4_Sub1_Sub2_Sub3_2;
+	public static Pix8 aClass4_Sub1_Sub2_Sub3_2;
 
 	@OriginalMember(owner = "client!ce", name = "j", descriptor = "Lclient!ka;")
-	public static Class4_Sub1_Sub3_Sub2_Sub1 aClass4_Sub1_Sub3_Sub2_Sub1_1;
+	public static PlayerEntity aClass4_Sub1_Sub3_Sub2_Sub1_1;
 
 	@OriginalMember(owner = "client!ce", name = "a", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_124 = Static60.method1113("Musik)2Engine vorbereitet)3");
+	public static JagString aClass22_124 = Static60.method1113("Musik)2Engine vorbereitet)3");
 
 	@OriginalMember(owner = "client!ce", name = "b", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_125 = Static60.method1113(" steht bereits auf Ihrer Freunde)2Liste(Q");
+	public static JagString aClass22_125 = Static60.method1113(" steht bereits auf Ihrer Freunde)2Liste(Q");
 
 	@OriginalMember(owner = "client!ce", name = "c", descriptor = "[I")
 	public static int[] anIntArray42 = new int[100];
@@ -26,7 +26,7 @@ public final class Static16 {
 	public static int anInt379 = 0;
 
 	@OriginalMember(owner = "client!ce", name = "i", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_126 = Static60.method1113("::noclip");
+	public static JagString aClass22_126 = Static60.method1113("::noclip");
 
 	@OriginalMember(owner = "client!ce", name = "a", descriptor = "(I)V")
 	public static void method283() {
@@ -39,7 +39,7 @@ public final class Static16 {
 	}
 
 	@OriginalMember(owner = "client!ce", name = "a", descriptor = "(ILclient!ec;)I")
-	public static int method284(@OriginalArg(1) Class22 arg0) {
+	public static int method284(@OriginalArg(1) JagString arg0) {
 		if (anInt379 == 1) {
 			return 7;
 		} else if (arg0.method471(Static109.aClass22_72)) {
@@ -70,7 +70,7 @@ public final class Static16 {
 		for (@Pc(14) int local14 = 0; local14 < Static120.anInt2929; local14++) {
 			@Pc(20) int local20 = Static93.anIntArray281[local14]--;
 			if (Static93.anIntArray281[local14] >= -10) {
-				@Pc(93) Class65 local93 = Static54.aClass65Array1[local14];
+				@Pc(93) Wave local93 = Static54.aClass65Array1[local14];
 				if (local93 == null) {
 					local93 = Static141.method1716(Static1.aClass20_Sub1_1, Static45.anIntArray133[local14], 0);
 					if (local93 == null) {
@@ -106,8 +106,8 @@ public final class Static16 {
 						local131 = Static95.anInt1927 * (local141 - local199) / local141;
 					}
 					if (local131 > 0) {
-						@Pc(238) Class4_Sub13_Sub1 local238 = local93.method1715().method935(Static108.aClass23_1);
-						@Pc(243) Class4_Sub4_Sub3 local243 = Static140.method1234(local238, local131);
+						@Pc(238) PcmSound local238 = local93.method1715().method935(Static108.aClass23_1);
+						@Pc(243) SoundPcmStream local243 = Static140.method1234(local238, local131);
 						local243.method1232(Static105.anIntArray296[local14] - 1);
 						Static32.aClass4_Sub4_Sub4_1.method1647(local243);
 					}

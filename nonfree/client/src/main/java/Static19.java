@@ -6,13 +6,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static19 {
 
 	@OriginalMember(owner = "client!da", name = "r", descriptor = "[[[Lclient!wd;")
-	public static Class82[][][] aClass82ArrayArrayArray1 = new Class82[4][104][104];
+	public static LinkList[][][] aClass82ArrayArrayArray1 = new LinkList[4][104][104];
 
 	@OriginalMember(owner = "client!da", name = "w", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_149 = Static60.method1113("<col=ffb000>");
+	public static JagString aClass22_149 = Static60.method1113("<col=ffb000>");
 
 	@OriginalMember(owner = "client!da", name = "x", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_150 = Static60.method1113("(Y");
+	public static JagString aClass22_150 = Static60.method1113("(Y");
 
 	@OriginalMember(owner = "client!da", name = "J", descriptor = "Ljava/util/zip/CRC32;")
 	public static CRC32 aCRC32_1 = new CRC32();
@@ -21,19 +21,19 @@ public final class Static19 {
 	public static boolean aBoolean52 = false;
 
 	@OriginalMember(owner = "client!da", name = "L", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_151 = Static60.method1113("Hier wechseln");
+	public static JagString aClass22_151 = Static60.method1113("Hier wechseln");
 
 	@OriginalMember(owner = "client!da", name = "M", descriptor = "Z")
 	public static boolean aBoolean53 = false;
 
 	@OriginalMember(owner = "client!da", name = "T", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_154 = Static60.method1113("To create a new account you need to");
+	private static JagString aClass22_154 = Static60.method1113("To create a new account you need to");
 
 	@OriginalMember(owner = "client!da", name = "Q", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_152 = aClass22_154;
+	public static JagString aClass22_152 = aClass22_154;
 
 	@OriginalMember(owner = "client!da", name = "R", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_153 = Static60.method1113("mapscene");
+	public static JagString aClass22_153 = Static60.method1113("mapscene");
 
 	@OriginalMember(owner = "client!da", name = "S", descriptor = "I")
 	public static int anInt543 = 0;
@@ -59,16 +59,16 @@ public final class Static19 {
 			Static65.method1153(Static89.aClass22_684, 0, Static64.aClass22_485);
 			return;
 		}
-		@Pc(27) Class22 local27 = Static8.method1575(arg0).method473();
+		@Pc(27) JagString local27 = Static8.method1575(arg0).method473();
 		for (@Pc(29) int local29 = 0; local29 < Static88.anInt2348; local29++) {
 			if (Static85.aLongArray5[local29] == arg0) {
-				Static65.method1153(Static44.method856(new Class22[] { local27, Static4.aClass22_20 }), 0, Static64.aClass22_485);
+				Static65.method1153(Static44.method856(new JagString[] { local27, Static4.aClass22_20 }), 0, Static64.aClass22_485);
 				return;
 			}
 		}
 		for (@Pc(64) int local64 = 0; local64 < Static2.anInt9; local64++) {
 			if (Static29.aLongArray1[local64] == arg0) {
-				Static65.method1153(Static44.method856(new Class22[] { Static5.aClass22_41, local27, Static78.aClass22_572 }), 0, Static64.aClass22_485);
+				Static65.method1153(Static44.method856(new JagString[] { Static5.aClass22_41, local27, Static78.aClass22_572 }), 0, Static64.aClass22_485);
 				return;
 			}
 		}
@@ -84,7 +84,7 @@ public final class Static19 {
 	}
 
 	@OriginalMember(owner = "client!da", name = "a", descriptor = "(BLclient!lf;)V")
-	public static void method373(@OriginalArg(1) Applet_Sub1 arg0) {
+	public static void method373(@OriginalArg(1) GameShell arg0) {
 		if (Static97.aBoolean228) {
 			Static99.method1671(arg0);
 			return;

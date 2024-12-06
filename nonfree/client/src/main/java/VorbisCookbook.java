@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ef")
-public final class Class24 {
+public final class VorbisCookbook {
 
 	@OriginalMember(owner = "client!ef", name = "f", descriptor = "[I")
 	private int[] anIntArray80;
@@ -24,7 +24,7 @@ public final class Class24 {
 	private float[][] aFloatArrayArray1;
 
 	@OriginalMember(owner = "client!ef", name = "<init>", descriptor = "()V")
-	public Class24() {
+	public VorbisCookbook() {
 		Static77.method1296(24);
 		this.anInt723 = Static77.method1296(16);
 		this.anInt724 = Static77.method1296(24);

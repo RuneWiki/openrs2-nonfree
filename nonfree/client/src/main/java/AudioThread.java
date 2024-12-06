@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!de")
-public final class Class18 implements Runnable {
+public final class AudioThread implements Runnable {
 
 	@OriginalMember(owner = "client!de", name = "e", descriptor = "Lclient!dc;")
 	public SignLink aClass17_2;
@@ -30,10 +30,10 @@ public final class Class18 implements Runnable {
 					}
 				}
 				Static46.method889(10L);
-				Static48.method904(null, this.aClass17_2);
+				GameShell.method904(null, this.aClass17_2);
 			}
 		} catch (@Pc(41) Exception local41) {
-			Static91.method1588(local41, null);
+			JagException.report(local41, null);
 		} finally {
 			@Pc(51) Object local51 = null;
 			this.aBoolean56 = false;

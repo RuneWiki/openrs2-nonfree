@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!hb")
-public final class Class4_Sub1_Sub2_Sub3 extends Class4_Sub1_Sub2 {
+public final class Pix8 extends Pix2D {
 
 	@OriginalMember(owner = "client!hb", name = "O", descriptor = "[B")
 	public byte[] aByteArray11;

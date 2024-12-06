@@ -2,13 +2,13 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ud")
-public final class Class4_Sub1_Sub16 extends DoublyLinkable {
+public final class ClientScript extends DoublyLinkable {
 
 	@OriginalMember(owner = "client!ud", name = "I", descriptor = "I")
 	public int anInt2922;
 
 	@OriginalMember(owner = "client!ud", name = "K", descriptor = "Lclient!ec;")
-	public Class22 aClass22_905;
+	public JagString aClass22_905;
 
 	@OriginalMember(owner = "client!ud", name = "M", descriptor = "I")
 	public int anInt2924;
@@ -23,7 +23,7 @@ public final class Class4_Sub1_Sub16 extends DoublyLinkable {
 	public int anInt2927;
 
 	@OriginalMember(owner = "client!ud", name = "R", descriptor = "[Lclient!ec;")
-	public Class22[] aClass22Array22;
+	public JagString[] aClass22Array22;
 
 	@OriginalMember(owner = "client!ud", name = "U", descriptor = "[I")
 	public int[] anIntArray313;

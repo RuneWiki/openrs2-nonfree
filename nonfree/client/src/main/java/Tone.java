@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!db")
-public final class Class16 {
+public final class Tone {
 
 	@OriginalMember(owner = "client!db", name = "q", descriptor = "[I")
 	public static int[] anIntArray54 = new int[32768];
@@ -14,34 +14,34 @@ public final class Class16 {
 	public static int[] anIntArray51;
 
 	@OriginalMember(owner = "client!db", name = "a", descriptor = "Lclient!k;")
-	private Class36 aClass36_1;
+	private Envelope aClass36_1;
 
 	@OriginalMember(owner = "client!db", name = "d", descriptor = "Lclient!hf;")
-	private Class29 aClass29_1;
+	private Filter aClass29_1;
 
 	@OriginalMember(owner = "client!db", name = "e", descriptor = "Lclient!k;")
-	private Class36 aClass36_2;
+	private Envelope aClass36_2;
 
 	@OriginalMember(owner = "client!db", name = "f", descriptor = "Lclient!k;")
-	private Class36 aClass36_3;
+	private Envelope aClass36_3;
 
 	@OriginalMember(owner = "client!db", name = "i", descriptor = "Lclient!k;")
-	private Class36 aClass36_4;
+	private Envelope aClass36_4;
 
 	@OriginalMember(owner = "client!db", name = "k", descriptor = "Lclient!k;")
-	private Class36 aClass36_5;
+	private Envelope aClass36_5;
 
 	@OriginalMember(owner = "client!db", name = "l", descriptor = "Lclient!k;")
-	private Class36 aClass36_6;
+	private Envelope aClass36_6;
 
 	@OriginalMember(owner = "client!db", name = "m", descriptor = "Lclient!k;")
-	private Class36 aClass36_7;
+	private Envelope aClass36_7;
 
 	@OriginalMember(owner = "client!db", name = "n", descriptor = "Lclient!k;")
-	private Class36 aClass36_8;
+	private Envelope aClass36_8;
 
 	@OriginalMember(owner = "client!db", name = "r", descriptor = "Lclient!k;")
-	private Class36 aClass36_9;
+	private Envelope aClass36_9;
 
 	@OriginalMember(owner = "client!db", name = "b", descriptor = "[I")
 	private final int[] anIntArray49 = new int[5];
@@ -77,32 +77,32 @@ public final class Class16 {
 
 	@OriginalMember(owner = "client!db", name = "a", descriptor = "(Lclient!jd;)V")
 	public void method377(@OriginalArg(0) Packet arg0) {
-		this.aClass36_1 = new Class36();
+		this.aClass36_1 = new Envelope();
 		this.aClass36_1.method1041(arg0);
-		this.aClass36_5 = new Class36();
+		this.aClass36_5 = new Envelope();
 		this.aClass36_5.method1041(arg0);
 		@Pc(21) int local21 = arg0.method719();
 		if (local21 != 0) {
 			arg0.anInt1099--;
-			this.aClass36_3 = new Class36();
+			this.aClass36_3 = new Envelope();
 			this.aClass36_3.method1041(arg0);
-			this.aClass36_4 = new Class36();
+			this.aClass36_4 = new Envelope();
 			this.aClass36_4.method1041(arg0);
 		}
 		local21 = arg0.method719();
 		if (local21 != 0) {
 			arg0.anInt1099--;
-			this.aClass36_2 = new Class36();
+			this.aClass36_2 = new Envelope();
 			this.aClass36_2.method1041(arg0);
-			this.aClass36_9 = new Class36();
+			this.aClass36_9 = new Envelope();
 			this.aClass36_9.method1041(arg0);
 		}
 		local21 = arg0.method719();
 		if (local21 != 0) {
 			arg0.anInt1099--;
-			this.aClass36_8 = new Class36();
+			this.aClass36_8 = new Envelope();
 			this.aClass36_8.method1041(arg0);
-			this.aClass36_7 = new Class36();
+			this.aClass36_7 = new Envelope();
 			this.aClass36_7.method1041(arg0);
 		}
 		for (@Pc(109) int local109 = 0; local109 < 10; local109++) {
@@ -118,8 +118,8 @@ public final class Class16 {
 		this.anInt545 = arg0.method692();
 		this.anInt547 = arg0.method718();
 		this.anInt544 = arg0.method718();
-		this.aClass29_1 = new Class29();
-		this.aClass36_6 = new Class36();
+		this.aClass29_1 = new Filter();
+		this.aClass36_6 = new Envelope();
 		this.aClass29_1.method893(arg0, this.aClass36_6);
 	}
 

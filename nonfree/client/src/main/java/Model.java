@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!p")
-public final class Class4_Sub1_Sub3_Sub4 extends Entity {
+public final class Model extends Entity {
 
 	@OriginalMember(owner = "client!p", name = "T", descriptor = "[S")
 	private short[] aShortArray25;
@@ -34,7 +34,7 @@ public final class Class4_Sub1_Sub3_Sub4 extends Entity {
 	public short aShort1;
 
 	@OriginalMember(owner = "client!p", name = "gb", descriptor = "[Lclient!kb;")
-	public Class37[] aClass37Array1;
+	public VertexNormal[] aClass37Array1;
 
 	@OriginalMember(owner = "client!p", name = "ib", descriptor = "[B")
 	private byte[] aByteArray38;
@@ -70,7 +70,7 @@ public final class Class4_Sub1_Sub3_Sub4 extends Entity {
 	public int[] anIntArray264;
 
 	@OriginalMember(owner = "client!p", name = "tb", descriptor = "[Lclient!kb;")
-	public Class37[] aClass37Array2;
+	public VertexNormal[] aClass37Array2;
 
 	@OriginalMember(owner = "client!p", name = "ub", descriptor = "I")
 	private int anInt2309;
@@ -112,7 +112,7 @@ public final class Class4_Sub1_Sub3_Sub4 extends Entity {
 	private short[] aShortArray35;
 
 	@OriginalMember(owner = "client!p", name = "Lb", descriptor = "[Lclient!na;")
-	private Class51[] aClass51Array1;
+	private VertexNormal2[] aClass51Array1;
 
 	@OriginalMember(owner = "client!p", name = "Mb", descriptor = "I")
 	public int anInt2314;
@@ -133,11 +133,11 @@ public final class Class4_Sub1_Sub3_Sub4 extends Entity {
 	private byte aByte6 = 0;
 
 	@OriginalMember(owner = "client!p", name = "<init>", descriptor = "()V")
-	private Class4_Sub1_Sub3_Sub4() {
+	private Model() {
 	}
 
 	@OriginalMember(owner = "client!p", name = "<init>", descriptor = "([B)V")
-	public Class4_Sub1_Sub3_Sub4(@OriginalArg(0) byte[] arg0) {
+	public Model(@OriginalArg(0) byte[] arg0) {
 		if (arg0[arg0.length - 1] == -1 && arg0[arg0.length - 2] == -1) {
 			this.method1519(arg0);
 		} else {
@@ -146,7 +146,7 @@ public final class Class4_Sub1_Sub3_Sub4 extends Entity {
 	}
 
 	@OriginalMember(owner = "client!p", name = "<init>", descriptor = "([Lclient!p;I)V")
-	public Class4_Sub1_Sub3_Sub4(@OriginalArg(0) Class4_Sub1_Sub3_Sub4[] arg0, @OriginalArg(1) int arg1) {
+	public Model(@OriginalArg(0) Model[] arg0, @OriginalArg(1) int arg1) {
 		@Pc(15) boolean local15 = false;
 		@Pc(17) boolean local17 = false;
 		@Pc(19) boolean local19 = false;
@@ -158,7 +158,7 @@ public final class Class4_Sub1_Sub3_Sub4 extends Entity {
 		this.anInt2309 = 0;
 		this.aByte6 = -1;
 		for (@Pc(39) int local39 = 0; local39 < arg1; local39++) {
-			@Pc(44) Class4_Sub1_Sub3_Sub4 local44 = arg0[local39];
+			@Pc(44) Model local44 = arg0[local39];
 			if (local44 != null) {
 				this.anInt2306 += local44.anInt2306;
 				this.anInt2311 += local44.anInt2311;
@@ -223,7 +223,7 @@ public final class Class4_Sub1_Sub3_Sub4 extends Entity {
 		this.anInt2311 = 0;
 		this.anInt2309 = 0;
 		for (@Pc(288) int local288 = 0; local288 < arg1; local288++) {
-			@Pc(293) Class4_Sub1_Sub3_Sub4 local293 = arg0[local288];
+			@Pc(293) Model local293 = arg0[local288];
 			if (local293 != null) {
 				for (@Pc(297) int local297 = 0; local297 < local293.anInt2311; local297++) {
 					if (local15 && local293.aByteArray37 != null) {
@@ -290,7 +290,7 @@ public final class Class4_Sub1_Sub3_Sub4 extends Entity {
 	}
 
 	@OriginalMember(owner = "client!p", name = "<init>", descriptor = "(Lclient!p;ZZZZ)V")
-	public Class4_Sub1_Sub3_Sub4(@OriginalArg(0) Class4_Sub1_Sub3_Sub4 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) boolean arg4) {
+	public Model(@OriginalArg(0) Model arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) boolean arg4) {
 		this.anInt2306 = arg0.anInt2306;
 		this.anInt2311 = arg0.anInt2311;
 		this.anInt2309 = arg0.anInt2309;
@@ -356,8 +356,8 @@ public final class Class4_Sub1_Sub3_Sub4 extends Entity {
 	}
 
 	@OriginalMember(owner = "client!p", name = "a", descriptor = "()Lclient!p;")
-	public Class4_Sub1_Sub3_Sub4 method1516() {
-		@Pc(3) Class4_Sub1_Sub3_Sub4 local3 = new Class4_Sub1_Sub3_Sub4();
+	public Model method1516() {
+		@Pc(3) Model local3 = new Model();
 		if (this.aByteArray37 != null) {
 			local3.aByteArray37 = new byte[this.anInt2311];
 			for (@Pc(13) int local13 = 0; local13 < this.anInt2311; local13++) {
@@ -422,13 +422,13 @@ public final class Class4_Sub1_Sub3_Sub4 extends Entity {
 
 	@OriginalMember(owner = "client!p", name = "a", descriptor = "([B)V")
 	private void method1519(@OriginalArg(0) byte[] arg0) {
-		@Pc(4) Class4_Sub11 local4 = new Class4_Sub11(arg0);
-		@Pc(9) Class4_Sub11 local9 = new Class4_Sub11(arg0);
-		@Pc(14) Class4_Sub11 local14 = new Class4_Sub11(arg0);
-		@Pc(19) Class4_Sub11 local19 = new Class4_Sub11(arg0);
-		@Pc(24) Class4_Sub11 local24 = new Class4_Sub11(arg0);
-		@Pc(29) Class4_Sub11 local29 = new Class4_Sub11(arg0);
-		@Pc(34) Class4_Sub11 local34 = new Class4_Sub11(arg0);
+		@Pc(4) Packet local4 = new Packet(arg0);
+		@Pc(9) Packet local9 = new Packet(arg0);
+		@Pc(14) Packet local14 = new Packet(arg0);
+		@Pc(19) Packet local19 = new Packet(arg0);
+		@Pc(24) Packet local24 = new Packet(arg0);
+		@Pc(29) Packet local29 = new Packet(arg0);
+		@Pc(34) Packet local34 = new Packet(arg0);
 		local4.anInt1099 = arg0.length - 23;
 		@Pc(44) int local44 = local4.method718();
 		@Pc(48) int local48 = local4.method718();
@@ -735,7 +735,7 @@ public final class Class4_Sub1_Sub3_Sub4 extends Entity {
 	}
 
 	@OriginalMember(owner = "client!p", name = "a", descriptor = "([[IIIIZI)Lclient!p;")
-	public Class4_Sub1_Sub3_Sub4 method1520(@OriginalArg(0) int[][] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
+	public Model method1520(@OriginalArg(0) int[][] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
 		this.method1527();
 		@Pc(6) int local6 = arg1 + this.anInt2314;
 		@Pc(11) int local11 = arg1 + this.anInt2312;
@@ -751,7 +751,7 @@ public final class Class4_Sub1_Sub3_Sub4 extends Entity {
 		if (arg0[local6][local16] == arg2 && arg0[local11][local16] == arg2 && arg0[local6][local21] == arg2 && arg0[local11][local21] == arg2) {
 			return this;
 		}
-		@Pc(101) Class4_Sub1_Sub3_Sub4 local101 = new Class4_Sub1_Sub3_Sub4();
+		@Pc(101) Model local101 = new Model();
 		local101.anInt2306 = this.anInt2306;
 		local101.anInt2311 = this.anInt2311;
 		local101.anInt2309 = this.anInt2309;
@@ -854,9 +854,9 @@ public final class Class4_Sub1_Sub3_Sub4 extends Entity {
 		if (this.aClass37Array1 != null) {
 			return;
 		}
-		this.aClass37Array1 = new Class37[this.anInt2306];
+		this.aClass37Array1 = new VertexNormal[this.anInt2306];
 		for (@Pc(10) int local10 = 0; local10 < this.anInt2306; local10++) {
-			this.aClass37Array1[local10] = new Class37();
+			this.aClass37Array1[local10] = new VertexNormal();
 		}
 		for (@Pc(25) int local25 = 0; local25 < this.anInt2311; local25++) {
 			@Pc(31) int local31 = this.anIntArray259[local25];
@@ -889,26 +889,26 @@ public final class Class4_Sub1_Sub3_Sub4 extends Entity {
 				local198 = this.aByteArray37[local25];
 			}
 			if (local198 == 0) {
-				@Pc(211) Class37 local211 = this.aClass37Array1[local31];
+				@Pc(211) VertexNormal local211 = this.aClass37Array1[local31];
 				local211.anInt1761 += local109;
 				local211.anInt1759 += local117;
 				local211.anInt1755 += local125;
 				local211.anInt1756++;
-				@Pc(240) Class37 local240 = this.aClass37Array1[local36];
+				@Pc(240) VertexNormal local240 = this.aClass37Array1[local36];
 				local240.anInt1761 += local109;
 				local240.anInt1759 += local117;
 				local240.anInt1755 += local125;
 				local240.anInt1756++;
-				@Pc(269) Class37 local269 = this.aClass37Array1[local41];
+				@Pc(269) VertexNormal local269 = this.aClass37Array1[local41];
 				local269.anInt1761 += local109;
 				local269.anInt1759 += local117;
 				local269.anInt1755 += local125;
 				local269.anInt1756++;
 			} else if (local198 == 1) {
 				if (this.aClass51Array1 == null) {
-					this.aClass51Array1 = new Class51[this.anInt2311];
+					this.aClass51Array1 = new VertexNormal2[this.anInt2311];
 				}
-				@Pc(314) Class51 local314 = this.aClass51Array1[local25] = new Class51();
+				@Pc(314) VertexNormal2 local314 = this.aClass51Array1[local25] = new VertexNormal2();
 				local314.anInt1994 = local109;
 				local314.anInt2002 = local117;
 				local314.anInt1997 = local125;
@@ -920,11 +920,11 @@ public final class Class4_Sub1_Sub3_Sub4 extends Entity {
 	private void method1525(@OriginalArg(0) byte[] arg0) {
 		@Pc(1) boolean local1 = false;
 		@Pc(3) boolean local3 = false;
-		@Pc(8) Class4_Sub11 local8 = new Class4_Sub11(arg0);
-		@Pc(13) Class4_Sub11 local13 = new Class4_Sub11(arg0);
-		@Pc(18) Class4_Sub11 local18 = new Class4_Sub11(arg0);
-		@Pc(23) Class4_Sub11 local23 = new Class4_Sub11(arg0);
-		@Pc(28) Class4_Sub11 local28 = new Class4_Sub11(arg0);
+		@Pc(8) Packet local8 = new Packet(arg0);
+		@Pc(13) Packet local13 = new Packet(arg0);
+		@Pc(18) Packet local18 = new Packet(arg0);
+		@Pc(23) Packet local23 = new Packet(arg0);
+		@Pc(28) Packet local28 = new Packet(arg0);
 		local8.anInt1099 = arg0.length - 18;
 		@Pc(38) int local38 = local8.method718();
 		@Pc(42) int local42 = local8.method718();
@@ -1215,7 +1215,7 @@ public final class Class4_Sub1_Sub3_Sub4 extends Entity {
 	}
 
 	@OriginalMember(owner = "client!p", name = "a", descriptor = "(Lclient!p;I)I")
-	private int method1529(@OriginalArg(0) Class4_Sub1_Sub3_Sub4 arg0, @OriginalArg(1) int arg1) {
+	private int method1529(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1) {
 		@Pc(1) int local1 = -1;
 		@Pc(6) int local6 = arg0.anIntArray261[arg1];
 		@Pc(11) int local11 = arg0.anIntArray264[arg1];
@@ -1309,8 +1309,8 @@ public final class Class4_Sub1_Sub3_Sub4 extends Entity {
 			if (local234 == -1) {
 				local223 = 2;
 			}
-			@Pc(292) Class37 local292;
-			@Pc(453) Class51 local453;
+			@Pc(292) VertexNormal local292;
+			@Pc(453) VertexNormal2 local453;
 			if (local245 == -1) {
 				if (local223 == 0) {
 					@Pc(273) int local273 = this.aShortArray25[local217] & 0xFFFF;

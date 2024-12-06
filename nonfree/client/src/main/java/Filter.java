@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!hf")
-public final class Class29 {
+public final class Filter {
 
 	@OriginalMember(owner = "client!hf", name = "b", descriptor = "[I")
 	public final int[] anIntArray138 = new int[2];
@@ -19,7 +19,7 @@ public final class Class29 {
 	private final int[][][] anIntArrayArrayArray3 = new int[2][2][4];
 
 	@OriginalMember(owner = "client!hf", name = "a", descriptor = "(Lclient!jd;Lclient!k;)V")
-	public void method893(@OriginalArg(0) Packet arg0, @OriginalArg(1) Class36 arg1) {
+	public void method893(@OriginalArg(0) Packet arg0, @OriginalArg(1) Envelope arg1) {
 		@Pc(3) int local3 = arg0.method719();
 		this.anIntArray138[0] = local3 >> 4;
 		this.anIntArray138[1] = local3 & 0xF;

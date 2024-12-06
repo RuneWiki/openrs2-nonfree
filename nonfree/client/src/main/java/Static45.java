@@ -5,16 +5,16 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static45 {
 
 	@OriginalMember(owner = "client!hd", name = "fb", descriptor = "Lclient!cc;")
-	public static Class12 aClass12_7;
+	public static PrivilegedRequest aClass12_7;
 
 	@OriginalMember(owner = "client!hd", name = "L", descriptor = "[I")
 	public static int[] anIntArray133 = new int[50];
 
 	@OriginalMember(owner = "client!hd", name = "db", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_308 = Static60.method1113("Ok");
+	private static JagString aClass22_308 = Static60.method1113("Ok");
 
 	@OriginalMember(owner = "client!hd", name = "T", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_307 = aClass22_308;
+	public static JagString aClass22_307 = aClass22_308;
 
 	@OriginalMember(owner = "client!hd", name = "Z", descriptor = "I")
 	public static int anInt1249 = 1;
@@ -26,19 +26,16 @@ public final class Static45 {
 	public static int anInt1254 = 0;
 
 	@OriginalMember(owner = "client!hd", name = "Xb", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_312 = Static60.method1113("Login limit exceeded)3");
+	private static JagString aClass22_312 = Static60.method1113("Login limit exceeded)3");
 
 	@OriginalMember(owner = "client!hd", name = "zb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_310 = aClass22_312;
+	public static JagString aClass22_310 = aClass22_312;
 
 	@OriginalMember(owner = "client!hd", name = "Cb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_311 = Static60.method1113("Gegenstand f-Ur Mitglieder");
+	public static JagString aClass22_311 = Static60.method1113("Gegenstand f-Ur Mitglieder");
 
 	@OriginalMember(owner = "client!hd", name = "Eb", descriptor = "[[I")
 	public static int[][] anIntArrayArray11 = new int[104][104];
-
-	@OriginalMember(owner = "client!hd", name = "Nb", descriptor = "J")
-	public static long aLong41 = 0L;
 
 	@OriginalMember(owner = "client!hd", name = "Ob", descriptor = "I")
 	public static int anInt1278 = 0;
@@ -88,7 +85,7 @@ public final class Static45 {
 	}
 
 	@OriginalMember(owner = "client!hd", name = "a", descriptor = "(ZI)Lclient!ec;")
-	public static Class22 method883(@OriginalArg(1) int arg0) {
+	public static JagString method883(@OriginalArg(1) int arg0) {
 		return arg0 < 999999999 ? Static134.method2042(arg0) : Static133.aClass22_972;
 	}
 }

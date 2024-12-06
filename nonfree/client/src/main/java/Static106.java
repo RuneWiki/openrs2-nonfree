@@ -9,22 +9,22 @@ public final class Static106 {
 	public static int anInt2687;
 
 	@OriginalMember(owner = "client!sc", name = "Y", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_788 = Static60.method1113("(U");
+	public static JagString aClass22_788 = Static60.method1113("(U");
 
 	@OriginalMember(owner = "client!sc", name = "bb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_789 = Static60.method1113("");
+	public static JagString aClass22_789 = Static60.method1113("");
 
 	@OriginalMember(owner = "client!sc", name = "cb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_790 = Static60.method1113("jolt");
+	public static JagString aClass22_790 = Static60.method1113("jolt");
 
 	@OriginalMember(owner = "client!sc", name = "mb", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_792 = Static60.method1113("yellow:");
+	private static JagString aClass22_792 = Static60.method1113("yellow:");
 
 	@OriginalMember(owner = "client!sc", name = "jb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_791 = aClass22_792;
+	public static JagString aClass22_791 = aClass22_792;
 
 	@OriginalMember(owner = "client!sc", name = "yb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_793 = aClass22_792;
+	public static JagString aClass22_793 = aClass22_792;
 
 	@OriginalMember(owner = "client!sc", name = "a", descriptor = "(ILjava/awt/Component;)V")
 	public static void method1747(@OriginalArg(1) Component arg0) {
@@ -44,7 +44,7 @@ public final class Static106 {
 	}
 
 	@OriginalMember(owner = "client!sc", name = "c", descriptor = "(II)Lclient!f;")
-	public static Class4_Sub7 method1749(@OriginalArg(0) int arg0) {
+	public static IfType method1749(@OriginalArg(0) int arg0) {
 		@Pc(15) int local15 = arg0 >> 16;
 		@Pc(19) int local19 = arg0 & 0xFFFF;
 		if (Static65.aClass4_Sub7ArrayArray1[local15] == null || Static65.aClass4_Sub7ArrayArray1[local15][local19] == null) {
@@ -66,7 +66,7 @@ public final class Static106 {
 	@OriginalMember(owner = "client!sc", name = "e", descriptor = "(I)V")
 	public static void method1751() {
 		Static9.aLong7 = 0L;
-		Static105.aBoolean234 = true;
+		GameShell.aBoolean234 = true;
 		Static129.anInt3059 = 0;
 		Static64.aBoolean164 = true;
 		Static115.aClass70_1.anInt2732 = 0;
@@ -110,7 +110,7 @@ public final class Static106 {
 		for (@Pc(2043) int local2043 = 0; local2043 < 32768; local2043++) {
 			Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1[local2043] = null;
 		}
-		Static16.aClass4_Sub1_Sub3_Sub2_Sub1_1 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[2047] = new Class4_Sub1_Sub3_Sub2_Sub1();
+		Static16.aClass4_Sub1_Sub3_Sub2_Sub1_1 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[2047] = new PlayerEntity();
 		Static73.aClass82_7.method2018();
 		Static132.aClass82_14.method2018();
 		@Pc(2073) int local2073;
@@ -122,11 +122,11 @@ public final class Static106 {
 				}
 			}
 		}
-		Static39.aClass82_4 = new Class82();
+		Static39.aClass82_4 = new LinkList();
 		Static2.anInt9 = 0;
 		Static50.anInt1408 = 0;
 		for (local2073 = 0; local2073 < Static50.anInt1412; local2073++) {
-			@Pc(2119) Class4_Sub1_Sub7 local2119 = Static48.method903(local2073);
+			@Pc(2119) VarPlayerType local2119 = Static48.method903(local2073);
 			if (local2119 != null && local2119.anInt1404 == 0) {
 				Static12.anIntArray19[local2073] = 0;
 				Static23.anIntArray61[local2073] = 0;
@@ -138,11 +138,11 @@ public final class Static106 {
 		if (Static11.anInt2982 != -1) {
 			Static97.method1661(Static11.anInt2982);
 		}
-		for (@Pc(2167) Class4_Sub21 local2167 = (Class4_Sub21) Static90.aClass81_11.method2017(); local2167 != null; local2167 = (Class4_Sub21) Static90.aClass81_11.method2013()) {
+		for (@Pc(2167) ComponentPointer local2167 = (ComponentPointer) Static90.aClass81_11.method2017(); local2167 != null; local2167 = (ComponentPointer) Static90.aClass81_11.method2013()) {
 			Static112.method1794(true, local2167);
 		}
 		Static11.anInt2982 = -1;
-		Static90.aClass81_11 = new Class81(8);
+		Static90.aClass81_11 = new HashTable(8);
 		Static43.aClass4_Sub7_9 = null;
 		Static99.anInt2589 = 0;
 		Static22.aBoolean250 = false;

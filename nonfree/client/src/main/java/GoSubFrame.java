@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!sa")
-public final class Class68 {
+public final class GoSubFrame {
 
 	@OriginalMember(owner = "client!sa", name = "b", descriptor = "[Lclient!ec;")
 	public JagString[] aClass22Array20;

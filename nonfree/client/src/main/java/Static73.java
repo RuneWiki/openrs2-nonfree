@@ -11,26 +11,26 @@ public final class Static73 {
 	public static int anInt1952 = 0;
 
 	@OriginalMember(owner = "client!me", name = "c", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_542 = Static60.method1113("Error loading your profile)3");
+	private static JagString aClass22_542 = Static60.method1113("Error loading your profile)3");
 
 	@OriginalMember(owner = "client!me", name = "e", descriptor = "Z")
 	public static boolean aBoolean166 = true;
 
 	@OriginalMember(owner = "client!me", name = "k", descriptor = "Lclient!wd;")
-	public static Class82 aClass82_7 = new Class82();
+	public static LinkList aClass82_7 = new LinkList();
 
 	@OriginalMember(owner = "client!me", name = "p", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_543 = aClass22_542;
+	public static JagString aClass22_543 = aClass22_542;
 
 	@OriginalMember(owner = "client!me", name = "t", descriptor = "[Lclient!ga;")
-	public static Class20_Sub1[] aClass20_Sub1Array1 = new Class20_Sub1[256];
+	public static Js5Provider[] aClass20_Sub1Array1 = new Js5Provider[256];
 
 	@OriginalMember(owner = "client!me", name = "a", descriptor = "(IILclient!ga;Lclient!tb;)V")
-	public static void method1205(@OriginalArg(1) int arg0, @OriginalArg(2) Class20_Sub1 arg1, @OriginalArg(3) Class71 arg2) {
+	public static void method1205(@OriginalArg(1) int arg0, @OriginalArg(2) Js5Provider arg1, @OriginalArg(3) FileStream arg2) {
 		@Pc(7) byte[] local7 = null;
-		@Pc(9) Class82 local9 = Static2.aClass82_1;
+		@Pc(9) LinkList local9 = Static2.aClass82_1;
 		synchronized (Static2.aClass82_1) {
-			for (@Pc(16) Class4_Sub20 local16 = (Class4_Sub20) Static2.aClass82_1.method2025(); local16 != null; local16 = (Class4_Sub20) Static2.aClass82_1.method2023()) {
+			for (@Pc(16) Js5NetProviderRequest local16 = (Js5NetProviderRequest) Static2.aClass82_1.method2025(); local16 != null; local16 = (Js5NetProviderRequest) Static2.aClass82_1.method2023()) {
 				if ((long) arg0 == local16.aLong99 && arg2 == local16.aClass71_4 && local16.anInt2897 == 0) {
 					local7 = local16.aByteArray42;
 					break;
@@ -75,7 +75,7 @@ public final class Static73 {
 			@Pc(155) int local155;
 			for (local99 = 0; local99 < 104; local99++) {
 				for (local113 = 0; local113 < 104; local113++) {
-					@Pc(142) Class82 local142 = Static19.aClass82ArrayArrayArray1[Static37.anInt895][local99][local113];
+					@Pc(142) LinkList local142 = Static19.aClass82ArrayArrayArray1[Static37.anInt895][local99][local113];
 					if (local142 != null) {
 						local155 = local113 * 4 + 2 - Static16.aClass4_Sub1_Sub3_Sub2_Sub1_1.anInt2462 / 32;
 						local166 = local99 * 4 + 2 - Static16.aClass4_Sub1_Sub3_Sub2_Sub1_1.anInt2500 / 32;
@@ -85,9 +85,9 @@ public final class Static73 {
 			}
 			@Pc(234) int local234;
 			for (local113 = 0; local113 < Static84.anInt2255; local113++) {
-				@Pc(197) Class4_Sub1_Sub3_Sub2_Sub2 local197 = Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1[Static13.anIntArray33[local113]];
+				@Pc(197) NpcEntity local197 = Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1[Static13.anIntArray33[local113]];
 				if (local197 != null && local197.method1614()) {
-					@Pc(206) Class4_Sub1_Sub10 local206 = local197.aClass4_Sub1_Sub10_1;
+					@Pc(206) NpcType local206 = local197.aClass4_Sub1_Sub10_1;
 					if (local206 != null && local206.anIntArray221 != null) {
 						local206 = local206.method1434();
 					}
@@ -98,7 +98,7 @@ public final class Static73 {
 					}
 				}
 			}
-			@Pc(272) Class4_Sub1_Sub3_Sub2_Sub1 local272;
+			@Pc(272) PlayerEntity local272;
 			for (@Pc(264) int local264 = 0; local264 < Static51.anInt1461; local264++) {
 				local272 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[Static115.anIntArray310[local264]];
 				if (local272 != null && local272.method1614()) {
@@ -125,9 +125,9 @@ public final class Static73 {
 					}
 				}
 			}
-			if (Static104.anInt2634 != 0 && Static117.anInt2877 % 20 < 10) {
+			if (Static104.anInt2634 != 0 && Client.anInt2877 % 20 < 10) {
 				if (Static104.anInt2634 == 1 && Static66.anInt1863 >= 0 && Static66.anInt1863 < Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1.length) {
-					@Pc(421) Class4_Sub1_Sub3_Sub2_Sub2 local421 = Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1[Static66.anInt1863];
+					@Pc(421) NpcEntity local421 = Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1[Static66.anInt1863];
 					if (local421 != null) {
 						local155 = local421.anInt2500 / 32 - Static16.aClass4_Sub1_Sub3_Sub2_Sub1_1.anInt2500 / 32;
 						local234 = local421.anInt2462 / 32 - Static16.aClass4_Sub1_Sub3_Sub2_Sub1_1.anInt2462 / 32;

@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!m")
-public final class Class45 {
+public final class BZip2State {
 
 	@OriginalMember(owner = "client!m", name = "h", descriptor = "B")
 	public byte aByte2;

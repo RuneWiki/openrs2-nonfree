@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
-public final class Static102 {
+public final class BZip2 {
 
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "Lclient!m;")
 	private static BZip2State aClass45_1 = new BZip2State();

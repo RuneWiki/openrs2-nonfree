@@ -8,10 +8,10 @@ public final class Static65 {
 	public static int anInt1844;
 
 	@OriginalMember(owner = "client!lc", name = "b", descriptor = "[[Lclient!f;")
-	public static Class4_Sub7[][] aClass4_Sub7ArrayArray1;
+	public static IfType[][] aClass4_Sub7ArrayArray1;
 
 	@OriginalMember(owner = "client!lc", name = "e", descriptor = "Lclient!ea;")
-	public static Class20 aClass20_34;
+	public static Js5Index aClass20_34;
 
 	@OriginalMember(owner = "client!lc", name = "c", descriptor = "I")
 	public static int anInt1845 = 0;
@@ -23,10 +23,10 @@ public final class Static65 {
 	public static int[] anIntArray187 = new int[2000];
 
 	@OriginalMember(owner = "client!lc", name = "j", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_491 = Static60.method1113("Fps:");
+	public static JagString aClass22_491 = Static60.method1113("Fps:");
 
 	@OriginalMember(owner = "client!lc", name = "k", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_492 = Static60.method1113("Titelbild geladen)3");
+	public static JagString aClass22_492 = Static60.method1113("Titelbild geladen)3");
 
 	@OriginalMember(owner = "client!lc", name = "a", descriptor = "(IIIII)V")
 	public static void method1150(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3) {
@@ -74,7 +74,7 @@ public final class Static65 {
 	}
 
 	@OriginalMember(owner = "client!lc", name = "a", descriptor = "(BLclient!ec;ILclient!ec;)V")
-	public static void method1153(@OriginalArg(1) Class22 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class22 arg2) {
+	public static void method1153(@OriginalArg(1) JagString arg0, @OriginalArg(2) int arg1, @OriginalArg(3) JagString arg2) {
 		Static79.method1433(arg2, arg1, arg0, null);
 	}
 

@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!vf")
-public final class Class79 {
+public final class BufferedFile {
 
 	@OriginalMember(owner = "client!vf", name = "g", descriptor = "I")
 	private int anInt3050;
@@ -43,7 +43,7 @@ public final class Class79 {
 	private final byte[] aByteArray44;
 
 	@OriginalMember(owner = "client!vf", name = "<init>", descriptor = "(Lclient!lb;II)V")
-	public Class79(@OriginalArg(0) FileOnDisk arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) throws IOException {
+	public BufferedFile(@OriginalArg(0) FileOnDisk arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) throws IOException {
 		this.aClass42_4 = arg0;
 		this.aLong96 = this.aLong97 = arg0.method1147();
 		this.aLong93 = 0L;

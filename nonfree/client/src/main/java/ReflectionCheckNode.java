@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!e")
-public final class Class4_Sub6 extends Linkable {
+public final class ReflectionCheckNode extends Linkable {
 
 	@OriginalMember(owner = "client!e", name = "r", descriptor = "I")
 	public int anInt571;
@@ -14,7 +14,7 @@ public final class Class4_Sub6 extends Linkable {
 	public int[] anIntArray64;
 
 	@OriginalMember(owner = "client!e", name = "C", descriptor = "[Lclient!cc;")
-	public Class12[] aClass12Array1;
+	public PrivilegedRequest[] aClass12Array1;
 
 	@OriginalMember(owner = "client!e", name = "F", descriptor = "[I")
 	public int[] anIntArray65;
@@ -23,7 +23,7 @@ public final class Class4_Sub6 extends Linkable {
 	public byte[][][] aByteArrayArrayArray2;
 
 	@OriginalMember(owner = "client!e", name = "H", descriptor = "[Lclient!cc;")
-	public Class12[] aClass12Array2;
+	public PrivilegedRequest[] aClass12Array2;
 
 	@OriginalMember(owner = "client!e", name = "I", descriptor = "I")
 	public int anInt575;

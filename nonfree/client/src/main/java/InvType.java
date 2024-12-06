@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!u")
-public final class Class4_Sub1_Sub15 extends DoublyLinkable {
+public final class InvType extends DoublyLinkable {
 
 	@OriginalMember(owner = "client!u", name = "M", descriptor = "I")
 	public int anInt2869 = 0;

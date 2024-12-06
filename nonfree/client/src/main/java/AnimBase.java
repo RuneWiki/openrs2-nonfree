@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!nb")
-public final class Class4_Sub16 extends Linkable {
+public final class AnimBase extends Linkable {
 
 	@OriginalMember(owner = "client!nb", name = "x", descriptor = "I")
 	public final int anInt2018;
@@ -19,7 +19,7 @@ public final class Class4_Sub16 extends Linkable {
 	public final int[] anIntArray200;
 
 	@OriginalMember(owner = "client!nb", name = "<init>", descriptor = "(I[B)V")
-	public Class4_Sub16(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1) {
+	public AnimBase(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1) {
 		this.anInt2018 = arg0;
 		@Pc(11) Packet local11 = new Packet(arg1);
 		this.anInt2021 = local11.method719();

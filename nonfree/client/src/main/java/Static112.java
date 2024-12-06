@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static112 {
 
 	@OriginalMember(owner = "client!tb", name = "h", descriptor = "Lclient!ga;")
-	public static Class20_Sub1 aClass20_Sub1_70;
+	public static Js5Provider aClass20_Sub1_70;
 
 	@OriginalMember(owner = "client!tb", name = "p", descriptor = "[[[B")
 	public static byte[][][] aByteArrayArrayArray6;
@@ -15,7 +15,7 @@ public final class Static112 {
 	public static byte[][][] aByteArrayArrayArray7;
 
 	@OriginalMember(owner = "client!tb", name = "c", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_862 = Static60.method1113("::");
+	public static JagString aClass22_862 = Static60.method1113("::");
 
 	@OriginalMember(owner = "client!tb", name = "g", descriptor = "I")
 	public static int anInt2775 = 0;
@@ -27,31 +27,31 @@ public final class Static112 {
 	public static int anInt2779 = 0;
 
 	@OriginalMember(owner = "client!tb", name = "o", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_863 = Static60.method1113("mapfunction");
+	public static JagString aClass22_863 = Static60.method1113("mapfunction");
 
 	@OriginalMember(owner = "client!tb", name = "t", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_864 = Static60.method1113(" )2> <col=ffffff>");
+	public static JagString aClass22_864 = Static60.method1113(" )2> <col=ffffff>");
 
 	@OriginalMember(owner = "client!tb", name = "u", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_865 = Static60.method1113("<col=00ff00>");
+	public static JagString aClass22_865 = Static60.method1113("<col=00ff00>");
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(BI)Lclient!jc;")
-	public static Class4_Sub1_Sub9 method1793(@OriginalArg(1) int arg0) {
-		@Pc(15) Class4_Sub1_Sub9 local15 = (Class4_Sub1_Sub9) Static32.aClass33_11.method998((long) arg0);
+	public static IdkType method1793(@OriginalArg(1) int arg0) {
+		@Pc(15) IdkType local15 = (IdkType) Static32.aClass33_11.method998((long) arg0);
 		if (local15 != null) {
 			return local15;
 		}
 		@Pc(25) byte[] local25 = Static11.aClass20_59.method597(3, arg0);
-		local15 = new Class4_Sub1_Sub9();
+		local15 = new IdkType();
 		if (local25 != null) {
-			local15.method1019(new Class4_Sub11(local25));
+			local15.method1019(new Packet(local25));
 		}
 		Static32.aClass33_11.method997((long) arg0, local15);
 		return local15;
 	}
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(ZBLclient!ue;)V")
-	public static void method1794(@OriginalArg(0) boolean arg0, @OriginalArg(2) Class4_Sub21 arg1) {
+	public static void method1794(@OriginalArg(0) boolean arg0, @OriginalArg(2) ComponentPointer arg1) {
 		@Pc(7) int local7 = (int) arg1.aLong99;
 		@Pc(10) int local10 = arg1.anInt2939;
 		arg1.method1999();
@@ -59,7 +59,7 @@ public final class Static112 {
 			Static97.method1661(local10);
 		}
 		Static89.method1566(local10);
-		@Pc(25) Class4_Sub7 local25 = Static106.method1749(local7);
+		@Pc(25) IfType local25 = Static106.method1749(local7);
 		if (local25 != null) {
 			Static110.method1772(local25);
 		}
@@ -84,7 +84,7 @@ public final class Static112 {
 	}
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(BILclient!ka;I)V")
-	public static void method1796(@OriginalArg(1) int arg0, @OriginalArg(2) Class4_Sub1_Sub3_Sub2_Sub1 arg1, @OriginalArg(3) int arg2) {
+	public static void method1796(@OriginalArg(1) int arg0, @OriginalArg(2) PlayerEntity arg1, @OriginalArg(3) int arg2) {
 		if (arg2 == arg1.anInt2474 && arg2 != -1) {
 			@Pc(52) int local52 = Static79.method1437(arg2).anInt3005;
 			if (local52 == 1) {
@@ -107,7 +107,7 @@ public final class Static112 {
 	}
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(Lclient!jd;IIIIIII)V")
-	public static void method1798(@OriginalArg(0) Class4_Sub11 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
+	public static void method1798(@OriginalArg(0) Packet arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
 		@Pc(23) int local23;
 		if (arg5 < 0 || arg5 >= 104 || arg4 < 0 || arg4 >= 104) {
 			while (true) {

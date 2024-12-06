@@ -9,28 +9,28 @@ public final class Static98 {
 	public static int anInt2584;
 
 	@OriginalMember(owner = "client!r", name = "t", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_757 = Static60.method1113("glow3:");
+	private static JagString aClass22_757 = Static60.method1113("glow3:");
 
 	@OriginalMember(owner = "client!r", name = "c", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_753 = aClass22_757;
+	public static JagString aClass22_753 = aClass22_757;
 
 	@OriginalMember(owner = "client!r", name = "f", descriptor = "[I")
 	public static int[] anIntArray283 = new int[32];
 
 	@OriginalMember(owner = "client!r", name = "i", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_754 = aClass22_757;
+	public static JagString aClass22_754 = aClass22_757;
 
 	@OriginalMember(owner = "client!r", name = "o", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_755 = Static60.method1113("Um ein neues Spielkonto zu erstellen)1 m-Ussen Sie");
+	public static JagString aClass22_755 = Static60.method1113("Um ein neues Spielkonto zu erstellen)1 m-Ussen Sie");
 
 	@OriginalMember(owner = "client!r", name = "q", descriptor = "[Lclient!vf;")
-	public static Class79[] aClass79Array1 = new Class79[16];
+	public static BufferedFile[] aClass79Array1 = new BufferedFile[16];
 
 	@OriginalMember(owner = "client!r", name = "r", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_756 = Static60.method1113("Nehmen");
+	public static JagString aClass22_756 = Static60.method1113("Nehmen");
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(ZLclient!f;)Z")
-	public static boolean method1667(@OriginalArg(1) Class4_Sub7 arg0) {
+	public static boolean method1667(@OriginalArg(1) IfType arg0) {
 		if (Static123.aBoolean278) {
 			if (Static124.method1890(arg0) != 0) {
 				return false;
@@ -88,7 +88,7 @@ public final class Static98 {
 			return;
 		}
 		if (Static99.anInt2586 != 0) {
-			Static12.method165(Static44.method856(new Class22[] { Static42.aClass22_252, Static91.aClass22_703 }), true);
+			Static12.method165(Static44.method856(new JagString[] { Static42.aClass22_252, Static91.aClass22_703 }), true);
 		}
 		Static104.method1724();
 		Static84.method1494();
@@ -235,7 +235,7 @@ public final class Static98 {
 		Static104.method1724();
 		Static115.method1826();
 		Static96.aClass33_28.method1003();
-		if (Static9.aFrame1 != null) {
+		if (GameShell.aFrame1 != null) {
 			Static38.aClass4_Sub11_Sub1_1.method752(153);
 			Static38.aClass4_Sub11_Sub1_1.method717(1057001181);
 		}
@@ -247,8 +247,8 @@ public final class Static98 {
 			for (local439 = local263 - 1; local439 <= local326 + 1; local439++) {
 				for (local445 = local371 - 1; local445 <= local381 + 1; local445++) {
 					if (local439 < local263 || local439 > local326 || local445 < local371 || local381 < local445) {
-						Static112.aClass20_Sub1_70.method603(Static44.method856(new Class22[] { Static31.aClass22_202, Static134.method2042(local439), Static15.aClass22_122, Static134.method2042(local445) }));
-						Static112.aClass20_Sub1_70.method603(Static44.method856(new Class22[] { Static95.aClass22_541, Static134.method2042(local439), Static15.aClass22_122, Static134.method2042(local445) }));
+						Static112.aClass20_Sub1_70.method603(Static44.method856(new JagString[] { Static31.aClass22_202, Static134.method2042(local439), Static15.aClass22_122, Static134.method2042(local445) }));
+						Static112.aClass20_Sub1_70.method603(Static44.method856(new JagString[] { Static95.aClass22_541, Static134.method2042(local439), Static15.aClass22_122, Static134.method2042(local445) }));
 					}
 				}
 			}

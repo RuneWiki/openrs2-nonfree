@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!qd")
-public abstract class Class4_Sub1_Sub3_Sub2 extends Entity {
+public abstract class PathingEntity extends Entity {
 
 	@OriginalMember(owner = "client!qd", name = "Y", descriptor = "I")
 	public int anInt2455;
@@ -97,7 +97,7 @@ public abstract class Class4_Sub1_Sub3_Sub2 extends Entity {
 	public int anInt2453 = 200;
 
 	@OriginalMember(owner = "client!qd", name = "Db", descriptor = "Lclient!ec;")
-	public Class22 aClass22_715 = null;
+	public JagString aClass22_715 = null;
 
 	@OriginalMember(owner = "client!qd", name = "Sb", descriptor = "[I")
 	public final int[] anIntArray277 = new int[10];

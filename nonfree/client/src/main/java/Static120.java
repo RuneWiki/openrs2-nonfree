@@ -8,34 +8,34 @@ public final class Static120 {
 	public static int[] anIntArray314;
 
 	@OriginalMember(owner = "client!ud", name = "X", descriptor = "Lclient!b;")
-	public static Class6 aClass6_4;
+	public static ClientStream aClass6_4;
 
 	@OriginalMember(owner = "client!ud", name = "H", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_904 = Static60.method1113("Ung-Ultiges Anmelde)2Paket)3");
+	public static JagString aClass22_904 = Static60.method1113("Ung-Ultiges Anmelde)2Paket)3");
 
 	@OriginalMember(owner = "client!ud", name = "L", descriptor = "[Lclient!jd;")
-	public static Class4_Sub11[] aClass4_Sub11Array1 = new Class4_Sub11[2048];
+	public static Packet[] aClass4_Sub11Array1 = new Packet[2048];
 
 	@OriginalMember(owner = "client!ud", name = "T", descriptor = "Lclient!ja;")
-	public static Class33 aClass33_32 = new Class33(50);
+	public static LruCache aClass33_32 = new LruCache(50);
 
 	@OriginalMember(owner = "client!ud", name = "V", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_906 = Static60.method1113("Lade Texturen )2 ");
+	public static JagString aClass22_906 = Static60.method1113("Lade Texturen )2 ");
 
 	@OriginalMember(owner = "client!ud", name = "Y", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_907 = Static60.method1113("scrollbar");
+	public static JagString aClass22_907 = Static60.method1113("scrollbar");
 
 	@OriginalMember(owner = "client!ud", name = "Z", descriptor = "I")
 	public static final int anInt2928 = 7759444;
 
 	@OriginalMember(owner = "client!ud", name = "ab", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_908 = Static60.method1113("::qa_op_test");
+	public static JagString aClass22_908 = Static60.method1113("::qa_op_test");
 
 	@OriginalMember(owner = "client!ud", name = "bb", descriptor = "I")
 	public static int anInt2929 = 0;
 
 	@OriginalMember(owner = "client!ud", name = "cb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_909 = Static60.method1113("<img=0>");
+	public static JagString aClass22_909 = Static60.method1113("<img=0>");
 
 	@OriginalMember(owner = "client!ud", name = "db", descriptor = "[I")
 	public static int[] anIntArray315 = new int[] { 1, -1, -1, 1 };
@@ -51,15 +51,15 @@ public final class Static120 {
 		@Pc(41) int local41;
 		@Pc(51) int local51;
 		if (local15 != 0) {
-			local37 = Class4_Sub1_Sub2_Sub1.anIntArray9[local15];
-			local41 = Class4_Sub1_Sub2_Sub1.anIntArray12[local15];
+			local37 = Pix3D.anIntArray9[local15];
+			local41 = Pix3D.anIntArray12[local15];
 			local51 = local41 * 0 - arg2 * local37 >> 16;
 			local17 = local37 * 0 + arg2 * local41 >> 16;
 			local26 = local51;
 		}
 		if (local24 != 0) {
-			local37 = Class4_Sub1_Sub2_Sub1.anIntArray9[local24];
-			local41 = Class4_Sub1_Sub2_Sub1.anIntArray12[local24];
+			local37 = Pix3D.anIntArray9[local24];
+			local41 = Pix3D.anIntArray12[local24];
 			local51 = local41 * 0 + local37 * local17 >> 16;
 			local17 = local41 * local17 - local37 * 0 >> 16;
 			local28 = local51;

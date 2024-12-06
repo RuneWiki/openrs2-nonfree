@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!af")
-public final class Class4_Sub1_Sub2_Sub1 extends Pix2D {
+public final class Pix3D extends Pix2D {
 
 	@OriginalMember(owner = "client!af", name = "V", descriptor = "[I")
 	public static int[] anIntArray11 = new int[512];

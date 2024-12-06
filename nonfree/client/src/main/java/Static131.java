@@ -5,28 +5,28 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static131 {
 
 	@OriginalMember(owner = "client!wc", name = "b", descriptor = "[Lclient!hb;")
-	public static Class4_Sub1_Sub2_Sub3[] aClass4_Sub1_Sub2_Sub3Array10;
+	public static Pix8[] aClass4_Sub1_Sub2_Sub3Array10;
 
 	@OriginalMember(owner = "client!wc", name = "k", descriptor = "Lclient!hb;")
-	public static Class4_Sub1_Sub2_Sub3 aClass4_Sub1_Sub2_Sub3_5;
+	public static Pix8 aClass4_Sub1_Sub2_Sub3_5;
 
 	@OriginalMember(owner = "client!wc", name = "d", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_956 = Static60.method1113("To play on this world move to a free area first");
+	private static JagString aClass22_956 = Static60.method1113("To play on this world move to a free area first");
 
 	@OriginalMember(owner = "client!wc", name = "l", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_959 = Static60.method1113("Could not complete login)3");
+	private static JagString aClass22_959 = Static60.method1113("Could not complete login)3");
 
 	@OriginalMember(owner = "client!wc", name = "g", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_957 = aClass22_959;
+	public static JagString aClass22_957 = aClass22_959;
 
 	@OriginalMember(owner = "client!wc", name = "i", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_958 = aClass22_956;
+	public static JagString aClass22_958 = aClass22_956;
 
 	@OriginalMember(owner = "client!wc", name = "r", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_960 = Static60.method1113("Das ist eine Mitglieder)2Welt(Q");
+	public static JagString aClass22_960 = Static60.method1113("Das ist eine Mitglieder)2Welt(Q");
 
 	@OriginalMember(owner = "client!wc", name = "s", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_961 = Static60.method1113("Okay");
+	public static JagString aClass22_961 = Static60.method1113("Okay");
 
 	@OriginalMember(owner = "client!wc", name = "u", descriptor = "[[B")
 	public static byte[][] aByteArrayArray10 = new byte[50][];
@@ -100,7 +100,7 @@ public final class Static131 {
 		@Pc(27) int local27 = local18 & 0x1F;
 		@Pc(33) int local33 = local18 >> 6 & 0x3;
 		if (local27 == 10 || local27 == 11 || local27 == 22) {
-			@Pc(76) Class4_Sub1_Sub5 local76 = Static5.method45(local7);
+			@Pc(76) LocType local76 = Static5.method45(local7);
 			@Pc(87) int local87;
 			@Pc(84) int local84;
 			if (local33 == 0 || local33 == 2) {

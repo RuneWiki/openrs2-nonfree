@@ -6,22 +6,22 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!tb")
-public final class Class71 {
+public final class FileStream {
 
 	@OriginalMember(owner = "client!tb", name = "l", descriptor = "Lclient!vf;")
-	private Class79 aClass79_3 = null;
+	private BufferedFile aClass79_3 = null;
 
 	@OriginalMember(owner = "client!tb", name = "k", descriptor = "I")
 	private int anInt2778 = 65000;
 
 	@OriginalMember(owner = "client!tb", name = "w", descriptor = "Lclient!vf;")
-	private Class79 aClass79_4 = null;
+	private BufferedFile aClass79_4 = null;
 
 	@OriginalMember(owner = "client!tb", name = "j", descriptor = "I")
 	private final int anInt2777;
 
 	@OriginalMember(owner = "client!tb", name = "<init>", descriptor = "(ILclient!vf;Lclient!vf;I)V")
-	public Class71(@OriginalArg(0) int arg0, @OriginalArg(1) Class79 arg1, @OriginalArg(2) Class79 arg2, @OriginalArg(3) int arg3) {
+	public FileStream(@OriginalArg(0) int arg0, @OriginalArg(1) BufferedFile arg1, @OriginalArg(2) BufferedFile arg2, @OriginalArg(3) int arg3) {
 		this.aClass79_4 = arg2;
 		this.anInt2777 = arg0;
 		this.anInt2778 = arg3;
@@ -30,7 +30,7 @@ public final class Class71 {
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(IIZZ[B)Z")
 	private boolean method1792(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) byte[] arg3) {
-		@Pc(8) Class79 local8 = this.aClass79_3;
+		@Pc(8) BufferedFile local8 = this.aClass79_3;
 		synchronized (this.aClass79_3) {
 			try {
 				@Pc(73) int local73;
@@ -122,7 +122,7 @@ public final class Class71 {
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(II)[B")
 	public byte[] method1797(@OriginalArg(1) int arg0) {
-		@Pc(8) Class79 local8 = this.aClass79_3;
+		@Pc(8) BufferedFile local8 = this.aClass79_3;
 		synchronized (this.aClass79_3) {
 			try {
 				if ((long) (arg0 * 6 + 6) > this.aClass79_4.method1978()) {
@@ -187,7 +187,7 @@ public final class Class71 {
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(BII[B)Z")
 	public boolean method1799(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) byte[] arg2) {
-		@Pc(6) Class79 local6 = this.aClass79_3;
+		@Pc(6) BufferedFile local6 = this.aClass79_3;
 		synchronized (this.aClass79_3) {
 			if (arg1 < 0 || this.anInt2778 < arg1) {
 				throw new IllegalArgumentException();

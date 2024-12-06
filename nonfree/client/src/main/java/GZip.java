@@ -5,22 +5,22 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!aa")
-public final class Class2 {
+public final class GZip {
 
 	@OriginalMember(owner = "client!aa", name = "a", descriptor = "Ljava/util/zip/Inflater;")
 	private Inflater anInflater1;
 
 	@OriginalMember(owner = "client!aa", name = "<init>", descriptor = "()V")
-	public Class2() {
+	public GZip() {
 		this(-1, 1000000, 1000000);
 	}
 
 	@OriginalMember(owner = "client!aa", name = "<init>", descriptor = "(III)V")
-	private Class2(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	private GZip(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 	}
 
 	@OriginalMember(owner = "client!aa", name = "a", descriptor = "([BBLclient!jd;)V")
-	public void method6(@OriginalArg(0) byte[] arg0, @OriginalArg(2) Class4_Sub11 arg1) {
+	public void method6(@OriginalArg(0) byte[] arg0, @OriginalArg(2) Packet arg1) {
 		if (arg1.aByteArray9[arg1.anInt1099] != 31 || arg1.aByteArray9[arg1.anInt1099 + 1] != -117) {
 			throw new RuntimeException("Invalid GZIP header!");
 		}

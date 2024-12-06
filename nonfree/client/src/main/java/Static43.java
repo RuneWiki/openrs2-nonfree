@@ -5,26 +5,23 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static43 {
 
-	@OriginalMember(owner = "client!ha", name = "D", descriptor = "Lclient!gf;")
-	public static Class11 aClass11_1;
-
 	@OriginalMember(owner = "client!ha", name = "K", descriptor = "Lclient!f;")
-	public static Class4_Sub7 aClass4_Sub7_10;
+	public static IfType aClass4_Sub7_10;
 
 	@OriginalMember(owner = "client!ha", name = "s", descriptor = "Lclient!ja;")
-	public static Class33 aClass33_18 = new Class33(128);
+	public static LruCache aClass33_18 = new LruCache(128);
 
 	@OriginalMember(owner = "client!ha", name = "u", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_290 = null;
+	public static JagString aClass22_290 = null;
 
 	@OriginalMember(owner = "client!ha", name = "y", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_291 = Static60.method1113("<img=0>");
+	public static JagString aClass22_291 = Static60.method1113("<img=0>");
 
 	@OriginalMember(owner = "client!ha", name = "B", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_292 = Static60.method1113("p11_full");
+	public static JagString aClass22_292 = Static60.method1113("p11_full");
 
 	@OriginalMember(owner = "client!ha", name = "E", descriptor = "Lclient!f;")
-	public static Class4_Sub7 aClass4_Sub7_9 = null;
+	public static IfType aClass4_Sub7_9 = null;
 
 	@OriginalMember(owner = "client!ha", name = "F", descriptor = "[I")
 	public static int[] anIntArray130 = new int[25];
@@ -33,7 +30,7 @@ public final class Static43 {
 	public static int anInt1179 = 0;
 
 	@OriginalMember(owner = "client!ha", name = "I", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_293 = Static60.method1113("mapmarker");
+	public static JagString aClass22_293 = Static60.method1113("mapmarker");
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(B)V")
 	public static void method817() {
@@ -42,7 +39,7 @@ public final class Static43 {
 		aClass33_18 = null;
 		aClass4_Sub7_9 = null;
 		aClass22_291 = null;
-		aClass11_1 = null;
+		GameShell.drawArea = null;
 		aClass22_292 = null;
 		aClass22_293 = null;
 		anIntArray130 = null;
@@ -55,7 +52,7 @@ public final class Static43 {
 	}
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(Lclient!nf;ZLclient!nf;)V")
-	public static void method819(@OriginalArg(0) Class4_Sub1_Sub2_Sub4_Sub1 arg0, @OriginalArg(2) Class4_Sub1_Sub2_Sub4_Sub1 arg1) {
+	public static void method819(@OriginalArg(0) SoftwareFont arg0, @OriginalArg(2) SoftwareFont arg1) {
 		if (Static57.aClass4_Sub1_Sub2_Sub2Array10 == null) {
 			Static57.aClass4_Sub1_Sub2_Sub2Array10 = Static51.method987(Static58.aClass22_459, Static26.aClass20_Sub1_25, Static61.aClass22_474);
 		}
@@ -159,9 +156,9 @@ public final class Static43 {
 			@Pc(511) int local511 = local489;
 			@Pc(513) int local513 = 0;
 			for (@Pc(515) int local515 = 0; local515 < Static62.anInt1802; local515++) {
-				@Pc(521) Class54 local521 = Static79.aClass54Array1[local515];
+				@Pc(521) WorldEntry local521 = Static79.aClass54Array1[local515];
 				@Pc(523) boolean local523 = true;
-				@Pc(528) Class22 local528 = Static134.method2042(local521.anInt2251);
+				@Pc(528) JagString local528 = Static134.method2042(local521.anInt2251);
 				if (local521.anInt2251 == -1) {
 					local528 = Static30.aClass22_195;
 					local523 = false;
@@ -190,21 +187,21 @@ public final class Static43 {
 			}
 		}
 		try {
-			@Pc(687) Graphics local687 = Static89.aCanvas1.getGraphics();
-			aClass11_1.method578(local687);
+			@Pc(687) Graphics local687 = GameShell.aCanvas1.getGraphics();
+			GameShell.drawArea.method578(local687);
 		} catch (@Pc(700) Exception local700) {
-			Static89.aCanvas1.repaint();
+			GameShell.aCanvas1.repaint();
 		}
 	}
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(II[II[I[Lclient!oe;)V")
-	public static void method820(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int[] arg2, @OriginalArg(4) int[] arg3, @OriginalArg(5) Class54[] arg4) {
+	public static void method820(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int[] arg2, @OriginalArg(4) int[] arg3, @OriginalArg(5) WorldEntry[] arg4) {
 		if (arg0 >= arg1) {
 			return;
 		}
 		@Pc(12) int local12 = arg1 + 1;
 		@Pc(18) int local18 = (arg0 + arg1) / 2;
-		@Pc(22) Class54 local22 = arg4[local18];
+		@Pc(22) WorldEntry local22 = arg4[local18];
 		arg4[local18] = arg4[arg0];
 		@Pc(32) int local32 = arg0 - 1;
 		arg4[arg0] = local22;
@@ -281,7 +278,7 @@ public final class Static43 {
 				}
 			} while (local40);
 			if (local32 < local12) {
-				@Pc(326) Class54 local326 = arg4[local32];
+				@Pc(326) WorldEntry local326 = arg4[local32];
 				arg4[local32] = arg4[local12];
 				arg4[local12] = local326;
 			}
@@ -296,15 +293,15 @@ public final class Static43 {
 	}
 
 	@OriginalMember(owner = "client!ha", name = "c", descriptor = "(II)Lclient!ia;")
-	public static Class4_Sub1_Sub6 method822(@OriginalArg(1) int arg0) {
-		@Pc(12) Class4_Sub1_Sub6 local12 = (Class4_Sub1_Sub6) Static5.aClass33_3.method998((long) arg0);
+	public static FloType method822(@OriginalArg(1) int arg0) {
+		@Pc(12) FloType local12 = (FloType) Static5.aClass33_3.method998((long) arg0);
 		if (local12 != null) {
 			return local12;
 		}
 		@Pc(24) byte[] local24 = Static4.aClass20_4.method597(4, arg0);
-		local12 = new Class4_Sub1_Sub6();
+		local12 = new FloType();
 		if (local24 != null) {
-			local12.method919(new Class4_Sub11(local24), arg0);
+			local12.method919(new Packet(local24), arg0);
 		}
 		local12.method918();
 		Static5.aClass33_3.method997((long) arg0, local12);
@@ -320,7 +317,7 @@ public final class Static43 {
 			} else {
 				local13 = Static115.anIntArray310[local3];
 			}
-			@Pc(21) Class4_Sub1_Sub3_Sub2_Sub1 local21 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local13];
+			@Pc(21) PlayerEntity local21 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local13];
 			if (local21 != null && local21.anInt2468 > 0) {
 				local21.anInt2468--;
 				if (local21.anInt2468 == 0) {
@@ -330,7 +327,7 @@ public final class Static43 {
 		}
 		for (local13 = 0; local13 < Static84.anInt2255; local13++) {
 			@Pc(57) int local57 = Static13.anIntArray33[local13];
-			@Pc(61) Class4_Sub1_Sub3_Sub2_Sub2 local61 = Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1[local57];
+			@Pc(61) NpcEntity local61 = Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1[local57];
 			if (local61 != null && local61.anInt2468 > 0) {
 				local61.anInt2468--;
 				if (local61.anInt2468 == 0) {

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!wd")
-public final class Class82 {
+public final class LinkList {
 
 	@OriginalMember(owner = "client!wd", name = "z", descriptor = "Lclient!v;")
 	private Linkable aClass4_128;
@@ -13,7 +13,7 @@ public final class Class82 {
 	public final Linkable aClass4_127 = new Linkable();
 
 	@OriginalMember(owner = "client!wd", name = "<init>", descriptor = "()V")
-	public Class82() {
+	public LinkList() {
 		this.aClass4_127.aClass4_123 = this.aClass4_127;
 		this.aClass4_127.aClass4_124 = this.aClass4_127;
 	}

@@ -11,16 +11,16 @@ public final class Static27 {
 	public static int[] anIntArray75;
 
 	@OriginalMember(owner = "client!eb", name = "f", descriptor = "Lclient!wc;")
-	public static Class81 aClass81_3 = new Class81(4096);
+	public static HashTable aClass81_3 = new HashTable(4096);
 
 	@OriginalMember(owner = "client!eb", name = "h", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_180 = Static60.method1113("hitmarks");
+	public static JagString aClass22_180 = Static60.method1113("hitmarks");
 
 	@OriginalMember(owner = "client!eb", name = "w", descriptor = "J")
 	public static volatile long aLong26 = 0L;
 
 	@OriginalMember(owner = "client!eb", name = "y", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_181 = Static60.method1113("RuneScape wird geladen )2 bitte warten)3)3)3");
+	public static JagString aClass22_181 = Static60.method1113("RuneScape wird geladen )2 bitte warten)3)3)3");
 
 	@OriginalMember(owner = "client!eb", name = "A", descriptor = "[I")
 	public static int[] anIntArray74 = new int[] { 768, 1024, 1280, 512, 1536, 256, 0, 1792 };
@@ -29,7 +29,7 @@ public final class Static27 {
 	public static int anInt620 = 0;
 
 	@OriginalMember(owner = "client!eb", name = "D", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_182 = Static60.method1113("Ladevorgang )2 bitte warten Sie)3");
+	public static JagString aClass22_182 = Static60.method1113("Ladevorgang )2 bitte warten Sie)3");
 
 	@OriginalMember(owner = "client!eb", name = "a", descriptor = "(I)I")
 	public static int method432() {
@@ -41,7 +41,7 @@ public final class Static27 {
 		anIntArray75 = null;
 		anIntArray74 = null;
 		aClass22_180 = null;
-		Class21.anIntArray73 = null;
+		PlayerModel.anIntArray73 = null;
 		aClass22_182 = null;
 		aClass81_3 = null;
 		anIntArrayArray3 = null;
@@ -51,17 +51,17 @@ public final class Static27 {
 	@OriginalMember(owner = "client!eb", name = "a", descriptor = "(III)V")
 	public static void method435(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(11) long local11 = (long) ((arg0 << 16) + arg1);
-		@Pc(25) Class4_Sub1_Sub11 local25 = (Class4_Sub1_Sub11) Static110.aClass81_14.method2010(local11);
+		@Pc(25) Js5NetRequest local25 = (Js5NetRequest) Static110.aClass81_14.method2010(local11);
 		if (local25 != null) {
 			Static105.aClass78_2.method1972(local25);
 		}
 	}
 
 	@OriginalMember(owner = "client!eb", name = "a", descriptor = "(BILclient!qd;)V")
-	public static void method436(@OriginalArg(1) int arg0, @OriginalArg(2) Class4_Sub1_Sub3_Sub2 arg1) {
-		if (arg1.anInt2488 > Static117.anInt2877) {
+	public static void method436(@OriginalArg(1) int arg0, @OriginalArg(2) PathingEntity arg1) {
+		if (arg1.anInt2488 > Client.anInt2877) {
 			Static74.method1212(arg1);
-		} else if (arg1.anInt2482 >= Static117.anInt2877) {
+		} else if (arg1.anInt2482 >= Client.anInt2877) {
 			Static13.method217(arg1);
 		} else {
 			Static122.method946(arg1);

@@ -16,31 +16,31 @@ public final class Static56 {
 	public static int anInt1532;
 
 	@OriginalMember(owner = "client!jf", name = "d", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_393 = Static60.method1113("::fpsoff");
+	public static JagString aClass22_393 = Static60.method1113("::fpsoff");
 
 	@OriginalMember(owner = "client!jf", name = "e", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_394 = Static60.method1113("titlebox");
+	public static JagString aClass22_394 = Static60.method1113("titlebox");
 
 	@OriginalMember(owner = "client!jf", name = "j", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_397 = Static60.method1113("This world is running a closed Beta)3");
+	private static JagString aClass22_397 = Static60.method1113("This world is running a closed Beta)3");
 
 	@OriginalMember(owner = "client!jf", name = "f", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_395 = aClass22_397;
+	public static JagString aClass22_395 = aClass22_397;
 
 	@OriginalMember(owner = "client!jf", name = "p", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_400 = Static60.method1113("No reply from loginserver)3");
+	private static JagString aClass22_400 = Static60.method1113("No reply from loginserver)3");
 
 	@OriginalMember(owner = "client!jf", name = "i", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_396 = aClass22_400;
+	public static JagString aClass22_396 = aClass22_400;
 
 	@OriginalMember(owner = "client!jf", name = "k", descriptor = "[I")
 	public static int[] anIntArray158 = new int[4000];
 
 	@OriginalMember(owner = "client!jf", name = "m", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_398 = Static60.method1113("bevor Sie den Vorgang wiederholen)3");
+	public static JagString aClass22_398 = Static60.method1113("bevor Sie den Vorgang wiederholen)3");
 
 	@OriginalMember(owner = "client!jf", name = "o", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_399 = Static60.method1113(" steht bereits auf Ihrer Ignorieren)2Liste(Q");
+	public static JagString aClass22_399 = Static60.method1113(" steht bereits auf Ihrer Ignorieren)2Liste(Q");
 
 	@OriginalMember(owner = "client!jf", name = "a", descriptor = "(I)Z")
 	public static boolean method1030() {
@@ -60,11 +60,11 @@ public final class Static56 {
 				if (Static111.anInt2753 > 30000) {
 					throw new IOException();
 				}
-				@Pc(69) Class4_Sub1_Sub11 local69;
-				@Pc(74) Class4_Sub11 local74;
+				@Pc(69) Js5NetRequest local69;
+				@Pc(74) Packet local74;
 				while (Static53.anInt1498 < 20 && Static133.anInt3145 > 0) {
-					local69 = (Class4_Sub1_Sub11) Static79.aClass81_10.method2017();
-					local74 = new Class4_Sub11(4);
+					local69 = (Js5NetRequest) Static79.aClass81_10.method2017();
+					local74 = new Packet(4);
 					local74.method701(1);
 					local74.method737((int) local69.aLong99);
 					Static4.aClass6_1.method133(local74.aByteArray9, 4);
@@ -73,8 +73,8 @@ public final class Static56 {
 					Static133.anInt3145--;
 				}
 				while (Static55.anInt1109 < 20 && Static29.anInt686 > 0) {
-					local69 = (Class4_Sub1_Sub11) Static105.aClass78_2.method1974();
-					local74 = new Class4_Sub11(4);
+					local69 = (Js5NetRequest) Static105.aClass78_2.method1974();
+					local74 = new Packet(4);
 					local74.method701(0);
 					local74.method737((int) local69.aLong99);
 					Static4.aClass6_1.method133(local74.aByteArray9, 4);
@@ -124,10 +124,10 @@ public final class Static56 {
 							@Pc(286) long local286 = (long) (local279 + (local233 << 16));
 							@Pc(290) int local290 = Static50.aClass4_Sub11_1.method719();
 							local294 = Static50.aClass4_Sub11_1.method725();
-							@Pc(300) Class4_Sub1_Sub11 local300 = (Class4_Sub1_Sub11) Static93.aClass81_13.method2010(local286);
+							@Pc(300) Js5NetRequest local300 = (Js5NetRequest) Static93.aClass81_13.method2010(local286);
 							Static11.aBoolean270 = true;
 							if (local300 == null) {
-								local300 = (Class4_Sub1_Sub11) Static27.aClass81_3.method2010(local286);
+								local300 = (Js5NetRequest) Static27.aClass81_3.method2010(local286);
 								Static11.aBoolean270 = false;
 							}
 							if (local300 == null) {
@@ -135,7 +135,7 @@ public final class Static56 {
 							}
 							Static126.aClass4_Sub1_Sub11_1 = local300;
 							@Pc(329) int local329 = local290 == 0 ? 5 : 9;
-							Static88.aClass4_Sub11_2 = new Class4_Sub11(Static126.aClass4_Sub1_Sub11_1.aByte7 + local294 + local329);
+							Static88.aClass4_Sub11_2 = new Packet(Static126.aClass4_Sub1_Sub11_1.aByte7 + local294 + local329);
 							Static88.aClass4_Sub11_2.method701(local290);
 							Static88.aClass4_Sub11_2.method717(local294);
 							Static50.aClass4_Sub11_1.anInt1099 = 0;
@@ -169,7 +169,7 @@ public final class Static56 {
 							if (Static126.aClass4_Sub1_Sub11_1.aLong99 == 16711935L) {
 								Static99.aClass4_Sub11_3 = Static88.aClass4_Sub11_2;
 								for (local279 = 0; local279 < 256; local279++) {
-									@Pc(546) Class20_Sub1 local546 = Static73.aClass20_Sub1Array1[local279];
+									@Pc(546) Js5Provider local546 = Static73.aClass20_Sub1Array1[local279];
 									if (local546 != null) {
 										Static99.aClass4_Sub11_3.anInt1099 = local279 * 8 + 5;
 										local294 = Static99.aClass4_Sub11_3.method725();
@@ -264,7 +264,7 @@ public final class Static56 {
 			} else {
 				local19 = Static115.anIntArray310[local11];
 			}
-			@Pc(29) Class4_Sub1_Sub3_Sub2_Sub1 local29 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local19];
+			@Pc(29) PlayerEntity local29 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local19];
 			if (local29 != null) {
 				Static27.method436(1, local29);
 			}
@@ -274,8 +274,8 @@ public final class Static56 {
 	@OriginalMember(owner = "client!jf", name = "a", descriptor = "(ILjava/lang/Throwable;)Ljava/lang/String;")
 	public static String method1039(@OriginalArg(1) Throwable arg0) throws IOException {
 		@Pc(24) String local24;
-		if (arg0 instanceof RuntimeException_Sub1) {
-			@Pc(11) RuntimeException_Sub1 local11 = (RuntimeException_Sub1) arg0;
+		if (arg0 instanceof JagException) {
+			@Pc(11) JagException local11 = (JagException) arg0;
 			arg0 = local11.aThrowable1;
 			local24 = local11.aString5 + " | ";
 		} else {

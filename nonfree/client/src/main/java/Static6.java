@@ -20,7 +20,7 @@ public final class Static6 {
 	public static int anInt151;
 
 	@OriginalMember(owner = "client!af", name = "cb", descriptor = "Lclient!je;")
-	public static Interface2 anInterface2_1;
+	public static SceneProvider anInterface2_1;
 
 	@OriginalMember(owner = "client!af", name = "fb", descriptor = "I")
 	public static int anInt153;
@@ -594,10 +594,10 @@ public final class Static6 {
 		anIntArray10 = null;
 		anIntArray13 = null;
 		anInterface2_1 = null;
-		Class4_Sub1_Sub2_Sub1.anIntArray11 = null;
-		Class4_Sub1_Sub2_Sub1.anIntArray14 = null;
-		Class4_Sub1_Sub2_Sub1.anIntArray9 = null;
-		Class4_Sub1_Sub2_Sub1.anIntArray12 = null;
+		Pix3D.anIntArray11 = null;
+		Pix3D.anIntArray14 = null;
+		Pix3D.anIntArray9 = null;
+		Pix3D.anIntArray12 = null;
 	}
 
 	@OriginalMember(owner = "client!af", name = "a", descriptor = "(IIIIIIIIIIIIIIIIIII)V")
@@ -3034,7 +3034,7 @@ public final class Static6 {
 	}
 
 	@OriginalMember(owner = "client!af", name = "a", descriptor = "(Lclient!je;)V")
-	public static void method125(@OriginalArg(0) Interface2 arg0) {
+	public static void method125(@OriginalArg(0) SceneProvider arg0) {
 		anInterface2_1 = arg0;
 	}
 

@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!pe")
-public final class Class57 implements MouseListener, MouseMotionListener, FocusListener {
+public final class JavaMouseProvider implements MouseListener, MouseMotionListener, FocusListener {
 
 	@OriginalMember(owner = "client!pe", name = "mouseEntered", descriptor = "(Ljava/awt/event/MouseEvent;)V")
 	@Override

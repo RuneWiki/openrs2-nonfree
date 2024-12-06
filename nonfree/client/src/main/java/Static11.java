@@ -13,13 +13,13 @@ public final class Static11 {
 	public static int anInt2985;
 
 	@OriginalMember(owner = "client!be", name = "G", descriptor = "Lclient!ea;")
-	public static Class20 aClass20_59;
+	public static Js5Index aClass20_59;
 
 	@OriginalMember(owner = "client!be", name = "u", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_930 = Static60.method1113("Bitte laden Sie die Seite neu)3");
+	public static JagString aClass22_930 = Static60.method1113("Bitte laden Sie die Seite neu)3");
 
 	@OriginalMember(owner = "client!be", name = "x", descriptor = "Lclient!aa;")
-	public static Class2 aClass2_32 = new Class2();
+	public static GZip aClass2_32 = new GZip();
 
 	@OriginalMember(owner = "client!be", name = "A", descriptor = "I")
 	public static int anInt2982 = -1;
@@ -28,7 +28,7 @@ public final class Static11 {
 	public static int anInt2983 = 0;
 
 	@OriginalMember(owner = "client!be", name = "C", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_931 = Static60.method1113("Mem:");
+	public static JagString aClass22_931 = Static60.method1113("Mem:");
 
 	@OriginalMember(owner = "client!be", name = "F", descriptor = "I")
 	public static int anInt2986 = 0;

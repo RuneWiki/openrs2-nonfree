@@ -8,10 +8,10 @@ public final class Static59 {
 	public static int anInt1769;
 
 	@OriginalMember(owner = "client!kc", name = "m", descriptor = "Lclient!ga;")
-	public static Class20_Sub1 aClass20_Sub1_43;
+	public static Js5Provider aClass20_Sub1_43;
 
 	@OriginalMember(owner = "client!kc", name = "d", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_460 = Static60.method1113("Attack");
+	private static JagString aClass22_460 = Static60.method1113("Attack");
 
 	@OriginalMember(owner = "client!kc", name = "e", descriptor = "Z")
 	public static boolean aBoolean158 = false;
@@ -20,22 +20,22 @@ public final class Static59 {
 	public static int anInt1766 = 0;
 
 	@OriginalMember(owner = "client!kc", name = "h", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_461 = Static60.method1113("Loading)3)3)3");
+	private static JagString aClass22_461 = Static60.method1113("Loading)3)3)3");
 
 	@OriginalMember(owner = "client!kc", name = "k", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_462 = Static60.method1113("Bitte versuchen Sie es in ");
+	public static JagString aClass22_462 = Static60.method1113("Bitte versuchen Sie es in ");
 
 	@OriginalMember(owner = "client!kc", name = "p", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_463 = aClass22_460;
+	public static JagString aClass22_463 = aClass22_460;
 
 	@OriginalMember(owner = "client!kc", name = "q", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_464 = Static60.method1113("sich mit einer anderen Welt zu verbinden)3");
+	public static JagString aClass22_464 = Static60.method1113("sich mit einer anderen Welt zu verbinden)3");
 
 	@OriginalMember(owner = "client!kc", name = "r", descriptor = "I")
 	public static int anInt1771 = 0;
 
 	@OriginalMember(owner = "client!kc", name = "t", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_465 = aClass22_461;
+	public static JagString aClass22_465 = aClass22_461;
 
 	@OriginalMember(owner = "client!kc", name = "a", descriptor = "(I)V")
 	public static void method1103() {
@@ -104,7 +104,7 @@ public final class Static59 {
 			Static67.anIntArray189[local103] = (int) (Math.sin((double) Static116.anInt2872 / 14.0D) * 16.0D + Math.sin((double) Static116.anInt2872 / 15.0D) * 14.0D + Math.sin((double) Static116.anInt2872 / 16.0D) * 12.0D);
 			Static116.anInt2872++;
 		}
-		local110 = (arg0 + (Static117.anInt2877 & 0x1)) / 2;
+		local110 = (arg0 + (Client.anInt2877 & 0x1)) / 2;
 		Static45.anInt1254 += arg0;
 		if (local110 <= 0) {
 			return;
@@ -152,7 +152,7 @@ public final class Static59 {
 	}
 
 	@OriginalMember(owner = "client!kc", name = "a", descriptor = "(Lclient!ea;Lclient!ec;IZILclient!ec;I)V")
-	public static void method1105(@OriginalArg(0) Class20 arg0, @OriginalArg(1) Class22 arg1, @OriginalArg(5) Class22 arg2) {
+	public static void method1105(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) JagString arg1, @OriginalArg(5) JagString arg2) {
 		@Pc(8) int local8 = arg0.method592(arg1);
 		@Pc(14) int local14 = arg0.method606(arg2, local8);
 		Static72.method1187(arg0, 255, local14, local8);

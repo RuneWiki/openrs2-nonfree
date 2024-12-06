@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!jc")
-public final class Class4_Sub1_Sub9 extends DoublyLinkable {
+public final class IdkType extends DoublyLinkable {
 
 	@OriginalMember(owner = "client!jc", name = "I", descriptor = "[S")
 	private short[] aShortArray13;

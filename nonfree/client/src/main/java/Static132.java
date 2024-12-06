@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static132 {
 
 	@OriginalMember(owner = "client!wd", name = "s", descriptor = "Lclient!ga;")
-	public static Class20_Sub1 aClass20_Sub1_82;
+	public static Js5Provider aClass20_Sub1_82;
 
 	@OriginalMember(owner = "client!wd", name = "t", descriptor = "Lclient!wc;")
-	public static Class81 aClass81_15;
+	public static HashTable aClass81_15;
 
 	@OriginalMember(owner = "client!wd", name = "A", descriptor = "Lclient!f;")
-	public static Class4_Sub7 aClass4_Sub7_15;
+	public static IfType aClass4_Sub7_15;
 
 	@OriginalMember(owner = "client!wd", name = "C", descriptor = "I")
 	public static int anInt3135;
@@ -20,19 +20,19 @@ public final class Static132 {
 	public static volatile int anInt3125 = 0;
 
 	@OriginalMember(owner = "client!wd", name = "o", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_962 = Static60.method1113("hel");
+	public static JagString aClass22_962 = Static60.method1113("hel");
 
 	@OriginalMember(owner = "client!wd", name = "q", descriptor = "Lclient!wd;")
-	public static Class82 aClass82_14 = new Class82();
+	public static LinkList aClass82_14 = new LinkList();
 
 	@OriginalMember(owner = "client!wd", name = "w", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_963 = Static60.method1113("Ein kostenloses Spielkonto erstellen)3");
+	public static JagString aClass22_963 = Static60.method1113("Ein kostenloses Spielkonto erstellen)3");
 
 	@OriginalMember(owner = "client!wd", name = "x", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_964 = Static60.method1113("Loading wordpack )2 ");
+	private static JagString aClass22_964 = Static60.method1113("Loading wordpack )2 ");
 
 	@OriginalMember(owner = "client!wd", name = "y", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_965 = aClass22_964;
+	public static JagString aClass22_965 = aClass22_964;
 
 	@OriginalMember(owner = "client!wd", name = "B", descriptor = "Z")
 	public static boolean aBoolean283 = false;
@@ -42,16 +42,16 @@ public final class Static132 {
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(III)V")
 	public static void method2019(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(7) Class82 local7 = Static19.aClass82ArrayArrayArray1[Static37.anInt895][arg1][arg0];
+		@Pc(7) LinkList local7 = Static19.aClass82ArrayArrayArray1[Static37.anInt895][arg1][arg0];
 		if (local7 == null) {
 			Static134.aClass77_1.method1930(Static37.anInt895, arg1, arg0);
 			return;
 		}
 		@Pc(21) int local21 = -99999999;
-		@Pc(23) Class4_Sub1_Sub3_Sub1 local23 = null;
-		@Pc(28) Class4_Sub1_Sub3_Sub1 local28;
-		for (local28 = (Class4_Sub1_Sub3_Sub1) local7.method2025(); local28 != null; local28 = (Class4_Sub1_Sub3_Sub1) local7.method2023()) {
-			@Pc(36) Class4_Sub1_Sub8 local36 = Static123.method2000(local28.anInt361);
+		@Pc(23) ObjStackEntity local23 = null;
+		@Pc(28) ObjStackEntity local28;
+		for (local28 = (ObjStackEntity) local7.method2025(); local28 != null; local28 = (ObjStackEntity) local7.method2023()) {
+			@Pc(36) ObjType local36 = Static123.method2000(local28.anInt361);
 			@Pc(39) int local39 = local36.anInt1437;
 			if (local36.anInt1465 == 1) {
 				local39 *= local28.anInt363 + 1;
@@ -66,9 +66,9 @@ public final class Static132 {
 			return;
 		}
 		local7.method2021(local23);
-		@Pc(88) Class4_Sub1_Sub3_Sub1 local88 = null;
-		local28 = (Class4_Sub1_Sub3_Sub1) local7.method2025();
-		@Pc(97) Class4_Sub1_Sub3_Sub1 local97 = null;
+		@Pc(88) ObjStackEntity local88 = null;
+		local28 = (ObjStackEntity) local7.method2025();
+		@Pc(97) ObjStackEntity local97 = null;
 		while (local28 != null) {
 			if (local23.anInt361 != local28.anInt361) {
 				if (local88 == null) {
@@ -78,7 +78,7 @@ public final class Static132 {
 					local97 = local28;
 				}
 			}
-			local28 = (Class4_Sub1_Sub3_Sub1) local7.method2023();
+			local28 = (ObjStackEntity) local7.method2023();
 		}
 		@Pc(133) int local133 = arg1 + (arg0 << 7) + 1610612736;
 		Static134.aClass77_1.method1969(Static37.anInt895, arg1, arg0, Static69.method1173(Static37.anInt895, arg1 * 128 + 64, arg0 * 128 + 64), local23, local133, local88, local97);
@@ -209,7 +209,7 @@ public final class Static132 {
 	}
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(BLclient!f;I)I")
-	public static int method2032(@OriginalArg(1) Class4_Sub7 arg0, @OriginalArg(2) int arg1) {
+	public static int method2032(@OriginalArg(1) IfType arg0, @OriginalArg(2) int arg1) {
 		if (arg0.anIntArrayArray6 == null || arg1 >= arg0.anIntArrayArray6.length) {
 			return -2;
 		}
@@ -244,7 +244,7 @@ public final class Static132 {
 					local44 = 3;
 				}
 				@Pc(116) int local116;
-				@Pc(127) Class4_Sub7 local127;
+				@Pc(127) IfType local127;
 				@Pc(132) int local132;
 				@Pc(145) int local145;
 				if (local40 == 4) {
@@ -264,7 +264,7 @@ public final class Static132 {
 					local42 = Static23.anIntArray61[local29[local35++]];
 				}
 				if (local40 == 6) {
-					local42 = Class72.anIntArray307[Static43.anIntArray130[local29[local35++]] - 1];
+					local42 = Stats.anIntArray307[Static43.anIntArray130[local29[local35++]] - 1];
 				}
 				if (local40 == 7) {
 					local42 = Static23.anIntArray61[local29[local35++]] * 100 / 46875;

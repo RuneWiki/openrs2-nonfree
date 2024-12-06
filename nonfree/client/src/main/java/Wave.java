@@ -4,10 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!re")
-public final class Class65 {
+public final class Wave {
 
 	@OriginalMember(owner = "client!re", name = "c", descriptor = "[Lclient!db;")
-	private final Class16[] aClass16Array1 = new Class16[10];
+	private final Tone[] aClass16Array1 = new Tone[10];
 
 	@OriginalMember(owner = "client!re", name = "a", descriptor = "I")
 	private int anInt2620;
@@ -16,12 +16,12 @@ public final class Class65 {
 	private int anInt2621;
 
 	@OriginalMember(owner = "client!re", name = "<init>", descriptor = "(Lclient!jd;)V")
-	public Class65(@OriginalArg(0) Packet arg0) {
+	public Wave(@OriginalArg(0) Packet arg0) {
 		for (@Pc(7) int local7 = 0; local7 < 10; local7++) {
 			@Pc(12) int local12 = arg0.method719();
 			if (local12 != 0) {
 				arg0.anInt1099--;
-				this.aClass16Array1[local7] = new Class16();
+				this.aClass16Array1[local7] = new Tone();
 				this.aClass16Array1[local7].method377(arg0);
 			}
 		}

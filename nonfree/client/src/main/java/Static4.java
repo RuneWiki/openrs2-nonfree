@@ -5,73 +5,73 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static4 {
 
 	@OriginalMember(owner = "client!ac", name = "L", descriptor = "Lclient!ea;")
-	public static Class20 aClass20_4;
+	public static Js5Index aClass20_4;
 
 	@OriginalMember(owner = "client!ac", name = "M", descriptor = "Lclient!ea;")
-	public static Class20 aClass20_5;
+	public static Js5Index aClass20_5;
 
 	@OriginalMember(owner = "client!ac", name = "ab", descriptor = "Lclient!hb;")
-	public static Class4_Sub1_Sub2_Sub3 aClass4_Sub1_Sub2_Sub3_1;
+	public static Pix8 aClass4_Sub1_Sub2_Sub3_1;
 
 	@OriginalMember(owner = "client!ac", name = "kb", descriptor = "Lclient!b;")
-	public static Class6 aClass6_1;
+	public static ClientStream aClass6_1;
 
 	@OriginalMember(owner = "client!ac", name = "H", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_17 = Static60.method1113(" is already on your ignore list");
+	private static JagString aClass22_17 = Static60.method1113(" is already on your ignore list");
 
 	@OriginalMember(owner = "client!ac", name = "J", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_18 = Static60.method1113("Please use a different world)3");
+	private static JagString aClass22_18 = Static60.method1113("Please use a different world)3");
 
 	@OriginalMember(owner = "client!ac", name = "K", descriptor = "[I")
 	public static int[] anIntArray4 = new int[128];
 
 	@OriginalMember(owner = "client!ac", name = "gb", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_30 = Static60.method1113("Your account has been disabled)3");
+	private static JagString aClass22_30 = Static60.method1113("Your account has been disabled)3");
 
 	@OriginalMember(owner = "client!ac", name = "N", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_19 = aClass22_30;
+	public static JagString aClass22_19 = aClass22_30;
 
 	@OriginalMember(owner = "client!ac", name = "O", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_20 = aClass22_17;
+	public static JagString aClass22_20 = aClass22_17;
 
 	@OriginalMember(owner = "client!ac", name = "R", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_21 = aClass22_18;
+	public static JagString aClass22_21 = aClass22_18;
 
 	@OriginalMember(owner = "client!ac", name = "S", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_22 = aClass22_18;
+	public static JagString aClass22_22 = aClass22_18;
 
 	@OriginalMember(owner = "client!ac", name = "T", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_23 = Static60.method1113("headicons_prayer");
+	public static JagString aClass22_23 = Static60.method1113("headicons_prayer");
 
 	@OriginalMember(owner = "client!ac", name = "W", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_25 = Static60.method1113("Select a world");
+	private static JagString aClass22_25 = Static60.method1113("Select a world");
 
 	@OriginalMember(owner = "client!ac", name = "U", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_24 = aClass22_25;
+	public static JagString aClass22_24 = aClass22_25;
 
 	@OriginalMember(owner = "client!ac", name = "X", descriptor = "I")
 	public static int anInt77 = 0;
 
 	@OriginalMember(owner = "client!ac", name = "Y", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_26 = Static60.method1113("headicons_hint");
+	public static JagString aClass22_26 = Static60.method1113("headicons_hint");
 
 	@OriginalMember(owner = "client!ac", name = "Z", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_27 = Static60.method1113("Lade Eingabe)2Steuerungsprogramm)3)3)3");
+	public static JagString aClass22_27 = Static60.method1113("Lade Eingabe)2Steuerungsprogramm)3)3)3");
 
 	@OriginalMember(owner = "client!ac", name = "bb", descriptor = "I")
 	public static int anInt78 = 0;
 
 	@OriginalMember(owner = "client!ac", name = "db", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_29 = Static60.method1113("New User");
+	private static JagString aClass22_29 = Static60.method1113("New User");
 
 	@OriginalMember(owner = "client!ac", name = "cb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_28 = aClass22_29;
+	public static JagString aClass22_28 = aClass22_29;
 
 	@OriginalMember(owner = "client!ac", name = "ib", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_31 = Static60.method1113("Lade Sprites )2 ");
+	public static JagString aClass22_31 = Static60.method1113("Lade Sprites )2 ");
 
 	@OriginalMember(owner = "client!ac", name = "a", descriptor = "(IIILclient!ea;)[Lclient!hb;")
-	public static Class4_Sub1_Sub2_Sub3[] method35(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class20 arg2) {
+	public static Pix8[] method35(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Js5Index arg2) {
 		return Static24.method397(arg0, arg2, arg1) ? Static121.method1884() : null;
 	}
 
@@ -134,8 +134,8 @@ public final class Static4 {
 					local143 = local135 + (local127 << 8);
 					if (!local65 || local135 != 49 && local135 != 149 && local135 != 147 && local127 != 50 && (local127 != 49 || local135 != 47)) {
 						Static34.anIntArray94[local29] = local143;
-						Static99.anIntArray284[local29] = Static112.aClass20_Sub1_70.method592(Static44.method856(new Class22[] { Static31.aClass22_202, Static134.method2042(local127), Static15.aClass22_122, Static134.method2042(local135) }));
-						Static61.anIntArray176[local29] = Static112.aClass20_Sub1_70.method592(Static44.method856(new Class22[] { Static95.aClass22_541, Static134.method2042(local127), Static15.aClass22_122, Static134.method2042(local135) }));
+						Static99.anIntArray284[local29] = Static112.aClass20_Sub1_70.method592(Static44.method856(new JagString[] { Static31.aClass22_202, Static134.method2042(local127), Static15.aClass22_122, Static134.method2042(local135) }));
+						Static61.anIntArray176[local29] = Static112.aClass20_Sub1_70.method592(Static44.method856(new JagString[] { Static95.aClass22_541, Static134.method2042(local127), Static15.aClass22_122, Static134.method2042(local135) }));
 						local29++;
 					}
 				}
@@ -194,8 +194,8 @@ public final class Static4 {
 							Static34.anIntArray94[local39] = local453;
 							@Pc(490) int local490 = local453 & 0xFF;
 							@Pc(496) int local496 = local453 >> 8 & 0xFF;
-							Static99.anIntArray284[local39] = Static112.aClass20_Sub1_70.method592(Static44.method856(new Class22[] { Static31.aClass22_202, Static134.method2042(local496), Static15.aClass22_122, Static134.method2042(local490) }));
-							Static61.anIntArray176[local39] = Static112.aClass20_Sub1_70.method592(Static44.method856(new Class22[] { Static95.aClass22_541, Static134.method2042(local496), Static15.aClass22_122, Static134.method2042(local490) }));
+							Static99.anIntArray284[local39] = Static112.aClass20_Sub1_70.method592(Static44.method856(new JagString[] { Static31.aClass22_202, Static134.method2042(local496), Static15.aClass22_122, Static134.method2042(local490) }));
+							Static61.anIntArray176[local39] = Static112.aClass20_Sub1_70.method592(Static44.method856(new JagString[] { Static95.aClass22_541, Static134.method2042(local496), Static15.aClass22_122, Static134.method2042(local490) }));
 							local39++;
 						}
 					}

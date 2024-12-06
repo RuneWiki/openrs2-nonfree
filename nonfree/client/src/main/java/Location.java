@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!gb")
-public final class Class26 {
+public final class Location {
 
 	@OriginalMember(owner = "client!gb", name = "d", descriptor = "I")
 	public int anInt958;

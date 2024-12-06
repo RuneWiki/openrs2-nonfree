@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!se")
-public final class Class4_Sub1_Sub13 extends DoublyLinkable {
+public final class EnumType extends DoublyLinkable {
 
 	@OriginalMember(owner = "client!se", name = "J", descriptor = "[I")
 	public int[] anIntArray299;
@@ -13,7 +13,7 @@ public final class Class4_Sub1_Sub13 extends DoublyLinkable {
 	public int[] anIntArray300;
 
 	@OriginalMember(owner = "client!se", name = "N", descriptor = "[Lclient!ec;")
-	public Class22[] aClass22Array21;
+	public JagString[] aClass22Array21;
 
 	@OriginalMember(owner = "client!se", name = "U", descriptor = "I")
 	public int anInt2721;
@@ -25,7 +25,7 @@ public final class Class4_Sub1_Sub13 extends DoublyLinkable {
 	public int anInt2726;
 
 	@OriginalMember(owner = "client!se", name = "I", descriptor = "Lclient!ec;")
-	public Class22 aClass22_802 = Static110.aClass22_811;
+	public JagString aClass22_802 = Static110.aClass22_811;
 
 	@OriginalMember(owner = "client!se", name = "P", descriptor = "I")
 	public int anInt2718 = 0;
@@ -55,7 +55,7 @@ public final class Class4_Sub1_Sub13 extends DoublyLinkable {
 			@Pc(59) int local59;
 			if (arg0 == 5) {
 				this.anInt2718 = arg1.method718();
-				this.aClass22Array21 = new Class22[this.anInt2718];
+				this.aClass22Array21 = new JagString[this.anInt2718];
 				this.anIntArray299 = new int[this.anInt2718];
 				for (local59 = 0; local59 < this.anInt2718; local59++) {
 					this.anIntArray299[local59] = arg1.method725();

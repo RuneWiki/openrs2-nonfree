@@ -11,22 +11,22 @@ public final class Static8 {
 	public static int anInt2380;
 
 	@OriginalMember(owner = "client!ba", name = "j", descriptor = "[Lclient!h;")
-	public static Class4_Sub1_Sub2_Sub2[] aClass4_Sub1_Sub2_Sub2Array13;
+	public static Pix32[] aClass4_Sub1_Sub2_Sub2Array13;
 
 	@OriginalMember(owner = "client!ba", name = "d", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_686 = Static60.method1113("m-Ochte mit Ihnen handeln)3");
+	public static JagString aClass22_686 = Static60.method1113("m-Ochte mit Ihnen handeln)3");
 
 	@OriginalMember(owner = "client!ba", name = "f", descriptor = "Lclient!ja;")
-	public static Class33 aClass33_27 = new Class33(64);
+	public static LruCache aClass33_27 = new LruCache(64);
 
 	@OriginalMember(owner = "client!ba", name = "h", descriptor = "I")
 	public static int anInt2382 = 0;
 
 	@OriginalMember(owner = "client!ba", name = "k", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_688 = Static60.method1113("Loading interfaces )2 ");
+	private static JagString aClass22_688 = Static60.method1113("Loading interfaces )2 ");
 
 	@OriginalMember(owner = "client!ba", name = "i", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_687 = aClass22_688;
+	public static JagString aClass22_687 = aClass22_688;
 
 	@OriginalMember(owner = "client!ba", name = "a", descriptor = "(B)V")
 	public static void method1570() {
@@ -43,23 +43,23 @@ public final class Static8 {
 		Static51.anInt1461 = 0;
 		for (local19 = 0; local19 < local10; local19++) {
 			@Pc(57) int local57 = Static115.anIntArray310[local19];
-			@Pc(61) Class4_Sub1_Sub3_Sub2_Sub1 local61 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local57];
+			@Pc(61) PlayerEntity local61 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local57];
 			@Pc(66) int local66 = Static133.aClass4_Sub11_Sub1_3.method748(1);
 			if (local66 == 0) {
 				Static115.anIntArray310[Static51.anInt1461++] = local57;
-				local61.anInt2475 = Static117.anInt2877;
+				local61.anInt2475 = Client.anInt2877;
 			} else {
 				@Pc(89) int local89 = Static133.aClass4_Sub11_Sub1_3.method748(2);
 				if (local89 == 0) {
 					Static115.anIntArray310[Static51.anInt1461++] = local57;
-					local61.anInt2475 = Static117.anInt2877;
+					local61.anInt2475 = Client.anInt2877;
 					Static51.anIntArray146[Static50.anInt1405++] = local57;
 				} else {
 					@Pc(133) int local133;
 					@Pc(143) int local143;
 					if (local89 == 1) {
 						Static115.anIntArray310[Static51.anInt1461++] = local57;
-						local61.anInt2475 = Static117.anInt2877;
+						local61.anInt2475 = Client.anInt2877;
 						local133 = Static133.aClass4_Sub11_Sub1_3.method748(3);
 						local61.method1608(local133, false);
 						local143 = Static133.aClass4_Sub11_Sub1_3.method748(1);
@@ -68,7 +68,7 @@ public final class Static8 {
 						}
 					} else if (local89 == 2) {
 						Static115.anIntArray310[Static51.anInt1461++] = local57;
-						local61.anInt2475 = Static117.anInt2877;
+						local61.anInt2475 = Client.anInt2877;
 						local133 = Static133.aClass4_Sub11_Sub1_3.method748(3);
 						local61.method1608(local133, true);
 						local143 = Static133.aClass4_Sub11_Sub1_3.method748(3);
@@ -86,7 +86,7 @@ public final class Static8 {
 	}
 
 	@OriginalMember(owner = "client!ba", name = "a", descriptor = "(Lclient!ea;I)V")
-	public static void method1571(@OriginalArg(0) Class20 arg0) {
+	public static void method1571(@OriginalArg(0) Js5Index arg0) {
 		Static107.aClass20_51 = arg0;
 	}
 
@@ -101,7 +101,7 @@ public final class Static8 {
 	}
 
 	@OriginalMember(owner = "client!ba", name = "a", descriptor = "(JI)Lclient!ec;")
-	public static Class22 method1575(@OriginalArg(0) long arg0) {
+	public static JagString method1575(@OriginalArg(0) long arg0) {
 		if (arg0 <= 0L || arg0 >= 6582952005840035281L) {
 			return null;
 		} else if (arg0 % 37L == 0L) {
@@ -118,7 +118,7 @@ public final class Static8 {
 				local32--;
 				local48[local32] = Static25.aByteArray6[(int) (local52 - arg0 * 37L)];
 			}
-			@Pc(79) Class22 local79 = new Class22();
+			@Pc(79) JagString local79 = new JagString();
 			local79.aByteArray7 = local48;
 			local79.anInt668 = local48.length;
 			return local79;

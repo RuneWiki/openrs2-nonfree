@@ -74,7 +74,7 @@ public final class Static127 {
 	public static final int anInt3015 = 4;
 
 	@OriginalMember(owner = "client!vd", name = "j", descriptor = "[[Lclient!of;")
-	public static Class55[][] aClass55ArrayArray1 = new Class55[anInt3015][500];
+	public static Occlude[][] aClass55ArrayArray1 = new Occlude[anInt3015][500];
 
 	@OriginalMember(owner = "client!vd", name = "k", descriptor = "Z")
 	public static boolean aBoolean272 = false;
@@ -86,7 +86,7 @@ public final class Static127 {
 	public static int anInt3017 = -1;
 
 	@OriginalMember(owner = "client!vd", name = "w", descriptor = "[Lclient!gb;")
-	public static Class26[] aClass26Array2 = new Class26[100];
+	public static Location[] aClass26Array2 = new Location[100];
 
 	@OriginalMember(owner = "client!vd", name = "x", descriptor = "I")
 	public static int anInt3022 = 0;
@@ -104,13 +104,13 @@ public final class Static127 {
 	public static boolean aBoolean273 = true;
 
 	@OriginalMember(owner = "client!vd", name = "I", descriptor = "[Lclient!of;")
-	public static Class55[] aClass55Array1 = new Class55[500];
+	public static Occlude[] aClass55Array1 = new Occlude[500];
 
 	@OriginalMember(owner = "client!vd", name = "K", descriptor = "I")
 	public static int anInt3033 = -1;
 
 	@OriginalMember(owner = "client!vd", name = "L", descriptor = "Lclient!wd;")
-	public static Class82 aClass82_13 = new Class82();
+	public static LinkList aClass82_13 = new LinkList();
 
 	@OriginalMember(owner = "client!vd", name = "M", descriptor = "[I")
 	public static int[] anIntArray331 = new int[anInt3015];
@@ -171,10 +171,10 @@ public final class Static127 {
 		@Pc(67) int local67;
 		for (@Pc(23) int local23 = 128; local23 <= 384; local23 += 32) {
 			for (local26 = 0; local26 < 2048; local26 += 64) {
-				anInt3019 = Class4_Sub1_Sub2_Sub1.anIntArray9[local23];
-				anInt3028 = Class4_Sub1_Sub2_Sub1.anIntArray12[local23];
-				anInt3032 = Class4_Sub1_Sub2_Sub1.anIntArray9[local26];
-				anInt3029 = Class4_Sub1_Sub2_Sub1.anIntArray12[local26];
+				anInt3019 = Pix3D.anIntArray9[local23];
+				anInt3028 = Pix3D.anIntArray12[local23];
+				anInt3032 = Pix3D.anIntArray9[local26];
+				anInt3029 = Pix3D.anIntArray12[local26];
 				local49 = (local23 - 128) / 32;
 				local53 = local26 / 64;
 				for (local55 = -26; local55 <= 26; local55++) {
@@ -227,7 +227,7 @@ public final class Static127 {
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(IIIIIIII)V")
 	public static void method1949(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
-		@Pc(3) Class55 local3 = new Class55();
+		@Pc(3) Occlude local3 = new Occlude();
 		local3.anInt2268 = arg2 / 128;
 		local3.anInt2273 = arg3 / 128;
 		local3.anInt2261 = arg4 / 128;

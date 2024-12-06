@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!lb")
-public final class Class42 {
+public final class FileOnDisk {
 
 	@OriginalMember(owner = "client!lb", name = "b", descriptor = "Ljava/io/RandomAccessFile;")
 	private RandomAccessFile aRandomAccessFile1;
@@ -23,7 +23,7 @@ public final class Class42 {
 	private final long aLong55;
 
 	@OriginalMember(owner = "client!lb", name = "<init>", descriptor = "(Ljava/io/File;Ljava/lang/String;J)V")
-	public Class42(@OriginalArg(0) File arg0, @OriginalArg(1) String arg1, @OriginalArg(2) long arg2) throws IOException {
+	public FileOnDisk(@OriginalArg(0) File arg0, @OriginalArg(1) String arg1, @OriginalArg(2) long arg2) throws IOException {
 		if (arg2 == -1L) {
 			arg2 = Long.MAX_VALUE;
 		}

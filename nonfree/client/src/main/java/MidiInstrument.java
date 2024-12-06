@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!kd")
-public final class Class4_Sub14 extends Linkable {
+public final class MidiInstrument extends Linkable {
 
 	@OriginalMember(owner = "client!kd", name = "r", descriptor = "[Lclient!ib;")
 	public final PcmSound[] aClass4_Sub13_Sub1Array1 = new PcmSound[128];
@@ -28,10 +28,10 @@ public final class Class4_Sub14 extends Linkable {
 	private int[] anIntArray172 = new int[128];
 
 	@OriginalMember(owner = "client!kd", name = "P", descriptor = "[Lclient!kc;")
-	public final Class38[] aClass38Array1 = new Class38[128];
+	public final MidiSound[] aClass38Array1 = new MidiSound[128];
 
 	@OriginalMember(owner = "client!kd", name = "<init>", descriptor = "([B)V")
-	public Class4_Sub14(@OriginalArg(0) byte[] arg0) {
+	public MidiInstrument(@OriginalArg(0) byte[] arg0) {
 		@Pc(21) int local21 = 0;
 		this.aByteArray18 = new byte[128];
 		this.aByteArray17 = new byte[128];
@@ -93,9 +93,9 @@ public final class Class4_Sub14 extends Linkable {
 				local180[local197] = (byte) local191;
 			}
 		}
-		@Pc(235) Class38[] local235 = new Class38[local185];
+		@Pc(235) MidiSound[] local235 = new MidiSound[local185];
 		for (local197 = 0; local197 < local235.length; local197++) {
-			@Pc(247) Class38 local247 = local235[local197] = new Class38();
+			@Pc(247) MidiSound local247 = local235[local197] = new MidiSound();
 			@Pc(251) int local251 = local38.method719();
 			if (local251 > 0) {
 				local247.aByteArray14 = new byte[local251 * 2];
@@ -181,7 +181,7 @@ public final class Class4_Sub14 extends Linkable {
 			}
 		}
 		local416 = 0;
-		@Pc(582) Class38 local582 = null;
+		@Pc(582) MidiSound local582 = null;
 		local412 = 0;
 		for (@Pc(586) int local586 = 0; local586 < 128; local586++) {
 			if (this.anIntArray172[local586] != 0) {
@@ -217,7 +217,7 @@ public final class Class4_Sub14 extends Linkable {
 		this.anInt1785 = local38.method719() + 1;
 		@Pc(698) int local698;
 		for (@Pc(687) int local687 = 0; local687 < local185; local687++) {
-			@Pc(693) Class38 local693 = local235[local687];
+			@Pc(693) MidiSound local693 = local235[local687];
 			if (local693.aByteArray14 != null) {
 				for (local698 = 1; local698 < local693.aByteArray14.length; local698 += 2) {
 					local693.aByteArray14[local698] = local38.method731();
@@ -242,7 +242,7 @@ public final class Class4_Sub14 extends Linkable {
 		}
 		@Pc(796) int local796;
 		for (local743 = 0; local743 < local185; local743++) {
-			@Pc(789) Class38 local789 = local235[local743];
+			@Pc(789) MidiSound local789 = local235[local743];
 			if (local789.aByteArray15 != null) {
 				local361 = 0;
 				for (local796 = 2; local796 < local789.aByteArray15.length; local796 += 2) {
@@ -253,7 +253,7 @@ public final class Class4_Sub14 extends Linkable {
 		}
 		@Pc(842) int local842;
 		for (local698 = 0; local698 < local185; local698++) {
-			@Pc(835) Class38 local835 = local235[local698];
+			@Pc(835) MidiSound local835 = local235[local698];
 			if (local835.aByteArray14 != null) {
 				local361 = 0;
 				for (local842 = 2; local842 < local835.aByteArray14.length; local842 += 2) {
@@ -357,7 +357,7 @@ public final class Class4_Sub14 extends Linkable {
 			local235[local796].anInt1770 = local38.method719();
 		}
 		for (local842 = 0; local842 < local185; local842++) {
-			@Pc(1298) Class38 local1298 = local235[local842];
+			@Pc(1298) MidiSound local1298 = local235[local842];
 			if (local1298.aByteArray14 != null) {
 				local1298.anInt1764 = local38.method719();
 			}
@@ -372,13 +372,13 @@ public final class Class4_Sub14 extends Linkable {
 			local235[local1097].anInt1767 = local38.method719();
 		}
 		for (local920 = 0; local920 < local185; local920++) {
-			@Pc(1353) Class38 local1353 = local235[local920];
+			@Pc(1353) MidiSound local1353 = local235[local920];
 			if (local1353.anInt1767 > 0) {
 				local1353.anInt1774 = local38.method719();
 			}
 		}
 		for (local943 = 0; local943 < local185; local943++) {
-			@Pc(1380) Class38 local1380 = local235[local943];
+			@Pc(1380) MidiSound local1380 = local235[local943];
 			if (local1380.anInt1774 > 0) {
 				local1380.anInt1763 = local38.method719();
 			}

@@ -5,16 +5,16 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static18 {
 
 	@OriginalMember(owner = "client!client", name = "gb", descriptor = "Lclient!nf;")
-	public static Class4_Sub1_Sub2_Sub4_Sub1 aClass4_Sub1_Sub2_Sub4_Sub1_1;
+	public static SoftwareFont aClass4_Sub1_Sub2_Sub4_Sub1_1;
 
 	@OriginalMember(owner = "client!client", name = "R", descriptor = "I")
 	public static int anInt500 = 0;
 
 	@OriginalMember(owner = "client!client", name = "T", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_147 = Static60.method1113("Startseite auf (WSpielkonto wiederherstellen(W)3");
+	public static JagString aClass22_147 = Static60.method1113("Startseite auf (WSpielkonto wiederherstellen(W)3");
 
 	@OriginalMember(owner = "client!client", name = "W", descriptor = "Lclient!ja;")
-	public static Class33 aClass33_9 = new Class33(64);
+	public static LruCache aClass33_9 = new LruCache(64);
 
 	@OriginalMember(owner = "client!client", name = "cb", descriptor = "I")
 	public static int anInt509 = 0;
@@ -53,7 +53,7 @@ public final class Static18 {
 			local90 = Static134.aClass77_1.method1925(arg5, arg2, arg6, local27);
 			@Pc(96) int local96 = local90 >> 6 & 0x3;
 			@Pc(100) int local100 = local90 & 0x1F;
-			@Pc(114) Class4_Sub1_Sub5 local114;
+			@Pc(114) LocType local114;
 			if (arg1 == 0) {
 				Static134.aClass77_1.method1952(arg5, arg2, arg6);
 				local114 = Static5.method45(local83);
@@ -93,7 +93,7 @@ public final class Static18 {
 	}
 
 	@OriginalMember(owner = "client!client", name = "a", descriptor = "(ILclient!f;)Z")
-	public static boolean method357(@OriginalArg(1) Class4_Sub7 arg0) {
+	public static boolean method357(@OriginalArg(1) IfType arg0) {
 		@Pc(6) int local6 = arg0.anInt793;
 		if (local6 == 205) {
 			Static4.anInt77 = 250;
@@ -131,9 +131,9 @@ public final class Static18 {
 		if (!Static24.method396(arg0)) {
 			return;
 		}
-		@Pc(14) Class4_Sub7[] local14 = Static65.aClass4_Sub7ArrayArray1[arg0];
+		@Pc(14) IfType[] local14 = Static65.aClass4_Sub7ArrayArray1[arg0];
 		for (@Pc(16) int local16 = 0; local16 < local14.length; local16++) {
-			@Pc(22) Class4_Sub7 local22 = local14[local16];
+			@Pc(22) IfType local22 = local14[local16];
 			if (local22 != null) {
 				local22.anInt747 = 0;
 				local22.anInt788 = 0;

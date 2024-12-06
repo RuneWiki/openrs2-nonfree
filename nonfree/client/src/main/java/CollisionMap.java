@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!qf")
-public final class Class60 {
+public final class CollisionMap {
 
 	@OriginalMember(owner = "client!qf", name = "c", descriptor = "[I")
 	public static int[] anIntArray282 = new int[32];
@@ -33,7 +33,7 @@ public final class Class60 {
 	}
 
 	@OriginalMember(owner = "client!qf", name = "<init>", descriptor = "(II)V")
-	public Class60(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public CollisionMap(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		this.anInt2555 = arg0;
 		this.anInt2564 = arg1;
 		this.anInt2563 = 0;

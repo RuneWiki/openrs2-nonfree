@@ -1,4 +1,3 @@
-import java.awt.Frame;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -6,10 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static9 {
 
 	@OriginalMember(owner = "client!bc", name = "d", descriptor = "Lclient!cc;")
-	public static Class12 aClass12_2;
-
-	@OriginalMember(owner = "client!bc", name = "n", descriptor = "Ljava/awt/Frame;")
-	public static Frame aFrame1;
+	public static PrivilegedRequest aClass12_2;
 
 	@OriginalMember(owner = "client!bc", name = "w", descriptor = "Z")
 	public static boolean aBoolean24;
@@ -18,16 +14,16 @@ public final class Static9 {
 	public static int anInt184 = 0;
 
 	@OriginalMember(owner = "client!bc", name = "f", descriptor = "Lclient!wd;")
-	public static Class82 aClass82_2 = new Class82();
+	public static LinkList aClass82_2 = new LinkList();
 
 	@OriginalMember(owner = "client!bc", name = "l", descriptor = "J")
 	public static long aLong7 = 0L;
 
 	@OriginalMember(owner = "client!bc", name = "m", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_76 = Static60.method1113("-5berpr-Ufen Sie Ihr Mitteilungsfach)3");
+	public static JagString aClass22_76 = Static60.method1113("-5berpr-Ufen Sie Ihr Mitteilungsfach)3");
 
 	@OriginalMember(owner = "client!bc", name = "p", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_77 = Static60.method1113("Die Verbindung konnte");
+	public static JagString aClass22_77 = Static60.method1113("Die Verbindung konnte");
 
 	@OriginalMember(owner = "client!bc", name = "r", descriptor = "[I")
 	public static int[] anIntArray16 = new int[128];
@@ -56,7 +52,7 @@ public final class Static9 {
 		anIntArray17 = null;
 		anIntArray16 = null;
 		aClass12_2 = null;
-		aFrame1 = null;
+		GameShell.aFrame1 = null;
 		aClass22_76 = null;
 	}
 }

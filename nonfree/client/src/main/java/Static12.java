@@ -6,31 +6,31 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static12 {
 
 	@OriginalMember(owner = "client!bf", name = "k", descriptor = "[Lclient!hb;")
-	public static Class4_Sub1_Sub2_Sub3[] aClass4_Sub1_Sub2_Sub3Array1;
+	public static Pix8[] aClass4_Sub1_Sub2_Sub3Array1;
 
 	@OriginalMember(owner = "client!bf", name = "d", descriptor = "[Lclient!q;")
-	public static Class4_Sub1_Sub3_Sub2_Sub2[] aClass4_Sub1_Sub3_Sub2_Sub2Array1 = new Class4_Sub1_Sub3_Sub2_Sub2[32768];
+	public static NpcEntity[] aClass4_Sub1_Sub3_Sub2_Sub2Array1 = new NpcEntity[32768];
 
 	@OriginalMember(owner = "client!bf", name = "e", descriptor = "I")
 	public static int anInt215 = 0;
 
 	@OriginalMember(owner = "client!bf", name = "h", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_80 = null;
+	public static JagString aClass22_80 = null;
 
 	@OriginalMember(owner = "client!bf", name = "i", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_81 = Static60.method1113("Bitte versuchen Sie)1");
+	public static JagString aClass22_81 = Static60.method1113("Bitte versuchen Sie)1");
 
 	@OriginalMember(owner = "client!bf", name = "l", descriptor = "[I")
 	public static int[] anIntArray19 = new int[2000];
 
 	@OriginalMember(owner = "client!bf", name = "m", descriptor = "[Lclient!ec;")
-	public static Class22[] aClass22Array1 = new Class22[200];
+	public static JagString[] aClass22Array1 = new JagString[200];
 
 	@OriginalMember(owner = "client!bf", name = "s", descriptor = "[Lclient!ec;")
-	public static Class22[] aClass22Array2 = new Class22[100];
+	public static JagString[] aClass22Array2 = new JagString[100];
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(Lclient!ec;IZ)V")
-	public static void method165(@OriginalArg(0) Class22 arg0, @OriginalArg(2) boolean arg1) {
+	public static void method165(@OriginalArg(0) JagString arg0, @OriginalArg(2) boolean arg1) {
 		@Pc(14) int local14 = Static101.aClass4_Sub1_Sub2_Sub4_Sub1_4.method1413(arg0, 250);
 		@Pc(21) int local21 = Static101.aClass4_Sub1_Sub2_Sub4_Sub1_4.method1398(arg0, 250) * 13;
 		Static118.method1373(6, 6, local14 + 4 + 4, local21 - -4 + 4, 0);
@@ -42,15 +42,15 @@ public final class Static12 {
 			return;
 		}
 		try {
-			@Pc(112) Graphics local112 = Static89.aCanvas1.getGraphics();
-			Static43.aClass11_1.method578(local112);
+			@Pc(112) Graphics local112 = GameShell.aCanvas1.getGraphics();
+			GameShell.drawArea.method578(local112);
 		} catch (@Pc(120) Exception local120) {
-			Static89.aCanvas1.repaint();
+			GameShell.aCanvas1.repaint();
 		}
 	}
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(ILclient!jd;)V")
-	public static void method167(@OriginalArg(1) Class4_Sub11 arg0) {
+	public static void method167(@OriginalArg(1) Packet arg0) {
 		if (Static111.aClass79_2 != null) {
 			try {
 				Static111.aClass79_2.method1988(0L);
@@ -63,7 +63,7 @@ public final class Static12 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(IZ[BI)Z")
 	public static boolean method169(@OriginalArg(0) int arg0, @OriginalArg(2) byte[] arg1, @OriginalArg(3) int arg2) {
-		@Pc(10) Class4_Sub11 local10 = new Class4_Sub11(arg1);
+		@Pc(10) Packet local10 = new Packet(arg1);
 		@Pc(12) int local12 = -1;
 		@Pc(14) boolean local14 = true;
 		label54: while (true) {
@@ -88,7 +88,7 @@ public final class Static12 {
 					@Pc(84) int local84 = local31 & 0x3F;
 					@Pc(89) int local89 = local84 + arg2;
 					if (local74 > 0 && local89 > 0 && local74 < 103 && local89 < 103) {
-						@Pc(110) Class4_Sub1_Sub5 local110 = Static5.method45(local12);
+						@Pc(110) LocType local110 = Static5.method45(local12);
 						if (local80 != 22 || !Static130.aBoolean279 || local110.anInt1242 != 0 || local110.anInt1268 == 1 || local110.aBoolean117) {
 							local29 = true;
 							if (!local110.method877()) {
@@ -144,7 +144,7 @@ public final class Static12 {
 			Static5.aClass4_Sub7_1 = Static106.method1749(local14);
 			Static30.anInt722 = local10;
 		}
-		@Pc(66) Class4_Sub1_Sub3_Sub2_Sub1 local66;
+		@Pc(66) PlayerEntity local66;
 		if (local18 == 50) {
 			local66 = Static44.aClass4_Sub1_Sub3_Sub2_Sub1Array1[local26];
 			if (local66 != null) {
@@ -157,7 +157,7 @@ public final class Static12 {
 				Static38.aClass4_Sub11_Sub1_1.method735(local26);
 			}
 		}
-		@Pc(121) Class4_Sub1_Sub3_Sub2_Sub2 local121;
+		@Pc(121) NpcEntity local121;
 		if (local18 == 10) {
 			local121 = aClass4_Sub1_Sub3_Sub2_Sub2Array1[local26];
 			if (local121 != null) {
@@ -184,7 +184,7 @@ public final class Static12 {
 				Static38.aClass4_Sub11_Sub1_1.method735(local26);
 			}
 		}
-		@Pc(240) Class4_Sub7 local240;
+		@Pc(240) IfType local240;
 		if (local18 == 8) {
 			local240 = Static108.method1767(local10, local14);
 			if (local240 != null) {
@@ -196,10 +196,10 @@ public final class Static12 {
 					Static124.aClass22_927 = Static75.aClass22_554;
 				}
 				if (!local240.aBoolean79) {
-					aClass22_80 = Static44.method856(new Class22[] { Static112.aClass22_865, local240.aClass22_208, Static108.aClass22_805 });
+					aClass22_80 = Static44.method856(new JagString[] { Static112.aClass22_865, local240.aClass22_208, Static108.aClass22_805 });
 					return;
 				}
-				aClass22_80 = Static44.method856(new Class22[] { local240.aClass22_205, Static108.aClass22_805 });
+				aClass22_80 = Static44.method856(new JagString[] { local240.aClass22_205, Static108.aClass22_805 });
 			}
 			return;
 		}
@@ -360,7 +360,7 @@ public final class Static12 {
 			Static38.anInt951 = local14;
 			Static104.anInt2636 = 1;
 			Static110.method1772(local240);
-			Static43.aClass22_290 = Static44.method856(new Class22[] { Static33.aClass22_221, Static123.method2000(local26).aClass22_359, Static108.aClass22_805 });
+			Static43.aClass22_290 = Static44.method856(new JagString[] { Static33.aClass22_221, Static123.method2000(local26).aClass22_359, Static108.aClass22_805 });
 			if (Static43.aClass22_290 == null) {
 				Static43.aClass22_290 = Static75.aClass22_558;
 			}
@@ -432,7 +432,7 @@ public final class Static12 {
 			Static130.anInt3100 = 0;
 			local121 = aClass4_Sub1_Sub3_Sub2_Sub2Array1[local26];
 			if (local121 != null) {
-				@Pc(1249) Class4_Sub1_Sub10 local1249 = local121.aClass4_Sub1_Sub10_1;
+				@Pc(1249) NpcType local1249 = local121.aClass4_Sub1_Sub10_1;
 				if (local1249.anIntArray221 != null) {
 					local1249 = local1249.method1434();
 				}
@@ -630,7 +630,7 @@ public final class Static12 {
 				Static38.aClass4_Sub11_Sub1_1.method752(43);
 				Static38.aClass4_Sub11_Sub1_1.method691(local26);
 			} else {
-				Static65.method1153(Static44.method856(new Class22[] { Static134.method2042(local240.anIntArray83[local10]), Static58.aClass22_449, Static123.method2000(local26).aClass22_359 }), 0, Static64.aClass22_485);
+				Static65.method1153(Static44.method856(new JagString[] { Static134.method2042(local240.anIntArray83[local10]), Static58.aClass22_449, Static123.method2000(local26).aClass22_359 }), 0, Static64.aClass22_485);
 			}
 			Static114.anInt2821 = 0;
 			Static5.aClass4_Sub7_1 = Static106.method1749(local14);

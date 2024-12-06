@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!bb")
-public final class Class8_Sub1 extends ByteArrayCopier {
+public final class ByteBufferNode extends ByteArrayCopier {
 
 	@OriginalMember(owner = "client!bb", name = "l", descriptor = "Ljava/nio/ByteBuffer;")
 	private ByteBuffer aByteBuffer1;

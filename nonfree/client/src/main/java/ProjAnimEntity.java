@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!sc")
-public final class Class4_Sub1_Sub3_Sub6 extends Entity {
+public final class ProjAnimEntity extends Entity {
 
 	@OriginalMember(owner = "client!sc", name = "V", descriptor = "D")
 	private double aDouble1;
@@ -79,10 +79,10 @@ public final class Class4_Sub1_Sub3_Sub6 extends Entity {
 	public final int anInt2670;
 
 	@OriginalMember(owner = "client!sc", name = "ub", descriptor = "Lclient!vc;")
-	private final Class4_Sub1_Sub17 aClass4_Sub1_Sub17_2;
+	private final SeqType aClass4_Sub1_Sub17_2;
 
 	@OriginalMember(owner = "client!sc", name = "<init>", descriptor = "(IIIIIIIIIII)V")
-	public Class4_Sub1_Sub3_Sub6(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10) {
+	public ProjAnimEntity(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10) {
 		this.anInt2688 = arg8;
 		this.anInt2672 = arg3;
 		this.anInt2671 = arg1;
@@ -134,7 +134,7 @@ public final class Class4_Sub1_Sub3_Sub6 extends Entity {
 	@OriginalMember(owner = "client!sc", name = "b", descriptor = "(B)Lclient!od;")
 	@Override
 	public SoftwareModel method1816() {
-		@Pc(13) Class4_Sub1_Sub14 local13 = Static33.method549(this.anInt2679);
+		@Pc(13) SpotAnimType local13 = Static33.method549(this.anInt2679);
 		@Pc(19) SoftwareModel local19 = local13.method1790(this.anInt2681);
 		if (local19 == null) {
 			return null;

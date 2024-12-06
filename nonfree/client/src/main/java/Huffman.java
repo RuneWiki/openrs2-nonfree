@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!bf")
-public final class Class10 {
+public final class Huffman {
 
 	@OriginalMember(owner = "client!bf", name = "g", descriptor = "[I")
 	private final int[] anIntArray18;
@@ -16,7 +16,7 @@ public final class Class10 {
 	private final byte[] aByteArray5;
 
 	@OriginalMember(owner = "client!bf", name = "<init>", descriptor = "([B)V")
-	public Class10(@OriginalArg(0) byte[] arg0) {
+	public Huffman(@OriginalArg(0) byte[] arg0) {
 		@Pc(6) int local6 = arg0.length;
 		this.anIntArray18 = new int[local6];
 		this.anIntArray20 = new int[8];

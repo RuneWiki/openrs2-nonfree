@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!tf")
-public final class Class74 {
+public final class VorbisResidue {
 
 	@OriginalMember(owner = "client!tf", name = "g", descriptor = "I")
 	private final int anInt2846 = Static77.method1296(16);
@@ -28,7 +28,7 @@ public final class Class74 {
 	private final int[] anIntArray311;
 
 	@OriginalMember(owner = "client!tf", name = "<init>", descriptor = "()V")
-	public Class74() {
+	public VorbisResidue() {
 		@Pc(33) int[] local33 = new int[this.anInt2845];
 		@Pc(38) int local38;
 		for (@Pc(35) int local35 = 0; local35 < this.anInt2845; local35++) {
@@ -77,7 +77,7 @@ public final class Class74 {
 					@Pc(90) int local90 = this.anIntArray311[local51 * 8 + local35];
 					if (local90 >= 0) {
 						@Pc(100) int local100 = this.anInt2842 + local38 * this.anInt2844;
-						@Pc(104) Class24 local104 = Static77.aClass24Array1[local90];
+						@Pc(104) VorbisCookbook local104 = Static77.aClass24Array1[local90];
 						@Pc(113) int local113;
 						if (this.anInt2846 == 0) {
 							local113 = this.anInt2844 / local104.anInt723;

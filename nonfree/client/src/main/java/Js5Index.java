@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ea")
-public abstract class Class20 {
+public abstract class Js5Index {
 
 	@OriginalMember(owner = "client!ea", name = "c", descriptor = "I")
 	private int anInt909;
@@ -31,13 +31,13 @@ public abstract class Class20 {
 	public int anInt925;
 
 	@OriginalMember(owner = "client!ea", name = "E", descriptor = "[Lclient!nd;")
-	private Class52[] aClass52Array2;
+	private IntHashTable[] aClass52Array2;
 
 	@OriginalMember(owner = "client!ea", name = "K", descriptor = "[I")
 	private int[] anIntArray110;
 
 	@OriginalMember(owner = "client!ea", name = "P", descriptor = "Lclient!nd;")
-	private Class52 aClass52_2;
+	private IntHashTable aClass52_2;
 
 	@OriginalMember(owner = "client!ea", name = "S", descriptor = "[[I")
 	private int[][] anIntArrayArray7;
@@ -52,7 +52,7 @@ public abstract class Class20 {
 	private final boolean aBoolean96;
 
 	@OriginalMember(owner = "client!ea", name = "<init>", descriptor = "(ZZ)V")
-	protected Class20(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1) {
+	protected Js5Index(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1) {
 		this.aBoolean95 = arg1;
 		this.aBoolean96 = arg0;
 	}
@@ -233,7 +233,7 @@ public abstract class Class20 {
 			for (local162 = 0; local162 < this.anInt909; local162++) {
 				this.anIntArray108[this.anIntArray110[local162]] = local19.method725();
 			}
-			this.aClass52_2 = new Class52(this.anIntArray108);
+			this.aClass52_2 = new IntHashTable(this.anIntArray108);
 		}
 		for (local162 = 0; local162 < this.anInt909; local162++) {
 			this.anIntArray109[this.anIntArray110[local162]] = local19.method725();
@@ -266,7 +266,7 @@ public abstract class Class20 {
 			return;
 		}
 		this.anIntArrayArray8 = new int[local78 + 1][];
-		this.aClass52Array2 = new Class52[local78 + 1];
+		this.aClass52Array2 = new IntHashTable[local78 + 1];
 		for (local260 = 0; local260 < this.anInt909; local260++) {
 			local265 = this.anIntArray110[local260];
 			local255 = this.anIntArray107[local265];
@@ -274,7 +274,7 @@ public abstract class Class20 {
 			for (local273 = 0; local273 < local255; local273++) {
 				this.anIntArrayArray8[local265][this.anIntArrayArray7[local265][local273]] = local19.method725();
 			}
-			this.aClass52Array2[local265] = new Class52(this.anIntArrayArray8[local265]);
+			this.aClass52Array2[local265] = new IntHashTable(this.anIntArrayArray8[local265]);
 		}
 	}
 

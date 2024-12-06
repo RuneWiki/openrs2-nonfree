@@ -15,25 +15,25 @@ public final class Static113 {
 	public static int[] anIntArray306 = new int[500];
 
 	@OriginalMember(owner = "client!tc", name = "f", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_866 = Static60.method1113("swe");
+	public static JagString aClass22_866 = Static60.method1113("swe");
 
 	@OriginalMember(owner = "client!tc", name = "g", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_867 = Static60.method1113("Der Server wird gerade aktualisiert)3");
+	public static JagString aClass22_867 = Static60.method1113("Der Server wird gerade aktualisiert)3");
 
 	@OriginalMember(owner = "client!tc", name = "h", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_868 = Static60.method1113(" <col=00ff80>");
+	public static JagString aClass22_868 = Static60.method1113(" <col=00ff80>");
 
 	@OriginalMember(owner = "client!tc", name = "i", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_869 = Static60.method1113("Examine");
+	private static JagString aClass22_869 = Static60.method1113("Examine");
 
 	@OriginalMember(owner = "client!tc", name = "j", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_870 = aClass22_869;
+	public static JagString aClass22_870 = aClass22_869;
 
 	@OriginalMember(owner = "client!tc", name = "n", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_871 = Static60.method1113("<col=ff3000>");
+	public static JagString aClass22_871 = Static60.method1113("<col=ff3000>");
 
 	@OriginalMember(owner = "client!tc", name = "o", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_872 = Static60.method1113("(U5");
+	public static JagString aClass22_872 = Static60.method1113("(U5");
 
 	@OriginalMember(owner = "client!tc", name = "p", descriptor = "[[S")
 	public static short[][] aShortArrayArray3 = new short[][] { { 6798, 107, 10283, 16, 4797, 7744, 5799, 4634, -31839, 22433, 2983, -11343 }, { 8741, 12, -1506, -22374, 7735, 8404, 1701, -27106, 24094, 10153, -8915, 4783, 1341, 16578, -30533, 25239 }, { 25238, 8742, 12, -1506, -22374, 7735, 8404, 1701, -27106, 24094, 10153, -8915, 4783, 1341, 16578, -30533 }, { 4626, 11146, 6439, 12, 4758, 10270 }, { 4550, 4537, 5681, 5673, 5790, 6806, 8076, 4574 } };
@@ -42,7 +42,7 @@ public final class Static113 {
 	public static int anInt2788 = 0;
 
 	@OriginalMember(owner = "client!tc", name = "a", descriptor = "(Lclient!b;IZ)V")
-	public static void method1800(@OriginalArg(0) Class6 arg0, @OriginalArg(2) boolean arg1) {
+	public static void method1800(@OriginalArg(0) ClientStream arg0, @OriginalArg(2) boolean arg1) {
 		if (Static4.aClass6_1 != null) {
 			try {
 				Static4.aClass6_1.method136();
@@ -57,14 +57,14 @@ public final class Static113 {
 		Static88.aClass4_Sub11_2 = null;
 		Static126.aClass4_Sub1_Sub11_1 = null;
 		while (true) {
-			@Pc(37) Class4_Sub1_Sub11 local37 = (Class4_Sub1_Sub11) Static93.aClass81_13.method2017();
+			@Pc(37) Js5NetRequest local37 = (Js5NetRequest) Static93.aClass81_13.method2017();
 			if (local37 == null) {
 				while (true) {
-					local37 = (Class4_Sub1_Sub11) Static27.aClass81_3.method2017();
+					local37 = (Js5NetRequest) Static27.aClass81_3.method2017();
 					if (local37 == null) {
 						if (Static76.aByte3 != 0) {
 							try {
-								@Pc(89) Class4_Sub11 local89 = new Class4_Sub11(4);
+								@Pc(89) Packet local89 = new Packet(4);
 								local89.method701(4);
 								local89.method701(Static76.aByte3);
 								local89.method700(0);
@@ -98,7 +98,7 @@ public final class Static113 {
 	public static void method1801() {
 		aClass22_866 = null;
 		aClass22_868 = null;
-		Class72.anIntArray307 = null;
+		Stats.anIntArray307 = null;
 		anIntArray305 = null;
 		aClass22_869 = null;
 		aShortArrayArray3 = null;
@@ -116,8 +116,8 @@ public final class Static113 {
 		} else if (arg1 instanceof byte[]) {
 			@Pc(13) byte[] local13 = (byte[]) arg1;
 			return arg0 ? Static72.method1188(local13) : local13;
-		} else if (arg1 instanceof Class8) {
-			@Pc(32) Class8 local32 = (Class8) arg1;
+		} else if (arg1 instanceof ByteArrayCopier) {
+			@Pc(32) ByteArrayCopier local32 = (ByteArrayCopier) arg1;
 			return local32.method152();
 		} else {
 			throw new IllegalArgumentException();

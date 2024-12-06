@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!od")
-public final class Class4_Sub1_Sub3_Sub3 extends Entity {
+public final class SoftwareModel extends Entity {
 
 	@OriginalMember(owner = "client!od", name = "T", descriptor = "[I")
 	public int[] anIntArray226;
@@ -91,11 +91,11 @@ public final class Class4_Sub1_Sub3_Sub3 extends Entity {
 	public int anInt2239 = 0;
 
 	@OriginalMember(owner = "client!od", name = "<init>", descriptor = "()V")
-	public Class4_Sub1_Sub3_Sub3() {
+	public SoftwareModel() {
 	}
 
 	@OriginalMember(owner = "client!od", name = "<init>", descriptor = "([Lclient!od;I)V")
-	public Class4_Sub1_Sub3_Sub3(@OriginalArg(0) Class4_Sub1_Sub3_Sub3[] arg0, @OriginalArg(1) int arg1) {
+	public SoftwareModel(@OriginalArg(0) SoftwareModel[] arg0, @OriginalArg(1) int arg1) {
 		@Pc(18) boolean local18 = false;
 		@Pc(20) boolean local20 = false;
 		@Pc(22) boolean local22 = false;
@@ -105,7 +105,7 @@ public final class Class4_Sub1_Sub3_Sub3 extends Entity {
 		this.anInt2234 = 0;
 		this.aByte4 = -1;
 		for (@Pc(38) int local38 = 0; local38 < arg1; local38++) {
-			@Pc(43) Class4_Sub1_Sub3_Sub3 local43 = arg0[local38];
+			@Pc(43) SoftwareModel local43 = arg0[local38];
 			if (local43 != null) {
 				this.anInt2238 += local43.anInt2238;
 				this.anInt2239 += local43.anInt2239;
@@ -155,7 +155,7 @@ public final class Class4_Sub1_Sub3_Sub3 extends Entity {
 		this.anInt2239 = 0;
 		this.anInt2234 = 0;
 		for (@Pc(220) int local220 = 0; local220 < arg1; local220++) {
-			@Pc(225) Class4_Sub1_Sub3_Sub3 local225 = arg0[local220];
+			@Pc(225) SoftwareModel local225 = arg0[local220];
 			if (local225 != null) {
 				for (@Pc(229) int local229 = 0; local229 < local225.anInt2239; local229++) {
 					this.anIntArray234[this.anInt2239] = local225.anIntArray234[local229] + this.anInt2238;
@@ -248,7 +248,7 @@ public final class Class4_Sub1_Sub3_Sub3 extends Entity {
 	}
 
 	@OriginalMember(owner = "client!od", name = "b", descriptor = "(Z)Lclient!od;")
-	public Class4_Sub1_Sub3_Sub3 method1469(@OriginalArg(0) boolean arg0) {
+	public SoftwareModel method1469(@OriginalArg(0) boolean arg0) {
 		if (!arg0 && Static83.aByteArray32.length < this.anInt2239) {
 			Static83.aByteArray32 = new byte[this.anInt2239 + 100];
 		}
@@ -376,7 +376,7 @@ public final class Class4_Sub1_Sub3_Sub3 extends Entity {
 	}
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(ZLclient!od;[B)Lclient!od;")
-	private Class4_Sub1_Sub3_Sub3 method1470(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class4_Sub1_Sub3_Sub3 arg1, @OriginalArg(2) byte[] arg2) {
+	private SoftwareModel method1470(@OriginalArg(0) boolean arg0, @OriginalArg(1) SoftwareModel arg1, @OriginalArg(2) byte[] arg2) {
 		arg1.anInt2238 = this.anInt2238;
 		arg1.anInt2239 = this.anInt2239;
 		arg1.anInt2234 = this.anInt2234;
@@ -713,7 +713,7 @@ public final class Class4_Sub1_Sub3_Sub3 extends Entity {
 	}
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "([[IIIIZI)Lclient!od;")
-	public Class4_Sub1_Sub3_Sub3 method1478(@OriginalArg(0) int[][] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) int arg5) {
+	public SoftwareModel method1478(@OriginalArg(0) int[][] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) int arg5) {
 		this.method1474();
 		@Pc(6) int local6 = arg1 - this.anInt2233;
 		@Pc(11) int local11 = arg1 + this.anInt2233;
@@ -729,9 +729,9 @@ public final class Class4_Sub1_Sub3_Sub3 extends Entity {
 		if (arg0[local6][local16] == arg2 && arg0[local11][local16] == arg2 && arg0[local6][local21] == arg2 && arg0[local11][local21] == arg2) {
 			return this;
 		}
-		@Pc(101) Class4_Sub1_Sub3_Sub3 local101;
+		@Pc(101) SoftwareModel local101;
 		if (arg4) {
-			local101 = new Class4_Sub1_Sub3_Sub3();
+			local101 = new SoftwareModel();
 			local101.anInt2238 = this.anInt2238;
 			local101.anInt2239 = this.anInt2239;
 			local101.anInt2234 = this.anInt2234;
@@ -855,12 +855,12 @@ public final class Class4_Sub1_Sub3_Sub3 extends Entity {
 	}
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(Lclient!rc;I)V")
-	public void method1480(@OriginalArg(0) Class4_Sub1_Sub12 arg0, @OriginalArg(1) int arg1) {
+	public void method1480(@OriginalArg(0) AnimFrameset arg0, @OriginalArg(1) int arg1) {
 		if (this.anIntArrayArray22 == null || arg1 == -1) {
 			return;
 		}
-		@Pc(12) Class25 local12 = arg0.aClass25Array1[arg1];
-		@Pc(15) Class4_Sub16 local15 = local12.aClass4_Sub16_1;
+		@Pc(12) AnimFrame local12 = arg0.aClass25Array1[arg1];
+		@Pc(15) AnimBase local15 = local12.aClass4_Sub16_1;
 		Static83.anInt2243 = 0;
 		Static83.anInt2240 = 0;
 		Static83.anInt2244 = 0;
@@ -947,7 +947,7 @@ public final class Class4_Sub1_Sub3_Sub3 extends Entity {
 	}
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(Lclient!rc;ILclient!rc;I[I)V")
-	public void method1484(@OriginalArg(0) Class4_Sub1_Sub12 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class4_Sub1_Sub12 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int[] arg4) {
+	public void method1484(@OriginalArg(0) AnimFrameset arg0, @OriginalArg(1) int arg1, @OriginalArg(2) AnimFrameset arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int[] arg4) {
 		if (arg1 == -1) {
 			return;
 		}
@@ -955,9 +955,9 @@ public final class Class4_Sub1_Sub3_Sub3 extends Entity {
 			this.method1480(arg0, arg1);
 			return;
 		}
-		@Pc(18) Class25 local18 = arg0.aClass25Array1[arg1];
-		@Pc(23) Class25 local23 = arg2.aClass25Array1[arg3];
-		@Pc(26) Class4_Sub16 local26 = local18.aClass4_Sub16_1;
+		@Pc(18) AnimFrame local18 = arg0.aClass25Array1[arg1];
+		@Pc(23) AnimFrame local23 = arg2.aClass25Array1[arg3];
+		@Pc(26) AnimBase local26 = local18.aClass4_Sub16_1;
 		Static83.anInt2243 = 0;
 		Static83.anInt2240 = 0;
 		Static83.anInt2244 = 0;
@@ -1301,7 +1301,7 @@ public final class Class4_Sub1_Sub3_Sub3 extends Entity {
 	}
 
 	@OriginalMember(owner = "client!od", name = "c", descriptor = "(Z)Lclient!od;")
-	public Class4_Sub1_Sub3_Sub3 method1490(@OriginalArg(0) boolean arg0) {
+	public SoftwareModel method1490(@OriginalArg(0) boolean arg0) {
 		if (!arg0 && Static83.aByteArray34.length < this.anInt2239) {
 			Static83.aByteArray34 = new byte[this.anInt2239 + 100];
 		}

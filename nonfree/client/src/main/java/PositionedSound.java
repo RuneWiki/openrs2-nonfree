@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!oa")
-public final class Class4_Sub18 extends Linkable {
+public final class PositionedSound extends Linkable {
 
 	@OriginalMember(owner = "client!oa", name = "r", descriptor = "I")
 	public int anInt2188;

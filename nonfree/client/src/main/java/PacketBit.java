@@ -4,16 +4,16 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ge")
-public final class Class4_Sub11_Sub1 extends Class4_Sub11 {
+public final class PacketBit extends Packet {
 
 	@OriginalMember(owner = "client!ge", name = "Hb", descriptor = "I")
 	private int anInt1119;
 
 	@OriginalMember(owner = "client!ge", name = "Ob", descriptor = "Lclient!va;")
-	private Class76 aClass76_1;
+	private Isaac aClass76_1;
 
 	@OriginalMember(owner = "client!ge", name = "<init>", descriptor = "(I)V")
-	public Class4_Sub11_Sub1(@OriginalArg(0) int arg0) {
+	public PacketBit(@OriginalArg(0) int arg0) {
 		super(arg0);
 	}
 
@@ -63,6 +63,6 @@ public final class Class4_Sub11_Sub1 extends Class4_Sub11 {
 
 	@OriginalMember(owner = "client!ge", name = "a", descriptor = "([IB)V")
 	public void method755(@OriginalArg(0) int[] arg0) {
-		this.aClass76_1 = new Class76(arg0);
+		this.aClass76_1 = new Isaac(arg0);
 	}
 }

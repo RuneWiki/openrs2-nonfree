@@ -5,43 +5,43 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static103 {
 
 	@OriginalMember(owner = "client!rf", name = "f", descriptor = "Lclient!ga;")
-	public static Class20_Sub1 aClass20_Sub1_66;
+	public static Js5Provider aClass20_Sub1_66;
 
 	@OriginalMember(owner = "client!rf", name = "i", descriptor = "[I")
 	public static int[] anIntArray293;
 
 	@OriginalMember(owner = "client!rf", name = "a", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_769 = Static60.method1113("FULL");
+	private static JagString aClass22_769 = Static60.method1113("FULL");
 
 	@OriginalMember(owner = "client!rf", name = "b", descriptor = "[I")
 	public static int[] anIntArray292 = new int[5];
 
 	@OriginalMember(owner = "client!rf", name = "m", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_773 = Static60.method1113("scroll:");
+	private static JagString aClass22_773 = Static60.method1113("scroll:");
 
 	@OriginalMember(owner = "client!rf", name = "c", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_770 = aClass22_773;
+	public static JagString aClass22_770 = aClass22_773;
 
 	@OriginalMember(owner = "client!rf", name = "d", descriptor = "I")
 	public static int anInt2622 = 0;
 
 	@OriginalMember(owner = "client!rf", name = "e", descriptor = "Lclient!f;")
-	public static Class4_Sub7 aClass4_Sub7_14 = null;
+	public static IfType aClass4_Sub7_14 = null;
 
 	@OriginalMember(owner = "client!rf", name = "h", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_771 = aClass22_769;
+	public static JagString aClass22_771 = aClass22_769;
 
 	@OriginalMember(owner = "client!rf", name = "j", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_772 = aClass22_773;
+	public static JagString aClass22_772 = aClass22_773;
 
 	@OriginalMember(owner = "client!rf", name = "k", descriptor = "[I")
 	public static int[] anIntArray294 = new int[100];
 
 	@OriginalMember(owner = "client!rf", name = "o", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_774 = Static60.method1113("M");
+	public static JagString aClass22_774 = Static60.method1113("M");
 
 	@OriginalMember(owner = "client!rf", name = "p", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_775 = Static60.method1113("Angreifen");
+	public static JagString aClass22_775 = Static60.method1113("Angreifen");
 
 	@OriginalMember(owner = "client!rf", name = "a", descriptor = "(BI[B)I")
 	public static int method1717(@OriginalArg(1) int arg0, @OriginalArg(2) byte[] arg1) {
@@ -53,22 +53,22 @@ public final class Static103 {
 		if (Static99.anInt2589 < 2 && Static104.anInt2636 == 0 && !Static128.aBoolean274) {
 			return;
 		}
-		@Pc(47) Class22 local47;
+		@Pc(47) JagString local47;
 		if (Static104.anInt2636 == 1 && Static99.anInt2589 < 2) {
-			local47 = Static44.method856(new Class22[] { Static35.aClass22_246, Static95.aClass22_537, Static43.aClass22_290, Static48.aClass22_321 });
+			local47 = Static44.method856(new JagString[] { Static35.aClass22_246, Static95.aClass22_537, Static43.aClass22_290, Static48.aClass22_321 });
 		} else if (Static128.aBoolean274 && Static99.anInt2589 < 2) {
-			local47 = Static44.method856(new Class22[] { Static124.aClass22_927, Static95.aClass22_537, Static12.aClass22_80, Static48.aClass22_321 });
+			local47 = Static44.method856(new JagString[] { Static124.aClass22_927, Static95.aClass22_537, Static12.aClass22_80, Static48.aClass22_321 });
 		} else {
 			local47 = Static92.method1620(Static99.anInt2589 - 1);
 		}
 		if (Static99.anInt2589 > 2) {
-			local47 = Static44.method856(new Class22[] { local47, Static30.aClass22_193, Static134.method2042(Static99.anInt2589 - 2), Static97.aClass22_746 });
+			local47 = Static44.method856(new JagString[] { local47, Static30.aClass22_193, Static134.method2042(Static99.anInt2589 - 2), Static97.aClass22_746 });
 		}
-		Static33.aClass4_Sub1_Sub2_Sub4_Sub1_2.method1402(local47, arg1 + 4, arg0 + 15, Static117.anInt2877 / 1000);
+		Static33.aClass4_Sub1_Sub2_Sub4_Sub1_2.method1402(local47, arg1 + 4, arg0 + 15, Client.anInt2877 / 1000);
 	}
 
 	@OriginalMember(owner = "client!rf", name = "a", descriptor = "(IIIZ)Lclient!ec;")
-	public static Class22 method1719(@OriginalArg(2) int arg0, @OriginalArg(3) boolean arg1) {
+	public static JagString method1719(@OriginalArg(2) int arg0, @OriginalArg(3) boolean arg1) {
 		@Pc(15) int local15 = 1;
 		@Pc(23) int local23 = arg0 / 10;
 		while (local23 != 0) {
@@ -96,7 +96,7 @@ public final class Static103 {
 			}
 			local48[local37 - local67 - 1] = (byte) (local73 + 48);
 		}
-		@Pc(111) Class22 local111 = new Class22();
+		@Pc(111) JagString local111 = new JagString();
 		local111.anInt668 = local37;
 		local111.aByteArray7 = local48;
 		return local111;

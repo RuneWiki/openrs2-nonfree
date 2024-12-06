@@ -5,34 +5,34 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static25 {
 
 	@OriginalMember(owner = "client!e", name = "y", descriptor = "Lclient!qc;")
-	public static Class15 aClass15_1;
+	public static AudioChannel aClass15_1;
 
 	@OriginalMember(owner = "client!e", name = "s", descriptor = "[B")
 	public static byte[] aByteArray6 = new byte[] { 95, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57 };
 
 	@OriginalMember(owner = "client!e", name = "u", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_169 = Static60.method1113("leuchten1:");
+	public static JagString aClass22_169 = Static60.method1113("leuchten1:");
 
 	@OriginalMember(owner = "client!e", name = "v", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_170 = Static60.method1113("We suspect someone knows your password)3");
+	private static JagString aClass22_170 = Static60.method1113("We suspect someone knows your password)3");
 
 	@OriginalMember(owner = "client!e", name = "A", descriptor = "I")
 	public static int anInt574 = 0;
 
 	@OriginalMember(owner = "client!e", name = "K", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_175 = Static60.method1113("Loaded fonts");
+	private static JagString aClass22_175 = Static60.method1113("Loaded fonts");
 
 	@OriginalMember(owner = "client!e", name = "B", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_171 = aClass22_175;
+	public static JagString aClass22_171 = aClass22_175;
 
 	@OriginalMember(owner = "client!e", name = "D", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_172 = Static60.method1113("Fehler beim Laden Ihres Spielcharakters)3");
+	public static JagString aClass22_172 = Static60.method1113("Fehler beim Laden Ihres Spielcharakters)3");
 
 	@OriginalMember(owner = "client!e", name = "E", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_173 = aClass22_170;
+	public static JagString aClass22_173 = aClass22_170;
 
 	@OriginalMember(owner = "client!e", name = "J", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_174 = Static60.method1113("compass");
+	public static JagString aClass22_174 = Static60.method1113("compass");
 
 	@OriginalMember(owner = "client!e", name = "d", descriptor = "(I)V")
 	public static void method404() {
@@ -49,7 +49,7 @@ public final class Static25 {
 
 	@OriginalMember(owner = "client!e", name = "a", descriptor = "(IIZ)I")
 	public static int method405(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(12) Class4_Sub19 local12 = (Class4_Sub19) Static30.aClass81_4.method2010((long) arg0);
+		@Pc(12) ClientInvCache local12 = (ClientInvCache) Static30.aClass81_4.method2010((long) arg0);
 		if (local12 == null) {
 			return 0;
 		} else if (arg1 == -1) {

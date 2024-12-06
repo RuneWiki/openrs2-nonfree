@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ed")
-public final class Class23 {
+public final class PcmResampler {
 
 	@OriginalMember(owner = "client!ed", name = "i", descriptor = "[[I")
 	private int[][] anIntArrayArray4;
@@ -16,7 +16,7 @@ public final class Class23 {
 	private int anInt676;
 
 	@OriginalMember(owner = "client!ed", name = "<init>", descriptor = "(II)V")
-	public Class23(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public PcmResampler(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		if (arg1 != arg0) {
 			@Pc(12) int local12 = Static14.method274(arg0, arg1);
 			@Pc(16) int local16 = arg0 / local12;

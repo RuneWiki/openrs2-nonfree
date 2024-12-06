@@ -5,19 +5,19 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static26 {
 
 	@OriginalMember(owner = "client!ea", name = "I", descriptor = "Lclient!ga;")
-	public static Class20_Sub1 aClass20_Sub1_25;
+	public static Js5Provider aClass20_Sub1_25;
 
 	@OriginalMember(owner = "client!ea", name = "O", descriptor = "[Lclient!h;")
-	public static Class4_Sub1_Sub2_Sub2[] aClass4_Sub1_Sub2_Sub2Array8;
+	public static Pix32[] aClass4_Sub1_Sub2_Sub2Array8;
 
 	@OriginalMember(owner = "client!ea", name = "X", descriptor = "[Lclient!h;")
-	public static Class4_Sub1_Sub2_Sub2[] aClass4_Sub1_Sub2_Sub2Array9;
+	public static Pix32[] aClass4_Sub1_Sub2_Sub2Array9;
 
 	@OriginalMember(owner = "client!ea", name = "i", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_263 = Static60.method1113("Invalid username or password)3");
+	private static JagString aClass22_263 = Static60.method1113("Invalid username or password)3");
 
 	@OriginalMember(owner = "client!ea", name = "b", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_262 = aClass22_263;
+	public static JagString aClass22_262 = aClass22_263;
 
 	@OriginalMember(owner = "client!ea", name = "n", descriptor = "Z")
 	public static boolean aBoolean94 = false;
@@ -26,7 +26,7 @@ public final class Static26 {
 	public static int anInt916 = 2;
 
 	@OriginalMember(owner = "client!ea", name = "x", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_264 = Static60.method1113("und die Schaltfl-=che (WSpielkonto erstellen(W am");
+	public static JagString aClass22_264 = Static60.method1113("und die Schaltfl-=che (WSpielkonto erstellen(W am");
 
 	@OriginalMember(owner = "client!ea", name = "y", descriptor = "I")
 	public static int anInt923 = 0;
@@ -35,7 +35,7 @@ public final class Static26 {
 	public static int anInt924 = -2;
 
 	@OriginalMember(owner = "client!ea", name = "D", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_265 = Static60.method1113("Der Anmelde)2Server ist offline)3");
+	public static JagString aClass22_265 = Static60.method1113("Der Anmelde)2Server ist offline)3");
 
 	@OriginalMember(owner = "client!ea", name = "a", descriptor = "(I)V")
 	public static void method593() {
@@ -68,7 +68,7 @@ public final class Static26 {
 			@Pc(39) int[] local39 = Static119.aClass4_Sub1_Sub2_Sub2_7.anIntArray129;
 			local45 = local11 >> 14 & 0x7FFF;
 			local60 = (52736 - arg3 * 512) * 4 + arg2 * 4 + 24624;
-			@Pc(64) Class4_Sub1_Sub5 local64 = Static5.method45(local45);
+			@Pc(64) LocType local64 = Static5.method45(local45);
 			if (local64.anInt1260 == -1) {
 				if (local32 == 0 || local32 == 2) {
 					if (local26 == 0) {
@@ -128,7 +128,7 @@ public final class Static26 {
 					}
 				}
 			} else {
-				@Pc(74) Class4_Sub1_Sub2_Sub3 local74 = Static51.aClass4_Sub1_Sub2_Sub3Array4[local64.anInt1260];
+				@Pc(74) Pix8 local74 = Static51.aClass4_Sub1_Sub2_Sub3Array4[local64.anInt1260];
 				if (local74 != null) {
 					@Pc(87) int local87 = (local64.anInt1256 * 4 - local74.anInt1206) / 2;
 					@Pc(98) int local98 = (local64.anInt1267 * 4 - local74.anInt1210) / 2;
@@ -142,10 +142,10 @@ public final class Static26 {
 			local26 = local20 >> 6 & 0x3;
 			local32 = local20 & 0x1F;
 			local28 = local11 >> 14 & 0x7FFF;
-			@Pc(463) Class4_Sub1_Sub5 local463 = Static5.method45(local28);
+			@Pc(463) LocType local463 = Static5.method45(local28);
 			@Pc(496) int local496;
 			if (local463.anInt1260 != -1) {
-				@Pc(472) Class4_Sub1_Sub2_Sub3 local472 = Static51.aClass4_Sub1_Sub2_Sub3Array4[local463.anInt1260];
+				@Pc(472) Pix8 local472 = Static51.aClass4_Sub1_Sub2_Sub3Array4[local463.anInt1260];
 				if (local472 != null) {
 					local45 = (local463.anInt1256 * 4 - local472.anInt1206) / 2;
 					local496 = (local463.anInt1267 * 4 - local472.anInt1210) / 2;
@@ -176,11 +176,11 @@ public final class Static26 {
 			return;
 		}
 		local20 = local11 >> 14 & 0x7FFF;
-		@Pc(642) Class4_Sub1_Sub5 local642 = Static5.method45(local20);
+		@Pc(642) LocType local642 = Static5.method45(local20);
 		if (local642.anInt1260 == -1) {
 			return;
 		}
-		@Pc(652) Class4_Sub1_Sub2_Sub3 local652 = Static51.aClass4_Sub1_Sub2_Sub3Array4[local642.anInt1260];
+		@Pc(652) Pix8 local652 = Static51.aClass4_Sub1_Sub2_Sub3Array4[local642.anInt1260];
 		if (local652 != null) {
 			local28 = (local642.anInt1256 * 4 - local652.anInt1206) / 2;
 			@Pc(676) int local676 = (local642.anInt1267 * 4 - local652.anInt1210) / 2;

@@ -9,7 +9,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ec")
-public final class JagString implements Interface3 {
+public final class JagString implements JagStringInterface {
 
 	@OriginalMember(owner = "client!ec", name = "a", descriptor = "[B")
 	public byte[] aByteArray7;
@@ -321,19 +321,19 @@ public final class JagString implements Interface3 {
 	@OriginalMember(owner = "client!ec", name = "d", descriptor = "(B)Lclient!ec;")
 	public JagString method463() {
 		@Pc(14) long local14 = this.method455();
-		@Pc(23) Class local23 = ec.class;
-		synchronized (ec.class) {
-			@Pc(39) Class4_Sub10 local39;
+		@Pc(23) Class local23 = JagString.class;
+		synchronized (JagString.class) {
+			@Pc(39) JagStringRelated local39;
 			if (Static132.aClass81_15 == null) {
 				Static132.aClass81_15 = new HashTable(4096);
 			} else {
-				for (local39 = (Class4_Sub10) Static132.aClass81_15.method2010(local14); local39 != null; local39 = (Class4_Sub10) Static132.aClass81_15.method2016()) {
+				for (local39 = (JagStringRelated) Static132.aClass81_15.method2010(local14); local39 != null; local39 = (JagStringRelated) Static132.aClass81_15.method2016()) {
 					if (this.method481(local39.aClass22_236)) {
 						return local39.aClass22_236;
 					}
 				}
 			}
-			local39 = new Class4_Sub10();
+			local39 = new JagStringRelated();
 			this.aBoolean65 = false;
 			local39.aClass22_236 = this;
 			Static132.aClass81_15.method2015(local14, local39);

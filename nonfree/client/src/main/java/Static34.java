@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static34 {
 
 	@OriginalMember(owner = "client!fc", name = "r", descriptor = "[Lclient!ec;")
-	public static Class22[] aClass22Array7;
+	public static JagString[] aClass22Array7;
 
 	@OriginalMember(owner = "client!fc", name = "y", descriptor = "[I")
 	public static int[] anIntArray94;
@@ -14,25 +14,25 @@ public final class Static34 {
 	public static int anInt859;
 
 	@OriginalMember(owner = "client!fc", name = "t", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_237 = Static60.method1113("Keine Antwort vom Server)3");
+	public static JagString aClass22_237 = Static60.method1113("Keine Antwort vom Server)3");
 
 	@OriginalMember(owner = "client!fc", name = "H", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_241 = Static60.method1113("flash2:");
+	private static JagString aClass22_241 = Static60.method1113("flash2:");
 
 	@OriginalMember(owner = "client!fc", name = "u", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_238 = aClass22_241;
+	public static JagString aClass22_238 = aClass22_241;
 
 	@OriginalMember(owner = "client!fc", name = "z", descriptor = "I")
 	public static int anInt856 = 0;
 
 	@OriginalMember(owner = "client!fc", name = "A", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_239 = Static60.method1113("mod_icons");
+	public static JagString aClass22_239 = Static60.method1113("mod_icons");
 
 	@OriginalMember(owner = "client!fc", name = "B", descriptor = "I")
 	public static int anInt857 = 0;
 
 	@OriginalMember(owner = "client!fc", name = "G", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_240 = aClass22_241;
+	public static JagString aClass22_240 = aClass22_241;
 
 	@OriginalMember(owner = "client!fc", name = "a", descriptor = "(IIII)I")
 	public static int method556(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {

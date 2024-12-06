@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!j")
-public final class Class4_Sub1_Sub8 extends DoublyLinkable {
+public final class ObjType extends DoublyLinkable {
 
 	@OriginalMember(owner = "client!j", name = "I", descriptor = "[S")
 	private short[] aShortArray9;
@@ -91,7 +91,7 @@ public final class Class4_Sub1_Sub8 extends DoublyLinkable {
 	public int anInt1476 = 0;
 
 	@OriginalMember(owner = "client!j", name = "zb", descriptor = "[Lclient!ec;")
-	public Class22[] aClass22Array11 = new Class22[] { null, null, Static24.aClass22_163, null, null };
+	public JagString[] aClass22Array11 = new JagString[] { null, null, Static24.aClass22_163, null, null };
 
 	@OriginalMember(owner = "client!j", name = "Gb", descriptor = "I")
 	private int anInt1470 = -1;
@@ -115,10 +115,10 @@ public final class Class4_Sub1_Sub8 extends DoublyLinkable {
 	public int anInt1465 = 0;
 
 	@OriginalMember(owner = "client!j", name = "Rb", descriptor = "[Lclient!ec;")
-	public Class22[] aClass22Array12 = new Class22[] { null, null, null, null, Static96.aClass22_716 };
+	public JagString[] aClass22Array12 = new JagString[] { null, null, null, null, Static96.aClass22_716 };
 
 	@OriginalMember(owner = "client!j", name = "Sb", descriptor = "Lclient!ec;")
-	public Class22 aClass22_359 = Static88.aClass22_675;
+	public JagString aClass22_359 = Static88.aClass22_675;
 
 	@OriginalMember(owner = "client!j", name = "Tb", descriptor = "I")
 	private int anInt1478 = 0;
@@ -234,7 +234,7 @@ public final class Class4_Sub1_Sub8 extends DoublyLinkable {
 	}
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(BI)Lclient!j;")
-	public Class4_Sub1_Sub8 method984(@OriginalArg(1) int arg0) {
+	public ObjType method984(@OriginalArg(1) int arg0) {
 		if (this.anIntArray145 != null && arg0 > 1) {
 			@Pc(18) int local18 = -1;
 			for (@Pc(20) int local20 = 0; local20 < 10; local20++) {
@@ -473,7 +473,7 @@ public final class Class4_Sub1_Sub8 extends DoublyLinkable {
 	}
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(Lclient!j;Lclient!j;I)V")
-	public void method994(@OriginalArg(0) Class4_Sub1_Sub8 arg0, @OriginalArg(1) Class4_Sub1_Sub8 arg1) {
+	public void method994(@OriginalArg(0) ObjType arg0, @OriginalArg(1) ObjType arg1) {
 		this.anInt1436 = arg1.anInt1436;
 		this.aShortArray11 = arg1.aShortArray11;
 		this.anInt1437 = arg0.anInt1437;

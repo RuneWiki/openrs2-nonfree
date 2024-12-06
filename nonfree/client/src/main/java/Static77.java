@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static77 {
 
 	@OriginalMember(owner = "client!nc", name = "t", descriptor = "[Lclient!l;")
-	public static Class41[] aClass41Array1;
+	public static VorbisFloor[] aClass41Array1;
 
 	@OriginalMember(owner = "client!nc", name = "u", descriptor = "[I")
 	public static int[] anIntArray202;
@@ -14,7 +14,7 @@ public final class Static77 {
 	public static float[] aFloatArray2;
 
 	@OriginalMember(owner = "client!nc", name = "x", descriptor = "[Lclient!tf;")
-	public static Class74[] aClass74Array1;
+	public static VorbisResidue[] aClass74Array1;
 
 	@OriginalMember(owner = "client!nc", name = "z", descriptor = "[I")
 	public static int[] anIntArray203;
@@ -32,13 +32,13 @@ public final class Static77 {
 	private static int anInt2038;
 
 	@OriginalMember(owner = "client!nc", name = "K", descriptor = "[Lclient!wb;")
-	public static Class80[] aClass80Array1;
+	public static VorbisMapping[] aClass80Array1;
 
 	@OriginalMember(owner = "client!nc", name = "L", descriptor = "I")
 	public static int anInt2040;
 
 	@OriginalMember(owner = "client!nc", name = "N", descriptor = "[Lclient!ef;")
-	public static Class24[] aClass24Array1;
+	public static VorbisCookbook[] aClass24Array1;
 
 	@OriginalMember(owner = "client!nc", name = "O", descriptor = "[F")
 	public static float[] aFloatArray7;
@@ -119,28 +119,28 @@ public final class Static77 {
 			}
 		}
 		local24 = method1296(8) + 1;
-		aClass24Array1 = new Class24[local24];
+		aClass24Array1 = new VorbisCookbook[local24];
 		for (local28 = 0; local28 < local24; local28++) {
-			aClass24Array1[local28] = new Class24();
+			aClass24Array1[local28] = new VorbisCookbook();
 		}
 		local32 = method1296(6) + 1;
 		for (local36 = 0; local36 < local32; local36++) {
 			method1296(16);
 		}
 		@Pc(269) int local269 = method1296(6) + 1;
-		aClass41Array1 = new Class41[local269];
+		aClass41Array1 = new VorbisFloor[local269];
 		for (local41 = 0; local41 < local269; local41++) {
-			aClass41Array1[local41] = new Class41();
+			aClass41Array1[local41] = new VorbisFloor();
 		}
 		@Pc(290) int local290 = method1296(6) + 1;
-		aClass74Array1 = new Class74[local290];
+		aClass74Array1 = new VorbisResidue[local290];
 		for (local86 = 0; local86 < local290; local86++) {
-			aClass74Array1[local86] = new Class74();
+			aClass74Array1[local86] = new VorbisResidue();
 		}
 		@Pc(311) int local311 = method1296(6) + 1;
-		aClass80Array1 = new Class80[local311];
+		aClass80Array1 = new VorbisMapping[local311];
 		for (local138 = 0; local138 < local311; local138++) {
-			aClass80Array1[local138] = new Class80();
+			aClass80Array1[local138] = new VorbisMapping();
 		}
 		@Pc(332) int local332 = method1296(6) + 1;
 		aBooleanArray15 = new boolean[local332];
@@ -183,7 +183,7 @@ public final class Static77 {
 	}
 
 	@OriginalMember(owner = "client!nc", name = "a", descriptor = "(Lclient!ea;)Z")
-	private static boolean method1292(@OriginalArg(0) Class20 arg0) {
+	private static boolean method1292(@OriginalArg(0) Js5Index arg0) {
 		if (!aBoolean178) {
 			@Pc(7) byte[] local7 = arg0.method597(0, 0);
 			if (local7 == null) {
@@ -203,10 +203,10 @@ public final class Static77 {
 	}
 
 	@OriginalMember(owner = "client!nc", name = "a", descriptor = "(Lclient!ea;II)Lclient!nc;")
-	public static Class4_Sub17 method1294(@OriginalArg(0) Class20 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static VorbisSound method1294(@OriginalArg(0) Js5Index arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		if (method1292(arg0)) {
 			@Pc(16) byte[] local16 = arg0.method597(arg1, arg2);
-			return local16 == null ? null : new Class4_Sub17(local16);
+			return local16 == null ? null : new VorbisSound(local16);
 		} else {
 			arg0.method604(arg1, arg2);
 			return null;

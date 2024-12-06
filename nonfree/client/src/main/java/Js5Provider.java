@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ga")
-public final class Class20_Sub1 extends Class20 {
+public final class Js5Provider extends Js5Index {
 
 	@OriginalMember(owner = "client!ga", name = "hb", descriptor = "I")
 	private int anInt944;
@@ -25,16 +25,16 @@ public final class Class20_Sub1 extends Class20 {
 	private int anInt942 = -1;
 
 	@OriginalMember(owner = "client!ga", name = "ob", descriptor = "Lclient!tb;")
-	private final Class71 aClass71_2;
+	private final FileStream aClass71_2;
 
 	@OriginalMember(owner = "client!ga", name = "kb", descriptor = "Lclient!tb;")
-	private final Class71 aClass71_1;
+	private final FileStream aClass71_1;
 
 	@OriginalMember(owner = "client!ga", name = "eb", descriptor = "I")
 	private final int anInt941;
 
 	@OriginalMember(owner = "client!ga", name = "<init>", descriptor = "(Lclient!tb;Lclient!tb;IZZZ)V")
-	public Class20_Sub1(@OriginalArg(0) Class71 arg0, @OriginalArg(1) Class71 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) boolean arg5) {
+	public Js5Provider(@OriginalArg(0) FileStream arg0, @OriginalArg(1) FileStream arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) boolean arg5) {
 		super(arg3, arg4);
 		this.aClass71_2 = arg1;
 		this.aClass71_1 = arg0;
@@ -109,7 +109,7 @@ public final class Class20_Sub1 extends Class20 {
 	}
 
 	@OriginalMember(owner = "client!ga", name = "a", descriptor = "(ZZ[BILclient!tb;)V")
-	public void method618(@OriginalArg(1) boolean arg0, @OriginalArg(2) byte[] arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class71 arg3) {
+	public void method618(@OriginalArg(1) boolean arg0, @OriginalArg(2) byte[] arg1, @OriginalArg(3) int arg2, @OriginalArg(4) FileStream arg3) {
 		@Pc(71) int local71;
 		if (this.aClass71_2 != arg3) {
 			if (!arg0 && arg2 == this.anInt942) {

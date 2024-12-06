@@ -4,28 +4,28 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!fe")
-public final class Class4_Sub4_Sub2 extends Class4_Sub4 {
+public final class MidiNoteStream extends PcmStream {
 
 	@OriginalMember(owner = "client!fe", name = "E", descriptor = "Lclient!wd;")
-	public final Class82 aClass82_3 = new Class82();
+	public final LinkList aClass82_3 = new LinkList();
 
 	@OriginalMember(owner = "client!fe", name = "Q", descriptor = "Lclient!qe;")
-	public final Class4_Sub4_Sub4 aClass4_Sub4_Sub4_2 = new Class4_Sub4_Sub4();
+	public final MixerPcmStream aClass4_Sub4_Sub4_2 = new MixerPcmStream();
 
 	@OriginalMember(owner = "client!fe", name = "I", descriptor = "Lclient!c;")
-	private final Class4_Sub4_Sub1 aClass4_Sub4_Sub1_1;
+	private final MidiPcmStream aClass4_Sub4_Sub1_1;
 
 	@OriginalMember(owner = "client!fe", name = "<init>", descriptor = "(Lclient!c;)V")
-	public Class4_Sub4_Sub2(@OriginalArg(0) Class4_Sub4_Sub1 arg0) {
+	public MidiNoteStream(@OriginalArg(0) MidiPcmStream arg0) {
 		this.aClass4_Sub4_Sub1_1 = arg0;
 	}
 
 	@OriginalMember(owner = "client!fe", name = "b", descriptor = "()Lclient!fd;")
 	@Override
-	public Class4_Sub4 method1638() {
-		@Pc(9) Class4_Sub15 local9;
+	public PcmStream method1638() {
+		@Pc(9) MidiNote local9;
 		do {
-			local9 = (Class4_Sub15) this.aClass82_3.method2023();
+			local9 = (MidiNote) this.aClass82_3.method2023();
 			if (local9 == null) {
 				return null;
 			}
@@ -34,7 +34,7 @@ public final class Class4_Sub4_Sub2 extends Class4_Sub4 {
 	}
 
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "(IILclient!la;)V")
-	private void method570(@OriginalArg(0) int arg0, @OriginalArg(2) Class4_Sub15 arg1) {
+	private void method570(@OriginalArg(0) int arg0, @OriginalArg(2) MidiNote arg1) {
 		if ((this.aClass4_Sub4_Sub1_1.anIntArray28[arg1.anInt1842] & 0x4) != 0 && arg1.anInt1843 < 0) {
 			@Pc(25) int local25 = this.aClass4_Sub4_Sub1_1.anIntArray32[arg1.anInt1842] / Static116.anInt2873;
 			@Pc(34) int local34 = (local25 + 1048575 - arg1.anInt1831) / local25;
@@ -59,7 +59,7 @@ public final class Class4_Sub4_Sub2 extends Class4_Sub4 {
 	@Override
 	public void method1637(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		this.aClass4_Sub4_Sub4_2.method1637(arg0, arg1, arg2);
-		for (@Pc(17) Class4_Sub15 local17 = (Class4_Sub15) this.aClass82_3.method2025(); local17 != null; local17 = (Class4_Sub15) this.aClass82_3.method2023()) {
+		for (@Pc(17) MidiNote local17 = (MidiNote) this.aClass82_3.method2025(); local17 != null; local17 = (MidiNote) this.aClass82_3.method2023()) {
 			if (!this.aClass4_Sub4_Sub1_1.method227(local17)) {
 				@Pc(27) int local27 = arg1;
 				@Pc(29) int local29 = arg2;
@@ -79,8 +79,8 @@ public final class Class4_Sub4_Sub2 extends Class4_Sub4 {
 
 	@OriginalMember(owner = "client!fe", name = "c", descriptor = "()Lclient!fd;")
 	@Override
-	public Class4_Sub4 method1640() {
-		@Pc(9) Class4_Sub15 local9 = (Class4_Sub15) this.aClass82_3.method2025();
+	public PcmStream method1640() {
+		@Pc(9) MidiNote local9 = (MidiNote) this.aClass82_3.method2025();
 		if (local9 == null) {
 			return null;
 		} else if (local9.aClass4_Sub4_Sub3_1 == null) {
@@ -100,7 +100,7 @@ public final class Class4_Sub4_Sub2 extends Class4_Sub4 {
 	@Override
 	public void method1639(@OriginalArg(0) int arg0) {
 		this.aClass4_Sub4_Sub4_2.method1639(arg0);
-		for (@Pc(15) Class4_Sub15 local15 = (Class4_Sub15) this.aClass82_3.method2025(); local15 != null; local15 = (Class4_Sub15) this.aClass82_3.method2023()) {
+		for (@Pc(15) MidiNote local15 = (MidiNote) this.aClass82_3.method2025(); local15 != null; local15 = (MidiNote) this.aClass82_3.method2023()) {
 			if (!this.aClass4_Sub4_Sub1_1.method227(local15)) {
 				@Pc(25) int local25 = arg0;
 				do {
@@ -117,7 +117,7 @@ public final class Class4_Sub4_Sub2 extends Class4_Sub4 {
 	}
 
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "(Lclient!la;[IIIII)V")
-	private void method575(@OriginalArg(0) Class4_Sub15 arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
+	private void method575(@OriginalArg(0) MidiNote arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		if ((this.aClass4_Sub4_Sub1_1.anIntArray28[arg0.anInt1842] & 0x4) != 0 && arg0.anInt1843 < 0) {
 			@Pc(29) int local29 = this.aClass4_Sub4_Sub1_1.anIntArray32[arg0.anInt1842] / Static116.anInt2873;
 			while (true) {
@@ -131,7 +131,7 @@ public final class Class4_Sub4_Sub2 extends Class4_Sub4 {
 				arg0.aClass4_Sub4_Sub3_1.method1637(arg1, arg2, local39);
 				arg0.anInt1831 += local39 * local29 - 1048576;
 				arg2 += local39;
-				@Pc(77) Class4_Sub4_Sub3 local77 = arg0.aClass4_Sub4_Sub3_1;
+				@Pc(77) SoundPcmStream local77 = arg0.aClass4_Sub4_Sub3_1;
 				@Pc(81) int local81 = Static116.anInt2873 / 100;
 				if (local54 < local81) {
 					local81 = local54;

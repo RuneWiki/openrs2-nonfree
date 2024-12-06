@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!n")
-public final class Class4_Sub4_Sub3 extends PcmStream {
+public final class SoundPcmStream extends PcmStream {
 
 	@OriginalMember(owner = "client!n", name = "v", descriptor = "I")
 	public int anInt1980;
@@ -52,7 +52,7 @@ public final class Class4_Sub4_Sub3 extends PcmStream {
 	public int anInt1993;
 
 	@OriginalMember(owner = "client!n", name = "<init>", descriptor = "(Lclient!ib;II)V")
-	public Class4_Sub4_Sub3(@OriginalArg(0) Class4_Sub13_Sub1 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public SoundPcmStream(@OriginalArg(0) PcmSound arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		super.aClass4_Sub13_5 = arg0;
 		this.anInt1990 = arg0.anInt1365;
 		this.anInt1984 = arg0.anInt1366;
@@ -65,7 +65,7 @@ public final class Class4_Sub4_Sub3 extends PcmStream {
 	}
 
 	@OriginalMember(owner = "client!n", name = "<init>", descriptor = "(Lclient!ib;III)V")
-	public Class4_Sub4_Sub3(@OriginalArg(0) Class4_Sub13_Sub1 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public SoundPcmStream(@OriginalArg(0) PcmSound arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		super.aClass4_Sub13_5 = arg0;
 		this.anInt1990 = arg0.anInt1365;
 		this.anInt1984 = arg0.anInt1366;
@@ -153,7 +153,7 @@ public final class Class4_Sub4_Sub3 extends PcmStream {
 			this.method1639(arg2);
 			return;
 		}
-		@Pc(13) Class4_Sub13_Sub1 local13 = (Class4_Sub13_Sub1) super.aClass4_Sub13_5;
+		@Pc(13) PcmSound local13 = (PcmSound) super.aClass4_Sub13_5;
 		@Pc(18) int local18 = this.anInt1990 << 8;
 		@Pc(23) int local23 = this.anInt1984 << 8;
 		@Pc(29) int local29 = local13.aByteArray12.length << 8;
@@ -311,14 +311,14 @@ public final class Class4_Sub4_Sub3 extends PcmStream {
 			if (this.anInt1992 <= 0) {
 				if (this.anInt1985 == -256 && (this.anInt1993 & 0xFF) == 0) {
 					if (Static48.aBoolean123) {
-						return Static140.method1231(((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1987, this.anInt1991, arg3, arg2, this);
+						return Static140.method1231(((PcmSound) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1987, this.anInt1991, arg3, arg2, this);
 					}
-					return Static140.method1244(((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1986, arg3, arg2, this);
+					return Static140.method1244(((PcmSound) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1986, arg3, arg2, this);
 				}
 				if (Static48.aBoolean123) {
-					return Static140.method1235(((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1987, this.anInt1991, arg3, arg2, this, this.anInt1985, arg4);
+					return Static140.method1235(((PcmSound) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1987, this.anInt1991, arg3, arg2, this, this.anInt1985, arg4);
 				}
-				return Static140.method1261(((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1986, arg3, arg2, this, this.anInt1985, arg4);
+				return Static140.method1261(((PcmSound) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1986, arg3, arg2, this, this.anInt1985, arg4);
 			}
 			@Pc(5) int local5 = arg1 + this.anInt1992;
 			if (local5 > arg3) {
@@ -327,14 +327,14 @@ public final class Class4_Sub4_Sub3 extends PcmStream {
 			this.anInt1992 += arg1;
 			if (this.anInt1985 == -256 && (this.anInt1993 & 0xFF) == 0) {
 				if (Static48.aBoolean123) {
-					arg1 = Static140.method1255(((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1987, this.anInt1991, this.anInt1989, this.anInt1980, local5, arg2, this);
+					arg1 = Static140.method1255(((PcmSound) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1987, this.anInt1991, this.anInt1989, this.anInt1980, local5, arg2, this);
 				} else {
-					arg1 = Static140.method1256(((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1986, this.anInt1981, local5, arg2, this);
+					arg1 = Static140.method1256(((PcmSound) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1986, this.anInt1981, local5, arg2, this);
 				}
 			} else if (Static48.aBoolean123) {
-				arg1 = Static140.method1237(((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1987, this.anInt1991, this.anInt1989, this.anInt1980, local5, arg2, this, this.anInt1985, arg4);
+				arg1 = Static140.method1237(((PcmSound) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1987, this.anInt1991, this.anInt1989, this.anInt1980, local5, arg2, this, this.anInt1985, arg4);
 			} else {
-				arg1 = Static140.method1233(((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1986, this.anInt1981, local5, arg2, this, this.anInt1985, arg4);
+				arg1 = Static140.method1233(((PcmSound) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1986, this.anInt1981, local5, arg2, this, this.anInt1985, arg4);
 			}
 			this.anInt1992 -= arg1;
 			if (this.anInt1992 != 0) {
@@ -363,9 +363,9 @@ public final class Class4_Sub4_Sub3 extends PcmStream {
 		@Pc(6) int local6 = this.anInt1986 * 3 >> 6;
 		local6 = (local6 ^ local6 >> 31) + (local6 >>> 31);
 		if (this.anInt1983 == 0) {
-			local6 -= local6 * this.anInt1993 / (((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12.length << 8);
+			local6 -= local6 * this.anInt1993 / (((PcmSound) super.aClass4_Sub13_5).aByteArray12.length << 8);
 		} else if (this.anInt1983 >= 0) {
-			local6 -= local6 * this.anInt1990 / ((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12.length;
+			local6 -= local6 * this.anInt1990 / ((PcmSound) super.aClass4_Sub13_5).aByteArray12.length;
 		}
 		return local6 > 255 ? 255 : local6;
 	}
@@ -387,7 +387,7 @@ public final class Class4_Sub4_Sub3 extends PcmStream {
 
 	@OriginalMember(owner = "client!n", name = "g", descriptor = "()Z")
 	public boolean method1247() {
-		return this.anInt1993 < 0 || this.anInt1993 >= ((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12.length << 8;
+		return this.anInt1993 < 0 || this.anInt1993 >= ((PcmSound) super.aClass4_Sub13_5).aByteArray12.length << 8;
 	}
 
 	@OriginalMember(owner = "client!n", name = "h", descriptor = "()I")
@@ -397,7 +397,7 @@ public final class Class4_Sub4_Sub3 extends PcmStream {
 
 	@OriginalMember(owner = "client!n", name = "j", descriptor = "(I)V")
 	public synchronized void method1250(@OriginalArg(0) int arg0) {
-		@Pc(7) int local7 = ((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12.length << 8;
+		@Pc(7) int local7 = ((PcmSound) super.aClass4_Sub13_5).aByteArray12.length << 8;
 		if (arg0 < -1) {
 			arg0 = -1;
 		}
@@ -427,7 +427,7 @@ public final class Class4_Sub4_Sub3 extends PcmStream {
 				this.anInt1992 -= arg0;
 			}
 		}
-		@Pc(71) Class4_Sub13_Sub1 local71 = (Class4_Sub13_Sub1) super.aClass4_Sub13_5;
+		@Pc(71) PcmSound local71 = (PcmSound) super.aClass4_Sub13_5;
 		@Pc(76) int local76 = this.anInt1990 << 8;
 		@Pc(81) int local81 = this.anInt1984 << 8;
 		@Pc(87) int local87 = local71.aByteArray12.length << 8;
@@ -615,14 +615,14 @@ public final class Class4_Sub4_Sub3 extends PcmStream {
 			if (this.anInt1992 <= 0) {
 				if (this.anInt1985 == 256 && (this.anInt1993 & 0xFF) == 0) {
 					if (Static48.aBoolean123) {
-						return Static140.method1228(((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1987, this.anInt1991, arg3, arg2, this);
+						return Static140.method1228(((PcmSound) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1987, this.anInt1991, arg3, arg2, this);
 					}
-					return Static140.method1254(((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1986, arg3, arg2, this);
+					return Static140.method1254(((PcmSound) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1986, arg3, arg2, this);
 				}
 				if (Static48.aBoolean123) {
-					return Static140.method1242(((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1987, this.anInt1991, arg3, arg2, this, this.anInt1985, arg4);
+					return Static140.method1242(((PcmSound) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1987, this.anInt1991, arg3, arg2, this, this.anInt1985, arg4);
 				}
-				return Static140.method1258(((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1986, arg3, arg2, this, this.anInt1985, arg4);
+				return Static140.method1258(((PcmSound) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1986, arg3, arg2, this, this.anInt1985, arg4);
 			}
 			@Pc(5) int local5 = arg1 + this.anInt1992;
 			if (local5 > arg3) {
@@ -631,14 +631,14 @@ public final class Class4_Sub4_Sub3 extends PcmStream {
 			this.anInt1992 += arg1;
 			if (this.anInt1985 == 256 && (this.anInt1993 & 0xFF) == 0) {
 				if (Static48.aBoolean123) {
-					arg1 = Static140.method1243(((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1987, this.anInt1991, this.anInt1989, this.anInt1980, local5, arg2, this);
+					arg1 = Static140.method1243(((PcmSound) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1987, this.anInt1991, this.anInt1989, this.anInt1980, local5, arg2, this);
 				} else {
-					arg1 = Static140.method1246(((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1986, this.anInt1981, local5, arg2, this);
+					arg1 = Static140.method1246(((PcmSound) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1986, this.anInt1981, local5, arg2, this);
 				}
 			} else if (Static48.aBoolean123) {
-				arg1 = Static140.method1253(((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1987, this.anInt1991, this.anInt1989, this.anInt1980, local5, arg2, this, this.anInt1985, arg4);
+				arg1 = Static140.method1253(((PcmSound) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1987, this.anInt1991, this.anInt1989, this.anInt1980, local5, arg2, this, this.anInt1985, arg4);
 			} else {
-				arg1 = Static140.method1225(((Class4_Sub13_Sub1) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1986, this.anInt1981, local5, arg2, this, this.anInt1985, arg4);
+				arg1 = Static140.method1225(((PcmSound) super.aClass4_Sub13_5).aByteArray12, arg0, this.anInt1993, arg1, this.anInt1986, this.anInt1981, local5, arg2, this, this.anInt1985, arg4);
 			}
 			this.anInt1992 -= arg1;
 			if (this.anInt1992 != 0) {

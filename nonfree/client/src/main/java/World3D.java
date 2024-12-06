@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!vd")
-public final class Class77 {
+public final class World3D {
 
 	@OriginalMember(owner = "client!vd", name = "c", descriptor = "I")
 	private int anInt3008 = 0;
@@ -13,7 +13,7 @@ public final class Class77 {
 	private int anInt3018 = 0;
 
 	@OriginalMember(owner = "client!vd", name = "d", descriptor = "[Lclient!gb;")
-	private final Class26[] aClass26Array1 = new Class26[5000];
+	private final Location[] aClass26Array1 = new Location[5000];
 
 	@OriginalMember(owner = "client!vd", name = "V", descriptor = "[[I")
 	private final int[][] anIntArrayArray28 = new int[][] { new int[16], { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }, { 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1 }, { 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 }, { 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1 }, { 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }, { 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1 }, { 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 }, { 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1 }, { 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1 }, { 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1 } };
@@ -31,7 +31,7 @@ public final class Class77 {
 	private final int anInt3023;
 
 	@OriginalMember(owner = "client!vd", name = "i", descriptor = "[[[Lclient!wa;")
-	private final Class4_Sub24[][][] aClass4_Sub24ArrayArrayArray1;
+	private final Ground[][][] aClass4_Sub24ArrayArrayArray1;
 
 	@OriginalMember(owner = "client!vd", name = "v", descriptor = "[[[I")
 	private final int[][][] anIntArrayArrayArray7;
@@ -40,11 +40,11 @@ public final class Class77 {
 	private final int[][][] anIntArrayArrayArray6;
 
 	@OriginalMember(owner = "client!vd", name = "<init>", descriptor = "(III[[[I)V")
-	public Class77(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int[][][] arg3) {
+	public World3D(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int[][][] arg3) {
 		this.anInt3006 = arg0;
 		this.anInt3010 = arg1;
 		this.anInt3023 = arg2;
-		this.aClass4_Sub24ArrayArrayArray1 = new Class4_Sub24[arg0][arg1][arg2];
+		this.aClass4_Sub24ArrayArrayArray1 = new Ground[arg0][arg1][arg2];
 		this.anIntArrayArrayArray7 = new int[arg0][arg1 + 1][arg2 + 1];
 		this.anIntArrayArrayArray6 = arg3;
 		this.method1943();
@@ -67,7 +67,7 @@ public final class Class77 {
 		local8.anInt21 = arg7;
 		for (@Pc(45) int local45 = arg0; local45 >= 0; local45--) {
 			if (this.aClass4_Sub24ArrayArrayArray1[local45][arg1][arg2] == null) {
-				this.aClass4_Sub24ArrayArrayArray1[local45][arg1][arg2] = new Class4_Sub24(local45, arg1, arg2);
+				this.aClass4_Sub24ArrayArrayArray1[local45][arg1][arg2] = new Ground(local45, arg1, arg2);
 			}
 		}
 		this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2].aClass3_1 = local8;
@@ -75,7 +75,7 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(Lclient!p;III)V")
 	private void method1922(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		@Pc(14) Class4_Sub24 local14;
+		@Pc(14) Ground local14;
 		@Pc(29) Model local29;
 		if (arg2 < this.anInt3010) {
 			local14 = this.aClass4_Sub24ArrayArrayArray1[arg1][arg2 + 1][arg3];
@@ -109,13 +109,13 @@ public final class Class77 {
 	}
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(III)Lclient!gb;")
-	public Class26 method1923(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
+	public Location method1923(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
 		if (local8 == null) {
 			return null;
 		}
 		for (@Pc(14) int local14 = 0; local14 < local8.anInt3103; local14++) {
-			@Pc(20) Class26 local20 = local8.aClass26Array3[local14];
+			@Pc(20) Location local20 = local8.aClass26Array3[local14];
 			if ((local20.anInt972 >> 29 & 0x3) == 2 && local20.anInt961 == arg1 && local20.anInt959 == arg2) {
 				return local20;
 			}
@@ -125,7 +125,7 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(IIII)I")
 	public int method1925(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
 		if (local8 == null) {
 			return -1;
 		} else if (local8.aClass3_1 != null && local8.aClass3_1.anInt26 == arg3) {
@@ -146,7 +146,7 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "b", descriptor = "(IIII)V")
 	public void method1926(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
 		if (local8 != null) {
 			this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2].anInt3105 = arg3;
 		}
@@ -154,13 +154,13 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "c", descriptor = "(III)Lclient!ab;")
 	public Wall method1927(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
 		return local8 == null ? null : local8.aClass3_1;
 	}
 
 	@OriginalMember(owner = "client!vd", name = "d", descriptor = "(III)V")
 	public void method1928(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
 		if (local8 != null) {
 			local8.aClass61_1 = null;
 		}
@@ -296,7 +296,7 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "e", descriptor = "(III)V")
 	public void method1930(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
 		if (local8 != null) {
 			local8.aClass49_1 = null;
 		}
@@ -304,12 +304,12 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "f", descriptor = "(III)V")
 	public void method1932(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
 		if (local8 == null) {
 			return;
 		}
 		for (@Pc(13) int local13 = 0; local13 < local8.anInt3103; local13++) {
-			@Pc(19) Class26 local19 = local8.aClass26Array3[local13];
+			@Pc(19) Location local19 = local8.aClass26Array3[local13];
 			if ((local19.anInt972 >> 29 & 0x3) == 2 && local19.anInt961 == arg1 && local19.anInt959 == arg2) {
 				this.method1968(local19);
 				return;
@@ -324,13 +324,13 @@ public final class Class77 {
 				if (local1 < 0 || local4 < 0 || local1 >= this.anInt3010 || local4 >= this.anInt3023) {
 					return false;
 				}
-				@Pc(28) Class4_Sub24 local28 = this.aClass4_Sub24ArrayArrayArray1[arg0][local1][local4];
+				@Pc(28) Ground local28 = this.aClass4_Sub24ArrayArrayArray1[arg0][local1][local4];
 				if (local28 != null && local28.anInt3103 >= 5) {
 					return false;
 				}
 			}
 		}
-		@Pc(52) Class26 local52 = new Class26();
+		@Pc(52) Location local52 = new Location();
 		local52.anInt972 = arg11;
 		local52.anInt964 = arg12;
 		local52.anInt970 = arg0;
@@ -360,10 +360,10 @@ public final class Class77 {
 				}
 				for (@Pc(130) int local130 = arg0; local130 >= 0; local130--) {
 					if (this.aClass4_Sub24ArrayArrayArray1[local130][local98][local101] == null) {
-						this.aClass4_Sub24ArrayArrayArray1[local130][local98][local101] = new Class4_Sub24(local130, local98, local101);
+						this.aClass4_Sub24ArrayArrayArray1[local130][local98][local101] = new Ground(local130, local98, local101);
 					}
 				}
-				@Pc(166) Class4_Sub24 local166 = this.aClass4_Sub24ArrayArrayArray1[arg0][local98][local101];
+				@Pc(166) Ground local166 = this.aClass4_Sub24ArrayArrayArray1[arg0][local98][local101];
 				local166.aClass26Array3[local166.anInt3103] = local52;
 				local166.anIntArray340[local166.anInt3103] = local104;
 				local166.anInt3096 |= local104;
@@ -388,7 +388,7 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "h", descriptor = "(III)I")
 	public int method1935(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
 		return local8 == null || local8.aClass61_1 == null ? 0 : local8.aClass61_1.anInt2578;
 	}
 
@@ -433,12 +433,12 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "i", descriptor = "(III)I")
 	public int method1937(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
 		if (local8 == null) {
 			return 0;
 		}
 		for (@Pc(14) int local14 = 0; local14 < local8.anInt3103; local14++) {
-			@Pc(20) Class26 local20 = local8.aClass26Array3[local14];
+			@Pc(20) Location local20 = local8.aClass26Array3[local14];
 			if ((local20.anInt972 >> 29 & 0x3) == 2 && local20.anInt961 == arg1 && local20.anInt959 == arg2) {
 				return local20.anInt972;
 			}
@@ -448,14 +448,14 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "j", descriptor = "(III)I")
 	public int method1938(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
 		return local8 == null || local8.aClass40_1 == null ? 0 : local8.aClass40_1.anInt1809;
 	}
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "()V")
 	public void method1939() {
 		for (@Pc(1) int local1 = 0; local1 < this.anInt3008; local1++) {
-			@Pc(7) Class26 local7 = this.aClass26Array1[local1];
+			@Pc(7) Location local7 = this.aClass26Array1[local1];
 			this.method1968(local7);
 			this.aClass26Array1[local1] = null;
 		}
@@ -464,7 +464,7 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "k", descriptor = "(III)V")
 	public void method1940(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
 		if (local8 != null) {
 			local8.aClass40_1 = null;
 		}
@@ -494,7 +494,7 @@ public final class Class77 {
 		local6.anInt1809 = arg5;
 		local6.anInt1807 = arg6;
 		if (this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2] == null) {
-			this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2] = new Class4_Sub24(arg0, arg1, arg2);
+			this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2] = new Ground(arg0, arg1, arg2);
 		}
 		this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2].aClass40_1 = local6;
 	}
@@ -530,7 +530,7 @@ public final class Class77 {
 		for (@Pc(1) int local1 = 0; local1 < this.anInt3006; local1++) {
 			for (@Pc(4) int local4 = 0; local4 < this.anInt3010; local4++) {
 				for (@Pc(7) int local7 = 0; local7 < this.anInt3023; local7++) {
-					@Pc(17) Class4_Sub24 local17 = this.aClass4_Sub24ArrayArrayArray1[local1][local4][local7];
+					@Pc(17) Ground local17 = this.aClass4_Sub24ArrayArrayArray1[local1][local4][local7];
 					if (local17 != null) {
 						@Pc(22) Wall local22 = local17.aClass3_1;
 						if (local22 != null && local22.aClass4_Sub1_Sub3_1 instanceof Model) {
@@ -546,7 +546,7 @@ public final class Class77 {
 						}
 						@Pc(103) Model local103;
 						for (@Pc(87) int local87 = 0; local87 < local17.anInt3103; local87++) {
-							@Pc(93) Class26 local93 = local17.aClass26Array3[local87];
+							@Pc(93) Location local93 = local17.aClass26Array3[local87];
 							if (local93 != null && local93.aClass4_Sub1_Sub3_3 instanceof Model) {
 								local103 = (Model) local93.aClass4_Sub1_Sub3_3;
 								this.method1966(local103, local1, local4, local7, local93.anInt968 + 1 - local93.anInt961, local93.anInt969 - local93.anInt959 + 1);
@@ -566,7 +566,7 @@ public final class Class77 {
 	}
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(Lclient!gd;IIIIII)V")
-	private void method1945(@OriginalArg(0) Class27 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
+	private void method1945(@OriginalArg(0) TileOverlay arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
 		@Pc(3) int local3 = arg0.anIntArray120.length;
 		@Pc(13) int local13;
 		@Pc(20) int local20;
@@ -634,7 +634,7 @@ public final class Class77 {
 		for (@Pc(4) int local4 = 0; local4 < this.anInt3010; local4++) {
 			for (@Pc(7) int local7 = 0; local7 < this.anInt3023; local7++) {
 				if (this.aClass4_Sub24ArrayArrayArray1[arg0][local4][local7] == null) {
-					this.aClass4_Sub24ArrayArrayArray1[arg0][local4][local7] = new Class4_Sub24(arg0, local4, local7);
+					this.aClass4_Sub24ArrayArrayArray1[arg0][local4][local7] = new Ground(arg0, local4, local7);
 				}
 			}
 		}
@@ -647,29 +647,29 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(IIIIIIIIIIIIIIIIIIII)V")
 	public void method1948(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13, @OriginalArg(14) int arg14, @OriginalArg(15) int arg15, @OriginalArg(16) int arg16, @OriginalArg(17) int arg17, @OriginalArg(18) int arg18, @OriginalArg(19) int arg19) {
-		@Pc(12) Class83 local12;
+		@Pc(12) TileUnderlay local12;
 		@Pc(14) int local14;
 		if (arg3 == 0) {
-			local12 = new Class83(arg10, arg11, arg12, arg13, -1, arg18, false);
+			local12 = new TileUnderlay(arg10, arg11, arg12, arg13, -1, arg18, false);
 			for (local14 = arg0; local14 >= 0; local14--) {
 				if (this.aClass4_Sub24ArrayArrayArray1[local14][arg1][arg2] == null) {
-					this.aClass4_Sub24ArrayArrayArray1[local14][arg1][arg2] = new Class4_Sub24(local14, arg1, arg2);
+					this.aClass4_Sub24ArrayArrayArray1[local14][arg1][arg2] = new Ground(local14, arg1, arg2);
 				}
 			}
 			this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2].aClass83_1 = local12;
 		} else if (arg3 == 1) {
-			local12 = new Class83(arg14, arg15, arg16, arg17, arg5, arg19, arg6 == arg7 && arg6 == arg8 && arg6 == arg9);
+			local12 = new TileUnderlay(arg14, arg15, arg16, arg17, arg5, arg19, arg6 == arg7 && arg6 == arg8 && arg6 == arg9);
 			for (local14 = arg0; local14 >= 0; local14--) {
 				if (this.aClass4_Sub24ArrayArrayArray1[local14][arg1][arg2] == null) {
-					this.aClass4_Sub24ArrayArrayArray1[local14][arg1][arg2] = new Class4_Sub24(local14, arg1, arg2);
+					this.aClass4_Sub24ArrayArrayArray1[local14][arg1][arg2] = new Ground(local14, arg1, arg2);
 				}
 			}
 			this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2].aClass83_1 = local12;
 		} else {
-			@Pc(140) Class27 local140 = new Class27(arg3, arg4, arg5, arg1, arg2, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19);
+			@Pc(140) TileOverlay local140 = new TileOverlay(arg3, arg4, arg5, arg1, arg2, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19);
 			for (local14 = arg0; local14 >= 0; local14--) {
 				if (this.aClass4_Sub24ArrayArrayArray1[local14][arg1][arg2] == null) {
-					this.aClass4_Sub24ArrayArrayArray1[local14][arg1][arg2] = new Class4_Sub24(local14, arg1, arg2);
+					this.aClass4_Sub24ArrayArrayArray1[local14][arg1][arg2] = new Ground(local14, arg1, arg2);
 				}
 			}
 			this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2].aClass27_1 = local140;
@@ -707,16 +707,16 @@ public final class Class77 {
 	}
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(Lclient!wa;Z)V")
-	private void method1951(@OriginalArg(0) Class4_Sub24 arg0, @OriginalArg(1) boolean arg1) {
+	private void method1951(@OriginalArg(0) Ground arg0, @OriginalArg(1) boolean arg1) {
 		Static127.aClass82_13.method2028(arg0);
 		while (true) {
-			@Pc(8) Class4_Sub24 local8;
+			@Pc(8) Ground local8;
 			@Pc(17) int local17;
 			@Pc(20) int local20;
 			@Pc(23) int local23;
 			@Pc(26) int local26;
-			@Pc(31) Class4_Sub24[][] local31;
-			@Pc(49) Class4_Sub24 local49;
+			@Pc(31) Ground[][] local31;
+			@Pc(49) Ground local49;
 			@Pc(251) int local251;
 			@Pc(592) int local592;
 			@Pc(597) int local597;
@@ -731,16 +731,16 @@ public final class Class77 {
 							do {
 								do {
 									while (true) {
-										@Pc(257) Class26 var12;
+										@Pc(257) Location var12;
 										@Pc(605) int var17;
 										@Pc(614) int var18;
 										@Pc(626) int var19;
 										@Pc(345) int var21;
 										@Pc(289) boolean var22;
-										@Pc(800) Class4_Sub24 var33;
+										@Pc(800) Ground var33;
 										while (true) {
 											do {
-												local8 = (Class4_Sub24) Static127.aClass82_13.method2029();
+												local8 = (Ground) Static127.aClass82_13.method2029();
 												if (local8 == null) {
 													return;
 												}
@@ -1009,7 +1009,7 @@ public final class Class77 {
 											while (var21 > 0) {
 												local1093 = -50;
 												local978 = -1;
-												@Pc(1102) Class26 local1102;
+												@Pc(1102) Location local1102;
 												for (local592 = 0; local592 < var21; local592++) {
 													local1102 = Static127.aClass26Array2[local592];
 													if (local1102.anInt962 != Static127.anInt3020) {
@@ -1037,7 +1037,7 @@ public final class Class77 {
 												}
 												for (local602 = local1102.anInt961; local602 <= local1102.anInt968; local602++) {
 													for (var17 = local1102.anInt959; var17 <= local1102.anInt969; var17++) {
-														@Pc(1227) Class4_Sub24 local1227 = local31[local602][var17];
+														@Pc(1227) Ground local1227 = local31[local602][var17];
 														if (local1227.anInt3093 != 0) {
 															Static127.aClass82_13.method2028(local1227);
 														} else if ((local602 != local17 || var17 != local20) && local1227.aBoolean281) {
@@ -1127,7 +1127,7 @@ public final class Class77 {
 					}
 				}
 			}
-			@Pc(1689) Class4_Sub24 local1689;
+			@Pc(1689) Ground local1689;
 			if (local23 < this.anInt3006 - 1) {
 				local1689 = this.aClass4_Sub24ArrayArrayArray1[local23 + 1][local17][local20];
 				if (local1689 != null && local1689.aBoolean281) {
@@ -1163,7 +1163,7 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "m", descriptor = "(III)V")
 	public void method1952(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
 		if (local8 != null) {
 			local8.aClass3_1 = null;
 		}
@@ -1171,11 +1171,11 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "([IIIIII)V")
 	public void method1953(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[arg2][arg3][arg4];
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[arg2][arg3][arg4];
 		if (local8 == null) {
 			return;
 		}
-		@Pc(14) Class83 local14 = local8.aClass83_1;
+		@Pc(14) TileUnderlay local14 = local8.aClass83_1;
 		@Pc(24) int local24;
 		if (local14 != null) {
 			@Pc(19) int local19 = local14.anInt3149;
@@ -1190,7 +1190,7 @@ public final class Class77 {
 			}
 			return;
 		}
-		@Pc(59) Class27 local59 = local8.aClass27_1;
+		@Pc(59) TileOverlay local59 = local8.aClass27_1;
 		if (local59 == null) {
 			return;
 		}
@@ -1231,7 +1231,7 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "n", descriptor = "(III)Lclient!r;")
 	public Decor method1954(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
 		return local8 == null ? null : local8.aClass61_1;
 	}
 
@@ -1248,7 +1248,7 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "e", descriptor = "(IIII)V")
 	public void method1956(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
 		if (local8 == null) {
 			return;
 		}
@@ -1261,12 +1261,12 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "o", descriptor = "(III)I")
 	public int method1957(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
 		return local8 == null || local8.aClass3_1 == null ? 0 : local8.aClass3_1.anInt26;
 	}
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(Lclient!we;IIIIIII)V")
-	private void method1958(@OriginalArg(0) Class83 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
+	private void method1958(@OriginalArg(0) TileUnderlay arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
 		@Pc(6) int local6;
 		@Pc(7) int local7 = local6 = (arg6 << 7) - Static127.anInt3021;
 		@Pc(14) int local14;
@@ -1499,13 +1499,13 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "b", descriptor = "(II)V")
 	public void method1961(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[0][arg0][arg1];
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[0][arg0][arg1];
 		for (@Pc(10) int local10 = 0; local10 < 3; local10++) {
-			@Pc(31) Class4_Sub24 local31 = this.aClass4_Sub24ArrayArrayArray1[local10][arg0][arg1] = this.aClass4_Sub24ArrayArrayArray1[local10 + 1][arg0][arg1];
+			@Pc(31) Ground local31 = this.aClass4_Sub24ArrayArrayArray1[local10][arg0][arg1] = this.aClass4_Sub24ArrayArrayArray1[local10 + 1][arg0][arg1];
 			if (local31 != null) {
 				local31.anInt3089--;
 				for (@Pc(41) int local41 = 0; local41 < local31.anInt3103; local41++) {
-					@Pc(47) Class26 local47 = local31.aClass26Array3[local41];
+					@Pc(47) Location local47 = local31.aClass26Array3[local41];
 					if ((local47.anInt972 >> 29 & 0x3) == 2 && local47.anInt961 == arg0 && local47.anInt959 == arg1) {
 						local47.anInt970--;
 					}
@@ -1513,7 +1513,7 @@ public final class Class77 {
 			}
 		}
 		if (this.aClass4_Sub24ArrayArrayArray1[0][arg0][arg1] == null) {
-			this.aClass4_Sub24ArrayArrayArray1[0][arg0][arg1] = new Class4_Sub24(0, arg0, arg1);
+			this.aClass4_Sub24ArrayArrayArray1[0][arg0][arg1] = new Ground(0, arg0, arg1);
 		}
 		this.aClass4_Sub24ArrayArrayArray1[0][arg0][arg1].aClass4_Sub24_1 = local8;
 		this.aClass4_Sub24ArrayArrayArray1[3][arg0][arg1] = null;
@@ -1538,7 +1538,7 @@ public final class Class77 {
 		local6.anInt2582 = arg9;
 		for (@Pc(49) int local49 = arg0; local49 >= 0; local49--) {
 			if (this.aClass4_Sub24ArrayArrayArray1[local49][arg1][arg2] == null) {
-				this.aClass4_Sub24ArrayArrayArray1[local49][arg1][arg2] = new Class4_Sub24(local49, arg1, arg2);
+				this.aClass4_Sub24ArrayArrayArray1[local49][arg1][arg2] = new Ground(local49, arg1, arg2);
 			}
 		}
 		this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2].aClass61_1 = local6;
@@ -1546,7 +1546,7 @@ public final class Class77 {
 
 	@OriginalMember(owner = "client!vd", name = "p", descriptor = "(III)Lclient!kf;")
 	public GroundDecor method1964(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class4_Sub24 local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
+		@Pc(8) Ground local8 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
 		return local8 == null || local8.aClass40_1 == null ? null : local8.aClass40_1;
 	}
 
@@ -1583,7 +1583,7 @@ public final class Class77 {
 					if (local24 >= 0 && local24 < this.anInt3010) {
 						for (@Pc(34) int local34 = local11; local34 <= local15; local34++) {
 							if (local34 >= 0 && local34 < this.anInt3023 && (!local1 || local24 >= local7 || local34 >= local15 || local34 < arg3 && local24 != arg2)) {
-								@Pc(66) Class4_Sub24 local66 = this.aClass4_Sub24ArrayArrayArray1[local17][local24][local34];
+								@Pc(66) Ground local66 = this.aClass4_Sub24ArrayArrayArray1[local17][local24][local34];
 								if (local66 != null) {
 									@Pc(160) int local160 = (this.anIntArrayArrayArray6[local17][local24][local34] + this.anIntArrayArrayArray6[local17][local24 + 1][local34] + this.anIntArrayArrayArray6[local17][local24][local34 + 1] + this.anIntArrayArrayArray6[local17][local24 + 1][local34 + 1]) / 4 - (this.anIntArrayArrayArray6[arg1][arg2][arg3] + this.anIntArrayArrayArray6[arg1][arg2 + 1][arg3] + this.anIntArrayArrayArray6[arg1][arg2][arg3 + 1] + this.anIntArrayArrayArray6[arg1][arg2 + 1][arg3 + 1]) / 4;
 									@Pc(163) Wall local163 = local66.aClass3_1;
@@ -1599,7 +1599,7 @@ public final class Class77 {
 										}
 									}
 									for (@Pc(237) int local237 = 0; local237 < local66.anInt3103; local237++) {
-										@Pc(243) Class26 local243 = local66.aClass26Array3[local237];
+										@Pc(243) Location local243 = local66.aClass26Array3[local237];
 										if (local243 != null && local243.aClass4_Sub1_Sub3_3 instanceof Model) {
 											@Pc(253) Model local253 = (Model) local243.aClass4_Sub1_Sub3_3;
 											@Pc(261) int local261 = local243.anInt968 + 1 - local243.anInt961;
@@ -1688,10 +1688,10 @@ public final class Class77 {
 	}
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(Lclient!gb;)V")
-	private void method1968(@OriginalArg(0) Class26 arg0) {
+	private void method1968(@OriginalArg(0) Location arg0) {
 		for (@Pc(2) int local2 = arg0.anInt961; local2 <= arg0.anInt968; local2++) {
 			for (@Pc(6) int local6 = arg0.anInt959; local6 <= arg0.anInt969; local6++) {
-				@Pc(17) Class4_Sub24 local17 = this.aClass4_Sub24ArrayArrayArray1[arg0.anInt970][local2][local6];
+				@Pc(17) Ground local17 = this.aClass4_Sub24ArrayArrayArray1[arg0.anInt970][local2][local6];
 				if (local17 != null) {
 					@Pc(36) int local36;
 					for (@Pc(21) int local21 = 0; local21 < local17.anInt3103; local21++) {
@@ -1725,7 +1725,7 @@ public final class Class77 {
 		local3.aClass4_Sub1_Sub3_7 = arg6;
 		local3.aClass4_Sub1_Sub3_5 = arg7;
 		@Pc(34) int local34 = 0;
-		@Pc(43) Class4_Sub24 local43 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
+		@Pc(43) Ground local43 = this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2];
 		if (local43 != null) {
 			for (@Pc(47) int local47 = 0; local47 < local43.anInt3103; local47++) {
 				if ((local43.aClass26Array3[local47].anInt964 & 0x100) == 256 && local43.aClass26Array3[local47].aClass4_Sub1_Sub3_3 instanceof SoftwareModel) {
@@ -1739,7 +1739,7 @@ public final class Class77 {
 		}
 		local3.anInt1958 = local34;
 		if (this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2] == null) {
-			this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2] = new Class4_Sub24(arg0, arg1, arg2);
+			this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2] = new Ground(arg0, arg1, arg2);
 		}
 		this.aClass4_Sub24ArrayArrayArray1[arg0][arg1][arg2].aClass49_1 = local3;
 	}
@@ -1807,10 +1807,10 @@ public final class Class77 {
 		@Pc(136) int local136;
 		@Pc(139) int local139;
 		for (@Pc(128) int local128 = this.anInt3018; local128 < this.anInt3006; local128++) {
-			@Pc(134) Class4_Sub24[][] local134 = this.aClass4_Sub24ArrayArrayArray1[local128];
+			@Pc(134) Ground[][] local134 = this.aClass4_Sub24ArrayArrayArray1[local128];
 			for (local136 = Static127.anInt3012; local136 < Static127.anInt3014; local136++) {
 				for (local139 = Static127.anInt3013; local139 < Static127.anInt3007; local139++) {
-					@Pc(146) Class4_Sub24 local146 = local134[local136][local139];
+					@Pc(146) Ground local146 = local134[local136][local139];
 					if (local146 != null) {
 						if (local146.anInt3105 <= arg5 && (Static127.aBooleanArrayArray1[local136 + 25 - Static127.anInt3030][local139 + 25 - Static127.anInt3011] || this.anIntArrayArrayArray6[local128][local136][local139] - arg1 >= 2000)) {
 							local146.aBoolean280 = true;
@@ -1836,7 +1836,7 @@ public final class Class77 {
 		@Pc(258) int local258;
 		@Pc(237) int local237;
 		for (@Pc(224) int local224 = this.anInt3018; local224 < this.anInt3006; local224++) {
-			@Pc(230) Class4_Sub24[][] local230 = this.aClass4_Sub24ArrayArrayArray1[local224];
+			@Pc(230) Ground[][] local230 = this.aClass4_Sub24ArrayArrayArray1[local224];
 			for (local139 = -25; local139 <= 0; local139++) {
 				local237 = Static127.anInt3030 + local139;
 				local241 = Static127.anInt3030 - local139;
@@ -1844,7 +1844,7 @@ public final class Class77 {
 					for (local249 = -25; local249 <= 0; local249++) {
 						local254 = Static127.anInt3011 + local249;
 						local258 = Static127.anInt3011 - local249;
-						@Pc(270) Class4_Sub24 local270;
+						@Pc(270) Ground local270;
 						if (local237 >= Static127.anInt3012) {
 							if (local254 >= Static127.anInt3013) {
 								local270 = local230[local237][local254];
@@ -1882,7 +1882,7 @@ public final class Class77 {
 			}
 		}
 		for (local136 = this.anInt3018; local136 < this.anInt3006; local136++) {
-			@Pc(361) Class4_Sub24[][] local361 = this.aClass4_Sub24ArrayArrayArray1[local136];
+			@Pc(361) Ground[][] local361 = this.aClass4_Sub24ArrayArrayArray1[local136];
 			for (local237 = -25; local237 <= 0; local237++) {
 				local241 = Static127.anInt3030 + local237;
 				local249 = Static127.anInt3030 - local237;
@@ -1890,7 +1890,7 @@ public final class Class77 {
 					for (local254 = -25; local254 <= 0; local254++) {
 						local258 = Static127.anInt3011 + local254;
 						@Pc(389) int local389 = Static127.anInt3011 - local254;
-						@Pc(401) Class4_Sub24 local401;
+						@Pc(401) Ground local401;
 						if (local241 >= Static127.anInt3012) {
 							if (local258 >= Static127.anInt3013) {
 								local401 = local361[local241][local258];

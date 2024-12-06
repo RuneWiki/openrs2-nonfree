@@ -1,6 +1,5 @@
 import java.awt.Component;
 import java.awt.Graphics;
-import java.awt.Point;
 import java.awt.Shape;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
@@ -14,7 +13,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ca")
-public final class Class11_Sub1 extends Class11 {
+public final class AwtPixMap extends PixMap {
 
 	@OriginalMember(owner = "client!ca", name = "t", descriptor = "Ljava/awt/Component;")
 	private Component aComponent1;

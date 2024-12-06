@@ -8,16 +8,10 @@ public final class Static51 {
 	public static int anInt1473;
 
 	@OriginalMember(owner = "client!j", name = "Xb", descriptor = "[Lclient!hb;")
-	public static Class4_Sub1_Sub2_Sub3[] aClass4_Sub1_Sub2_Sub3Array4;
+	public static Pix8[] aClass4_Sub1_Sub2_Sub3Array4;
 
 	@OriginalMember(owner = "client!j", name = "H", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_356 = Static60.method1113("Schlie-8en");
-
-	@OriginalMember(owner = "client!j", name = "bb", descriptor = "Lclient!lf;")
-	public static Applet_Sub1 anApplet_Sub1_1 = null;
-
-	@OriginalMember(owner = "client!j", name = "eb", descriptor = "Z")
-	public static boolean aBoolean139 = false;
+	public static JagString aClass22_356 = Static60.method1113("Schlie-8en");
 
 	@OriginalMember(owner = "client!j", name = "fb", descriptor = "[I")
 	public static int[] anIntArray144 = new int[] { 16776960, 16711680, 65280, 65535, 16711935, 16777215 };
@@ -29,42 +23,42 @@ public final class Static51 {
 	public static int anInt1461 = 0;
 
 	@OriginalMember(owner = "client!j", name = "vb", descriptor = "Lclient!ja;")
-	public static Class33 aClass33_19 = new Class33(64);
+	public static LruCache aClass33_19 = new LruCache(64);
 
 	@OriginalMember(owner = "client!j", name = "Qb", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_358 = Static60.method1113("Your friend list is full)3 Max of 100 for free users)1 and 200 for members");
+	private static JagString aClass22_358 = Static60.method1113("Your friend list is full)3 Max of 100 for free users)1 and 200 for members");
 
 	@OriginalMember(owner = "client!j", name = "Cb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_357 = aClass22_358;
+	public static JagString aClass22_357 = aClass22_358;
 
 	@OriginalMember(owner = "client!j", name = "Hb", descriptor = "[I")
 	public static int[] anIntArray146 = new int[2048];
 
 	@OriginalMember(owner = "client!j", name = "Vb", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_360 = Static60.method1113("wave:");
+	private static JagString aClass22_360 = Static60.method1113("wave:");
 
 	@OriginalMember(owner = "client!j", name = "Wb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_361 = aClass22_360;
+	public static JagString aClass22_361 = aClass22_360;
 
 	@OriginalMember(owner = "client!j", name = "Yb", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_362 = Static60.method1113("auf einer freien Welt zu spielen)3");
+	public static JagString aClass22_362 = Static60.method1113("auf einer freien Welt zu spielen)3");
 
 	@OriginalMember(owner = "client!j", name = "Zb", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_363 = Static60.method1113("level)2");
+	private static JagString aClass22_363 = Static60.method1113("level)2");
 
 	@OriginalMember(owner = "client!j", name = "ac", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_364 = aClass22_363;
+	public static JagString aClass22_364 = aClass22_363;
 
 	@OriginalMember(owner = "client!j", name = "bc", descriptor = "[B")
 	public static byte[] aByteArray13 = new byte[520];
 
 	@OriginalMember(owner = "client!j", name = "cc", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_365 = aClass22_360;
+	public static JagString aClass22_365 = aClass22_360;
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(IZ)V")
 	public static void method981(@OriginalArg(1) boolean arg0) {
 		for (@Pc(1) int local1 = 0; local1 < Static84.anInt2255; local1++) {
-			@Pc(11) Class4_Sub1_Sub3_Sub2_Sub2 local11 = Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1[Static13.anIntArray33[local1]];
+			@Pc(11) NpcEntity local11 = Static12.aClass4_Sub1_Sub3_Sub2_Sub2Array1[Static13.anIntArray33[local1]];
 			@Pc(19) int local19 = (Static13.anIntArray33[local1] << 14) + 536870912;
 			if (local11 != null && local11.method1614() && arg0 == local11.aClass4_Sub1_Sub10_1.aBoolean192 && local11.aClass4_Sub1_Sub10_1.method1432()) {
 				@Pc(46) int local46 = local11.anInt2500 >> 7;
@@ -86,7 +80,7 @@ public final class Static51 {
 	}
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(Lclient!ec;Lclient!ea;ZLclient!ec;)[Lclient!h;")
-	public static Class4_Sub1_Sub2_Sub2[] method987(@OriginalArg(0) Class22 arg0, @OriginalArg(1) Class20 arg1, @OriginalArg(3) Class22 arg2) {
+	public static Pix32[] method987(@OriginalArg(0) JagString arg0, @OriginalArg(1) Js5Index arg1, @OriginalArg(3) JagString arg2) {
 		@Pc(8) int local8 = arg1.method592(arg0);
 		@Pc(14) int local14 = arg1.method606(arg2, local8);
 		return Static78.method1297(local14, arg1, local8);

@@ -8,13 +8,13 @@ public final class Static39 {
 	public static int anInt957;
 
 	@OriginalMember(owner = "client!gb", name = "f", descriptor = "Lclient!h;")
-	public static Class4_Sub1_Sub2_Sub2 aClass4_Sub1_Sub2_Sub2_5;
+	public static Pix32 aClass4_Sub1_Sub2_Sub2_5;
 
 	@OriginalMember(owner = "client!gb", name = "y", descriptor = "I")
 	public static int anInt974;
 
 	@OriginalMember(owner = "client!gb", name = "i", descriptor = "Lclient!ja;")
-	public static Class33 aClass33_15 = new Class33(20);
+	public static LruCache aClass33_15 = new LruCache(20);
 
 	@OriginalMember(owner = "client!gb", name = "t", descriptor = "I")
 	public static int anInt971 = 0;
@@ -26,29 +26,29 @@ public final class Static39 {
 	public static boolean[] aBooleanArray4 = new boolean[] { true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, false };
 
 	@OriginalMember(owner = "client!gb", name = "x", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_271 = Static60.method1113("<col=ff7000>");
+	public static JagString aClass22_271 = Static60.method1113("<col=ff7000>");
 
 	@OriginalMember(owner = "client!gb", name = "z", descriptor = "[I")
 	public static int[] anIntArray112 = new int[] { 0, 0, -2, 0, -2, 6, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 5, 2, 0, 0, 0, 0, 3, -2, 0, 0, -2, 0, 8, 2, 0, -2, -2, 0, 0, 3, 11, 0, 0, 0, 0, -2, 0, 0, 0, 6, 0, 6, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 3, -2, 0, 6, -1, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, -2, 0, 0, 10, 0, -1, 0, 0, 0, 0, 5, 0, 0, 0, 7, 0, 4, -2, 0, 2, 0, 1, 7, 5, 0, 0, 2, 0, 0, 0, 24, 6, 0, 1, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 2, 7, 0, 0, 0, 6, 0, 0, 0, 0, 4, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 14, 0, 0, 0, 0, -2, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 1, 0, 0, 0, 3, 0, 0, 0, 0, 0, 2, 6, 6, 6, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, -2, 0, 0, 0, 0, 0, 0, -2, 6, 0, 0, 0, 0, 4, -1, 8, 0, 0, 0, 0, 6, 0, 0, 4, 0, 0, 0, 0, 0, 0, 4, 0 };
 
 	@OriginalMember(owner = "client!gb", name = "C", descriptor = "Lclient!ec;")
-	private static Class22 aClass22_274 = Static60.method1113("glow1:");
+	private static JagString aClass22_274 = Static60.method1113("glow1:");
 
 	@OriginalMember(owner = "client!gb", name = "A", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_272 = aClass22_274;
+	public static JagString aClass22_272 = aClass22_274;
 
 	@OriginalMember(owner = "client!gb", name = "B", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_273 = aClass22_274;
+	public static JagString aClass22_273 = aClass22_274;
 
 	@OriginalMember(owner = "client!gb", name = "D", descriptor = "Lclient!wd;")
-	public static Class82 aClass82_4 = new Class82();
+	public static LinkList aClass82_4 = new LinkList();
 
 	@OriginalMember(owner = "client!gb", name = "E", descriptor = "Lclient!ec;")
-	public static Class22 aClass22_275 = Static60.method1113("lila:");
+	public static JagString aClass22_275 = Static60.method1113("lila:");
 
 	@OriginalMember(owner = "client!gb", name = "a", descriptor = "(BI)V")
 	public static void method622(@OriginalArg(1) int arg0) {
-		@Pc(15) Class4_Sub19 local15 = (Class4_Sub19) Static30.aClass81_4.method2010((long) arg0);
+		@Pc(15) ClientInvCache local15 = (ClientInvCache) Static30.aClass81_4.method2010((long) arg0);
 		if (local15 != null) {
 			local15.method1999();
 		}
@@ -56,7 +56,7 @@ public final class Static39 {
 
 	@OriginalMember(owner = "client!gb", name = "a", descriptor = "(IIIII)V")
 	public static void method623(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3) {
-		for (@Pc(10) Class4_Sub18 local10 = (Class4_Sub18) Static52.aClass82_5.method2025(); local10 != null; local10 = (Class4_Sub18) Static52.aClass82_5.method2023()) {
+		for (@Pc(10) PositionedSound local10 = (PositionedSound) Static52.aClass82_5.method2025(); local10 != null; local10 = (PositionedSound) Static52.aClass82_5.method2023()) {
 			if (local10.anInt2202 != -1 || local10.anIntArray222 != null) {
 				@Pc(22) int local22 = 0;
 				if (arg1 > local10.anInt2192) {
@@ -87,10 +87,10 @@ public final class Static39 {
 					if (local10.aClass4_Sub4_Sub3_2 != null) {
 						local10.aClass4_Sub4_Sub3_2.method1238(local142);
 					} else if (local10.anInt2202 >= 0) {
-						@Pc(160) Class65 local160 = Static141.method1716(Static1.aClass20_Sub1_1, local10.anInt2202, 0);
+						@Pc(160) Wave local160 = Static141.method1716(Static1.aClass20_Sub1_1, local10.anInt2202, 0);
 						if (local160 != null) {
-							@Pc(167) Class4_Sub13_Sub1 local167 = local160.method1715().method935(Static108.aClass23_1);
-							@Pc(172) Class4_Sub4_Sub3 local172 = Static140.method1234(local167, local142);
+							@Pc(167) PcmSound local167 = local160.method1715().method935(Static108.aClass23_1);
+							@Pc(172) SoundPcmStream local172 = Static140.method1234(local167, local142);
 							local172.method1232(-1);
 							Static32.aClass4_Sub4_Sub4_1.method1647(local172);
 							local10.aClass4_Sub4_Sub3_2 = local172;
@@ -103,10 +103,10 @@ public final class Static39 {
 						}
 					} else if (local10.anIntArray222 != null && (local10.anInt2199 -= arg2) <= 0) {
 						@Pc(203) int local203 = (int) (Math.random() * (double) local10.anIntArray222.length);
-						@Pc(211) Class65 local211 = Static141.method1716(Static1.aClass20_Sub1_1, local10.anIntArray222[local203], 0);
+						@Pc(211) Wave local211 = Static141.method1716(Static1.aClass20_Sub1_1, local10.anIntArray222[local203], 0);
 						if (local211 != null) {
-							@Pc(218) Class4_Sub13_Sub1 local218 = local211.method1715().method935(Static108.aClass23_1);
-							@Pc(223) Class4_Sub4_Sub3 local223 = Static140.method1234(local218, local142);
+							@Pc(218) PcmSound local218 = local211.method1715().method935(Static108.aClass23_1);
+							@Pc(223) SoundPcmStream local223 = Static140.method1234(local218, local142);
 							local223.method1232(0);
 							Static32.aClass4_Sub4_Sub4_1.method1647(local223);
 							local10.anInt2199 = (int) (Math.random() * (double) (local10.anInt2190 - local10.anInt2188)) + local10.anInt2188;

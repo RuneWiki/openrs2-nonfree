@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!nc")
-public final class Class4_Sub17 extends Linkable {
+public final class VorbisSound extends Linkable {
 
 	@OriginalMember(owner = "client!nc", name = "r", descriptor = "[[B")
 	private byte[][] aByteArrayArray5;
@@ -46,7 +46,7 @@ public final class Class4_Sub17 extends Linkable {
 	private byte[] aByteArray27;
 
 	@OriginalMember(owner = "client!nc", name = "<init>", descriptor = "([B)V")
-	public Class4_Sub17(@OriginalArg(0) byte[] arg0) {
+	public VorbisSound(@OriginalArg(0) byte[] arg0) {
 		this.method1286(arg0);
 	}
 
@@ -114,7 +114,7 @@ public final class Class4_Sub17 extends Linkable {
 			local104 = local25;
 			local108 = local25 >> 1;
 		}
-		@Pc(123) Class80 local123 = Static77.aClass80Array1[Static77.anIntArray204[local15]];
+		@Pc(123) VorbisMapping local123 = Static77.aClass80Array1[Static77.anIntArray204[local15]];
 		@Pc(126) int local126 = local123.anInt3107;
 		@Pc(131) int local131 = local123.anIntArray342[local126];
 		@Pc(140) boolean local140 = !Static77.aClass41Array1[local131].method1133();

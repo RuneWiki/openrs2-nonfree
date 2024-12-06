@@ -10,7 +10,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!md")
-public final class Class15_Sub2 extends AudioChannel {
+public final class JavaAudioChannel extends AudioChannel {
 
 	@OriginalMember(owner = "client!md", name = "A", descriptor = "[B")
 	private byte[] aByteArray25;

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!qe")
-public final class Class4_Sub4_Sub4 extends Class4_Sub4 {
+public final class MixerPcmStream extends PcmStream {
 
 	@OriginalMember(owner = "client!qe", name = "v", descriptor = "Lclient!wd;")
 	private final LinkList aClass82_10 = new LinkList();
@@ -19,7 +19,7 @@ public final class Class4_Sub4_Sub4 extends Class4_Sub4 {
 	private int anInt2548 = 0;
 
 	@OriginalMember(owner = "client!qe", name = "a", descriptor = "(Lclient!fd;)V")
-	public synchronized void method1642(@OriginalArg(0) Class4_Sub4 arg0) {
+	public synchronized void method1642(@OriginalArg(0) PcmStream arg0) {
 		arg0.method1999();
 	}
 
@@ -42,7 +42,7 @@ public final class Class4_Sub4_Sub4 extends Class4_Sub4 {
 			arg2 -= local33;
 			this.anInt2548 += local33;
 			this.method1646();
-			@Pc(60) Class4_Sub23 local60 = (Class4_Sub23) this.aClass82_11.method2025();
+			@Pc(60) MixerListener local60 = (MixerListener) this.aClass82_11.method2025();
 			synchronized (local60) {
 				@Pc(68) int local68 = local60.method1997(this);
 				if (local68 < 0) {
@@ -58,18 +58,18 @@ public final class Class4_Sub4_Sub4 extends Class4_Sub4 {
 
 	@OriginalMember(owner = "client!qe", name = "c", descriptor = "([III)V")
 	private void method1643(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		for (@Pc(5) Class4_Sub4 local5 = (Class4_Sub4) this.aClass82_10.method2025(); local5 != null; local5 = (Class4_Sub4) this.aClass82_10.method2023()) {
+		for (@Pc(5) PcmStream local5 = (PcmStream) this.aClass82_10.method2025(); local5 != null; local5 = (PcmStream) this.aClass82_10.method2023()) {
 			local5.method1636(arg0, arg1, arg2);
 		}
 	}
 
 	@OriginalMember(owner = "client!qe", name = "a", descriptor = "(Lclient!v;Lclient!w;)V")
-	private void method1644(@OriginalArg(0) Linkable arg0, @OriginalArg(1) Class4_Sub23 arg1) {
-		while (arg0 != this.aClass82_11.aClass4_127 && ((Class4_Sub23) arg0).anInt3075 <= arg1.anInt3075) {
+	private void method1644(@OriginalArg(0) Linkable arg0, @OriginalArg(1) MixerListener arg1) {
+		while (arg0 != this.aClass82_11.aClass4_127 && ((MixerListener) arg0).anInt3075 <= arg1.anInt3075) {
 			arg0 = arg0.aClass4_124;
 		}
 		this.aClass82_11.method2030(arg1, arg0);
-		this.anInt2547 = ((Class4_Sub23) this.aClass82_11.aClass4_127.aClass4_124).anInt3075;
+		this.anInt2547 = ((MixerListener) this.aClass82_11.aClass4_127.aClass4_124).anInt3075;
 	}
 
 	@OriginalMember(owner = "client!qe", name = "d", descriptor = "(I)V")
@@ -90,7 +90,7 @@ public final class Class4_Sub4_Sub4 extends Class4_Sub4 {
 			arg0 -= local29;
 			this.anInt2548 += local29;
 			this.method1646();
-			@Pc(50) Class4_Sub23 local50 = (Class4_Sub23) this.aClass82_11.method2025();
+			@Pc(50) MixerListener local50 = (MixerListener) this.aClass82_11.method2025();
 			synchronized (local50) {
 				@Pc(58) int local58 = local50.method1997(this);
 				if (local58 < 0) {
@@ -106,21 +106,21 @@ public final class Class4_Sub4_Sub4 extends Class4_Sub4 {
 
 	@OriginalMember(owner = "client!qe", name = "c", descriptor = "()Lclient!fd;")
 	@Override
-	public Class4_Sub4 method1640() {
-		return (Class4_Sub4) this.aClass82_10.method2025();
+	public PcmStream method1640() {
+		return (PcmStream) this.aClass82_10.method2025();
 	}
 
 	@OriginalMember(owner = "client!qe", name = "e", descriptor = "(I)V")
 	private void method1645(@OriginalArg(0) int arg0) {
-		for (@Pc(5) Class4_Sub4 local5 = (Class4_Sub4) this.aClass82_10.method2025(); local5 != null; local5 = (Class4_Sub4) this.aClass82_10.method2023()) {
+		for (@Pc(5) PcmStream local5 = (PcmStream) this.aClass82_10.method2025(); local5 != null; local5 = (PcmStream) this.aClass82_10.method2023()) {
 			local5.method1639(arg0);
 		}
 	}
 
 	@OriginalMember(owner = "client!qe", name = "b", descriptor = "()Lclient!fd;")
 	@Override
-	public Class4_Sub4 method1638() {
-		return (Class4_Sub4) this.aClass82_10.method2023();
+	public PcmStream method1638() {
+		return (PcmStream) this.aClass82_10.method2023();
 	}
 
 	@OriginalMember(owner = "client!qe", name = "e", descriptor = "()V")
@@ -128,7 +128,7 @@ public final class Class4_Sub4_Sub4 extends Class4_Sub4 {
 		if (this.anInt2548 <= 0) {
 			return;
 		}
-		for (@Pc(8) Class4_Sub23 local8 = (Class4_Sub23) this.aClass82_11.method2025(); local8 != null; local8 = (Class4_Sub23) this.aClass82_11.method2023()) {
+		for (@Pc(8) MixerListener local8 = (MixerListener) this.aClass82_11.method2025(); local8 != null; local8 = (MixerListener) this.aClass82_11.method2023()) {
 			local8.anInt3075 -= this.anInt2548;
 		}
 		this.anInt2547 -= this.anInt2548;
@@ -136,19 +136,19 @@ public final class Class4_Sub4_Sub4 extends Class4_Sub4 {
 	}
 
 	@OriginalMember(owner = "client!qe", name = "b", descriptor = "(Lclient!fd;)V")
-	public synchronized void method1647(@OriginalArg(0) Class4_Sub4 arg0) {
+	public synchronized void method1647(@OriginalArg(0) PcmStream arg0) {
 		this.aClass82_10.method2021(arg0);
 	}
 
 	@OriginalMember(owner = "client!qe", name = "a", descriptor = "(Lclient!w;)V")
-	private void method1648(@OriginalArg(0) Class4_Sub23 arg0) {
+	private void method1648(@OriginalArg(0) MixerListener arg0) {
 		arg0.method1999();
 		arg0.method1998();
 		@Pc(9) Linkable local9 = this.aClass82_11.aClass4_127.aClass4_124;
 		if (local9 == this.aClass82_11.aClass4_127) {
 			this.anInt2547 = -1;
 		} else {
-			this.anInt2547 = ((Class4_Sub23) local9).anInt3075;
+			this.anInt2547 = ((MixerListener) local9).anInt3075;
 		}
 	}
 
